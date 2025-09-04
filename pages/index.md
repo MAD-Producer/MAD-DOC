@@ -1,10 +1,10 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: home
+layout: 主页
 
 hero:
   name: "MAD DOC"
-  text: "MAD·AMV 文档库"
+  text: "国立国会图书馆中国分馆 MAD·AMV 文档库 自发进化型SE-778Hλ（拟蓑白）"
   tagline: 你可以在这里获取到有关于 MAD·AMV 的相关信息
   actions:
     - theme: brand
