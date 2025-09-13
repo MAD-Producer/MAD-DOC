@@ -2,8 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "vitepress-template",
-  description: "A starter template for VitePress",
+  title: "MAD DOC",
+  description: "国立国会图书馆中国分馆 MAD·AMV 文档库 自发进化型SE-778Hλ（拟蓑白）",
   srcDir: 'pages',
   outDir: 'dist',
   ignoreDeadLinks: true,
