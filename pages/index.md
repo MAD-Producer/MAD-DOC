@@ -1,10 +1,10 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: Home
+layout: home
 
 hero:
   name: "MAD DOC"
-  text: "MAD·AMV文档库"
+  text: "MAD·AMV 文档库"
   tagline: 你可以在这里获取到有关于 MAD·AMV 的相关信息
   actions:
     - theme: brand
