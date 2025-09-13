@@ -1,6 +1,6 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
-layout: 主页
+layout: home
 
 hero:
   name: "MAD DOC"
