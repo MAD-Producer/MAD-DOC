@@ -4,7 +4,7 @@ layout: Home
 
 hero:
   name: "MAD DOC"
-  text: "国立国会图书馆中国分馆 MAD·AMV 文档库 自发进化型SE-778Hλ（拟蓑白）"
+  text: "MAD·AMV文档库"
   tagline: 你可以在这里获取到有关于 MAD·AMV 的相关信息
   actions:
     - theme: brand
