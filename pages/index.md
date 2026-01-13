@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Let's Begin
-      link: /quick-start/quick-start
+      link: /mad/mad
 
 features:
   - title: MAD 是什么？
@@ -19,4 +19,3 @@ features:
   - title: MAD 的分类
     details: 动画系、静止系、风格系等具体分类及示例
 ---
-
