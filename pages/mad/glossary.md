@@ -30,6 +30,7 @@ description: MAD、AMV 创作、比赛和社区中的常见术语
 | Raw | 主要依靠选镜、剪辑、同步和基础处理，不以显著合成为核心 |
 | FX／VFX | 强调视觉效果和合成；不同比赛对二者的区分并不一致 |
 | Mograph／MG | Motion Graphics，使用图形、文字、形状和版式运动进行表达 |
+| IG／INS | 源自 Instagram 发布生态的社区标签，可涵盖节奏型短 edit、Motion Design、FX、VFX、真人或游戏素材等多种方向，不是单一固定技法 |
 | Character Profile | 围绕角色或群像进行塑造 |
 | Cross-over | 让不同作品中的角色、世界或事件在同一叙事中相遇 |
 | Non-anime | 使用真人、电影或其他非动画影像；是否接纳取决于社区与比赛 |

@@ -58,6 +58,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | 资料 | 本地摘要 | 性质／状态 |
 | --- | --- | --- |
 | [MAD·AMV 分区定义说明](https://www.bilibili.com/opus/663304501451554818) | 平台把 MAD·AMV 描述为使用动画、漫画等原作进行有制作含量的二创，并排除对现成二创的简单再编辑 | A／🟢 |
+| [NEW EDITORS CON：比赛说明与 IG 风格科普](https://www.bilibili.com/opus/215518138904040334) | NEW-editors 于 2019 年发布的活动说明；将 IG 解释为 Instagram AMV／edit 生态中的宽泛风格集合，并列举节奏型短 edit、混合型、Motion Design、Candy／FX、脉冲、明星 edit、GMV 与 VFX／3D 等方向 | B／🟢 |
 | [MAD大赛2024 公告](https://www.bilibili.com/opus/951075964632170496) | 给出当届投稿分区、活动标签和主办语境，并对日本 MAD、英语圈 AMV 和中文平台用法作官方活动解释 | A／🟢 |
 | [哔哩哔哩 MAD 创作大赛 2016 规则（PDF）](https://activity.hdslb.com/zzjs/20160615mad/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9MAD%E5%88%9B%E4%BD%9C%E5%A4%A7%E8%B5%9B2016%E8%A7%84%E5%88%99%28%E4%B8%AD%E6%96%87%29.pdf) | 同期平台文件，记录 Action、Dance、Drama、Character Profile、Fun、Still Picture 六个赛区，以及匿名展示、素材标注和投稿技术要求 | A／🟢 |
 | [2022 MAD创作盛典作品索引](https://www.bilibili.com/list/ml212983561) | 用于核对 2022 年活动作品与发布情况 | A／🟢 |

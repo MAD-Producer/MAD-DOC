@@ -93,39 +93,81 @@ description: 用多维标签替代互斥分类树，覆盖素材、表达、技�
 
 通常指合成、运动图形或视觉效果占比显著的作品。它与 FX／VFX 接近，但边界取决于社区或比赛。特效数量不能替代整体设计。
 
-## Wuyi无疑分类表的价值与限制
+## Wuyi无疑《MAD的分类》
 
-Wuyi无疑 2019 年的《MAD的分类》把作品分为动画系、静止系和混合系，并汇总了 Raw、VFX、FX 以及大量国际标签。这篇文章很适合做**检索词表**，但不宜原样当作唯一标准：
+Wuyi无疑在 2019 年发布的《MAD的分类》中，将“分类”和“Tag”分为两个部分。以下按原文层级列出，术语说明作了简化，未改写其基本结构。
 
-1. 作者明确说明分类更偏欧美社区；
-2. “Part 1 分类”和“Part 2 Tag”混合了素材、风格、技术、形式与活动方式；
-3. 标签之间并不互斥；
-4. 部分词在不同站点有不同解释。
+### Part I：分类
 
-MAD DOC 保留该文的术语覆盖面，并将混合层级拆分为五维元数据。
+| 一级分类 | 二级分类 | 下级类型 |
+| --- | --- | --- |
+| 动画系 MAD（AMV） | Raw | Action、Dance、Fun／Comedy、Drama／Romance、Psyche／Horror |
+| 动画系 MAD（AMV） | VFX | 以大幅度重新构图和视觉合成为主要表现方式 |
+| 动画系 MAD（AMV） | FX | 剪辑与大量图形、色块、缩放等效果共同服务于节奏 |
+| 静画系 MAD | MMV | 以漫画为主要素材的 Manga Music Video |
+| 静画系 MAD | 静止系 M@D | 强调静态素材、文案编排及分镜之间的联系 |
+| 混合系 MAD | — | 混合使用 ACGN 等不同媒介素材 |
 
-## 作品元数据字段
+原文对 Raw 之下的表达类型作了进一步说明：
 
-```yaml
-title: 作品名
-creator: 作者／团队
-published_at: YYYY-MM-DD
-original_url: 首发地址
-self_identification: 作者原始标签
-source_media: [动画, 漫画]
-intent: [Drama, Character Profile]
-technique: [Raw, Match Cut, Color Design]
-collaboration: Solo
-context: Contest Entry
-music: 曲名与表演者
-source_titles: 原作名
-rights_note: 素材和音乐的授权／声明
-evidence: 分类依据或赛事规则链接
-```
+| 类型 | 原文要点的本地摘要 |
+| --- | --- |
+| Action | 强调动作、力量和流畅节奏 |
+| Dance | 强调律动、节奏和镜头运动 |
+| Fun／Comedy | 以趣味、喜剧和观众反应为主要目标 |
+| Drama | 通过剪辑重新组织剧情与分镜意义 |
+| Romance | 以人物关系和浪漫情绪为中心 |
+| Psyche | 以迷幻、意识感和创造性画面为主要特征 |
+| Horror | 通过氛围、悬念与不安感建立恐怖体验 |
+
+### Part II：Tag
+
+原文将其他常见称呼归入 Tag，并明确指出一部作品可以同时具有多个标签：
+
+| 范围 | 原文列出的标签 |
+| --- | --- |
+| 叙事与人物 | ASMV、Character Profile、Story、Sentimental、Cinematic、Dark、Trailer |
+| 类型与情绪 | Candy、Comedy／Humor、Ecchi、Play／Fun、Rhythm & Beat、Upbeat |
+| 素材与媒介 | FMV、Manga、Non-Anime、Original Animation、iMADs、复合 MAD |
+| 视觉与声音技术 | GFX、Kinetic Typography、MG、Over-Sync、Lip Sync、SFX、补帧 |
+| 形式与发布 | Alt-Opening、BGA、CM、MTV、PV／Promo／Preview、Parody／パロ |
+| 合作方式 | Collab、MEP |
+| 音乐相关 | Instrumental、RAP、Trap |
+| 平台衍生 | INS／ig、Vine |
+| 其他写法 | Cross-Over、M@D |
+
+这套分类的价值在于保留了 2019 年中文 MAD·AMV 社区常用的大量检索词。使用时需要同时注意：
+
+1. 作者明确说明分类更偏欧美 AMV 社区；
+2. 分类、素材、风格、技术、活动方式和平台来源存在层级混合；
+3. 标签并不互斥；
+4. 部分术语在不同站点、时期和活动中具有不同解释。
+
+MAD DOC 因此并列保留原始分类表与前述五维分类，不以其中任何一套覆盖作者自我标注或赛事规则。
+
+## IG／INS
+
+IG 是 Instagram 的常用简称。中文 MAD·AMV 社区中的“IG 风”来自创作者在 Instagram 发布的短篇 edit／AMV，但它并不是一种边界固定的单一技术风格。
+
+Wuyi无疑的分类表把 **INS／ig** 作为 Tag，概括为短小、可循环、偏意识流、重视设计与节奏的作品。2019 年 NEW EDITORS CON 的说明则采用更宽的范围，将 IG 视为平台中多种短篇编辑风格的集合，并列举了以下常见方向：
+
+| 方向 | 常见表现 |
+| --- | --- |
+| 节奏型短 edit | 拉镜、抖动、曝光、调色、模糊、变速和密集同步，强调流畅与张力 |
+| 混合型 | 将 IG 常见的模糊、抖动和节奏处理与较长篇幅剪辑、三维场景结合 |
+| Motion Design | 以平面设计、文字动画、排版和图形运动构成画面 |
+| Candy／FX | 以明亮图形、色块、形状动画和效果设计为主要特征 |
+| Pulse／脉冲 | 使用高频闪烁、跳切和强烈视听刺激 |
+| Celebrity Edit | 使用真人明星或偶像素材，常见变速与流畅运动衔接 |
+| GMV Edit | 使用游戏实机、过场或竞技片段进行短篇编辑 |
+| VFX／3D | 在三维空间中组织镜头、文字和场景，强调摄影机运动与空间设计 |
+
+上述方向来自特定作者对当时 Instagram 编辑生态的观察，不构成平台官方分类。作品登记时，“IG／INS”可作为发布文化或社区风格标签，同时继续记录实际素材、表达目的和制作技术。
 
 ## 参考资料
 
 - [Wuyi无疑：《MAD的分类》](https://www.bilibili.com/opus/291682438941101836)
+- [NEW EDITORS CON：比赛说明与 IG 风格科普](https://www.bilibili.com/opus/215518138904040334)
 - [AMV Japan：AMVのカテゴリー](https://amv-japan.org/column/amv-categories)
 - [AnimeMusicVideos.org](https://www.animemusicvideos.org/)
 - [AKROSS Con](https://www.akross.ru/)
