@@ -242,10 +242,12 @@
 .mad-footer-main {
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 28px;
 }
 
 .mad-footer-identity {
+  flex: 0 1 360px;
   min-width: 300px;
   align-items: center;
   gap: 15px;
@@ -307,6 +309,7 @@
 
 .mad-footer-links {
   display: grid;
+  flex: 1 1 400px;
   grid-template-columns: repeat(4, minmax(88px, 1fr));
   gap: 8px;
 }
@@ -392,9 +395,16 @@
   }
 }
 
+/* 右侧本页目录从 1280px 起显示，为其保留完整的 256px 栏宽。 */
+@media (min-width: 1280px) {
+  .VPFooter.has-sidebar {
+    margin-right: 256px;
+  }
+}
+
 @media (min-width: 1440px) {
   .VPFooter.has-sidebar {
-    margin-right: calc((100vw - var(--vp-layout-max-width)) / 2);
+    margin-right: calc((100vw - var(--vp-layout-max-width)) / 2 + 256px);
     margin-left: calc((100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width));
   }
 }
