@@ -62,7 +62,7 @@ rights: 引用、本地保存和再利用条件
 - B：参与者回忆、社区整理或后续专题文章；
 - C：广泛流传但缺少原始材料，或不同来源说法不一致。
 
-## 内部资料任务
+## 维护路线
 
 - 继续核验 MAD 吧新手导航及二级导航中的存活旧帖；
 - 联系原作者确认旧教程图片、附件和工程文件的存档授权；
@@ -71,21 +71,52 @@ rights: 引用、本地保存和再利用条件
 - 建立 Bilibili BV／Opus ID、作者 UID、发布日期和存档地址的稳定映射；
 - 建立外链巡检记录，不在公共页面显示内部待办清单；
 - 后续作品数据库采用多维标签，不以单一“动画系／静止系”字段替代完整元数据。
+- AI 专页按季度检查产品状态、平台标识规则和失效工具；保留旧 MAID 专栏为历史快照，不把模型排名写成长期结论；
+- 继续收集 MAD／AMV 作者公开的 AI 工作流、工程说明和比赛申报案例，优先记录实际使用范围、授权与人工修改，而非只登记工具名称。
 
 ## 本地开发
 
+### 环境要求
+
+- Node.js 22 或更高版本；
+- npm；
+- Git。
+
+克隆仓库并安装锁定版本的依赖：
+
 ```bash
-npm install
+git clone https://github.com/MAD-Producer/MAD-DOC.git
+cd MAD-DOC
+npm ci
+```
+
+启动开发服务器：
+
+```bash
 npm run dev
 ```
 
-生产构建：
+终端会显示本地访问地址。修改 `pages/` 中的 Markdown 或 `.vitepress/` 中的配置后，开发页面会自动更新。
+
+### 构建与预览
+
+生成生产文件：
 
 ```bash
 npm run build
 ```
 
-EdgeOne Pages 使用根目录的 `edgeone.json`：
+构建产物位于 `dist/`。发布前应在本地预览生产构建：
+
+```bash
+npm run preview
+```
+
+如果 `npm run build` 失败，不要部署旧的 `dist/`。先解决构建错误，并检查新增页面的站内链接、表格、移动端目录和外部来源。
+
+## 部署到 EdgeOne Pages
+
+本项目是纯静态 VitePress 站点，仓库根目录的 [`edgeone.json`](./edgeone.json) 已提供构建配置：
 
 ```json
 {
@@ -94,13 +125,48 @@ EdgeOne Pages 使用根目录的 `edgeone.json`：
 }
 ```
 
+### 从 GitHub 仓库部署
+
+1. 登录 [EdgeOne Pages](https://pages.edgeone.ai/) 并选择从 GitHub 导入项目；
+2. 授权并选择 `MAD-Producer/MAD-DOC`，Fork 使用者选择自己的仓库；
+3. 将项目根目录设置为 `./`；
+4. 选择 Node.js 22；
+5. 确认构建命令为 `npm run build`；
+6. 确认输出目录为 `dist` 或 `./dist`；
+7. 开始部署，并在部署日志中确认 VitePress 构建完成；
+8. 使用 EdgeOne 生成的预览地址检查首页、导航、搜索、深色模式和新增页面；
+9. 需要自定义域名时，在项目的域名设置中添加域名并按控制台提示配置 DNS。
+
+EdgeOne Pages 可以在 GitHub 分支产生新提交后自动构建。生产分支、预览分支和自动部署策略由仓库维护者在 EdgeOne 项目设置中决定，仓库不保存平台账号、项目 ID、API Token 或域名证书。
+
+### 其他静态托管平台
+
+任何能够执行 Node.js 构建并托管静态文件的平台都可以使用相同配置：
+
+- 安装命令：`npm ci`
+- 构建命令：`npm run build`
+- 输出目录：`dist`
+- Node.js：22 或更高版本
+
+站点当前按域名根路径 `/` 构建。如果部署到 `https://example.com/MAD-DOC/` 这类子路径，需要在 `.vitepress/config.mts` 中设置对应的 `base`，再重新构建。
+
+## 参与维护
+
+1. Fork 本仓库并从最新 `main` 创建分支；
+2. 修改或新增资料时保留原始来源、核验日期、适用范围和争议说明；
+3. 不提交盗版素材、破解软件、失去授权的附件或个人敏感信息；
+4. 运行 `npm run build`，确认构建通过；
+5. 提交 Pull Request，并在说明中列出新增资料、主要来源和验证结果。
+
+比赛规则、平台政策、软件版本和 AI 服务变化较快。相关修改应优先引用主办方、平台或项目官方页面，不以搜索摘要代替原文。
+
 ## 目录
 
 ```text
 .
 ├─ .vitepress/        # VitePress 配置与主题
 ├─ pages/
-│  ├─ mad/            # 定义、分类、术语与现状研究
+│  ├─ mad/            # 定义、分类、术语、比赛规范与现状研究
 │  ├─ history/        # 历史、研究方法与旧史料
 │  ├─ tools/          # 工具、素材、编码、插件与 AI
 │  └─ resources/      # 来源索引

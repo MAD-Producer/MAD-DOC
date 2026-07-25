@@ -34,6 +34,28 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 
 旧资料中的结论不因收录而自动成为已证实事实。新版页面通过摘要、证据等级和交叉来源进行拓写。
 
+## MAD Producer 比赛专栏
+
+截至核验日，MAD Producer 的“比赛”分类公开接口收录 **43 篇**专栏。MAD DOC 已逐篇检索标题和正文规则，用于编写[比赛与投稿规范](/mad/contest-rules)。这些专栏是各届主办方规则的记录，不应拼成对所有赛事自动生效的统一条款。
+
+| 来源 | 可核验的信息 | 性质／状态 |
+| --- | --- | --- |
+| [MAD 比赛标准规则](https://madproducer.com/archives/1309) | 将参赛资格、原创与素材、公开时间、评分、违规处理和交稿包整理成通俗模板；原文同时说明比赛可对标准条款作出修改 | A／🟢 |
+| [MAD Producer“比赛”分类](https://madproducer.com/topics/contest) | 赛事专栏汇总入口；用于核对收录数量、年份和规则差异 | A／🟢 |
+| [2024 第一届 EAC MAD 大赛](https://madproducer.com/archives/196) | 不限风格但限定文件、片长、Logo、未公开、非三剪／仿作／未完成作品，并要求工程与主页材料 | A／🟢 |
+| [NMIC#II · What can IC](https://madproducer.com/archives/201) | 72 小时 IC、曲包分类、素材占比、合作方式和交稿命名；该届允许跨曲包 | A／🟢 |
+| [2024 第一届 SWT MAD 比赛](https://madproducer.com/archives/620) | 静止／动画双赛道、入围加排位、未公开、一稿多投、Logo 和 MP4 要求 | A／🟢 |
+| [第三届成都高校 MAD 合战暨第 27 回红白 MAD 合战](https://madproducer.com/archives/633) | 高校身份、线下到场、观众与评委加权、40 秒至 6 分钟、公开时间与标签要求 | A／🟢 |
+| [2026 黄金祭](https://madproducer.com/archives/2303) | 静止系限定、邀请制与入围制并行、作品感想、公开等待时间及静止系技术要求 | A／🟢 |
+| [蔷薇宴 2026](https://madproducer.com/archives/2348) | 红／白分区、随交随投、评语、素材范围，并明确排除纯 AIGC 动画 | A／🟢 |
+| [IMAC FUN#4](https://madproducer.com/archives/2355) | 分类时长、素材范围、完整稿件、Logo、公开限制，并明确禁止 AI 或 AI 辅助创作 | A／🟢 |
+| [第八届 ALS AMV IC](https://madproducer.com/archives/2427) | 七日曲包 IC、小组形式、分类选择、个人稿与小组排名的关系 | A／🟢 |
+| [QG SOLO MAD CONTEST #S2](https://madproducer.com/archives/2434) | AMV／ASMV 双赛道、SOLO 对抗、公开方式、合作限制和详细文件规格 | A／🟢 |
+| [IFT IC #6](https://madproducer.com/archives/2532) | 一周 IC、禁止跨分类、动画／漫画素材占比、公开限制和表单交稿 | A／🟢 |
+| [第十二届南京高校 MAD 大赛](https://madproducer.com/archives/2537) | 无赛道总评、随交随投、多稿取最优、初审终审及 720p—4K 技术范围 | A／🟢 |
+
+检索中反复出现的项目包括时长、合作方式、评委、未公开、三剪／仿作／抄袭、Logo、Loop、平台审核和编码格式；但同一项目的具体值经常相反。例如有的比赛允许交稿后公开，有的必须等官方合集；有的允许评委参赛并回避自评，有的完全禁止评委参赛。
+
 ## Wuyi无疑（Bilibili UID 11869055）
 
 [作者空间](https://space.bilibili.com/11869055)在核验时显示 7 篇图文与 29 个视频投稿；与当前资料范围直接相关的条目如下：
@@ -59,6 +81,9 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | --- | --- | --- |
 | [MAD·AMV 分区定义说明](https://www.bilibili.com/opus/663304501451554818) | 平台把 MAD·AMV 描述为使用动画、漫画等原作进行有制作含量的二创，并排除对现成二创的简单再编辑 | A／🟢 |
 | [NEW EDITORS CON：比赛说明与 IG 风格科普](https://www.bilibili.com/opus/215518138904040334) | NEW-editors 于 2019 年发布的活动说明；将 IG 解释为 Instagram AMV／edit 生态中的宽泛风格集合，并列举节奏型短 edit、混合型、Motion Design、Candy／FX、脉冲、明星 edit、GMV 与 VFX／3D 等方向 | B／🟢 |
+| [IMAC FUN#4 · 天性使然](https://www.bilibili.com/opus/1203002472552988705) | 2026 年赛事公告分别规定动画系 AMV、静止系和风格系稿件时长；可作为大陆赛事已在实践中区分长篇与风格系生产语境的同期材料，仅适用于该届比赛 | A／🟢 |
+| [MAD 部分风格分类／TeaPartyClub](https://www.bilibili.com/video/BV1oq7Gz4E2f/) | 2025 年短视频式分类整理，反映当代风格系作者使用的检索词；适合作术语线索，不作为唯一分类表 | B/C／🟢 |
+| [IMAC#3 风格系赛道看稿回放](https://www.bilibili.com/video/BV1wk4yz2EXu/) | 2025 年赛事风格系赛道长时回放，可用于观察参赛作品篇幅、标签和评审语境，不等同于赛事书面规则 | A/B／🟢 |
 | [MAD大赛2024 公告](https://www.bilibili.com/opus/951075964632170496) | 给出当届投稿分区、活动标签和主办语境，并对日本 MAD、英语圈 AMV 和中文平台用法作官方活动解释 | A／🟢 |
 | [哔哩哔哩 MAD 创作大赛 2016 规则（PDF）](https://activity.hdslb.com/zzjs/20160615mad/%E5%93%94%E5%93%A9%E5%93%94%E5%93%A9MAD%E5%88%9B%E4%BD%9C%E5%A4%A7%E8%B5%9B2016%E8%A7%84%E5%88%99%28%E4%B8%AD%E6%96%87%29.pdf) | 同期平台文件，记录 Action、Dance、Drama、Character Profile、Fun、Still Picture 六个赛区，以及匿名展示、素材标注和投稿技术要求 | A／🟢 |
 | [2022 MAD创作盛典作品索引](https://www.bilibili.com/list/ml212983561) | 用于核对 2022 年活动作品与发布情况 | A／🟢 |
@@ -80,6 +105,14 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | [MIRAI MAD TEAM 2024 招新公告](https://www.bilibili.com/opus/909668970904158232) | 团队自述成立于 2012 年、创作类型和培养目标；适合作组织自述史料，人数与经历需按时间快照理解 | A／🟢 |
 | [东方同人视频发展史：AB站的崛起与演变](https://www.bilibili.com/opus/995486244312973315) | 汇集早期 AcFun／Bilibili 视频号、投稿时间和东方二创线索；作者也提示统计数据不完整 | B／🟢 |
 | [音MAD和YTPMV信息的获取渠道，检索方式](https://www.bilibili.com/read/cv34832696/) | 按数据库／统计、百科、文章和作者选整理跨站检索方法，列出 Niconico、Bilibili、YouTube 与个人博客的追溯路径 | B／🟢 |
+| [AI 动画：古风，补帧丝滑](https://www.bilibili.com/video/BV1qs4y1E7Nb/) | 2023 年创作案例，公开“人物抠图分层—慢放补帧—逐帧 AI 重绘—重新合成—再次补帧”的流程，能观察早期 AI 动画的闪烁与一致性问题 | C／🟢 |
+| [如何用 AI 在三天内做出“异环”二创](https://www.bilibili.com/video/BV1aY9YB7Eot/) | 2026 年游戏／动画二创案例，页面链接 Bilibili 的 AI 创作平台入口；反映生成式动画二创进入平台工具与活动生态，不证明素材授权或普遍制作效率 | C／🟢 |
+| [AI 二创 MV 教程：踩坑问题](https://www.bilibili.com/video/BV1e1RLBuErN/) | 2026 年面向 AI 二创 MV 的短教程线索，可用于观察当前作者把生成镜头与后期剪辑结合的常见问题 | C／🟢 |
+| [ComfyUI TTS 声音克隆用于二创对白](https://www.bilibili.com/video/BV1wS9MBhENR/) | 2026 年 TTS／声音一致性教程，说明角色对白已进入节点式音视频工作流；声音来源与授权必须另行核验 | C／🟢 |
+| [二次元角色声音克隆与立绘](https://www.bilibili.com/video/BV1c5UeBQEvP/) | 2025 年角色声音和立绘二创教程样本；适合作使用方式与风险研究，不收录其模型包或训练数据 | C／🟢 |
+| [原神角色 GPT-SoVITS 音色模型展示](https://www.bilibili.com/video/BV1rA4m157aw/) | 2024 年角色声音克隆与模型分享样本，能说明少样本 TTS 在动漫／游戏二创中的传播方式；模型分发权与声优授权不因公开展示而成立 | C／🟢 |
+| [AMV 消除对白／背景音乐旧教程](https://www.bilibili.com/read/cv1972078/) | 2019 年相位抵消流程；作者后来在正文中标明方法已过时，并指出 AI 声源分离工具已替代旧流程，适合作技术转折记录 | B／🟢 |
+| [Bilibili：整治 AI 应用乱象专项公告](https://www.bilibili.com/opus/1202507670848798745) | 2026-05-15 平台公告：生成合成内容需要标识，投稿端 AI 标识已提升到一级页面；漏标可被补标、打回或下架，虚假配音与换脸误导从严处理 | A／🟢 |
 
 ## MAD吧与中文社区
 
@@ -144,6 +177,39 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | [静止画MADを作るときの考え方](https://mota0827.hatenablog.com/entry/ar1183429) | 2017 年创作者文章，重点讨论先确定主题、传达目标和画面组织，而不是从软件按钮出发 | C／🟢 |
 | [Creator Blog：静止画MADの作り方](https://creator-blog.jp/how-to-make-mad-using-still-images/) | 2023 年以 Photoshop／After Effects 说明静态图像分层和动画化的入门流程；具体界面与订阅信息按当前 Adobe 文档核对 | C／🟢 |
 | [音MADとその周辺](https://otomad.jp/column) | 日本音 MAD 专题文章列表，包含社群史、创作和职业讨论；属于 MAD 的相关分支，不与视频 AMV 混写 | B／🟢 |
+
+## AI 辅助、MAID 与生成式二创
+
+### MAD Producer 早期资料
+
+| 来源 | 本地摘要 | 性质／状态 |
+| --- | --- | --- |
+| [妹抖研究所／MAID](https://madproducer.com/maid) | 记录醉石散客提出的 MAID 概念，把以 AI 生成素材为主要素材来源的 MAD 与动画系、静止系并列讨论；页面以 Stable Diffusion 为主要入口，现作为 2024 年前后的技术史快照 | A/B／🟢 |
+| [AI 修补扩扣流程](https://madproducer.com/archives/1197) | 2024 年 ComfyUI、FLUX Fill 与 BiRefNet／BEN／RMBG／Inspyrenet 流程，面向漫画修补、扩图和抠图；作者当时也指出动漫抠图质量有限 | B／🟢 |
+| [AI 绘画入门教程](https://madproducer.com/archives/1038) | 醉石散客面向 MAD 创作者编写的 ComfyUI 入门资料，反映本地节点式生图工作流的早期学习路径 | B／🟢 |
+| [ComfyUI 介绍](https://madproducer.com/archives/1034) | 2024 年对节点、模型和工作流的基础介绍；界面、安装方式与可用模型应以当前官方文档为准 | B／🟢 |
+| [AI 声乐相关基础介绍及推荐](https://madproducer.com/archives/1194) | 把 AI 音乐、TTS、翻唱和变声并列介绍，涉及 Suno、VITS、RVC 与 DiffSinger；工具评价具有年代性和个人观点，当前资料已拆分 TTS、VC、歌声合成与权利边界 | B/C／🟢 |
+| [创意阶层还是不稳定工作者：英文论文 PDF](https://madproducer.com/wp-content/uploads/2025/02/1739612493-FullText.pdf) | 2024 年香港大学硕士论文，含 69 次半结构化访谈；记录当时 MAD 创作者对 AI 图像、声音处理、创意扩展和同质化风险的不同态度 | A／🟢 |
+
+### 当前技术与规则
+
+| 来源 | 本地摘要 | 性质／状态 |
+| --- | --- | --- |
+| [ChatGPT Images](https://help.openai.com/en/articles/11084440) | 官方帮助页记录图像生成、上传后编辑、局部增删改、透明背景与画幅调整；具体模型与套餐可用性按页面更新时间核对 | A／🟢 |
+| [Seedream 4.0—5.0 图像创作文档](https://www.volcengine.com/docs/82379/1829186) | 火山引擎文档记录文生图、参考图、组图、增加／删除／替换编辑和视觉标记控制，可用于豆包／Seedream 能力核验 | A／🟢 |
+| [Seedance 2.0 说明](https://developer.volcengine.com/articles/7606009619928449070) | 2026 年官方文章记录文字、图片、音频、视频输入，MV、参考运镜、视频编辑与延长；能力展示不等于所有账号、接口或素材均可直接使用 | A／🟢 |
+| [ComfyUI 工作流文档](https://docs.comfy.org/development/core-concepts/workflow) | 官方文档将工作流定义为可保存的节点图，可编排图像、视频、音频、模型等媒体任务，并能以 JSON 或图像元数据保存 | A／🟢 |
+| [Adobe Firefly 音视频文档](https://helpx.adobe.com/firefly/web/work-with-audio-and-video/work-with-video/translate-video.html) | 官方目录覆盖文生／图生视频、参考运镜、透明背景、编辑、放大、音效、语音和翻译配音；翻译配音文件带 Content Credentials | A／🟢 |
+| [SAM 2](https://github.com/facebookresearch/sam2) | Meta 发布的图像与视频可提示分割／跟踪模型，可输出跨帧遮罩；适合做抠像初稿，复杂遮挡和动漫线条仍需人工修正 | A／🟢 |
+| [BiRefNet](https://github.com/ZhengPeng7/BiRefNet) | 高分辨率前景分割与 matting 的官方实现，包含动漫图像衍生模型线索；版本、模型许可与显存要求需分别登记 | A／🟢 |
+| [GPT-SoVITS](https://github.com/RVC-Boss/GPT-SoVITS) | 少样本声音克隆与 TTS 项目；用于从文字生成目标音色语音，不与语音转换混为一类 | A／🟢 |
+| [RVC WebUI](https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI) | 语音转换框架，以现有语音／演唱作为表演输入后转换音色；模型许可不自动包含训练声音的使用权 | A／🟢 |
+| [Demucs](https://github.com/facebookresearch/demucs) | 音乐声源分离模型，可估计人声、鼓、贝斯和其他伴奏；原仓库已说明维护状态有限，输出也不是官方分轨 | A／🟢 |
+| [OpenAI：Sora 停止服务说明](https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation) | 官方记录 Sora 网页端和应用于 2026-04-26 停止，API 将于 2026-09-24 停止；用于纠正旧 MAID 页面仍把 Sora 当现行入口的问题 | A／🟢 |
+| [IMAC FUN#4 的 AI 禁用条款](https://madproducer.com/archives/2355) | 该届规则明确禁止 AI 及 AI 辅助创作，证明轻量辅助也不能脱离当届比赛规则自行豁免 | A／🟢 |
+| [蔷薇宴 2026 的纯 AIGC 排除条款](https://madproducer.com/archives/2348) | 该届不接收纯 AIGC 动画；条文不能反向推定其他生成式用途全部获准 | A／🟢 |
+| [《人工智能生成合成内容标识办法》](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm) | 自 2025-09-01 起施行，覆盖文字、图片、音频、视频和虚拟场景，规定显式／隐式标识及发布者主动声明义务 | A／🟢 |
+| [最高人民法院：AI 化使用他人声音典型案例](https://www.court.gov.cn/zixun/xiangqing/467511.html) | 最高法发布的典型案例说明，可识别的 AI 合成声音可能落入特定自然人的声音权益保护范围；录音使用许可不当然等于声音 AI 化许可 | A／🟢 |
 
 ## 日本 MAD 与 AMV 历史
 

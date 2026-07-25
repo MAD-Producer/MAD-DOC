@@ -11,7 +11,7 @@ description: 从素材、剪辑、合成、音频到输出的工具地图与选�
 
 | 阶段 | 主要任务 | 常用工具 |
 | --- | --- | --- |
-| 规划 | 主题、选曲、镜头表、版权记录 | 文档／表格、PureRef、Eagle 等 |
+| 规划 | 主题、选曲、镜头表、版权记录 | 文档／表格、PureRef、Eagle；可选对话模型辅助整理 |
 | 检查素材 | 查看封装、编码、帧率、色彩和音轨 | MediaInfo、ffprobe |
 | 拆封装 | 从自己合法持有的 MKV 等容器提取轨道 | MKVToolNix、FFmpeg |
 | 转码／代理 | 转为软件易解码的中间格式，生成低负载代理 | FFmpeg、HandBrake、剪辑软件内置代理 |
@@ -101,4 +101,4 @@ description: 从素材、剪辑、合成、音频到输出的工具地图与选�
 - [Blender 系统要求](https://www.blender.org/download/requirements/)
 - [FFmpeg 文档](https://ffmpeg.org/documentation.html)
 
-相关条目：[素材与工程](/tools/footage) · [编码与交付](/tools/encoding) · [软件选择](/tools/software) · [插件与 AI](/tools/plugins-ai)
+相关条目：[素材与工程](/tools/footage) · [编码与交付](/tools/encoding) · [软件选择](/tools/software) · [插件与脚本](/tools/plugins-ai) · [AI 辅助创作与 MAID](/tools/ai)

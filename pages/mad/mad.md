@@ -5,6 +5,8 @@ description: 从历史语境、素材范围和创作方法解释 MAD、AMV 及�
 
 # MAD·AMV 的定义与边界
 
+本站主要讨论以 Bilibili 为发布、赛事和交流中心的中国大陆 MAD·AMV 圈层。日本 MAD、欧美 AMV 和风格系短剪资料用于解释源流、术语及相互影响。
+
 ::: tip 一句话理解
 **MAD** 是从日本同人再编辑文化中发展出的宽泛称呼；**AMV** 原意是 Anime Music Video，是以动画影像和音乐构成表达的作品类型。二者有大面积交集，但不是“静止系”和“动画系”的同义词。
 :::
@@ -92,4 +94,4 @@ MAD吧的讨论帖《MAD和AMV之间到底是什么关系》也反对“静止 M
 - [AMV Japan：AMVの歴史（第一回）](https://amv-japan.org/column/history-of-amv-01) — 日本 AMV 组织整理的系列历史入口。
 - [ACG Library](https://acglibrary.com/) — 以 MAD吧资料为重要基础的中文专题资料库。
 
-相关条目：[分类方法](/mad/classification) · [术语词典](/mad/glossary)
+相关条目：[分类方法](/mad/classification) · [术语词典](/mad/glossary) · [比赛与投稿规范](/mad/contest-rules)

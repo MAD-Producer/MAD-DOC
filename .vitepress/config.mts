@@ -54,7 +54,8 @@ export default defineConfig({
         items: [
           { text: '定义与边界', link: '/mad/mad' },
           { text: '分类方法', link: '/mad/classification' },
-          { text: '术语词典', link: '/mad/glossary' }
+          { text: '术语词典', link: '/mad/glossary' },
+          { text: '比赛与投稿规范', link: '/mad/contest-rules' }
         ]
       },
       {
@@ -72,7 +73,8 @@ export default defineConfig({
           { text: '素材与工程', link: '/tools/footage' },
           { text: '编码与交付', link: '/tools/encoding' },
           { text: '软件选择', link: '/tools/software' },
-          { text: '插件与 AI', link: '/tools/plugins-ai' }
+          { text: '插件与脚本', link: '/tools/plugins-ai' },
+          { text: 'AI 辅助与 MAID', link: '/tools/ai' }
         ]
       },
       { text: '来源索引', link: '/resources/' }
@@ -86,6 +88,7 @@ export default defineConfig({
             { text: '定义与边界', link: '/mad/mad' },
             { text: '分类方法', link: '/mad/classification' },
             { text: '术语词典', link: '/mad/glossary' },
+            { text: '比赛与投稿规范', link: '/mad/contest-rules' },
             { text: '创作者现状研究', link: '/mad/ccopw' },
             { text: '旧版 MAD 资料（存档）', link: '/mad/mad-original' }
           ]
@@ -109,7 +112,8 @@ export default defineConfig({
             { text: '素材与工程', link: '/tools/footage' },
             { text: '编码与交付', link: '/tools/encoding' },
             { text: '软件选择', link: '/tools/software' },
-            { text: '插件与 AI', link: '/tools/plugins-ai' }
+            { text: '插件与脚本', link: '/tools/plugins-ai' },
+            { text: 'AI 辅助与 MAID', link: '/tools/ai' }
           ]
         }
       ],
