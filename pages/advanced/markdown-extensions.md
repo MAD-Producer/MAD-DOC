@@ -210,8 +210,8 @@ Enhanced table support:
 ### Internal Links
 
 - [Home](/)
-- [Quick Start](/quick-start)
-- [API Examples](/api-examples)
+- [MAD·AMV 定义](/mad/mad)
+- [来源索引](/resources/)
 
 ### External Links
 
@@ -247,4 +247,4 @@ Enhanced table support:
 
 - Use clear headings and subheadings
 - Group related content together
-- Keep paragraphs short and readable 
+- Keep paragraphs short and readable

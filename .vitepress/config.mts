@@ -1,117 +1,133 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "MAD DOC",
-  description: "MAD·AMV 文档库",
+  title: 'MAD DOC',
+  description: 'MAD·AMV 资料库：定义、分类、历史、术语、工具与来源索引',
   srcDir: 'pages',
   outDir: 'dist',
-  ignoreDeadLinks: true,
   cleanUrls: true,
+  lastUpdated: true,
+  lang: 'zh-CN',
 
-  locales: {
-    root: {
-      label: '简体中文',
-      lang: 'zh-CN',
-      link: '/',
-      themeConfig: {
-        outline: { level: [1, 3] },
+  head: [
+    ['meta', { name: 'theme-color', content: '#5b5bd6' }],
+    ['meta', { name: 'keywords', content: 'MAD, AMV, MAD教程, AMV历史, MAD吧, 动画音乐视频' }]
+  ],
 
-        nav: [
-          { text: '首页', link: '/' },
-          { text: '什么是MAD?', link: '/mad/mad' },
-          { text: '历史', link: '/history/history' }
-
-        ],
-
-        sidebar: [
-          {
-            text: '什么是MAD?',
-            collapsed: true,
-            items: [
-              { text: 'MAD片', link: '/mad/mad' },
-              { text: '起源', link: '/mad/mad#mad起源' },
-              { text: '消长', link: '/mad/mad#mad界的消长' },
-              { text: '分类', link: '/mad/mad#mad分类' },
-              { text: '现状分析', link: '/mad/ccopw'}
-            ]
+  themeConfig: {
+    outline: {
+      level: [2, 3],
+      label: '本页目录'
+    },
+    lastUpdated: {
+      text: '最后更新'
+    },
+    docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+    },
+    search: {
+      provider: 'local',
+      options: {
+        translations: {
+          button: {
+            buttonText: '搜索资料',
+            buttonAriaLabel: '搜索资料'
           },
-          {
-            text: '历史',
-            items: [
-              { text: 'MAD史', link: '/history/history' },
-              { text: '声明1', link: '/history/history#%E5%A3%B0%E6%98%8E1' },
-              { text: '声明', link: 'history/history#%E8%81%B2%E6%98%8E' },
-              { text: '起源', link: 'history/history#%E7%AC%AC%E4%B8%80%E7%AB%A0-mad%E7%9A%84%E8%B5%B7%E6%BA%90' },
-              { text: '特色', link: 'history/history#%E7%AC%AC%E4%BA%8C%E7%AB%A0-mad%E7%9A%84%E7%89%B9%E8%89%B2' },
-              { text: '活动', link: 'history/history#%E7%AC%AC%E4%B8%89%E7%AB%A0-2005%E5%B9%B4%E4%BB%A5%E9%99%8D%E7%9A%84mad%E6%B4%BB%E5%8B%95%E8%88%87%E5%A4%A7%E8%B3%9E' },
-              { text: '附录A', link: 'history/history#%E9%99%84%E9%8C%84a-%E5%90%84%E5%BC%8F%E7%9F%AD%E7%89%87%E7%B4%B0%E9%83%A8%E5%88%86%E9%A1%9E%E8%A1%A8' },
-              { text: '附录B', link: 'history/history#%E9%99%84%E9%8C%84b-%E6%AD%B7%E5%B1%86mad%E5%A4%A7%E8%B3%9E%E5%82%91%E5%87%BA%E4%BD%9C%E5%93%81%E5%88%97%E8%A1%A8' },
-              { text: '附录C', link: 'history/history#%E9%99%84%E9%8C%84c-%E5%85%B6%E4%BB%96mad%E7%9B%B8%E9%97%9C%E7%AB%99%E9%BB%9E' }
-            ]
+          modal: {
+            noResultsText: '没有找到相关资料',
+            resetButtonTitle: '清除查询',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭'
+            }
           }
-        ],
-
-        socialLinks: [
-          { icon: 'github', link: 'https://github.com/MAD-Producer/MAD-DOC' }
-        ]
+        }
       }
     },
 
-    en: {
-      label: 'English',
-      lang: 'en-US',
-      link: '/en/',
-      themeConfig: {
-        outline: { level: [1, 3] },
-
-        nav: [
-          { text: 'Home', link: '/en/' },
-          { text: 'Quick Start', link: '/en/quick-start/quick-start' },
-          { text: 'Examples', link: '/en/examples/markdown-examples' }
-        ],
-
-        sidebar: [
-          {
-            text: 'Quick Start',
-            collapsed: true,
-            items: [
-              { text: 'Overview', link: '/en/quick-start/quick-start' },
-              { text: 'Installation', link: '/en/quick-start/quick-start#installation' },
-              { text: 'Basic Setup', link: '/en/quick-start/quick-start#basic-setup' },
-              { text: 'Configuration', link: '/en/quick-start/quick-start#configuration' }
-            ]
-          },
-          {
-            text: 'Advanced',
-            collapsed: true,
-            items: [
-              { text: 'Custom Theme', link: '/en/advanced/custom-theme' },
-              { text: 'Markdown Extensions', link: '/en/advanced/markdown-extensions' },
-              { text: 'Code Highlighting', link: '/en/advanced/code-highlighting' }
-            ]
-          },
-          {
-            text: 'Deployment',
-            collapsed: true,
-            items: [
-              { text: 'Build for Production', link: '/en/quick-start/quick-start#build-for-production' },
-              { text: 'GitHub Pages', link: '/en/quick-start/quick-start#deploy-to-github-pages' },
-              { text: 'Netlify', link: '/en/quick-start/quick-start#netlify-deployment' }
-            ]
-          },
-          {
-            text: 'Examples',
-            items: [
-              { text: 'Markdown Examples', link: '/en/examples/markdown-examples' },
-              { text: 'Runtime API Examples', link: '/en/examples/api-examples' }
-            ]
-          }
-        ],
-
-        socialLinks: [
-          { icon: 'github', link: 'https://github.com/MAD-Producer/MAD-DOC' }
+    nav: [
+      { text: '首页', link: '/' },
+      {
+        text: '认识 MAD·AMV',
+        items: [
+          { text: '定义与边界', link: '/mad/mad' },
+          { text: '分类方法', link: '/mad/classification' },
+          { text: '术语词典', link: '/mad/glossary' }
         ]
-      }
+      },
+      {
+        text: '历史',
+        items: [
+          { text: '三条发展脉络', link: '/history/timeline' },
+          { text: '研究与问卷', link: '/history/research' },
+          { text: '中文旧史料存档', link: '/history/history' }
+        ]
+      },
+      {
+        text: '创作工具',
+        items: [
+          { text: '工具总览', link: '/tools/' },
+          { text: '素材与工程', link: '/tools/footage' },
+          { text: '软件选择', link: '/tools/software' },
+          { text: '插件与 AI', link: '/tools/plugins-ai' }
+        ]
+      },
+      { text: '来源索引', link: '/resources/' }
+    ],
+
+    sidebar: {
+      '/mad/': [
+        {
+          text: '一、认识 MAD·AMV',
+          items: [
+            { text: '定义与边界', link: '/mad/mad' },
+            { text: '分类方法', link: '/mad/classification' },
+            { text: '术语词典', link: '/mad/glossary' },
+            { text: '创作者现状研究', link: '/mad/ccopw' },
+            { text: '旧版 MAD 资料（存档）', link: '/mad/mad-original' }
+          ]
+        }
+      ],
+      '/history/': [
+        {
+          text: '二、历史与研究',
+          items: [
+            { text: '三条发展脉络', link: '/history/timeline' },
+            { text: '研究方法与问卷', link: '/history/research' },
+            { text: '山外青山楼外楼（存档）', link: '/history/history' }
+          ]
+        }
+      ],
+      '/tools/': [
+        {
+          text: '三、创作工具',
+          items: [
+            { text: '工具总览', link: '/tools/' },
+            { text: '素材与工程', link: '/tools/footage' },
+            { text: '软件选择', link: '/tools/software' },
+            { text: '插件与 AI', link: '/tools/plugins-ai' }
+          ]
+        }
+      ],
+      '/resources/': [
+        {
+          text: '资料来源',
+          items: [
+            { text: '来源索引与考证状态', link: '/resources/' }
+          ]
+        }
+      ]
+    },
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/MAD-Producer/MAD-DOC' }
+    ],
+
+    footer: {
+      message: '资料以原始链接、官方文档和可追溯存档为先；欢迎补充与纠错。',
+      copyright: 'MAD DOC'
     }
   }
 })
