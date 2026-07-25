@@ -48,6 +48,6 @@ MAD DOC 不以复制文章数量衡量规模，而以“能否找到、能否核
 
 MAD DOC 已在 GitHub 公开源代码与资料文件。提交本人文章、推荐已经公开的 MAD／AMV 资料、修正现有内容或咨询项目相关问题时，可通过以下渠道联系：
 
-- **邮件：**发送至 [hi@madproducer.com](mailto:hi@madproducer.com)。来信请尽量附上文章标题、作者、原始链接及必要的背景说明；
-- **Issue：**通过 [GitHub Issues](https://github.com/MAD-Producer/MAD-DOC/issues) 报告资料缺失、内容错误、失效链接或站点问题；
-- **Pull Request：**在 [MAD-Producer/MAD-DOC](https://github.com/MAD-Producer/MAD-DOC) 仓库直接提交资料补充、内容修订或站点改进。新增或修订资料时，请同时注明原始来源及核验信息。
+- **邮件：** 发送至 [hi@madproducer.com](mailto:hi@madproducer.com)。来信请尽量附上文章标题、作者、原始链接及必要的背景说明；
+- **Issue：** 通过 [GitHub Issues](https://github.com/MAD-Producer/MAD-DOC/issues) 报告资料缺失、内容错误、失效链接或站点问题；
+- **Pull Request：** 在 [MAD-Producer/MAD-DOC](https://github.com/MAD-Producer/MAD-DOC) 仓库直接提交资料补充、内容修订或站点改进。新增或修订资料时，请同时注明原始来源及核验信息。
