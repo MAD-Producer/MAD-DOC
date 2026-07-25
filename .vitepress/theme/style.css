@@ -203,25 +203,179 @@
  * Official footer links
  * -------------------------------------------------------------------------- */
 
-.mad-footer-brand {
-  display: block;
-  margin-bottom: 12px;
-  color: var(--vp-c-text-1);
-  font-size: 14px;
-  font-weight: 650;
-  letter-spacing: 0.02em;
-}
-
-.mad-footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 8px 14px;
-}
-
 /* VitePress 默认在文档侧栏存在时隐藏全站页脚。 */
 .VPFooter.has-sidebar {
   display: block !important;
+}
+
+.VPFooter {
+  padding: 0 !important;
+  border-top: 1px solid var(--vp-c-divider);
+  background:
+    radial-gradient(circle at 16% 0%, var(--vp-c-brand-soft), transparent 34%),
+    linear-gradient(180deg, var(--vp-c-bg-soft) 0%, var(--vp-c-bg) 100%);
+}
+
+.VPFooter .container {
+  width: min(100%, 1180px);
+  margin: 0 auto;
+  padding: 34px 28px 22px;
+}
+
+.VPFooter .message {
+  margin: 0 !important;
+}
+
+.mad-footer-shell,
+.mad-footer-main,
+.mad-footer-identity,
+.mad-footer-brand-copy,
+.mad-footer-meta {
+  display: flex;
+}
+
+.mad-footer-shell,
+.mad-footer-brand-copy {
+  flex-direction: column;
+}
+
+.mad-footer-main {
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.mad-footer-identity {
+  min-width: 300px;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.mad-footer-monogram {
+  display: inline-flex;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid color-mix(in srgb, var(--vp-c-brand-1) 32%, transparent);
+  border-radius: 15px;
+  background: linear-gradient(145deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
+  box-shadow: 0 10px 28px color-mix(in srgb, var(--vp-c-brand-1) 20%, transparent);
+  color: var(--vp-c-white);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.mad-footer-brand-copy {
+  gap: 3px;
+}
+
+.mad-footer-kicker {
+  color: var(--vp-c-brand-1);
+  font-size: 10px;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+}
+
+.mad-footer-brand-copy strong {
+  color: var(--vp-c-text-1);
+  font-size: 18px;
+  font-weight: 720;
+  letter-spacing: -0.015em;
+}
+
+.mad-footer-brand-copy strong span {
+  margin-left: 5px;
+  font-weight: 620;
+}
+
+.mad-footer-studio {
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+}
+
+.mad-footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(88px, 1fr));
+  gap: 8px;
+}
+
+.mad-footer-links a {
+  display: inline-flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  padding: 7px 11px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--vp-c-bg) 76%, transparent);
+  color: var(--vp-c-text-2);
+  font-size: 12px;
+  font-weight: 550;
+  line-height: 1;
+  text-decoration: none;
+  transition:
+    color 0.18s ease,
+    border-color 0.18s ease,
+    background-color 0.18s ease,
+    transform 0.18s ease;
+}
+
+.mad-footer-links a:hover {
+  border-color: color-mix(in srgb, var(--vp-c-brand-1) 50%, var(--vp-c-divider));
+  background: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  transform: translateY(-1px);
+}
+
+.mad-footer-links i {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.mad-footer-meta {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--vp-c-divider);
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  color: var(--vp-c-text-3);
+  font-size: 11px;
+}
+
+.mad-footer-license {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--vp-c-text-2);
+  text-decoration: none;
+}
+
+.mad-footer-license:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.mad-footer-license-icons {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--vp-c-text-1);
+  font-size: 17px;
+}
+
+.mad-footer-purpose {
+  text-align: right;
+}
+
+.VPFooter .copyright {
+  margin-top: 12px !important;
+  color: var(--vp-c-text-3);
+  font-size: 11px;
 }
 
 @media (min-width: 960px) {
@@ -237,43 +391,36 @@
   }
 }
 
-.mad-footer-links a {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  color: var(--vp-c-text-2);
-  font-size: 13px;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
+@media (max-width: 900px) {
+  .mad-footer-main {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 
-.mad-footer-links a:hover {
-  color: var(--vp-c-brand-1);
-}
-
-.mad-footer-links i {
-  font-size: 17px;
-  line-height: 1;
+  .mad-footer-links {
+    width: 100%;
+  }
 }
 
 @media (max-width: 640px) {
+  .VPFooter .container {
+    padding: 28px 20px 20px;
+  }
+
+  .mad-footer-identity {
+    min-width: 0;
+  }
+
   .mad-footer-links {
-    gap: 10px 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .mad-footer-links span {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+  .mad-footer-meta {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
-  .mad-footer-links i {
-    font-size: 20px;
+  .mad-footer-purpose {
+    text-align: left;
   }
 }

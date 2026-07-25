@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'MAD DOC',
-  description: 'MAD·AMV 资料库：定义、分类、历史、术语、工具与来源索引',
+  title: 'MAD Producer 麦德工坊',
+  description: 'MAD Producer 麦德工坊维护的 MAD·AMV 资料库：定义、分类、历史、术语、工具与来源索引',
   srcDir: 'pages',
   outDir: 'dist',
   cleanUrls: true,
@@ -129,18 +129,37 @@ export default defineConfig({
 
     footer: {
       message: `
-        <span class="mad-footer-brand">MAD Producer · MAD DOC</span>
-        <span class="mad-footer-links" aria-label="MAD Producer 官方链接">
-          <a href="https://madproducer.com" target="_blank" rel="noopener" aria-label="MAD Producer 国际站"><i class="ri-global-line" aria-hidden="true"></i><span>madproducer.com</span></a>
-          <a href="https://madproducer.cn" target="_blank" rel="noopener" aria-label="MAD Producer 中国站"><i class="ri-global-line" aria-hidden="true"></i><span>madproducer.cn</span></a>
-          <a href="https://space.bilibili.com/3546821106338121" target="_blank" rel="noopener" aria-label="哔哩哔哩"><i class="ri-bilibili-fill" aria-hidden="true"></i><span>Bilibili</span></a>
-          <a href="https://www.youtube.com/@InfiniteTeamOfficial" target="_blank" rel="noopener" aria-label="YouTube"><i class="ri-youtube-fill" aria-hidden="true"></i><span>YouTube</span></a>
-          <a href="https://qm.qq.com/q/LDaTG07qaC" target="_blank" rel="noopener" aria-label="QQ 社群"><i class="ri-qq-fill" aria-hidden="true"></i><span>QQ</span></a>
-          <a href="https://discord.gg/vmtJcs5nxk" target="_blank" rel="noopener" aria-label="Discord 社群"><i class="ri-discord-fill" aria-hidden="true"></i><span>Discord</span></a>
-          <a href="https://x.com/Infinite_Team_X" target="_blank" rel="noopener" aria-label="X"><i class="ri-twitter-x-fill" aria-hidden="true"></i><span>X</span></a>
+        <span class="mad-footer-shell">
+          <span class="mad-footer-main">
+            <span class="mad-footer-identity">
+              <span class="mad-footer-monogram" aria-hidden="true">MP</span>
+              <span class="mad-footer-brand-copy">
+                <span class="mad-footer-kicker">MAD·AMV KNOWLEDGE BASE</span>
+                <strong>MAD Producer <span lang="zh-CN">麦德工坊</span></strong>
+                <span class="mad-footer-studio">由 MAD Producer Studio 开发与维护</span>
+              </span>
+            </span>
+            <span class="mad-footer-links" role="navigation" aria-label="MAD Producer 官方链接">
+              <a href="https://madproducer.com" target="_blank" rel="noopener"><i class="ri-global-line" aria-hidden="true"></i><span>国际站</span></a>
+              <a href="https://madproducer.cn" target="_blank" rel="noopener"><i class="ri-global-line" aria-hidden="true"></i><span>中国站</span></a>
+              <a href="https://space.bilibili.com/3546821106338121" target="_blank" rel="noopener"><i class="ri-bilibili-fill" aria-hidden="true"></i><span>Bilibili</span></a>
+              <a href="https://www.youtube.com/@InfiniteTeamOfficial" target="_blank" rel="noopener"><i class="ri-youtube-fill" aria-hidden="true"></i><span>YouTube</span></a>
+              <a href="https://qm.qq.com/q/LDaTG07qaC" target="_blank" rel="noopener"><i class="ri-qq-fill" aria-hidden="true"></i><span>QQ</span></a>
+              <a href="https://discord.gg/vmtJcs5nxk" target="_blank" rel="noopener"><i class="ri-discord-fill" aria-hidden="true"></i><span>Discord</span></a>
+              <a href="https://x.com/Infinite_Team_X" target="_blank" rel="noopener"><i class="ri-twitter-x-fill" aria-hidden="true"></i><span>X</span></a>
+              <a href="https://github.com/MAD-Producer/MAD-DOC" target="_blank" rel="noopener"><i class="ri-github-fill" aria-hidden="true"></i><span>GitHub</span></a>
+            </span>
+          </span>
+          <span class="mad-footer-meta">
+            <a class="mad-footer-license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans" target="_blank" rel="license noopener">
+              <span class="mad-footer-license-icons" aria-hidden="true"><i class="ri-creative-commons-line"></i><i class="ri-creative-commons-by-line"></i><i class="ri-creative-commons-sa-line"></i></span>
+              <span>本项目采用 CC BY-SA 4.0 许可</span>
+            </a>
+            <span class="mad-footer-purpose">MAD·AMV 文献与技术资料项目</span>
+          </span>
         </span>
       `,
-      copyright: 'MAD·AMV 文献与技术资料项目'
+      copyright: '© 2026 MAD Producer Studio'
     }
   }
 })

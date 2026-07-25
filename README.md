@@ -1,6 +1,8 @@
-# MAD DOC
+# MAD Producer 麦德工坊 · MAD DOC
 
-MAD DOC 是 MAD Producer 维护的 MAD·AMV 文献与技术资料项目。站点使用 VitePress 构建，并通过 EdgeOne Pages 发布。
+MAD DOC 是 MAD Producer 麦德工坊旗下的 MAD·AMV 文献与技术资料项目，由 MAD Producer Studio 开发与维护。站点使用 VitePress 构建，并通过 EdgeOne Pages 发布。
+
+**许可：** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
 
 ## 官方链接
 
@@ -159,6 +161,12 @@ EdgeOne Pages 可以在 GitHub 分支产生新提交后自动构建。生产分�
 5. 提交 Pull Request，并在说明中列出新增资料、主要来源和验证结果。
 
 比赛规则、平台政策、软件版本和 AI 服务变化较快。相关修改应优先引用主办方、平台或项目官方页面，不以搜索摘要代替原文。
+
+## 许可
+
+除另有注明的第三方材料外，本项目整体采用 [Creative Commons Attribution-ShareAlike 4.0 International（CC BY-SA 4.0）](https://creativecommons.org/licenses/by-sa/4.0/) 许可。
+
+转载、复制或改编本项目内容时，应注明 MAD Producer 麦德工坊及原始页面，并以 CC BY-SA 4.0 或兼容许可共享演绎内容。项目名称、组织名称与标识不因内容许可而自动授予商标使用权。完整说明见 [LICENSE.md](./LICENSE.md)。
 
 ## 目录
 
