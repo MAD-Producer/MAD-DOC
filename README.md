@@ -1,4 +1,4 @@
-# MAD Producer 麦德工坊 · MAD DOC
+# MAD DOC
 
 MAD DOC 是 MAD Producer 麦德工坊旗下的 MAD·AMV 文献与技术资料项目，由 MAD Producer Studio 开发与维护。站点使用 VitePress 构建，并通过 EdgeOne Pages 发布。
 

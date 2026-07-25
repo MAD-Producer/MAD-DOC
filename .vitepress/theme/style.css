@@ -259,14 +259,15 @@
   flex: 0 0 48px;
   align-items: center;
   justify-content: center;
-  border: 1px solid color-mix(in srgb, var(--vp-c-brand-1) 32%, transparent);
-  border-radius: 15px;
-  background: linear-gradient(145deg, var(--vp-c-brand-1), var(--vp-c-brand-3));
-  box-shadow: 0 10px 28px color-mix(in srgb, var(--vp-c-brand-1) 20%, transparent);
-  color: var(--vp-c-white);
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: -0.04em;
+  border-radius: 12px;
+  filter: drop-shadow(0 9px 18px color-mix(in srgb, var(--vp-c-brand-1) 18%, transparent));
+}
+
+.mad-footer-monogram img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .mad-footer-brand-copy {
@@ -293,8 +294,15 @@
 }
 
 .mad-footer-studio {
+  max-width: 420px;
   color: var(--vp-c-text-2);
   font-size: 12px;
+}
+
+.VPNavBarTitle .logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .mad-footer-links {

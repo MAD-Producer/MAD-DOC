@@ -1,8 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'MAD Producer 麦德工坊',
-  description: 'MAD Producer 麦德工坊维护的 MAD·AMV 资料库：定义、分类、历史、术语、工具与来源索引',
+  title: 'MAD DOC',
+  description: 'MAD Producer 麦德工坊旗下的 MAD·AMV 资料库：定义、分类、历史、术语、工具与来源索引',
   srcDir: 'pages',
   outDir: 'dist',
   cleanUrls: true,
@@ -10,11 +10,16 @@ export default defineConfig({
   lang: 'zh-CN',
 
   head: [
+    ['link', { rel: 'icon', type: 'image/webp', href: '/brand/mad-producer-logo.webp' }],
     ['meta', { name: 'theme-color', content: '#5b5bd6' }],
     ['meta', { name: 'keywords', content: 'MAD, AMV, MAD教程, AMV历史, MAD吧, 动画音乐视频' }]
   ],
 
   themeConfig: {
+    logo: {
+      src: '/brand/mad-producer-logo.webp',
+      alt: 'MAD DOC'
+    },
     outline: {
       level: [2, 3],
       label: '本页目录'
@@ -132,11 +137,11 @@ export default defineConfig({
         <span class="mad-footer-shell">
           <span class="mad-footer-main">
             <span class="mad-footer-identity">
-              <span class="mad-footer-monogram" aria-hidden="true">MP</span>
+              <span class="mad-footer-monogram" aria-hidden="true"><img src="/brand/mad-producer-logo.webp" alt=""></span>
               <span class="mad-footer-brand-copy">
-                <span class="mad-footer-kicker">MAD·AMV KNOWLEDGE BASE</span>
-                <strong>MAD Producer <span lang="zh-CN">麦德工坊</span></strong>
-                <span class="mad-footer-studio">由 MAD Producer Studio 开发与维护</span>
+                <span class="mad-footer-kicker">MAD PRODUCER PROJECT</span>
+                <strong>MAD DOC</strong>
+                <span class="mad-footer-studio">MAD Producer 麦德工坊旗下项目 · 由 MAD Producer Studio 开发与维护</span>
               </span>
             </span>
             <span class="mad-footer-links" role="navigation" aria-label="MAD Producer 官方链接">
