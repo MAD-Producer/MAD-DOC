@@ -328,7 +328,7 @@ This section describes **creator social networks and publishing ecosystems**, no
 
 Three groups of verifiable evidence support this distinction:
 
-1. The 2024 [interview study of MAD creators on Chinese online platforms (Chinese text)](/mad/ccopw) includes 69 semi-structured interviews. It discusses the Bilibili-centered MAD community separately from IG-style creators on Instagram and Chinese TikTok, recording differences in social relationships, tutorials, and commercial practice.
+1. The 2024 dissertation [Creative Class or Precarious Workers](/en/mad/ccopw) includes 69 semi-structured interviews. It discusses the Bilibili-centered MAD community separately from IG-style creators on Instagram and Douyin, recording differences in social relationships, tutorials, and commercial practice.
 2. The 2019 [NEW EDITORS CON guide to IG styles](https://www.bilibili.com/opus/215518138904040334) understands IG as a collection of short-form edit styles on Instagram, not as one fixed technical branch of Bilibili long-form MAD.
 3. The 2026 [IMAC FUN#4 rules](https://www.bilibili.com/opus/1203002472552988705) separately set durations of 2–5 minutes for anime AMV, 1:30–5 minutes for still-image works, and 35 seconds–3 minutes for style-focused and other MAD. Rules for one contest do not represent an entire field, but they show organizers distinguishing these production contexts in actual submissions.
 
@@ -339,7 +339,7 @@ Three groups of verifiable evidence support this distinction:
 - [Wuyi无疑: “Classification of MAD”](https://www.bilibili.com/opus/291682438941101836)
 - [NEW EDITORS CON: Contest Guide and Introduction to IG Styles](https://www.bilibili.com/opus/215518138904040334)
 - [IMAC FUN#4: Contest Guide and Category Durations](https://www.bilibili.com/opus/1203002472552988705)
-- [Creative Class or Precarious Workers: Anime Secondary Creators on Chinese Video Platforms (Chinese text)](/mad/ccopw)
+- [Creative Class or Precarious Workers: Animation Recreators in China's Video Platform](/en/mad/ccopw)
 - [AMV Japan: AMVのカテゴリー](https://amv-japan.org/column/amv-categories)
 - [AnimeMusicVideos.org](https://www.animemusicvideos.org/)
 - [AKROSS Con](https://www.akross.ru/)

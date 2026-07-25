@@ -104,9 +104,9 @@ Filenames should include at least the content, shot or episode, version, and dat
 
 MAD Bar’s newcomer navigation once listed posts on MKV extraction, image search, locating original footage, and MKVToolNix. They show that source preprocessing has long been a central problem for newcomers, but some posts and images are now unavailable, and older tutorials may use obsolete software or point to unauthorized sources.
 
-MAD DOC preserves their **problem structure and original-post index**, localizes generally applicable knowledge, and replaces old download links with current official documentation. See the original navigation in the [Source Index (Chinese)](/resources/#mad吧与中文社区).
+MAD DOC preserves their **problem structure and original-post index**, localizes generally applicable knowledge, and replaces old download links with current official documentation. See the original navigation in the [Source Index](/en/resources/#mad-tieba-and-the-chinese-community).
 
-For encoding parameters, frame rate, color information, and delivery checks, see [Encoding and Delivery (Chinese)](/tools/encoding).
+For encoding parameters, frame rate, color information, and delivery checks, see [Encoding and Delivery](/en/tools/encoding).
 
 ## Tool Documentation
 

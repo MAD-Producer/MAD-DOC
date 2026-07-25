@@ -110,4 +110,4 @@ rights: rights and permission for publication
 notes: conflicting accounts, missing fields, and follow-up verification tasks
 ```
 
-For the existing long-form creator study, see [Interview Study of MAD Creators on Chinese Online Platforms (Chinese text)](/mad/ccopw). It can identify useful questions, but any new study must independently document its sample, recruitment, period, and ethical procedures.
+For the existing long-form creator study, see [Creative Class or Precarious Workers: Animation Recreators in China's Video Platform](/en/mad/ccopw). It can identify useful questions, but any new study must independently document its sample, recruitment, period, and ethical procedures.

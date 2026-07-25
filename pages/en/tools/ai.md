@@ -232,4 +232,4 @@ These requirements concern **labeling and responsibility for distribution**. The
 - [Measures for Labeling AI-Generated Synthetic Content](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm)
 - [Bilibili: Special Announcement on “Qinglang: Rectifying Misuse of AI”](https://www.bilibili.com/opus/1202507670848798745)
 - [Supreme People’s Court: Typical Case on Unauthorized AI Use of Another Person’s Voice](https://www.court.gov.cn/zixun/xiangqing/467511.html)
-- [Interview Study of MAD Creators on Chinese Online Platforms (Chinese text)](/mad/ccopw#_5-3-新技术)
+- [Creative Class or Precarious Workers: Animation Recreators in China's Video Platform](/en/mad/ccopw)

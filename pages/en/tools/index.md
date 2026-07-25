@@ -101,4 +101,4 @@ Minimum requirements indicate only basic operation. Evaluate hardware against th
 - [Blender system requirements](https://www.blender.org/download/requirements/)
 - [FFmpeg documentation](https://ffmpeg.org/documentation.html)
 
-Related entries: [Source Media and Project Management](/en/tools/footage) · [Encoding and Delivery (Chinese)](/tools/encoding) · [Software](/en/tools/software) · [Plugins and Scripts](/en/tools/plugins-ai) · [AI-Assisted Creation and MAID](/en/tools/ai)
+Related entries: [Source Media and Project Management](/en/tools/footage) · [Encoding and Delivery](/en/tools/encoding) · [Software](/en/tools/software) · [Plugins and Scripts](/en/tools/plugins-ai) · [AI-Assisted Creation and MAID](/en/tools/ai)

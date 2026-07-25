@@ -11,7 +11,7 @@ hero:
       link: /en/mad/mad
     - theme: alt
       text: Browse the Source Index
-      link: /resources/
+      link: /en/resources/
 
 features:
   - title: About MAD·AMV
@@ -28,7 +28,7 @@ features:
     linkText: Choose Your Tools
   - title: Bilibili, MAD Bar, and Blog Index
     details: Brings together Wuyi无疑, MAD Bar navigation posts, ACG Library, international organizations, research papers, and official tool documentation, with link status recorded.
-    link: /resources/
+    link: /en/resources/
     linkText: Find Primary Sources
 ---
 

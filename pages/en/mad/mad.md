@@ -11,7 +11,7 @@ This site primarily discusses the mainland Chinese MAD·AMV community centered o
 **MAD** is a broad term that developed from Japanese dōjin remix culture. **AMV** stands for Anime Music Video, a type of work that creates expression through anime footage and music. The two overlap extensively, but they are not synonyms for “static” and “animated” works.
 :::
 
-This page supplements and re-examines existing materials; it does not replace the earlier text. The complete pre-revision discussion of definitions, origins, and classification remains available in [Legacy MAD Resources (Chinese Archive)](/mad/mad-original).
+This page supplements and re-examines existing materials; it does not replace the earlier text. The complete pre-revision discussion of definitions, origins, and classification remains available in [Legacy MAD Resources (Archive)](/en/mad/mad-original).
 
 ## Three Common Misconceptions
 

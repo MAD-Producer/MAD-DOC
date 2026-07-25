@@ -135,4 +135,4 @@ Creator activity became more distributed across individual Bilibili spaces, post
 - [Bilibili 2022 MAD Creation Festival Work Index](https://www.bilibili.com/list/ml212983561)
 - [Bilibili MAD CONTEST 2024](https://www.bilibili.com/opus/951075964632170496)
 
-The long-form legacy Chinese material remains available in [Beyond the Mountains Rise More Mountains (MAD History, Chinese)](/history/history). When reading it, consider its age, chain of reposts, and partially dead links.
+The long-form legacy material remains available in [Beyond the Mountains, Beyond the Towers (History of MAD)](/en/history/history). When reading it, consider its age, chain of reposts, and partially dead links.

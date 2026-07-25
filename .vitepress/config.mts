@@ -225,7 +225,7 @@ const enThemeConfig: DefaultTheme.Config = {
       items: [
         { text: 'Three Historical Threads', link: '/en/history/timeline' },
         { text: 'Research and Survey', link: '/en/history/research' },
-        { text: 'Chinese Historical Archive', link: '/history/history' }
+        { text: 'Historical Archive', link: '/en/history/history' }
       ]
     },
     {
@@ -233,13 +233,13 @@ const enThemeConfig: DefaultTheme.Config = {
       items: [
         { text: 'Overview', link: '/en/tools/' },
         { text: 'Source Media and Projects', link: '/en/tools/footage' },
-        { text: 'Encoding and Delivery (Chinese)', link: '/tools/encoding' },
+        { text: 'Encoding and Delivery', link: '/en/tools/encoding' },
         { text: 'Software', link: '/en/tools/software' },
         { text: 'Plugins and Scripts', link: '/en/tools/plugins-ai' },
         { text: 'AI Assistance and MAID', link: '/en/tools/ai' }
       ]
     },
-    { text: 'Sources (Chinese)', link: '/resources/' }
+    { text: 'Source Index', link: '/en/resources/' }
   ],
   sidebar: {
     '/en/mad/': [
@@ -250,8 +250,8 @@ const enThemeConfig: DefaultTheme.Config = {
           { text: 'Classification', link: '/en/mad/classification' },
           { text: 'Glossary', link: '/en/mad/glossary' },
           { text: 'Contest and Submission Guidelines', link: '/en/mad/contest-rules' },
-          { text: 'Creator Research (Chinese)', link: '/mad/ccopw' },
-          { text: 'Legacy MAD Resources (Chinese Archive)', link: '/mad/mad-original' }
+          { text: 'Creator Research', link: '/en/mad/ccopw' },
+          { text: 'Legacy MAD Resources (Archive)', link: '/en/mad/mad-original' }
         ]
       }
     ],
@@ -261,7 +261,7 @@ const enThemeConfig: DefaultTheme.Config = {
         items: [
           { text: 'Three Historical Threads', link: '/en/history/timeline' },
           { text: 'Research Methods and Survey', link: '/en/history/research' },
-          { text: '山外青山楼外楼 (Chinese Archive)', link: '/history/history' }
+          { text: 'Beyond the Mountains, Beyond the Towers (Archive)', link: '/en/history/history' }
         ]
       }
     ],
@@ -271,14 +271,21 @@ const enThemeConfig: DefaultTheme.Config = {
         items: [
           { text: 'Overview', link: '/en/tools/' },
           { text: 'Source Media and Projects', link: '/en/tools/footage' },
-          { text: 'Encoding and Delivery (Chinese)', link: '/tools/encoding' },
+          { text: 'Encoding and Delivery', link: '/en/tools/encoding' },
           { text: 'Software', link: '/en/tools/software' },
           { text: 'Plugins and Scripts', link: '/en/tools/plugins-ai' },
           { text: 'AI Assistance and MAID', link: '/en/tools/ai' }
         ]
       }
     ],
-    '/en/resources/': []
+    '/en/resources/': [
+      {
+        text: 'Source Documentation',
+        items: [
+          { text: 'Source Index and Verification Status', link: '/en/resources/' }
+        ]
+      }
+    ]
   },
   footer: enFooter
 }
