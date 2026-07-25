@@ -13,6 +13,7 @@ MAD DOC 是 MAD Producer 麦德工坊旗下的 MAD·AMV 文献与技术资料项
 - QQ 社群：https://qm.qq.com/q/LDaTG07qaC
 - Discord：https://discord.gg/vmtJcs5nxk
 - X：https://x.com/Infinite_Team_X
+- GitHub：https://github.com/MAD-Producer/MAD-DOC
 
 ## 内容范围
 
@@ -153,6 +154,8 @@ EdgeOne Pages 可以在 GitHub 分支产生新提交后自动构建。生产分�
 站点当前按域名根路径 `/` 构建。如果部署到 `https://example.com/MAD-DOC/` 这类子路径，需要在 `.vitepress/config.mts` 中设置对应的 `base`，再重新构建。
 
 ## 参与维护
+
+发现资料缺失、事实错误、失效链接或站点问题时，可先提交 [Issue](https://github.com/MAD-Producer/MAD-DOC/issues)。如需直接补充或修订内容，可按以下流程提交 Pull Request：
 
 1. Fork 本仓库并从最新 `main` 创建分支；
 2. 修改或新增资料时保留原始来源、核验日期、适用范围和争议说明；
