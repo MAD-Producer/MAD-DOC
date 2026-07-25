@@ -97,7 +97,7 @@ description: MAD·AMV 各环节软件能力、适用场景与官方入口
 | REAPER | 多轨编辑、路由、自动化和插件生态 | [REAPER](https://www.reaper.fm/) |
 | Audacity | 开源波形编辑、录音和基础处理 | [Audacity](https://www.audacityteam.org/) |
 
-不要从发布版歌曲中粗暴“消除人声／BGM”后声称得到原始分轨。源分离工具只能估计，常伴随残留、相位和高频损伤。
+从发布版歌曲进行人声或伴奏分离只能得到估计结果，常伴随残留、相位和高频损伤，不能标记为原始分轨。
 
 ## 编码与诊断
 
@@ -110,9 +110,9 @@ description: MAD·AMV 各环节软件能力、适用场景与官方入口
 | LosslessCut | 基于 FFmpeg 的快速无重编码裁切／重封装 | [GitHub](https://github.com/mifi/lossless-cut) |
 | VapourSynth | 可脚本化帧服务器与视频处理 | [文档](https://www.vapoursynth.com/doc/) |
 
-## 如何迁移旧教程
+## 旧教程的版本标记
 
-MAD吧与 B站早期教程可能使用 Premiere CS6、After Effects CS6／CC 旧版、旧 VEGAS、QuickTime、旧编码包和停止维护的网盘。整理时不要直接删掉，而应标记：
+MAD吧与 B站早期教程可能使用 Premiere CS6、After Effects CS6／CC 旧版、旧 VEGAS、QuickTime、旧编码包和停止维护的网盘。此类资料保留原始记录，并按以下状态标记：
 
 - **历史有效**：用于理解当时工作流；
 - **界面过时**：原理仍可用，但菜单和参数已变化；

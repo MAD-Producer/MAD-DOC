@@ -70,6 +70,7 @@ export default defineConfig({
         items: [
           { text: '工具总览', link: '/tools/' },
           { text: '素材与工程', link: '/tools/footage' },
+          { text: '编码与交付', link: '/tools/encoding' },
           { text: '软件选择', link: '/tools/software' },
           { text: '插件与 AI', link: '/tools/plugins-ai' }
         ]
@@ -106,6 +107,7 @@ export default defineConfig({
           items: [
             { text: '工具总览', link: '/tools/' },
             { text: '素材与工程', link: '/tools/footage' },
+            { text: '编码与交付', link: '/tools/encoding' },
             { text: '软件选择', link: '/tools/software' },
             { text: '插件与 AI', link: '/tools/plugins-ai' }
           ]
@@ -121,13 +123,20 @@ export default defineConfig({
       ]
     },
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/MAD-Producer/MAD-DOC' }
-    ],
-
     footer: {
-      message: '资料以原始链接、官方文档和可追溯存档为先；欢迎补充与纠错。',
-      copyright: 'MAD DOC'
+      message: `
+        <span class="mad-footer-brand">MAD Producer · MAD DOC</span>
+        <span class="mad-footer-links" aria-label="MAD Producer 官方链接">
+          <a href="https://madproducer.com" target="_blank" rel="noopener" aria-label="MAD Producer 国际站"><i class="ri-global-line" aria-hidden="true"></i><span>madproducer.com</span></a>
+          <a href="https://madproducer.cn" target="_blank" rel="noopener" aria-label="MAD Producer 中国站"><i class="ri-global-line" aria-hidden="true"></i><span>madproducer.cn</span></a>
+          <a href="https://space.bilibili.com/3546821106338121" target="_blank" rel="noopener" aria-label="哔哩哔哩"><i class="ri-bilibili-fill" aria-hidden="true"></i><span>Bilibili</span></a>
+          <a href="https://www.youtube.com/@InfiniteTeamOfficial" target="_blank" rel="noopener" aria-label="YouTube"><i class="ri-youtube-fill" aria-hidden="true"></i><span>YouTube</span></a>
+          <a href="https://qm.qq.com/q/LDaTG07qaC" target="_blank" rel="noopener" aria-label="QQ 社群"><i class="ri-qq-fill" aria-hidden="true"></i><span>QQ</span></a>
+          <a href="https://discord.gg/vmtJcs5nxk" target="_blank" rel="noopener" aria-label="Discord 社群"><i class="ri-discord-fill" aria-hidden="true"></i><span>Discord</span></a>
+          <a href="https://x.com/Infinite_Team_X" target="_blank" rel="noopener" aria-label="X"><i class="ri-twitter-x-fill" aria-hidden="true"></i><span>X</span></a>
+        </span>
+      `,
+      copyright: 'MAD·AMV 文献与技术资料项目'
     }
   }
 })

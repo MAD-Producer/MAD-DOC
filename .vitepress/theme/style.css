@@ -199,3 +199,81 @@
   padding-left: 16px !important;
 }
 
+/**
+ * Official footer links
+ * -------------------------------------------------------------------------- */
+
+.mad-footer-brand {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+}
+
+.mad-footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 14px;
+}
+
+/* VitePress 默认在文档侧栏存在时隐藏全站页脚。 */
+.VPFooter.has-sidebar {
+  display: block !important;
+}
+
+@media (min-width: 960px) {
+  .VPFooter.has-sidebar {
+    margin-left: var(--vp-sidebar-width);
+  }
+}
+
+@media (min-width: 1440px) {
+  .VPFooter.has-sidebar {
+    margin-right: calc((100vw - var(--vp-layout-max-width)) / 2);
+    margin-left: calc((100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width));
+  }
+}
+
+.mad-footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mad-footer-links a:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.mad-footer-links i {
+  font-size: 17px;
+  line-height: 1;
+}
+
+@media (max-width: 640px) {
+  .mad-footer-links {
+    gap: 10px 16px;
+  }
+
+  .mad-footer-links span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .mad-footer-links i {
+    font-size: 20px;
+  }
+}
