@@ -1,4 +1,11 @@
 import { defineConfig, type DefaultTheme } from 'vitepress'
+import {
+  createSeoHead,
+  enhanceSitemapItems,
+  EN_DESCRIPTION,
+  SITE_URL,
+  ZH_DESCRIPTION
+} from './seo'
 
 const logo: DefaultTheme.ThemeableImage = {
   src: '/brand/mad-producer-logo.webp',
@@ -292,18 +299,41 @@ const enThemeConfig: DefaultTheme.Config = {
 
 export default defineConfig({
   title: 'MAD DOC',
-  description: 'MAD Producer 麦德工坊旗下的 MAD·AMV 资料库：定义、分类、历史、术语、工具与来源索引',
+  description: ZH_DESCRIPTION,
   srcDir: 'pages',
+  srcExclude: [
+    'advanced/code-highlighting.md',
+    'advanced/custom-theme.md',
+    'advanced/markdown-extensions.md',
+    'history/markdown-examples.md',
+    'tools/images/vcb-encoding/README.md'
+  ],
   outDir: 'dist',
   cleanUrls: true,
   lastUpdated: true,
+  sitemap: {
+    hostname: SITE_URL,
+    lastmodDateOnly: true,
+    transformItems: enhanceSitemapItems
+  },
+  transformPageData(pageData) {
+    return {
+      frontmatter: {
+        ...pageData.frontmatter,
+        head: [
+          ...(pageData.frontmatter.head ?? []),
+          ...createSeoHead(pageData)
+        ]
+      }
+    }
+  },
 
   locales: {
     root: {
       label: '简体中文',
       lang: 'zh-CN',
       title: 'MAD DOC',
-      description: 'MAD Producer 麦德工坊旗下的 MAD·AMV 资料库：定义、分类、历史、术语、工具与来源索引',
+      description: ZH_DESCRIPTION,
       themeConfig: zhThemeConfig
     },
     en: {
@@ -311,7 +341,7 @@ export default defineConfig({
       lang: 'en-US',
       link: '/en/',
       title: 'MAD DOC',
-      description: 'A MAD·AMV knowledge base by MAD Producer, covering definitions, classification, history, terminology, tools, and sources.',
+      description: EN_DESCRIPTION,
       themeConfig: enThemeConfig
     }
   },

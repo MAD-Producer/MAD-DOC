@@ -1,3 +1,8 @@
+---
+title: 旧版 MAD 资料（存档）
+description: MAD DOC 旧版资料存档，收录早期 MAD 定义、历史记录与分类文章，并保留原始引用和正文
+---
+
 # 旧版 MAD 资料（存档）
 
 ::: warning 存档说明
