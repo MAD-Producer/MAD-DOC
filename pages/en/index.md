@@ -1,5 +1,7 @@
 ---
 layout: home
+title: "MAD·AMV Knowledge Base"
+description: A MAD·AMV knowledge base by MAD Producer covering definitions, history, and creation tools.
 
 hero:
   name: "MAD DOC"

@@ -213,7 +213,7 @@ Type-Moon第二部AVG”Fate/Stay Night”情報開始公開
 
 光之大陸 伊莉琴斯由於外在環境的惡化,關閉了最後一個留存的物資管理局版面,台灣MAD與OPED的收集與傳播開始進入論壇林立的戰國時代.
 
-![](images/1742040854-image.webp)
+![伊莉琴斯站点 Logo](images/1742040854-image.webp)
 
 (圖:伊莉琴斯站點Logo)
 
@@ -336,7 +336,7 @@ Hatsune Miku-[Electric Love\[Wakamura\]](https://nicovideo.jp/watch/sm12234304)
 
 Hatsune Miku-[Sweet Devil MMDPV\[Wakamura\]](https://nicovideo.jp/watch/sm12392042)
 
-![](images/1742041000-image-2.webp)
+![MMD 作品示例](images/1742041000-image-2.webp)
 
 #### 1-4-6 音系MAD
 
@@ -388,7 +388,7 @@ Hatsune Miku-[Sweet Devil MMDPV\[Wakamura\]](https://nicovideo.jp/watch/sm123920
 
 水準極高且整齊劃一,MAD愛好者不應錯過的盛會.
 
-![](images/1742041001-image-3.webp)
+![日本第二次红白 MAD 合战 Logo](images/1742041001-image-3.webp)
 
 (圖:日本第2次紅白MAD合戰logo)
 
@@ -420,11 +420,11 @@ Hatsune Miku-[Sweet Devil MMDPV\[Wakamura\]](https://nicovideo.jp/watch/sm123920
 
 2009年首度辦理,至2011年9月10日舉辦第三屆,前兩屆均在單身漢節(11/11公開)第二屆有點類似沒女友Madder們的怨念MAD大會….作品不限定為首度公開,亦未限制個人投稿數.第三屆作品的高畫質原檔官網目前已經公開.WAKUWAKU團的創立雖然原來是因活動而產生,但隨著其活動的頻繁性,有組織定型化的傾向,值得期待.
 
-![](images/1742041001-image-4.webp)
+![WAKUWAKU 2010 官方网站首页](images/1742041001-image-4.webp)
 
 (圖:WAKUWAKU 2010 HP TOP)
 
-![](images/1742041001-image-5.webp)
+![WAKUWAKU 2011 官方网站截图](images/1742041001-image-5.webp)
 
 (圖:WAKUWAKU 2011官網剪影)
 
@@ -440,7 +440,7 @@ MADMAX是由日本主要MAD創作團體”Visitor”所主辦的MAD活動,由於
 
 開始時間是2011年12月24日,有8名作者參賽.
 
-![](images/1742041002-image-6.webp)
+![MADMAX 活动 Logo](images/1742041002-image-6.webp)
 
 (圖:MADMAX活動Logo)
 
@@ -494,7 +494,7 @@ C.[Nameless](http://zoome.jp/sirotora/diary/47/)
 
 純粹娛樂與惡搞取向的小型MAD活動,作品水準中平,至2012年9月共舉辦了2屆.
 
-![](images/1742041002-image-7.webp)
+![春秋火锅活动首页横幅](images/1742041002-image-7.webp)
 
 (圖:春秋火鍋首頁Banner)
 
@@ -502,7 +502,7 @@ C.[Nameless](http://zoome.jp/sirotora/diary/47/)
 
 2009年開始SKM內部在農曆新年時首次進行組內MAD展示大會,屬於成果展覽類活動.做為歷史較長的中國MAD組織,每年推出的靜畫系作品亦有相當數量,然水準上彼此差異較大為遺珠之憾自第二届開始，情人祭就改為白色情人祭，於3.14活動.
 
-![](images/1742041003-image-8.webp)
+![SKM 第三届年度活动 Logo](images/1742041003-image-8.webp)
 
 (圖:SKM第三次年度活動LOGO)
 
@@ -530,7 +530,7 @@ RL在2009年底開始發布組成果展覽用DVD,2009年版的內容上包含了
 
 參加成員均為Hinako Studio的內部人員,由於是專職設計人員,作品完成度高,技術層面演出亦相當華麗.
 
-![](images/1742041003-image-9.webp)
+![2011 H@S 创立日祭海报](images/1742041003-image-9.webp)
 
 (圖:2011創立日祭海報)
 
@@ -570,11 +570,11 @@ MADeMAD整合了來自中台美日等地的Madder們.當前的參賽制度為半
 
 2012年該屆首度與BGM團合作設立了獨立的HTML形式官網.
 
-![](images/1742041004-image-10.webp)
+![MADeMAD 2009 Logo](images/1742041004-image-10.webp)
 
 (圖:MADeMAD 2009 LOGO)
 
-![](images/1742041004-image-11.webp)
+![MADeMAD 2012 活动网站截图](images/1742041004-image-11.webp)
 
 (圖:MADeMAD 2012活動官網剪影)
 
@@ -590,7 +590,7 @@ MADeMAD整合了來自中台美日等地的Madder們.當前的參賽制度為半
 
 然後在當天由入場觀眾點播並同時一起熱唱,有如演唱會的氣氛一般
 
-![](images/1742041005-image-12.webp)
+![中央大学歌谣祭博客页面](images/1742041005-image-12.webp)
 
 (圖:央大歌謠祭Blog)
 
@@ -604,7 +604,7 @@ MADeMAD整合了來自中台美日等地的Madder們.當前的參賽制度為半
 
 每年均會公布新人賞/最佳百大MAD賞/最佳創作者賞,是為靜畫系作品最具代表性的排名榜.
 
-![](images/1742041005-image-13.webp)
+![红白 MAD 合战官方网站](images/1742041005-image-13.webp)
 
 (圖:紅白公式網站)
 
@@ -616,7 +616,7 @@ AMV.com每年在年初到三月初舉辦的前一年間最佳AMV評選活動,並
 
 評選內容上分類相當細緻,如果喜愛高水準的AMV不可不看.
 
-![](images/1742041006-image-14.webp)
+![VCA 赛事结果发布页面](images/1742041006-image-14.webp)
 
 (圖:VCA賽事結果發表欄)
 

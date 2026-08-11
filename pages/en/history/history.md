@@ -214,7 +214,7 @@ The Chinese MAD organization FLSnow established a MAD section.
 Due to worsening external circumstances, 光之大陸 伊莉琴斯 closed its last remaining Material Management Bureau page. The collection and distribution of MADs and OPEDs in Taiwan entered a "warring states" era with numerous competing forums emerging.
 
 
-![](images/1742040854-image.webp)
+![Illychins site logo](images/1742040854-image.webp)
 
 
 (Image: Illychins site logo)
@@ -320,7 +320,7 @@ The Idol Master-V-[Project VA](https://www.nicovideo.jp/watch/sm4821152)
 The Idol Master—[2008 Autumn Festival](https://www.nicovideo.jp/watch/sm5537811)
 
 
-![](images/1742041270-长横幅-scaled.webp)
+![iMAD work appreciation banner](images/1742041270-长横幅-scaled.webp)
 
 
 #### 1-4-5 MMD
@@ -342,7 +342,7 @@ Hatsune Miku-[Electric Love \[Wakamura\]](https://nicovideo.jp/watch/sm12234304)
 Hatsune Miku-[Sweet Devil MMDPV \[Wakamura\]](https://nicovideo.jp/watch/sm12392042)
 
 
-![](images/1742041000-image-2.webp)
+![MMD work example](images/1742041000-image-2.webp)
 
 
 #### 1-4-6 Sound-based MAD
@@ -396,7 +396,7 @@ As the first country to develop MADs, Japan undoubtedly has the highest number a
 With a consistently high level of quality, it is an event that MAD enthusiasts should not miss.
 
 
-![](images/1742041001-image-3.webp)
+![Logo of the 2nd Japan Red and White MAD Battle](images/1742041001-image-3.webp)
 
 
 (Image: Logo of the 2nd Japan Red and White MAD Battle)
@@ -430,13 +430,13 @@ A MAD competition held on Nico. As of September 2012, it had been held an astoni
 First held in 2009, the third edition of the event took place on September 10, 2011. The first two editions were both released on Singles' Day (November 11). The second edition was somewhat like a MAD competition expressing the grievances of single Madders... There was no requirement for works to be released for the first time, nor was there a limit on the number of submissions per individual. The high-quality original files for the third edition are now available on the official website. Although the WAKUWAKU Group was initially established for the purpose of the event, its increasing frequency has shown a trend towards becoming an organized group, which is promising.
 
 
-![](images/1742041001-image-4.webp)
+![WAKUWAKU 2010 official website homepage](images/1742041001-image-4.webp)
 
 
 (Image:WAKUWAKU 2010 HP TOP)
 
 
-![](images/1742041001-image-5.webp)
+![WAKUWAKU 2011 official website screenshot](images/1742041001-image-5.webp)
 
 
 (Image:WAKUWAKU 2011 official-site screenshot)
@@ -454,7 +454,7 @@ MADMAX is a MAD event organized by the major Japanese MAD creation group "Visito
 The start date was December 24, 2011, with 8 creators participating.
 
 
-![](images/1742041002-image-6.webp)
+![MADMAX event logo](images/1742041002-image-6.webp)
 
 
 (Image: MADMAX event logo)
@@ -510,7 +510,7 @@ The content includes outstanding works from various events in the Chinese-speaki
 A small-scale MAD event focused purely on entertainment and parody, with an average level of work quality. As of September 2012, it has been held twice.
 
 
-![](images/1742041002-image-7.webp)
+![Spring and Autumn Hot Pot homepage banner](images/1742041002-image-7.webp)
 
 
 (Image: "Spring and Autumn Hot Pot" homepage banner)
@@ -520,7 +520,7 @@ A small-scale MAD event focused purely on entertainment and parody, with an aver
 Starting in 2009, SKM held its first internal MAD exhibition during the Lunar New Year, categorizing it as a showcase event. As one of the oldest MAD organizations in China, SKM also releases a considerable number of still image works each year, though the quality varies significantly, leading to some regrets. Beginning with the second edition, the "Valentine's Festival" was renamed to "White Valentine's Festival," held on March 14th.
 
 
-![](images/1742041003-image-8.webp)
+![SKM third annual event logo](images/1742041003-image-8.webp)
 
 
 (Image: SKM Third Annual Event Logo)
@@ -550,7 +550,7 @@ The Founding Anniversary Festival is an exhibition competition organized by Chin
 All participants are internal members of Hinako Studio. As professional designers, their works are highly polished, with impressive technical execution and a very refined presentation.
 
 
-![](images/1742041003-image-9.webp)
+![2011 H@S Founding Anniversary Festival poster](images/1742041003-image-9.webp)
 
 
 (Image: 2011 Founding Anniversary Festival Poster)
@@ -592,7 +592,7 @@ The event format resembles a newcomer selection competition, with entries of var
 In 2012, for the first time, the event collaborated with the BGM group to establish a standalone HTML-based official website.
 
 
-![](images/1742041004-image-10.webp)
+![MADeMAD 2009 logo](images/1742041004-image-10.webp)
 
 
  
@@ -600,7 +600,7 @@ In 2012, for the first time, the event collaborated with the BGM group to establ
 (Image: MADeMAD 2009 Logo)
 
 
-![](images/1742041004-image-11.webp)
+![MADeMAD 2012 event website screenshot](images/1742041004-image-11.webp)
 
 
 (Image: MADeMAD 2012 Event Website Snapshot)
@@ -618,7 +618,7 @@ Strictly speaking, many universities hold their own Song Festivals. However, the
 Then, on the event day, the audience requests songs, and everyone sings along, creating an atmosphere similar to a concert.
 
 
-![](images/1742041005-image-12.webp)
+![Central University Song Festival blog](images/1742041005-image-12.webp)
 
 
 (Image: Central University Song Festival Blog)
@@ -634,7 +634,7 @@ An event held annually from the beginning of the year to around February, evalua
 Each year, awards for "Newcomer Award," "Top 100 MAD Awards," and "Best Creator Award" are announced, making it the most representative ranking list for still image works.
 
 
-![](images/1742041005-image-13.webp)
+![Red and White official website](images/1742041005-image-13.webp)
 
 
 (Image: Red and White official website)
@@ -648,7 +648,7 @@ The A-M-V.org Viewer's Choice Awards is an annual event held from the beginning 
 The selection categories are very detailed, making this event a must-watch for fans of high-quality AMVs.
 
 
-![](images/1742041006-image-14.webp)
+![VCA results announcement page](images/1742041006-image-14.webp)
 
 
 (Image: VCA Results Announcement Section)

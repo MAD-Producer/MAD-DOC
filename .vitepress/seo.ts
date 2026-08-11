@@ -6,6 +6,8 @@ export const ZH_DESCRIPTION =
   'MAD Producer 麦德工坊旗下的 MAD·AMV 资料库：定义、分类、历史、术语、工具与来源索引'
 export const EN_DESCRIPTION =
   'A MAD·AMV knowledge base by MAD Producer, covering definitions, classification, history, terminology, tools, and sources.'
+const ZH_HOME_TITLE = 'MAD·AMV 资料库'
+const EN_HOME_TITLE = 'MAD·AMV Knowledge Base'
 
 const SOCIAL_IMAGE = `${SITE_URL}/covers/mad-doc-renewal-gfx-16x9-v3.png`
 
@@ -147,15 +149,15 @@ function structuredData(
     graph[1].dateModified = new Date(pageData.lastUpdated).toISOString()
   }
 
-  if (path === '/') {
+  if (path === '/' || path === '/en/') {
     graph.splice(1, 0, {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
       url: `${SITE_URL}/`,
       name: SITE_NAME,
-      alternateName: ['MAD·AMV 资料库', 'MAD·AMV Knowledge Base'],
-      description: ZH_DESCRIPTION,
-      inLanguage: ['zh-CN', 'en-US'],
+      alternateName: [ZH_HOME_TITLE, EN_HOME_TITLE],
+      description,
+      inLanguage: language,
       publisher: {
         '@id': `${SITE_URL}/#organization`
       }
@@ -181,6 +183,8 @@ export function createSeoHead(pageData: SeoPageData): HeadConfig[] {
   const path = pagePath(pageData.relativePath)
   const canonical = absoluteUrl(path)
   const alternates = alternatePaths(pageData.relativePath)
+  const title =
+    pageData.title || (isEnglish ? EN_HOME_TITLE : ZH_HOME_TITLE)
   const description =
     pageData.description || (isEnglish ? EN_DESCRIPTION : ZH_DESCRIPTION)
   const locale = isEnglish ? 'en_US' : 'zh_CN'
@@ -226,7 +230,7 @@ export function createSeoHead(pageData: SeoPageData): HeadConfig[] {
     ['meta', { name: 'author', content: 'MAD Producer Studio' }],
     ['meta', { property: 'og:type', content: path === '/' || path === '/en/' ? 'website' : 'article' }],
     ['meta', { property: 'og:site_name', content: SITE_NAME }],
-    ['meta', { property: 'og:title', content: pageData.title }],
+    ['meta', { property: 'og:title', content: title }],
     ['meta', { property: 'og:description', content: description }],
     ['meta', { property: 'og:url', content: canonical }],
     ['meta', { property: 'og:locale', content: locale }],
@@ -238,7 +242,7 @@ export function createSeoHead(pageData: SeoPageData): HeadConfig[] {
     ['meta', { property: 'og:image:height', content: '1080' }],
     ['meta', { property: 'og:image:alt', content: imageAlt }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { name: 'twitter:title', content: pageData.title }],
+    ['meta', { name: 'twitter:title', content: title }],
     ['meta', { name: 'twitter:description', content: description }],
     ['meta', { name: 'twitter:image', content: SOCIAL_IMAGE }],
     ['meta', { name: 'twitter:image:alt', content: imageAlt }],
@@ -247,7 +251,7 @@ export function createSeoHead(pageData: SeoPageData): HeadConfig[] {
       { type: 'application/ld+json' },
       safeJson(
         structuredData(
-          pageData,
+          { ...pageData, title },
           canonical,
           description,
           isEnglish,

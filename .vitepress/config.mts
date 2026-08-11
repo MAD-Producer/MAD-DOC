@@ -348,7 +348,6 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', type: 'image/webp', href: '/brand/mad-producer-logo.webp' }],
-    ['meta', { name: 'theme-color', content: '#5b5bd6' }],
-    ['meta', { name: 'keywords', content: 'MAD, AMV, MAD tutorial, AMV history, MAD community, anime music video' }]
+    ['meta', { name: 'theme-color', content: '#5b5bd6' }]
   ]
 })

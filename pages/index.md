@@ -1,5 +1,7 @@
 ---
 layout: home
+title: "MAD·AMV 资料库"
+description: MAD Producer 麦德工坊旗下，从定义、历史到创作工具的中文 MAD·AMV 知识库
 
 hero:
   name: "MAD DOC"
