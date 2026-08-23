@@ -1,4 +1,136 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": "./dist"
+  "outputDirectory": "./dist",
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en",
+      "destination": "/en/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/index.html",
+      "destination": "/en/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools",
+      "destination": "/tools/",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/index.html",
+      "destination": "/tools/",
+      "statusCode": 301
+    },
+    {
+      "source": "/resources",
+      "destination": "/resources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/resources/index.html",
+      "destination": "/resources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tools",
+      "destination": "/en/tools/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tools/index.html",
+      "destination": "/en/tools/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/resources",
+      "destination": "/en/resources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/resources/index.html",
+      "destination": "/en/resources/",
+      "statusCode": 301
+    },
+    {
+      "source": "/history/*.html",
+      "destination": "/history/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/mad/*.html",
+      "destination": "/mad/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/*.html",
+      "destination": "/tools/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/history/*.html",
+      "destination": "/en/history/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/mad/*.html",
+      "destination": "/en/mad/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tools/*.html",
+      "destination": "/en/tools/:splat",
+      "statusCode": 301
+    },
+    {
+      "source": "/history/:slug/",
+      "destination": "/history/:slug",
+      "statusCode": 301
+    },
+    {
+      "source": "/mad/:slug/",
+      "destination": "/mad/:slug",
+      "statusCode": 301
+    },
+    {
+      "source": "/tools/:slug/",
+      "destination": "/tools/:slug",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/history/:slug/",
+      "destination": "/en/history/:slug",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/mad/:slug/",
+      "destination": "/en/mad/:slug",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/tools/:slug/",
+      "destination": "/en/tools/:slug",
+      "statusCode": 301
+    }
+  ],
+  "headers": [
+    {
+      "source": "/*",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
 }

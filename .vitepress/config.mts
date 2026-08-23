@@ -327,6 +327,14 @@ export default defineConfig({
       }
     }
   },
+  transformHead({ page }) {
+    if (page !== '404.md') return
+
+    return [
+      ['meta', { name: 'robots', content: 'noindex, follow' }],
+      ['meta', { name: 'googlebot', content: 'noindex, follow' }]
+    ]
+  },
 
   locales: {
     root: {

@@ -149,7 +149,9 @@ function structuredData(
     graph[1].dateModified = new Date(pageData.lastUpdated).toISOString()
   }
 
-  if (path === '/' || path === '/en/') {
+  // Google only supports WebSite site-name markup on the domain homepage.
+  // The localized /en/ homepage is represented by its WebPage node instead.
+  if (path === '/') {
     graph.splice(1, 0, {
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
