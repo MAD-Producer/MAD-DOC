@@ -135,7 +135,8 @@ const zhThemeConfig: DefaultTheme.Config = {
       items: [
         { text: '三条发展脉络', link: '/history/timeline' },
         { text: '研究与问卷', link: '/history/research' },
-        { text: '中文旧史料存档', link: '/history/history' }
+        { text: '中文旧史料存档', link: '/history/history' },
+        { text: '电脑绘卷专栏摘要', link: '/history/dennouemaki/' }
       ]
     },
     {
@@ -172,6 +173,15 @@ const zhThemeConfig: DefaultTheme.Config = {
           { text: '三条发展脉络', link: '/history/timeline' },
           { text: '研究方法与问卷', link: '/history/research' },
           { text: '山外青山楼外楼（存档）', link: '/history/history' }
+        ]
+      },
+      {
+        text: '电脑绘卷专栏摘要',
+        items: [
+          { text: '概览与文章目录', link: '/history/dennouemaki/' },
+          { text: '起源、语源与十二支团', link: '/history/dennouemaki/origins' },
+          { text: '媒体、流通与视频平台', link: '/history/dennouemaki/media' },
+          { text: '分类、创作观与著作权', link: '/history/dennouemaki/theory' }
         ]
       }
     ],
@@ -232,7 +242,8 @@ const enThemeConfig: DefaultTheme.Config = {
       items: [
         { text: 'Three Historical Threads', link: '/en/history/timeline' },
         { text: 'Research and Survey', link: '/en/history/research' },
-        { text: 'Historical Archive', link: '/en/history/history' }
+        { text: 'Historical Archive', link: '/en/history/history' },
+        { text: 'Dennou Emaki Column Summaries', link: '/en/history/dennouemaki/' }
       ]
     },
     {
@@ -269,6 +280,15 @@ const enThemeConfig: DefaultTheme.Config = {
           { text: 'Three Historical Threads', link: '/en/history/timeline' },
           { text: 'Research Methods and Survey', link: '/en/history/research' },
           { text: 'Beyond the Mountains, Beyond the Towers (Archive)', link: '/en/history/history' }
+        ]
+      },
+      {
+        text: 'Dennou Emaki Column Summaries',
+        items: [
+          { text: 'Overview and Article Index', link: '/en/history/dennouemaki/' },
+          { text: 'Origins, Etymology, and Jūnishidan', link: '/en/history/dennouemaki/origins' },
+          { text: 'Media, Distribution, and Video Platforms', link: '/en/history/dennouemaki/media' },
+          { text: 'Classification, Views on Creativity, and Copyright', link: '/en/history/dennouemaki/theory' }
         ]
       }
     ],

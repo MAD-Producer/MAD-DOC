@@ -34,6 +34,15 @@ This index records original MAD·AMV sources, local summaries of their use, sour
 
 Conclusions in old materials do not automatically become proven facts upon inclusion. The new page is expanded upon with abstracts, levels of evidence, and cross-sources.
 
+## Japanese MAD Blog: Dennou Emaki Seisaku Iinkai
+
+Personal blog of yuu926. MAD DOC covers 14 of the 15 articles in its “Column” category as original thematic summaries (*“Otaku no MAD Video” (Hajiou)* is not summarized). The “MAD Videos” and “How to Make MAD” categories are out of scope.
+
+| Source | Verifiable information | Nature / status |
+| --- | --- | --- |
+| [Dennou Emaki Seisaku Iinkai, “Column” category](https://dennouemaki.blog.jp/archives/cat_250334.html) | MAD genealogy, etymology, Jūnishidan interview, media history, classification theory, views on copyright; see [Dennou Emaki Column Summaries](/en/history/dennouemaki/) | B/C · 🟢 (some videos and PDF attachments 🟡) |
+| [MAD動画の創始者「企画グループ十二支団」（1985年）](https://dennouemaki.blog.jp/2020/04/25/mad%E5%8B%95%E7%94%BB%E3%81%AE%E5%89%B5%E5%A7%8B%E8%80%85%E3%80%8C%E4%BC%81%E7%94%BB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E5%8D%81%E4%BA%8C%E6%94%AF%E5%9B%A3%E3%80%8D%EF%BC%881985%E5%B9%B4%EF%BC%89/) | Interview with Jūnishidan leader tencho: 1984–1989 events, annual videos, attendance figures; see [Origins](/en/history/dennouemaki/origins#junishidan) | B · 🟢 |
+
 ## MAD Producer Contest Articles
 
 As of the verification date, the public interface for MAD Producer's contest category contains **43 articles**. MAD DOC reviewed their titles and rule text individually when preparing the [Contest and Submission Guidelines](/en/mad/contest-rules). Each article records the rules of a particular event; they must not be combined into a single rule set assumed to govern every contest.
