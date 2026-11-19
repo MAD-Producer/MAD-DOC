@@ -112,13 +112,18 @@ description: MAD、AMV 创作、比赛和社区中的常见术语
 - **“官方”**：原作版权方、平台账号、活动主办方、社区管理者是不同主体。
 - **“规则”**：比赛规则只约束该活动，平台规则只约束该平台；它们都不是普遍定义。
 
-## 延伸资料
+## 参考资料
 
 - [ACG Library：常见名词解释](https://acglibrary.com/clarification/dictionary.html)
 - [Wuyi无疑：《MAD的分类》](https://www.bilibili.com/opus/291682438941101836)
 - [AMV Japan：AMVのカテゴリー](https://amv-japan.org/column/amv-categories)
 - [AnimeMusicVideos.org](https://www.animemusicvideos.org/)
-- [AI 辅助创作与 MAID](/tools/ai)
-- [比赛与投稿规范](/mad/contest-rules)
 
 词条增补以“词条、使用年代、使用社区、原始例句链接”为最小证据集；缺少可核验语境的解释不纳入正式定义。
+
+## 相关页面
+
+- [定义与边界](/mad/mad)：MAD、AMV 两个核心词的完整讨论；
+- [分类方法](/mad/classification)：风格与类型标签如何组合使用；
+- [AI 辅助与 MAID](/tools/ai)：AI 相关术语与使用边界；
+- [比赛与投稿规范](/mad/contest-rules)：IC、MEP、三剪等比赛用语的实际规则。

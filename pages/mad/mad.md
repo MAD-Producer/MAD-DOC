@@ -94,4 +94,9 @@ MAD吧的讨论帖《MAD和AMV之间到底是什么关系》也反对“静止 M
 - [AMV Japan：AMVの歴史（第一回）](https://amv-japan.org/column/history-of-amv-01) — 日本 AMV 组织整理的系列历史入口。
 - [ACG Library](https://acglibrary.com/) — 以 MAD吧资料为重要基础的中文专题资料库。
 
-相关条目：[分类方法](/mad/classification) · [术语词典](/mad/glossary) · [比赛与投稿规范](/mad/contest-rules)
+## 相关页面
+
+- [分类方法](/mad/classification)：用五个维度描述一部作品，替代互斥的分类树；
+- [术语词典](/mad/glossary)：创作、比赛和社区中的常用词；
+- [历史时间线](/history/timeline)：日本 MAD、欧美 AMV 与中文社区三条脉络；
+- [旧版 MAD 资料（存档）](/mad/mad-original)：本页早期版本的定义、起源和分类全文。

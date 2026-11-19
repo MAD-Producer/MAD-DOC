@@ -7,11 +7,11 @@ description: Original summaries of the Dennou Emaki blog's articles on MAD cultu
 
 This page summarizes the five more theoretical, opinion-based “Column” articles: two on classification, a short essay on the nature of MAD, a note on copyright, and an essay on generational change in the community. These mainly reflect the author’s personal position and are all rated **C Personal opinion**.
 
-> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and evidence ratings. MAD DOC’s own framework is described in [Classification](/en/mad/classification).
+> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and how reliability is labeled. MAD DOC’s own framework is described in [Classification](/en/mad/classification).
 
 ## The Third MAD: The “New Video” Sphere {#third-mad}
 
-Source: [第三のMAD](https://dennouemaki.blog.jp/2018/11/11/%E7%AC%AC%E4%B8%89%E3%81%AEmad/) (2018-11-11) · Evidence **C**
+Source: [第三のMAD](https://dennouemaki.blog.jp/2018/11/11/%E7%AC%AC%E4%B8%89%E3%81%AEmad/) (2018-11-11) · Reliability: **Personal view**
 
 ### Five Cultural Spheres in Two Branches
 
@@ -37,7 +37,7 @@ The author argues that MAD movies fall into five cultural spheres according to t
 
 ## Classifying MAD {#classification}
 
-Source: [MADの分類](https://dennouemaki.blog.jp/2018/11/11/mad%E3%81%AE%E5%88%86%E9%A1%9E/) (2018-11-11) · Evidence **C**
+Source: [MADの分類](https://dennouemaki.blog.jp/2018/11/11/mad%E3%81%AE%E5%88%86%E9%A1%9E/) (2018-11-11) · Reliability: **Personal view**
 
 The author proposes a three-layer classification: by cultural sphere, by genre, and by editing technique.
 
@@ -126,7 +126,7 @@ The author lists 37 detailed types. The first group is labeled “9 types” in 
 36. Everyday-life MAD
 37. Flash MAD
 
-The author says the attached PDF explains each category and lists reference works that can be seen as starting points (the PDF was hosted on dennouemaki.info; link status 🟡).
+The author says the attached PDF explains each category and lists reference works that can be seen as starting points (the PDF was hosted on dennouemaki.info and no longer opens).
 
 ### Comparison with MAD DOC’s Classification
 
@@ -136,7 +136,7 @@ The author says the attached PDF explains each category and lists reference work
 
 ## Is MAD Derivative Work, Original Work, or Creative Activity? {#is-mad-creative}
 
-Source: [MADは二次か・創作か・クリエイティブか](https://dennouemaki.blog.jp/2018/11/22/mad%E3%81%AF%E4%BA%8C%E6%AC%A1%E3%81%8B%E3%83%BB%E5%89%B5%E4%BD%9C%E3%81%8B%E3%83%BB%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%81%8B/) (2018-11-22) · Evidence **C**
+Source: [MADは二次か・創作か・クリエイティブか](https://dennouemaki.blog.jp/2018/11/22/mad%E3%81%AF%E4%BA%8C%E6%AC%A1%E3%81%8B%E3%83%BB%E5%89%B5%E4%BD%9C%E3%81%8B%E3%83%BB%E3%82%AF%E3%83%AA%E3%82%A8%E3%82%A4%E3%83%86%E3%82%A3%E3%83%96%E3%81%8B/) (2018-11-22) · Reliability: **Personal view**
 
 The author says he has written and deleted this piece many times over several years, knowing the topic is explosive, but still wants readers to understand it correctly.
 
@@ -164,7 +164,7 @@ He sums up his position as follows: MAD, which can never become anything in its 
 
 ## MAD and Copyright Law: What Changes Without the Complaint Requirement? {#copyright}
 
-Source: [MADと著作権法、非親告罪でどう変わるか？](https://dennouemaki.blog.jp/2018/12/15/mad%E3%81%A8%E8%91%97%E4%BD%9C%E6%A8%A9%E6%B3%95/) (2018-12-15) · Evidence **C** (described by the author as a personal memo; legal information reflects the situation in 2018 and is not legal advice)
+Source: [MADと著作権法、非親告罪でどう変わるか？](https://dennouemaki.blog.jp/2018/12/15/mad%E3%81%A8%E8%91%97%E4%BD%9C%E6%A8%A9%E6%B3%95/) (2018-12-15) · Reliability: **Personal view** (described by the author as a personal memo; legal information reflects the situation in 2018 and is not legal advice)
 
 ### Background Concepts
 
@@ -215,7 +215,7 @@ The author lists: the Japanese Wikipedia talk page on non-complaint offenses in 
 
 ## A “Newtype” Theory of MAD {#newtype}
 
-Source: [MADにおけるニュータイプ論](https://dennouemaki.blog.jp/2020/07/25/mad%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E8%AB%96/) (2020-07-25) · Evidence **C** (personal essay with community recollections)
+Source: [MADにおけるニュータイプ論](https://dennouemaki.blog.jp/2020/07/25/mad%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A4%E3%83%97%E8%AB%96/) (2020-07-25) · Reliability: **Personal view** (personal essay with community recollections)
 
 ### 1. What Is a Newtype?
 

@@ -51,7 +51,7 @@ features:
 | --- | --- |
 | **刚接触 MAD·AMV** | [定义与边界](/mad/mad) → [分类方法](/mad/classification) → [术语词典](/mad/glossary) |
 | **准备创作或参赛** | [工具总览](/tools/) → [素材与工程管理](/tools/footage) → [视频基础与编码](/tools/encoding) → [比赛与投稿规范](/mad/contest-rules) |
-| **研究历史与社区** | [历史时间线](/history/timeline) → [电脑绘卷专栏摘要](/history/dennouemaki) → [来源索引](/resources/) → [研究方法与问卷](/history/research) |
+| **研究历史与社区** | [历史时间线](/history/timeline) → [电脑绘卷专栏摘要](/history/dennouemaki) → [中国 MAD 创作者研究](/mad/ccopw) → [来源索引](/resources/) |
 
 ## 收录原则
 
@@ -63,7 +63,7 @@ MAD DOC 不以搬运文章的数量衡量规模，而看资料能否被找到、
 4. **不提供侵权下载**：素材相关页面只讲合法来源与整理方法，不收录盗版资源站。
 5. **记录链接状态**：已失效的贴吧、网盘和旧站链接不会被当作可用资源，而是作为数字保存问题记录在案。
 
-各页面在开头或资料说明中注明核验日期；软件、平台规则和比赛信息以核验日为准，使用前请对照官方最新版本。
+[比赛与投稿规范](/mad/contest-rules)、[AI 辅助与 MAID](/tools/ai)、[来源索引](/resources/)等时效性强的页面在开头注明核验日期。软件版本、平台规则和比赛信息变化很快，使用前请对照官方最新版本。
 
 ## 联系与投稿
 

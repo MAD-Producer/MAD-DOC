@@ -92,7 +92,7 @@ Minimum requirements indicate only basic operation. Evaluate hardware against th
 - Preserve the final master, release encode, subtitles, cover, description, and checksums;
 - Use at least a 3-2-1 backup: three copies, two media types, and one off-site copy.
 
-## Official Documentation
+## References
 
 - [Adobe Premiere technical requirements](https://helpx.adobe.com/premiere/desktop/get-started/technical-requirements/adobe-premiere-pro-technical-requirements.html)
 - [Adobe After Effects system requirements](https://helpx.adobe.com/after-effects/system-requirements.html)
@@ -101,4 +101,10 @@ Minimum requirements indicate only basic operation. Evaluate hardware against th
 - [Blender system requirements](https://www.blender.org/download/requirements/)
 - [FFmpeg documentation](https://ffmpeg.org/documentation.html)
 
-Related entries: [Source Media and Project Management](/en/tools/footage) · [Encoding and Delivery](/en/tools/encoding) · [Software](/en/tools/software) · [Plugins and Scripts](/en/tools/plugins-ai) · [AI-Assisted Creation and MAID](/en/tools/ai)
+## Related Pages
+
+- [Software](/en/tools/software): what each tool does and where to get it;
+- [Source Media and Project Management](/en/tools/footage): sources, folder structure, and long-term storage;
+- [Video Fundamentals and Encoding](/en/tools/encoding): color, frame rate, compression, and delivery checks;
+- [Plugins and Scripts](/en/tools/plugins-ai): choosing plugins, compatibility manifests, and archiving;
+- [AI Assistance and MAID](/en/tools/ai): how AI is used at each stage, and how to disclose it.

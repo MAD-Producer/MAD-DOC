@@ -208,3 +208,10 @@ Compressed archives and email subjects must follow the naming format for the cur
 - [12th Nanjing MAD competition](https://madproducer.com/archives/2537)
 
 This page extracts only shared patterns and points of variation. Contest dates, group numbers, prize money, judges, and delivery channels are time-sensitive; always return to the original column and the organizer’s latest announcement for verification.
+
+## Related Pages
+
+- [Video Fundamentals and Encoding](/en/tools/encoding): resolution, frame rate, bitrate, and delivery checks;
+- [Source Media and Project Management](/en/tools/footage): source records and project archiving, useful when organizers ask about source media;
+- [AI Assistance and MAID](/en/tools/ai): categories of AI use and how to write a disclosure;
+- [Glossary](/en/mad/glossary): contest terms such as IC, MEP, triple-editing, and loops.

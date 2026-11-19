@@ -346,3 +346,10 @@ Wuyi无疑的分类表把 **INS／ig** 作为 Tag，概括为短小、可循环�
 - [AMVNews](https://amvnews.ru/)
 - [ACG Library：常见名词解释](https://acglibrary.com/clarification/dictionary.html)
 - [MAD吧：《怎么制作MAD？》](https://tieba.baidu.com/p/5405972673) — 包含大量作品类型示例；作者后续留言提醒正文存在错误且无法编辑，应配合其他来源阅读。
+
+## 相关页面
+
+- [定义与边界](/mad/mad)：MAD 与 AMV 各指什么、二者是什么关系；
+- [术语词典](/mad/glossary)：分类标签以外的技术与社区用语；
+- [电脑绘卷：分类、创作观与著作权](/history/dennouemaki/theory#classification)：一位日本 MAD 作者自己的 37 项技法分类；
+- [比赛与投稿规范](/mad/contest-rules)：比赛分区与本页分类的对应关系。

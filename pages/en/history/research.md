@@ -111,3 +111,9 @@ notes: conflicting accounts, missing fields, and follow-up verification tasks
 ```
 
 For the existing long-form creator study, see [Creative Class or Precarious Workers: Animation Recreators in China's Video Platform](/en/mad/ccopw). It can identify useful questions, but any new study must independently document its sample, recruitment, period, and ethical procedures.
+
+## Related Pages
+
+- [Chinese MAD Creator Study (Dissertation)](/en/mad/ccopw): a published study based on 69 interviews;
+- [Historical Timeline](/en/history/timeline): what has been documented so far and where the gaps are;
+- [Source Index](/en/resources/): the type and link status of existing sources.

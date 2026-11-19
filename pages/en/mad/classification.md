@@ -346,3 +346,10 @@ Three groups of verifiable evidence support this distinction:
 - [AMVNews](https://amvnews.ru/)
 - [ACG Library: Explanation of Common Terms](https://acglibrary.com/clarification/dictionary.html)
 - [MAD Bar: “How Do You Make MAD?”](https://tieba.baidu.com/p/5405972673) — Contains many examples of work types. The author later noted that the article contains errors that could no longer be edited; it should be read alongside other sources.
+
+## Related Pages
+
+- [Definitions and Scope](/en/mad/mad): what MAD and AMV each mean and how they relate;
+- [Glossary](/en/mad/glossary): technical and community terms beyond classification tags;
+- [Dennou Emaki: Classification, Creativity, and Copyright](/en/history/dennouemaki/theory#classification): a Japanese MAD creator’s own scheme of 37 techniques;
+- [Contest and Submission Guidelines](/en/mad/contest-rules): how contest divisions relate to these dimensions.

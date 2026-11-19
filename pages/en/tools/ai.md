@@ -204,7 +204,7 @@ In its May 15, 2026 special-enforcement announcement, Bilibili stated that all A
 
 These requirements concern **labeling and responsibility for distribution**. They do not mean that permission has been obtained for the original anime, music, character likeness, voice actor’s voice, or training material. Public works must also comply with copyright, personality rights, platform rules, and contest rules.
 
-## Resources and Entry Points
+## References
 
 ### Legacy MAD Producer Columns
 
@@ -233,3 +233,9 @@ These requirements concern **labeling and responsibility for distribution**. The
 - [Bilibili: Special Announcement on “Qinglang: Rectifying Misuse of AI”](https://www.bilibili.com/opus/1202507670848798745)
 - [Supreme People’s Court: Typical Case on Unauthorized AI Use of Another Person’s Voice](https://www.court.gov.cn/zixun/xiangqing/467511.html)
 - [Creative Class or Precarious Workers: Animation Recreators in China's Video Platform](/en/mad/ccopw)
+
+## Related Pages
+
+- [Contest and Submission Guidelines](/en/mad/contest-rules#how-contests-handle-ai-assistance): how contests commonly treat AI assistance;
+- [Plugins and Scripts](/en/tools/plugins-ai): non-generative productivity tools and compatibility management;
+- [Glossary](/en/mad/glossary): MAID and related terms.

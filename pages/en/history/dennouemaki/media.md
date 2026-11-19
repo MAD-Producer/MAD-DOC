@@ -7,11 +7,11 @@ description: Original summaries of the Dennou Emaki blog's articles on MAD media
 
 One of the author’s central arguments is that **the history of MAD is also the history of media**. Each generation of storage and distribution media shaped how MAD was made, how it circulated, and even what the word “MAD” meant. This page summarizes the five “Column” articles that deal with media, platforms, and the publishing environment.
 
-> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and evidence ratings.
+> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and how reliability is labeled.
 
 ## Old Stories of Media and Distribution {#media-history}
 
-Source: [メディアと流通のむかし話](https://dennouemaki.blog.jp/2018/04/21/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%81%A8%E6%B5%81%E9%80%9A%E3%81%AE%E3%82%80%E3%81%8B%E3%81%97%E8%A9%B1/) (2018-04-21) · Evidence **B** (first-hand recollection) / **C** (views on the future)
+Source: [メディアと流通のむかし話](https://dennouemaki.blog.jp/2018/04/21/%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%81%A8%E6%B5%81%E9%80%9A%E3%81%AE%E3%82%80%E3%81%8B%E3%81%97%E8%A9%B1/) (2018-04-21) · Reliability: **Community record** (first-hand recollection) / **Personal view** (views on the future)
 
 The author organizes each era by its main media, editing method, and distribution channels.
 
@@ -63,7 +63,7 @@ The article cites the Japanese Wikipedia entry “MADムービー” and the Nic
 
 ## Video Capture in the Analog Era {#capture}
 
-Source: [ビデオキャプチャという作業（アナログ時代）](https://dennouemaki.blog.jp/2018/12/11/%E3%83%93%E3%83%87%E3%82%AA%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%A8%E3%81%84%E3%81%86%E4%BD%9C%E6%A5%AD%EF%BC%88%E3%82%A2%E3%83%8A%E3%83%AD%E3%82%B0%E6%99%82%E4%BB%A3%EF%BC%89/) (2018-12-11) · Evidence **B** (first-hand recollection)
+Source: [ビデオキャプチャという作業（アナログ時代）](https://dennouemaki.blog.jp/2018/12/11/%E3%83%93%E3%83%87%E3%82%AA%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3%E3%81%A8%E3%81%84%E3%81%86%E4%BD%9C%E6%A5%AD%EF%BC%88%E3%82%A2%E3%83%8A%E3%83%AD%E3%82%B0%E6%99%82%E4%BB%A3%EF%BC%89/) (2018-12-11) · Reliability: **Community record** (first-hand recollection)
 
 - From the arrival of Windows in 1995 until around 2005, VHS was the dominant video medium, and the standard method was analog capture from tape to PC.
 - Hard drives held around 10 GB, which the author puts at roughly one ten-thousandth of today’s capacity. Creators had to hunt through piles of tapes for the scenes they wanted and capture them second by second, which took great patience.
@@ -73,7 +73,7 @@ Source: [ビデオキャプチャという作業（アナログ時代）](https:
 
 ## Niconico Douga as a Medium (2018) {#niconico-2018}
 
-Source: [ニコニコ動画というメディアの話](https://dennouemaki.blog.jp/2018/05/19/%E3%83%8B%E3%82%B3%E3%83%8B%E3%82%B3%E3%81%AE%E8%A9%B1/) (2018-05-19) · Evidence **C** (personal opinion responding to news coverage at the time)
+Source: [ニコニコ動画というメディアの話](https://dennouemaki.blog.jp/2018/05/19/%E3%83%8B%E3%82%B3%E3%83%8B%E3%82%B3%E3%81%AE%E8%A9%B1/) (2018-05-19) · Reliability: **Personal view** (personal opinion responding to news coverage at the time)
 
 - **Context**: On 2018-05-19, several outlets reported on Niconico Douga’s earnings outlook. The figures were broadly as expected, and the author imagines users had mixed feelings.
 - **Voices from the scene**: The author relays a comment from a MAD editor active on Niconico: the site is getting emptier, and MAD itself is losing popularity. The author takes this as a sign that users themselves feel the exodus.
@@ -85,7 +85,7 @@ Source: [ニコニコ動画というメディアの話](https://dennouemaki.blog
 
 ## MAD Media and the Future of Niconico Douga (2020) {#niconico-2020}
 
-Source: [MADのメディアとニコニコ動画のみらい](https://dennouemaki.blog.jp/2020/08/01/mad%E3%81%AE%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%81%A8%E3%83%8B%E3%82%B3%E3%83%8B%E3%82%B3%E5%8B%95%E7%94%BB%E3%81%AE%E3%81%BF%E3%82%89%E3%81%84/) (2020-08-01) · Evidence **C** (personal opinion and business commentary; corporate results and personnel details should be checked against official announcements)
+Source: [MADのメディアとニコニコ動画のみらい](https://dennouemaki.blog.jp/2020/08/01/mad%E3%81%AE%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2%E3%81%A8%E3%83%8B%E3%82%B3%E3%83%8B%E3%82%B3%E5%8B%95%E7%94%BB%E3%81%AE%E3%81%BF%E3%82%89%E3%81%84/) (2020-08-01) · Reliability: **Personal view** (personal opinion and business commentary; corporate results and personnel details should be checked against official announcements)
 
 ### 1. A Ten-Year Cycle in MAD Media
 
@@ -122,7 +122,7 @@ Source: [MADのメディアとニコニコ動画のみらい](https://dennouemak
 
 ## Behind the Scenes of a Niconico Livestream: Audio Notes {#livestream-audio}
 
-Source: [ニコ生配信のウラかた（音声環境備忘録）](https://dennouemaki.blog.jp/2020/04/25/%E3%83%8B%E3%82%B3%E7%94%9F%E9%85%8D%E4%BF%A1%E3%81%AE%E3%82%A6%E3%83%A9%E3%81%8B%E3%81%9F%EF%BC%88%E9%9F%B3%E5%A3%B0%E7%92%B0%E5%A2%83%E5%82%99%E5%BF%98%E9%8C%B2%EF%BC%89/) (2020-04-25) · Evidence **C** (personal experience; software and service details as of 2019–2020)
+Source: [ニコ生配信のウラかた（音声環境備忘録）](https://dennouemaki.blog.jp/2020/04/25/%E3%83%8B%E3%82%B3%E7%94%9F%E9%85%8D%E4%BF%A1%E3%81%AE%E3%82%A6%E3%83%A9%E3%81%8B%E3%81%9F%EF%BC%88%E9%9F%B3%E5%A3%B0%E7%92%B0%E5%A2%83%E5%82%99%E5%BF%98%E9%8C%B2%EF%BC%89/) (2020-04-25) · Reliability: **Personal view** (personal experience; software and service details as of 2019–2020)
 
 The MAD-themed Niconico livestreams the author takes part in (such as the [Jūnishidan specials](./origins#junishidan)) involve several members on a voice call. Describing himself as quiet-voiced and not very articulate, the author experimented repeatedly with equipment and voice services and recorded the following.
 
@@ -175,5 +175,5 @@ The MAD-themed Niconico livestreams the author takes part in (such as the [Jūni
 
 ## Relation to Other MAD DOC Pages
 
-- [Encoding and Delivery](/en/tools/encoding) and [Source Media and Projects](/en/tools/footage) discuss contemporary digital workflows; the analog capture and DVD-R burning accounts on this page serve as historical contrast.
+- [Video Fundamentals and Encoding](/en/tools/encoding) and [Source Media and Project Management](/en/tools/footage) discuss contemporary digital workflows; the analog capture and DVD-R burning accounts on this page serve as historical contrast.
 - The judgments here about Niconico and YouTube are the author’s views from 2018–2020 and should not be read as the current state of those platforms.

@@ -7,11 +7,11 @@ description: Original summaries of the Dennou Emaki blog's articles on the genea
 
 This page summarizes four articles from the “Genealogy of MAD” subcategory of the Dennou Emaki blog. *The Genealogy of MAD* (2018) is the author’s first timeline. In April 2020, after interviewing **tencho**, leader of the group Jūnishidan, the author published three articles that revise and expand it. The two accounts differ, so this page summarizes them in order of publication and ends with a comparison table.
 
-> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and evidence ratings.
+> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and how reliability is labeled.
 
 ## The 2018 Genealogy: From MAD Tape to AI Editing {#lineage-2018}
 
-Source: [MADの系譜](https://dennouemaki.blog.jp/2018/11/10/mad%E3%81%AE%E7%B3%BB%E8%AD%9C/) (2018-11-10) · Evidence **B/C**
+Source: [MADの系譜](https://dennouemaki.blog.jp/2018/11/10/mad%E3%81%AE%E7%B3%BB%E8%AD%9C/) (2018-11-10) · Reliability: **Community record / Personal view**
 
 The author divides MAD history into seven milestones, each marking a shift in technology or distribution.
 
@@ -60,11 +60,11 @@ The author divides MAD history into seven milestones, each marking a shift in te
 - The author half-jokingly predicts that AI editing will free people from the agony of deadlines, that social media will shift to VR, and that VR screening events will begin.
 - He links a 2018 roundup of AI video editing services, noting that some of this already exists.
 
-The article ends with a genealogy chart, “MADの系譜.pdf” (originally hosted on dennouemaki.info; link status 🟡).
+The article ends with a genealogy chart, “MADの系譜.pdf” (originally hosted on dennouemaki.info; it no longer opens).
 
 ## The Etymology of MAD (1978) {#etymology}
 
-Source: [MADの語源（1978年）](https://dennouemaki.blog.jp/2020/04/25/mad%E3%81%AE%E8%AA%9E%E6%BA%90%EF%BC%881978%E5%B9%B4%EF%BC%89/) (2020-04-25) · Evidence **B** (information provided by tencho of Jūnishidan)
+Source: [MADの語源（1978年）](https://dennouemaki.blog.jp/2020/04/25/mad%E3%81%AE%E8%AA%9E%E6%BA%90%EF%BC%881978%E5%B9%B4%EF%BC%89/) (2020-04-25) · Reliability: **Community record** (information provided by tencho of Jūnishidan)
 
 ### What “MAD” Means
 
@@ -83,7 +83,7 @@ Source: [MADの語源（1978年）](https://dennouemaki.blog.jp/2020/04/25/mad%E
 
 ## The Revised Origin Timeline (1973–1985) {#origin-1973}
 
-Source: [MADの起源（1973年）](https://dennouemaki.blog.jp/2020/04/25/mad%E3%81%AE%E8%B5%B7%E6%BA%90%EF%BC%881973%E5%B9%B4%EF%BC%89/) (2020-04-25) · Evidence **B** (tencho’s recollection)
+Source: [MADの起源（1973年）](https://dennouemaki.blog.jp/2020/04/25/mad%E3%81%AE%E8%B5%B7%E6%BA%90%EF%BC%881973%E5%B9%B4%EF%BC%89/) (2020-04-25) · Reliability: **Community record** (tencho’s recollection)
 
 After interviewing tencho, the author reorganized the timeline as follows:
 
@@ -119,7 +119,7 @@ After interviewing tencho, the author reorganized the timeline as follows:
 
 ## Kikaku Group Jūnishidan {#junishidan}
 
-Source: [MAD動画の創始者「企画グループ十二支団」（1985年）](https://dennouemaki.blog.jp/2020/04/25/mad%E5%8B%95%E7%94%BB%E3%81%AE%E5%89%B5%E5%A7%8B%E8%80%85%E3%80%8C%E4%BC%81%E7%94%BB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E5%8D%81%E4%BA%8C%E6%94%AF%E5%9B%A3%E3%80%8D%EF%BC%881985%E5%B9%B4%EF%BC%89/) (2020-04-25) · Evidence **B** (the author’s interview with tencho)
+Source: [MAD動画の創始者「企画グループ十二支団」（1985年）](https://dennouemaki.blog.jp/2020/04/25/mad%E5%8B%95%E7%94%BB%E3%81%AE%E5%89%B5%E5%A7%8B%E8%80%85%E3%80%8C%E4%BC%81%E7%94%BB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E5%8D%81%E4%BA%8C%E6%94%AF%E5%9B%A3%E3%80%8D%EF%BC%881985%E5%B9%B4%EF%BC%89/) (2020-04-25) · Reliability: **Community record** (the author’s interview with tencho)
 
 This is the longest article in the “Column” category. The author states that it is based entirely on a direct interview with tencho, leader of Jūnishidan, and that the linked *Jūnishidan Video* files were copied from the master tapes by tencho himself.
 
@@ -214,5 +214,5 @@ The author’s channel aired two Jūnishidan specials on Niconico Live, on 2019-
 
 ## Relation to Other MAD DOC Pages
 
-- [Three Historical Threads · Japanese MAD](/en/history/timeline#japanese-mad) rates the MAD tape and the origin of the name as `B/C`. This page adds a community account traceable to a named participant (tencho), but it is still a single source and needs cross-checking against contemporary material such as the original *NEW MAD TAPE* notes, event programs, and master tapes.
-- The 1973 radio-show account and the 1985 first-MAD-video account rest mainly on tencho’s recollection and are rated **B**.
+- [Three Historical Threads · Japanese MAD](/en/history/timeline#japanese-mad) labels the MAD tape and the origin of the name “Community record / Unverified”. This page adds a community account traceable to a named participant (tencho), but it is still a single source and needs cross-checking against contemporary material such as the original *NEW MAD TAPE* notes, event programs, and master tapes.
+- The 1973 radio-show account and the 1985 first-MAD-video account rest mainly on tencho’s recollection and are labeled **Community record**.

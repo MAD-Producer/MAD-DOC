@@ -112,13 +112,18 @@ Terminology changes across regions, periods, and event rules. The working defini
 - **“Official”:** A rights holder, platform account, event organizer, and community administrator are different entities.
 - **“Rules”:** Contest rules govern only that event, and platform rules govern only that platform. Neither is a universal definition.
 
-## Further Reading
+## References
 
 - [ACG Library: Explanation of Common Terms](https://acglibrary.com/clarification/dictionary.html)
 - [Wuyi无疑: “Classification of MAD”](https://www.bilibili.com/opus/291682438941101836)
 - [AMV Japan: AMVのカテゴリー](https://amv-japan.org/column/amv-categories)
 - [AnimeMusicVideos.org](https://www.animemusicvideos.org/)
-- [AI-Assisted Creation and MAID](/en/tools/ai)
-- [Contest and Submission Guidelines](/en/mad/contest-rules)
 
 Each glossary addition requires, at minimum, the term, period of use, community of use, and a link to an original example. Explanations without verifiable context are not added as formal definitions.
+
+## Related Pages
+
+- [Definitions and Scope](/en/mad/mad): a full discussion of the two core terms, MAD and AMV;
+- [Classification](/en/mad/classification): how style and type tags combine;
+- [AI Assistance and MAID](/en/tools/ai): AI-related terms and where their limits lie;
+- [Contest and Submission Guidelines](/en/mad/contest-rules): how contest terms such as IC, MEP, and triple-editing work in practice.
