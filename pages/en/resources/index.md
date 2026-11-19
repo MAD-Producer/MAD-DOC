@@ -28,11 +28,11 @@ This index records original MAD·AMV sources, local summaries of their use, sour
 
 | Local Page | Description | Status |
 | --- | --- | --- |
-| [Legacy MAD Resources](/en/mad/mad-original) | The complete pre-revision text, including older definitions, origin accounts, classification material, and Wuyi无疑's article | Preserved in full |
+| [Legacy MAD Resources](/en/mad/mad-original) | The complete text from an earlier version of MAD DOC, including older definitions, origin accounts, classification material, and Wuyi无疑's article | Preserved in full |
 | [Beyond the Mountains, Beyond the Towers (History of MAD)](/en/history/history) | A long-form historical archive with 15 local images, early MAD records, events, and appendices | Preserved in full |
 | [Creative Class or Precarious Workers](/en/mad/ccopw) | The original English dissertation, including interviews, learning paths, employment, and community observations | Preserved in full, with the original PDF |
 
-Conclusions in old materials do not automatically become proven facts upon inclusion. The new page is expanded upon with abstracts, levels of evidence, and cross-sources.
+Conclusions in archived material do not become proven facts merely by being included. The main pages re-examine them using summaries, evidence ratings, and cross-referenced sources.
 
 ## Japanese MAD Blog: Dennou Emaki Seisaku Iinkai
 
@@ -40,7 +40,7 @@ Personal blog of yuu926. MAD DOC covers 14 of the 15 articles in its “Column�
 
 | Source | Verifiable information | Nature / status |
 | --- | --- | --- |
-| [Dennou Emaki Seisaku Iinkai, “Column” category](https://dennouemaki.blog.jp/archives/cat_250334.html) | MAD genealogy, etymology, Jūnishidan interview, media history, classification theory, views on copyright; see [Dennou Emaki Column Summaries](/en/history/dennouemaki/) | B/C · 🟢 (some videos and PDF attachments 🟡) |
+| [Dennou Emaki Seisaku Iinkai, “Column” category](https://dennouemaki.blog.jp/archives/cat_250334.html) | MAD genealogy, etymology, Jūnishidan interview, media history, classification theory, views on copyright; see [Dennou Emaki Column Summaries](/en/history/dennouemaki) | B/C · 🟢 (some videos and PDF attachments 🟡) |
 | [MAD動画の創始者「企画グループ十二支団」（1985年）](https://dennouemaki.blog.jp/2020/04/25/mad%E5%8B%95%E7%94%BB%E3%81%AE%E5%89%B5%E5%A7%8B%E8%80%85%E3%80%8C%E4%BC%81%E7%94%BB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E5%8D%81%E4%BA%8C%E6%94%AF%E5%9B%A3%E3%80%8D%EF%BC%881985%E5%B9%B4%EF%BC%89/) | Interview with Jūnishidan leader tencho: 1984–1989 events, annual videos, attendance figures; see [Origins](/en/history/dennouemaki/origins#junishidan) | B · 🟢 |
 
 ## MAD Producer Contest Articles

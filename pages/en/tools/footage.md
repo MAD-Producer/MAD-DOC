@@ -1,9 +1,11 @@
 ---
-title: Source Media, Encoding, and Project Management
+title: Source Media and Project Management
 description: Lawful sources, technical inspection, proxies, organization, and long-term preservation for MAD·AMV source media
 ---
 
-# Source Media, Encoding, and Project Management
+# Source Media and Project Management
+
+This page covers where source media comes from, what to check and record when adding it to a library, and how to organize and preserve projects. For the principles and details of containers, codecs, color, frame rates, and delivery specifications, see [Video Fundamentals and Encoding](/en/tools/encoding).
 
 ::: tip Scope
 This entry covers lawful sources, media structure, project management, and archiving. It does not list piracy sites, cracked tools, or methods for evading platform copyright identification.

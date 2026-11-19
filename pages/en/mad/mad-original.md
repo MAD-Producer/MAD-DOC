@@ -6,7 +6,7 @@ description: Archived definitions, early-history notes, and Wuyi无疑's MAD cla
 # Legacy MAD Resources (Archive)
 
 ::: warning Archive note
-This is the complete legacy MAD resource page retained before MAD DOC's expansion. It includes Wikipedia-derived definitions, older historical material, and the full classification article by Wuyi无疑. Some definitions, links, and time-sensitive statements may be outdated. For the current editorial treatment, see [Definitions and Scope](/en/mad/mad) and [Classification](/en/mad/classification).
+This page preserves, unedited, the MAD resource page from an earlier version of MAD DOC. It includes Wikipedia-derived definitions, older historical material, and the full classification article by Wuyi无疑. Some definitions, links, and time-sensitive statements may be outdated. For the re-examined treatment, see [Definitions and Scope](/en/mad/mad) and [Classification](/en/mad/classification).
 :::
 
 > English wording in this archive follows the historical English edition published by [MAD Producer](https://madproducer.com/en/mad). The archive preserves the original authors' framing; inclusion does not make every historical claim a current MAD DOC conclusion.

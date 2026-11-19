@@ -58,6 +58,7 @@ Team project delivery must not include paid plugin installers, serial numbers, o
 - [Twixtor Frame Interpolation: Principles and Advanced Techniques](https://www.bilibili.com/opus/82666859045536657)
 - [Complete MAD／AMV Production Troubleshooting Guide](https://www.bilibili.com/video/BV1j4411y7sC/)
 
-## AI Material Is Maintained Separately
+## Related Pages
 
-Generative images and video, character voices, source separation, MAID, platform labeling, and disclosure requirements change rapidly. They are maintained on a separate page: [AI-Assisted Creation and MAID](/en/tools/ai).
+- [Software](/en/tools/software): capabilities and official links for each host application;
+- [AI-Assisted Creation and MAID](/en/tools/ai): generative images and video, character voices, source separation, disclosure, and platform labeling.

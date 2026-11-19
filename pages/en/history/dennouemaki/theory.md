@@ -7,7 +7,7 @@ description: Original summaries of the Dennou Emaki blog's articles on MAD cultu
 
 This page summarizes the five more theoretical, opinion-based “Column” articles: two on classification, a short essay on the nature of MAD, a note on copyright, and an essay on generational change in the community. These mainly reflect the author’s personal position and are all rated **C Personal opinion**.
 
-> See the [Column Summaries overview](./) for the source registration and evidence ratings. MAD DOC’s own framework is described in [Classification](/en/mad/classification).
+> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and evidence ratings. MAD DOC’s own framework is described in [Classification](/en/mad/classification).
 
 ## The Third MAD: The “New Video” Sphere {#third-mad}
 
