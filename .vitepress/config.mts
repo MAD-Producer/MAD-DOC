@@ -82,8 +82,139 @@ const enFooter: DefaultTheme.Footer = {
   copyright: '© 2026 MAD Producer Studio'
 }
 
+const zhSidebar: DefaultTheme.SidebarItem[] = [
+  {
+    text: '认识 MAD·AMV',
+    collapsed: false,
+    items: [
+      { text: '定义与边界', link: '/mad/mad' },
+      { text: '分类方法', link: '/mad/classification' },
+      { text: '术语词典', link: '/mad/glossary' }
+    ]
+  },
+  {
+    text: '历史与研究',
+    collapsed: false,
+    items: [
+      { text: '历史时间线', link: '/history/timeline' },
+      {
+        text: '电脑绘卷专栏摘要',
+        link: '/history/dennouemaki',
+        collapsed: true,
+        items: [
+          { text: '起源、语源与十二支团', link: '/history/dennouemaki/origins' },
+          { text: '媒体、流通与视频平台', link: '/history/dennouemaki/media' },
+          { text: '分类、创作观与著作权', link: '/history/dennouemaki/theory' }
+        ]
+      },
+      { text: '研究方法与问卷', link: '/history/research' }
+    ]
+  },
+  {
+    text: '创作工具',
+    collapsed: false,
+    items: [
+      { text: '工具总览', link: '/tools/' },
+      { text: '软件选择', link: '/tools/software' },
+      { text: '素材与工程管理', link: '/tools/footage' },
+      { text: '视频基础与编码', link: '/tools/encoding' },
+      { text: '插件与脚本', link: '/tools/plugins-ai' },
+      { text: 'AI 辅助与 MAID', link: '/tools/ai' }
+    ]
+  },
+  {
+    text: '比赛',
+    collapsed: false,
+    items: [
+      { text: '比赛与投稿规范', link: '/mad/contest-rules' }
+    ]
+  },
+  {
+    text: '资料与存档',
+    collapsed: true,
+    items: [
+      { text: '来源索引', link: '/resources/' },
+      { text: '旧版 MAD 资料（存档）', link: '/mad/mad-original' },
+      { text: '山外青山楼外楼（存档）', link: '/history/history' },
+      { text: '中国 MAD 创作者研究（论文）', link: '/mad/ccopw' }
+    ]
+  }
+]
+
+const enSidebar: DefaultTheme.SidebarItem[] = [
+  {
+    text: 'About MAD·AMV',
+    collapsed: false,
+    items: [
+      { text: 'Definitions and Scope', link: '/en/mad/mad' },
+      { text: 'Classification', link: '/en/mad/classification' },
+      { text: 'Glossary', link: '/en/mad/glossary' }
+    ]
+  },
+  {
+    text: 'History and Research',
+    collapsed: false,
+    items: [
+      { text: 'Historical Timeline', link: '/en/history/timeline' },
+      {
+        text: 'Dennou Emaki Column Summaries',
+        link: '/en/history/dennouemaki',
+        collapsed: true,
+        items: [
+          { text: 'Origins, Etymology, and Jūnishidan', link: '/en/history/dennouemaki/origins' },
+          { text: 'Media, Distribution, and Platforms', link: '/en/history/dennouemaki/media' },
+          { text: 'Classification, Creativity, and Copyright', link: '/en/history/dennouemaki/theory' }
+        ]
+      },
+      { text: 'Research Methods and Survey', link: '/en/history/research' }
+    ]
+  },
+  {
+    text: 'Creation Tools',
+    collapsed: false,
+    items: [
+      { text: 'Tools Overview', link: '/en/tools/' },
+      { text: 'Software', link: '/en/tools/software' },
+      { text: 'Source Media and Project Management', link: '/en/tools/footage' },
+      { text: 'Video Fundamentals and Encoding', link: '/en/tools/encoding' },
+      { text: 'Plugins and Scripts', link: '/en/tools/plugins-ai' },
+      { text: 'AI Assistance and MAID', link: '/en/tools/ai' }
+    ]
+  },
+  {
+    text: 'Contests',
+    collapsed: false,
+    items: [
+      { text: 'Contest and Submission Guidelines', link: '/en/mad/contest-rules' }
+    ]
+  },
+  {
+    text: 'Resources and Archive',
+    collapsed: true,
+    items: [
+      { text: 'Source Index', link: '/en/resources/' },
+      { text: 'Legacy MAD Resources (Archive)', link: '/en/mad/mad-original' },
+      { text: 'Beyond the Mountains (Archive)', link: '/en/history/history' },
+      { text: 'Chinese MAD Creator Study (Dissertation)', link: '/en/mad/ccopw' }
+    ]
+  }
+]
+
 const zhThemeConfig: DefaultTheme.Config = {
   logo,
+  sidebarMenuLabel: '导航',
+  returnToTopLabel: '返回顶部',
+  darkModeSwitchLabel: '外观',
+  lightModeSwitchTitle: '切换到浅色模式',
+  darkModeSwitchTitle: '切换到深色模式',
+  langMenuLabel: '切换语言',
+  skipToContentLabel: '跳到正文',
+  notFound: {
+    title: '页面不存在',
+    quote: '这个地址没有对应的页面，可能已移动或从未存在。',
+    linkLabel: '返回首页',
+    linkText: '返回首页'
+  },
   outline: {
     level: [2, 3],
     label: '本页目录'
@@ -126,86 +257,56 @@ const zhThemeConfig: DefaultTheme.Config = {
       items: [
         { text: '定义与边界', link: '/mad/mad' },
         { text: '分类方法', link: '/mad/classification' },
-        { text: '术语词典', link: '/mad/glossary' },
-        { text: '比赛与投稿规范', link: '/mad/contest-rules' }
+        { text: '术语词典', link: '/mad/glossary' }
       ]
     },
     {
       text: '历史',
       items: [
-        { text: '三条发展脉络', link: '/history/timeline' },
-        { text: '研究与问卷', link: '/history/research' },
-        { text: '中文旧史料存档', link: '/history/history' },
-        { text: '电脑绘卷专栏摘要', link: '/history/dennouemaki/' }
+        { text: '历史时间线', link: '/history/timeline' },
+        { text: '电脑绘卷专栏摘要', link: '/history/dennouemaki' },
+        { text: '研究方法与问卷', link: '/history/research' }
       ]
     },
     {
-      text: '创作工具',
+      text: '创作',
       items: [
-        { text: '工具总览', link: '/tools/' },
-        { text: '素材与工程', link: '/tools/footage' },
-        { text: '编码与交付', link: '/tools/encoding' },
-        { text: '软件选择', link: '/tools/software' },
-        { text: '插件与脚本', link: '/tools/plugins-ai' },
-        { text: 'AI 辅助与 MAID', link: '/tools/ai' }
+        {
+          text: '工具与工作流',
+          items: [
+            { text: '工具总览', link: '/tools/' },
+            { text: '软件选择', link: '/tools/software' },
+            { text: '插件与脚本', link: '/tools/plugins-ai' },
+            { text: 'AI 辅助与 MAID', link: '/tools/ai' }
+          ]
+        },
+        {
+          text: '素材与交付',
+          items: [
+            { text: '素材与工程管理', link: '/tools/footage' },
+            { text: '视频基础与编码', link: '/tools/encoding' }
+          ]
+        }
       ]
     },
-    { text: '来源索引', link: '/resources/' }
+    { text: '比赛规范', link: '/mad/contest-rules' },
+    {
+      text: '资料',
+      items: [
+        { text: '来源索引', link: '/resources/' },
+        {
+          text: '存档',
+          items: [
+            { text: '旧版 MAD 资料', link: '/mad/mad-original' },
+            { text: '山外青山楼外楼（MAD史）', link: '/history/history' },
+            { text: '中国 MAD 创作者研究', link: '/mad/ccopw' }
+          ]
+        }
+      ]
+    }
   ],
   sidebar: {
-    '/mad/': [
-      {
-        text: '一、认识 MAD·AMV',
-        items: [
-          { text: '定义与边界', link: '/mad/mad' },
-          { text: '分类方法', link: '/mad/classification' },
-          { text: '术语词典', link: '/mad/glossary' },
-          { text: '比赛与投稿规范', link: '/mad/contest-rules' },
-          { text: '创作者现状研究', link: '/mad/ccopw' },
-          { text: '旧版 MAD 资料（存档）', link: '/mad/mad-original' }
-        ]
-      }
-    ],
-    '/history/': [
-      {
-        text: '二、历史与研究',
-        items: [
-          { text: '三条发展脉络', link: '/history/timeline' },
-          { text: '研究方法与问卷', link: '/history/research' },
-          { text: '山外青山楼外楼（存档）', link: '/history/history' }
-        ]
-      },
-      {
-        text: '电脑绘卷专栏摘要',
-        items: [
-          { text: '概览与文章目录', link: '/history/dennouemaki/' },
-          { text: '起源、语源与十二支团', link: '/history/dennouemaki/origins' },
-          { text: '媒体、流通与视频平台', link: '/history/dennouemaki/media' },
-          { text: '分类、创作观与著作权', link: '/history/dennouemaki/theory' }
-        ]
-      }
-    ],
-    '/tools/': [
-      {
-        text: '三、创作工具',
-        items: [
-          { text: '工具总览', link: '/tools/' },
-          { text: '素材与工程', link: '/tools/footage' },
-          { text: '编码与交付', link: '/tools/encoding' },
-          { text: '软件选择', link: '/tools/software' },
-          { text: '插件与脚本', link: '/tools/plugins-ai' },
-          { text: 'AI 辅助与 MAID', link: '/tools/ai' }
-        ]
-      }
-    ],
-    '/resources/': [
-      {
-        text: '资料来源',
-        items: [
-          { text: '来源索引与考证状态', link: '/resources/' }
-        ]
-      }
-    ]
+    '/': zhSidebar
   },
   footer: zhFooter
 }
@@ -233,86 +334,56 @@ const enThemeConfig: DefaultTheme.Config = {
       items: [
         { text: 'Definitions and Scope', link: '/en/mad/mad' },
         { text: 'Classification', link: '/en/mad/classification' },
-        { text: 'Glossary', link: '/en/mad/glossary' },
-        { text: 'Contest and Submission Guidelines', link: '/en/mad/contest-rules' }
+        { text: 'Glossary', link: '/en/mad/glossary' }
       ]
     },
     {
       text: 'History',
       items: [
-        { text: 'Three Historical Threads', link: '/en/history/timeline' },
-        { text: 'Research and Survey', link: '/en/history/research' },
-        { text: 'Historical Archive', link: '/en/history/history' },
-        { text: 'Dennou Emaki Column Summaries', link: '/en/history/dennouemaki/' }
+        { text: 'Historical Timeline', link: '/en/history/timeline' },
+        { text: 'Dennou Emaki Column Summaries', link: '/en/history/dennouemaki' },
+        { text: 'Research Methods and Survey', link: '/en/history/research' }
       ]
     },
     {
-      text: 'Creation Tools',
+      text: 'Create',
       items: [
-        { text: 'Overview', link: '/en/tools/' },
-        { text: 'Source Media and Projects', link: '/en/tools/footage' },
-        { text: 'Encoding and Delivery', link: '/en/tools/encoding' },
-        { text: 'Software', link: '/en/tools/software' },
-        { text: 'Plugins and Scripts', link: '/en/tools/plugins-ai' },
-        { text: 'AI Assistance and MAID', link: '/en/tools/ai' }
+        {
+          text: 'Tools and Workflows',
+          items: [
+            { text: 'Tools Overview', link: '/en/tools/' },
+            { text: 'Software', link: '/en/tools/software' },
+            { text: 'Plugins and Scripts', link: '/en/tools/plugins-ai' },
+            { text: 'AI Assistance and MAID', link: '/en/tools/ai' }
+          ]
+        },
+        {
+          text: 'Source Media and Delivery',
+          items: [
+            { text: 'Source Media and Project Management', link: '/en/tools/footage' },
+            { text: 'Video Fundamentals and Encoding', link: '/en/tools/encoding' }
+          ]
+        }
       ]
     },
-    { text: 'Source Index', link: '/en/resources/' }
+    { text: 'Contests', link: '/en/mad/contest-rules' },
+    {
+      text: 'Resources',
+      items: [
+        { text: 'Source Index', link: '/en/resources/' },
+        {
+          text: 'Archive',
+          items: [
+            { text: 'Legacy MAD Resources', link: '/en/mad/mad-original' },
+            { text: 'Beyond the Mountains (History of MAD)', link: '/en/history/history' },
+            { text: 'Chinese MAD Creator Study', link: '/en/mad/ccopw' }
+          ]
+        }
+      ]
+    }
   ],
   sidebar: {
-    '/en/mad/': [
-      {
-        text: 'I. About MAD·AMV',
-        items: [
-          { text: 'Definitions and Scope', link: '/en/mad/mad' },
-          { text: 'Classification', link: '/en/mad/classification' },
-          { text: 'Glossary', link: '/en/mad/glossary' },
-          { text: 'Contest and Submission Guidelines', link: '/en/mad/contest-rules' },
-          { text: 'Creator Research', link: '/en/mad/ccopw' },
-          { text: 'Legacy MAD Resources (Archive)', link: '/en/mad/mad-original' }
-        ]
-      }
-    ],
-    '/en/history/': [
-      {
-        text: 'II. History and Research',
-        items: [
-          { text: 'Three Historical Threads', link: '/en/history/timeline' },
-          { text: 'Research Methods and Survey', link: '/en/history/research' },
-          { text: 'Beyond the Mountains, Beyond the Towers (Archive)', link: '/en/history/history' }
-        ]
-      },
-      {
-        text: 'Dennou Emaki Column Summaries',
-        items: [
-          { text: 'Overview and Article Index', link: '/en/history/dennouemaki/' },
-          { text: 'Origins, Etymology, and Jūnishidan', link: '/en/history/dennouemaki/origins' },
-          { text: 'Media, Distribution, and Video Platforms', link: '/en/history/dennouemaki/media' },
-          { text: 'Classification, Views on Creativity, and Copyright', link: '/en/history/dennouemaki/theory' }
-        ]
-      }
-    ],
-    '/en/tools/': [
-      {
-        text: 'III. Creation Tools',
-        items: [
-          { text: 'Overview', link: '/en/tools/' },
-          { text: 'Source Media and Projects', link: '/en/tools/footage' },
-          { text: 'Encoding and Delivery', link: '/en/tools/encoding' },
-          { text: 'Software', link: '/en/tools/software' },
-          { text: 'Plugins and Scripts', link: '/en/tools/plugins-ai' },
-          { text: 'AI Assistance and MAID', link: '/en/tools/ai' }
-        ]
-      }
-    ],
-    '/en/resources/': [
-      {
-        text: 'Source Documentation',
-        items: [
-          { text: 'Source Index and Verification Status', link: '/en/resources/' }
-        ]
-      }
-    ]
+    '/en/': enSidebar
   },
   footer: enFooter
 }
@@ -322,10 +393,6 @@ export default defineConfig({
   description: ZH_DESCRIPTION,
   srcDir: 'pages',
   srcExclude: [
-    'advanced/code-highlighting.md',
-    'advanced/custom-theme.md',
-    'advanced/markdown-extensions.md',
-    'history/markdown-examples.md',
     'tools/images/vcb-encoding/README.md'
   ],
   outDir: 'dist',

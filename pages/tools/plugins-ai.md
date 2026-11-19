@@ -58,6 +58,7 @@ fallback_render: 是否已有无插件中间渲染
 - [Twixtor 补帧原理与进阶操作](https://www.bilibili.com/opus/82666859045536657)
 - [MAD／AMV制作疑难杂症全教程](https://www.bilibili.com/video/BV1j4411y7sC/)
 
-## AI 内容已独立整理
+## 相关页面
 
-生成式图像、视频、角色声音、声源分离、MAID、平台标识与披露要求变化频繁，现已移至独立页面：[AI 辅助创作与 MAID](/tools/ai)。
+- [软件选择](/tools/software)：各宿主软件的能力与官方入口；
+- [AI 辅助创作与 MAID](/tools/ai)：生成式图像与视频、角色声音、声源分离、使用披露与平台标识。

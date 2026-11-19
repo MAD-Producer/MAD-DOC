@@ -7,7 +7,7 @@ description: Original summaries of the Dennou Emaki blog's articles on the genea
 
 This page summarizes four articles from the “Genealogy of MAD” subcategory of the Dennou Emaki blog. *The Genealogy of MAD* (2018) is the author’s first timeline. In April 2020, after interviewing **tencho**, leader of the group Jūnishidan, the author published three articles that revise and expand it. The two accounts differ, so this page summarizes them in order of publication and ends with a comparison table.
 
-> See the [Column Summaries overview](./) for the source registration and evidence ratings.
+> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and evidence ratings.
 
 ## The 2018 Genealogy: From MAD Tape to AI Editing {#lineage-2018}
 

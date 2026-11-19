@@ -7,7 +7,7 @@ description: Original summaries of the Dennou Emaki blog's articles on MAD media
 
 One of the author’s central arguments is that **the history of MAD is also the history of media**. Each generation of storage and distribution media shaped how MAD was made, how it circulated, and even what the word “MAD” meant. This page summarizes the five “Column” articles that deal with media, platforms, and the publishing environment.
 
-> See the [Column Summaries overview](./) for the source registration and evidence ratings.
+> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and evidence ratings.
 
 ## Old Stories of Media and Distribution {#media-history}
 
