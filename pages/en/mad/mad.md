@@ -1,102 +1,91 @@
 ---
-title: Definitions and Scope of MAD·AMV
-description: An explanation of MAD, AMV, and their relationship through historical context, source media, and creative methods
+title: What Are MAD and AMV?
+description: Definitions, origins, and differences between MAD and AMV. MAD comes from Japanese fan re-editing culture; AMV means Anime Music Video. The two overlap heavily and cannot be told apart by "still vs. animated" or "effects vs. no effects."
 ---
 
-# Definitions and Scope of MAD·AMV
+# What Are MAD and AMV?
 
-This site primarily discusses the mainland Chinese MAD·AMV community centered on Bilibili as its main platform for publishing, contests, and communication. Materials on Japanese MAD, Western AMV, and style-focused short edits are included to explain origins, terminology, and mutual influences.
-
-::: tip In one sentence
-**MAD** is a broad term that developed from Japanese dōjin remix culture. **AMV** stands for Anime Music Video, a type of work that creates expression through anime footage and music. The two overlap extensively, but they are not synonyms for “static” and “animated” works.
+::: tip Key points
+- **MAD**: a term from Japanese fan culture for new works made by re-editing and compositing existing anime, manga, game, or audio material.
+- **AMV**: Anime Music Video, an unofficial music video made by re-editing anime footage to music. It grew out of Western anime-convention communities.
+- The two overlap heavily; the same work can often be called either. The difference lies in origin and community, not technique.
+- "MAD = still images, AMV = animation" and "effects = MAD" are both misconceptions.
+- Chinese platforms often combine them as "MAD·AMV", which is also the name of a Bilibili category.
 :::
 
-This page expands on and re-examines earlier material. The full earlier discussion of definitions, origins, and classification is preserved in [Legacy MAD Resources (Archive)](/en/mad/mad-original) for comparison.
+## One-Sentence Definitions
+
+**MAD**: fan work that selects, edits, and composites existing footage, sound, or images to create new rhythm, story, emotion, or humor.
+
+**AMV**: an unofficial music video made by re-editing footage from one or more anime to a piece of music.
+
+At the core of both is **reorganizing someone else's material to say something of your own**, not any particular software or visual style.
 
 ## Three Common Misconceptions
 
-| Common claim | More accurate understanding |
+| Misconception | What is actually true |
 | --- | --- |
-| MAD means still images, while AMV means animated editing | Incorrect. MAD can use moving footage, and AMV can make extensive use of compositing, masks, effects, and still images. |
-| A work with effects is MAD; one without effects is AMV | Incorrect. Effects are production techniques, not a boundary between national traditions or work types. |
-| MAD is a fixed acronym for “Music Anime Douga” | Reliable historical evidence for this claim is lacking. Early uses of “MAD” are connected to Japanese MAD tape and audio-collage culture. Later English expansions are generally community interpretations or backronyms. |
+| MAD means still images; AMV means animation | MAD can use animated footage; AMVs can make heavy use of compositing, masking, and still images |
+| Works with effects are MAD; plain edits are AMV | Effects are a production technique and have nothing to do with which name a work goes by |
+| MAD stands for “Music Anime Douga” | There is no reliable evidence for this. “MAD” is generally traced to Japanese audio collage tapes (MAD tapes) from the late 1970s; the English expansion was invented later |
 
-## What Is MAD?
+## Where the Two Words Come From
 
-The scope of “MAD” differs across periods and communities. A practical working definition is:
+- **MAD** is generally traced to audio collage tapes made by students at Osaka University of Arts in the late 1970s: “奇知害低符” in 1976 and *NEW MAD TAPE*, which circulated from 1978. According to a participant's recollection, “MAD” meant that after hearing it, the songs in your head were scrambled. The 1985 parody edit videos of Kindai University's “Jūnishidan” are regarded as the first MAD videos; the form later expanded to games, still images (still-image M@D), and audio MAD. These accounts rest mainly on participants' memories; see [Dennou Emaki: Origins, Etymology, and Jūnishidan](/en/history/dennouemaki/origins).
+- **AMV** comes from the West. The earliest documented work was edited by Jim Kaposztas with two VCRs in 1982. AMV then developed through convention screenings, contests, and sites such as AnimeMusicVideos.org. See the [Historical Timeline](/en/history/timeline).
 
-> A dōjin transformative work in which a creator reselects, edits, and composites existing sound, images, animation, manga, games, or other media to create new rhythm, narrative, emotion, humor, or audiovisual relationships.
+## How the Two Relate
 
-This definition emphasizes **creating new expression by reorganizing source material**, rather than any particular software or visual style. In Japanese usage, MAD may also include audio MAD, oto MAD, game remixes, hand-drawn animation, and still-image M@D. Not all of these fit the narrow idea of “animation set to music.”
+Think of MAD and AMV as **two heavily overlapping circles**:
 
-## What Is an AMV?
+- **By material**: a work that sets anime to music can be called MAD or AMV by its creator.
+- **By origin**: MAD comes from the Japanese fan collage tradition and is broader (including audio, games, and still images); AMV comes from the Western convention tradition and centers on “anime + music.”
+- **In Chinese usage**: Tieba, Bilibili, and contests often say “MAD·AMV.” What you can actually submit depends on the platform category or contest rules.
+- **By creator**: how the creator labels the work, where it premiered, and which contest it entered tell you more than an outsider's judgment of the footage.
 
-AMV stands for **Anime Music Video**. Western AMV communities generally understand it as an unofficial music video made by combining, re-editing, and designing the audiovisual relationship between footage from one or more anime and a piece of music.
+## Editing, Fan Works, and Re-Edits
 
-AMV traditions are closely connected to convention screenings, contests, tape trading, and later online communities. Common criteria include the choice of music and source material, synchronization, pacing, narrative, emotion, technical execution, and overall coherence. An AMV may rely on editing alone or include complex motion graphics, keying, 3D, and compositing.
+| Term | Meaning | Relation to MAD·AMV |
+| --- | --- | --- |
+| Editing | The craft of choosing shots, ordering them, and controlling pace | MAD·AMV uses editing, but editing skill alone is not MAD |
+| Derivative (fan) work | New expression built on an original work | Most MAD·AMV are derivative works |
+| Re-edit of a fan work (“三剪”) | Splicing, re-scoring, or speeding up someone else's finished MAD·AMV and reposting it | Not MAD·AMV creation; Bilibili's category and most contests reject it |
 
-## How Are MAD and AMV Related?
-
-MAD and AMV are best understood as **partially overlapping cultural sets**:
-
-- In terms of source media, a work combining anime and music may be described by its creator as both MAD and AMV.
-- Historically, MAD is more closely associated with Japanese dōjin collage and remix traditions, while AMV is more closely associated with Western anime conventions and Anime Music Videos communities.
-- In Chinese online usage, “MAD·AMV” is often used as a combined platform category or umbrella term, although actual submissions remain subject to platform rules.
-- When identifying a work, its creator’s self-identification, original community, and contest system should be respected. A work should not be classified for its creator solely by whether the images move.
-
-The MAD Bar discussion [“What Exactly Is the Relationship Between MAD and AMV?”](https://tieba.baidu.com/p/4010687722) also rejects the “static MAD / animated AMV” dichotomy and notes that the two overlap extensively in actual practice. It is an influential community perspective, not a universal standard.
-
-## Relationship to “Editing,” “Secondary Creation,” and “Tertiary Creation”
-
-### Editing
-
-Editing is a set of production methods that includes shot selection, ordering, duration control, transitions, sound, and rhythmic design. MAD, AMV, film trailers, and vlogs can all use editing; knowing how to edit does not automatically mean that someone creates MAD.
-
-### Secondary Creation
-
-Secondary creation generally produces new expression from an existing work. Most MAD and AMV fall within this broad category, but whether a work creates sufficiently new expression must be assessed in light of how its sources are used, the purpose of the work, and the applicable legal environment.
-
-### Tertiary Creation
-
-On Chinese platforms, “tertiary creation” often refers to reposting, splicing, speed-changing, replacing the music in, or minimally modifying another creator’s completed MAD/AMV. This differs from creating directly from the original source material and may affect the rights of both the MAD/AMV creator and the underlying rights holders. Bilibili category rules exclude simple re-edits of existing secondary creations from MAD·AMV submissions.
-
-::: warning Rights and permissions
-Crediting the original work, disabling monetization, or stating “for study purposes only” does not automatically grant permission. MAD DOC documents lawful methods for obtaining source material and managing projects; it does not provide pirated sources, cracked software, or methods for evading platform detection.
+::: warning About copyright
+Crediting the original, turning off monetization, or writing “for learning only” does not amount to permission. This site covers lawful ways to obtain source media and manage projects; it does not provide source downloads or cracked software.
 :::
 
-## Differences Between Regional Contexts
+## Regional Usage
 
-| Context | Common usage | What to consider when reading sources |
+| Region | Common terms | Note |
 | --- | --- | --- |
-| Japan | MAD has a broad scope, with distinct traditions such as still-image M@D and audio MAD | The same term may change meaning across periods, websites, and events |
-| Europe and North America | AMV is the prevalent term, with classifications shaped by conventions, contests, and AMV communities | “Raw” and “FX” are community labels, not rankings of value |
-| Mainland China | MAD, AMV, GMV, mixed edits, and other terms coexist; platforms often combine them as “MAD·AMV” | Tieba definitions, Bilibili category definitions, and contest rules may differ |
-| International contests | Organizers define eligible source media, duration, publication windows, and technical specifications | A contest’s rules apply only to that event and should not be generalized into an industry-wide standard |
+| Japan | MAD, used broadly; still-image M@D and audio MAD each have their own traditions | The same word means different things in different eras and sites |
+| West | AMV; contests use categories such as Action, Drama, and Comedy | Raw, FX, and similar labels are community tags, not quality grades |
+| Mainland China | MAD, AMV, GMV, and 混剪 (mixed edits) all in use; platforms say “MAD·AMV” | Tieba usage, Bilibili categories, and contest rules may all differ |
 
 ## How to Describe a Work
 
-Instead of asking whether a work can only be classified as MAD or AMV, record the following fields:
+Rather than arguing whether a work is “really” MAD or AMV, state these five things:
 
-1. **Creator’s own label:** The title, description, tags, and contest category used for the original release.
-2. **Primary source media:** Anime, manga, games, original illustration, live action, or mixed media.
-3. **Expressive purpose:** Action, narrative, emotion, comedy, character development, dance, or experimentation.
-4. **Primary techniques:** Editing, visual-effects compositing, motion graphics, hand-drawn animation, 3D, or audio reconstruction.
-5. **Release context:** An individual upload, collaborative MEP, contest, event promotion, or platform category.
+1. **How the creator labels it**: title, description, tags, contest division;
+2. **What material it uses**: anime, manga, games, live action, original, or mixed;
+3. **What it aims to express**: action, story, emotion, comedy, character, dance, or experiment;
+4. **Main technique**: plain editing, effects compositing, motion graphics, hand-drawn, 3D;
+5. **Where it was released**: personal upload, collaborative MEP, contest, or event.
 
-For a large knowledge base, this multidimensional record is more useful than forcing every work into a single classification tree.
+Tags for each item are listed in [Types and Classification](/en/mad/classification).
 
 ## References
 
-- [Wuyi无疑: “Classification of MAD”](https://www.bilibili.com/opus/291682438941101836) — A detailed classification and tag collection. The author also notes that it favors Western systems and is not exhaustive.
-- [MAD Bar: “What Exactly Is the Relationship Between MAD and AMV?”](https://tieba.baidu.com/p/4010687722) — A representative discussion of the relationship between the terms in the Chinese community.
-- [Bilibili MAD·AMV category definition](https://www.bilibili.com/opus/663304501451554818) — Useful for understanding Bilibili’s submission boundaries, but not a general academic definition.
-- [Ian Roberts: *Genesis of the Digital Anime Music Video Scene, 1990–2001*](https://journal.transformativeworks.org/index.php/twc/article/download/365/293?inline=1) — Research on the early digital history of Western AMV.
-- [AMV Japan: History of AMV (Part 1)](https://amv-japan.org/column/history-of-amv-01) — The entry point to AMV Japan’s series on AMV history.
-- [ACG Library](https://acglibrary.com/) — A Chinese-language reference site built substantially on materials from MAD Bar.
+- [Bilibili MAD·AMV category definition](https://www.bilibili.com/opus/663304501451554818): Bilibili's description of what the category accepts.
+- [MAD Bar: “What Exactly Is the Relationship Between MAD and AMV?”](https://tieba.baidu.com/p/4010687722): a representative Chinese community discussion rejecting the still/animated split.
+- [Wuyi无疑: “Classification of MAD”](https://www.bilibili.com/opus/291682438941101836): the most widely circulated classification and tag list in the Chinese community.
+- [Ian Roberts: *Genesis of the Digital Anime Music Video Scene, 1990–2001*](https://journal.transformativeworks.org/index.php/twc/article/download/365/293?inline=1): academic research on early Western AMV history.
+- [AMV Japan: History of AMV, Part 1](https://amv-japan.org/column/history-of-amv-01): a history series by a Japanese AMV organization.
 
 ## Related Pages
 
-- [Classification](/en/mad/classification): describing a work along five dimensions instead of a single category tree;
+- [Types and Classification](/en/mad/classification): anime-based, still-image, style-focused, and other common types;
 - [Glossary](/en/mad/glossary): common terms in creation, contests, and communities;
-- [Historical Timeline](/en/history/timeline): the Japanese MAD, Western AMV, and Chinese community threads;
-- [Legacy MAD Resources (Archive)](/en/mad/mad-original): the full text of the earlier definitions, origins, and classification.
+- [Historical Timeline](/en/history/timeline): how the Japanese, Western, and Chinese communities developed;
+- [Legacy MAD Resources (Archive)](/en/mad/mad-original): the full text of the site's earlier definitions and classification.

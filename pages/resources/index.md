@@ -1,13 +1,18 @@
 ---
 title: MAD·AMV 来源索引
-description: B站、MAD吧、博客、专题站、论文、国际社区与工具官方文档的本地化目录
+description: MAD·AMV 原始资料索引：B站专栏与视频、MAD吧旧帖、中日博客、学术论文、海外 AMV 社区、AI 工具与法规、软件官方文档，每条附摘要、资料性质与链接状态。
 ---
 
-# 来源索引与考证状态
+# 来源索引
 
-本索引记录 MAD·AMV 相关原始页面、用途摘要、资料性质与链接状态。摘要在站内独立保存，用于说明来源处理的问题、适用范围和后续检索词；外部链接保留原始出处。
+::: tip 要点
+- 收录 MAD·AMV 相关的原始资料 130 余条：B站、MAD吧、博客、论文、海外社区和软件官方文档。
+- 每条都写明**资料性质**（一手资料／社区整理／个人观点）和**链接状态**（🟢 可访问／🟡 部分缺失／🔴 已失效）。
+- 摘要是本站自己写的，原文请点链接查看。
+- 核验日期：**2026-07-25**。贴吧和 B站页面核对了可见正文，其他条目与公开网页、论文和官方文档交叉核对。
+:::
 
-> 核验日期：**2026-07-25**。贴吧与 B站页面已核对可见正文或页面信息；其他条目以公开网页、组织页面、论文和软件官方文档交叉验证。
+**按主题跳转**：[日本 MAD 博客](#dennouemaki) · [比赛专栏](#contests) · [Wuyi无疑](#wuyi) · [B站资料](#bilibili) · [MAD吧](#mad-tieba) · [中文博客与专题站](#blogs) · [AI 与 MAID](#ai) · [日本 MAD 与 AMV 历史](#japan-history) · [欧美与国际](#international) · [软件官方文档](#software)
 
 ## 标签怎么看
 
@@ -42,7 +47,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 
 存档资料中的结论不因收录而自动成为已证实事实。正文页面在此基础上以摘要、可靠程度标签和交叉来源重新考证。
 
-## 日本 MAD 博客：電脳絵巻製作委員会
+## 日本 MAD 博客：電脳絵巻製作委員会 {#dennouemaki}
 
 作者 yuu926 的个人博客。MAD DOC 仅收录其“コラム”分类 15 篇中的 14 篇，按主题写成原创摘要（《『おたくのMADビデオ』（はじおう）》暂不收录）。“MAD動画”和“MADの作り方”两个分类不在收录范围内。
 
@@ -51,7 +56,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | [電脳絵巻製作委員会「コラム」分类](https://dennouemaki.blog.jp/archives/cat_250334.html) | MAD 系谱、语源、十二支团访谈、媒体史、分类论、著作权观点；摘要见[电脑绘卷专栏摘要](/history/dennouemaki) | 社区整理／个人观点 · 🟢 可访问（部分视频与 PDF 附件缺失） |
 | [MAD動画の創始者「企画グループ十二支団」（1985年）](https://dennouemaki.blog.jp/2020/04/25/mad%E5%8B%95%E7%94%BB%E3%81%AE%E5%89%B5%E5%A7%8B%E8%80%85%E3%80%8C%E4%BC%81%E7%94%BB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E5%8D%81%E4%BA%8C%E6%94%AF%E5%9B%A3%E3%80%8D%EF%BC%881985%E5%B9%B4%EF%BC%89/) | 对十二支团团长 tencho 的采访：1984—1989 年活动、历届视频、来场人数；摘要见[起源页](/history/dennouemaki/origins#junishidan) | 社区整理 · 🟢 可访问 |
 
-## MAD Producer 比赛专栏
+## MAD Producer 比赛专栏 {#contests}
 
 截至核验日，MAD Producer 的“比赛”分类公开接口收录 **43 篇**专栏。MAD DOC 已逐篇检索标题和正文规则，用于编写[比赛与投稿规范](/mad/contest-rules)。这些专栏是各届主办方规则的记录，不应拼成对所有赛事自动生效的统一条款。
 
@@ -73,7 +78,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 
 检索中反复出现的项目包括时长、合作方式、评委、未公开、三剪／仿作／抄袭、Logo、Loop、平台审核和编码格式；但同一项目的具体值经常相反。例如有的比赛允许交稿后公开，有的必须等官方合集；有的允许评委参赛并回避自评，有的完全禁止评委参赛。
 
-## Wuyi无疑（Bilibili UID 11869055）
+## Wuyi无疑（Bilibili UID 11869055） {#wuyi}
 
 [作者空间](https://space.bilibili.com/11869055)在核验时显示 7 篇图文与 29 个视频投稿；与当前资料范围直接相关的条目如下：
 
@@ -85,7 +90,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 - 发布：2019-08-26
 - 本地摘要：把作品分为动画、静止和混合三大部分；动画部分包含 Raw、VFX、FX，另汇总 Action、Dance、Drama、Psyche、ASMV、MEP、MG、Lip Sync、Typography 等大量标签。
 - 资料价值：中文互联网覆盖面很广的分类词表，引用了 AMVNews、AKROSS、AMV Japan、AMV France、AnimeMusicVideos.org 等国际来源。
-- 限制：作者明确说明体系偏欧美且不完整；分类、技术、风格和活动形式混在同一层级。MAD DOC 在[分类方法](/mad/classification)中将其改写为五维字段。
+- 限制：作者明确说明体系偏欧美且不完整；分类、技术、风格和活动形式混在同一层级。MAD DOC 在[作品类型与分类](/mad/classification)中将其改写为五维字段。
 
 ### 《2021，你在MAD区看到了什么？2021MAD大事件》
 
@@ -96,7 +101,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 - 本地摘要：以视频形式回顾 2021 年中文 MAD 区事件，适合作为年度记忆入口。
 - 限制：属于作者选取的年度回顾；事件清单仍需与活动公告、作品页和其他当事人交叉核验。
 
-## Bilibili 资料
+## Bilibili 资料 {#bilibili}
 
 | 资料 | 本地摘要 | 性质／状态 |
 | --- | --- | --- |
@@ -135,7 +140,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | [AMV 消除对白／背景音乐旧教程](https://www.bilibili.com/read/cv1972078/) | 2019 年相位抵消流程；作者后来在正文中标明方法已过时，并指出 AI 声源分离工具已替代旧流程，适合作技术转折记录 | 社区整理 · 🟢 可访问 |
 | [Bilibili：整治 AI 应用乱象专项公告](https://www.bilibili.com/opus/1202507670848798745) | 2026-05-15 平台公告：生成合成内容需要标识，投稿端 AI 标识已提升到一级页面；漏标可被补标、打回或下架，虚假配音与换脸误导从严处理 | 一手资料 · 🟢 可访问 |
 
-## MAD吧与中文社区
+## MAD吧与中文社区 {#mad-tieba}
 
 ### 核心导航
 
@@ -187,14 +192,14 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 - 核验时页面显示：建吧日期 **2004-12-06**，简介“用爱来制作原创动漫视频”，约 7.9 万关注、66 万帖子。此前资料中也出现过 12 月 7 日的记录，MAD DOC 暂以当前贴吧页面为准并保留这一日期差异。
 - 关注和帖子数字会变化，只作为 2026-07-25 快照，不用于推断活跃创作者人数。
 
-## 中文博客与专题站
+## 中文博客与专题站 {#blogs}
 
 | 来源 | 本地摘要 | 性质／状态 |
 | --- | --- | --- |
 | [ACG Library](https://acglibrary.com/) | 以 MAD吧资料为重要基础，整理特效图鉴、教程体系、作品赏析、三剪／版权、FAQ、历史和相关链接；部分旧贴吧目标已失效 | 社区整理 · 🟢 可访问 |
 | [ACG Library：新人指南](https://mad-center.github.io/acg-library/docs/tutorial/new_guide) | 旧版完整指南，覆盖 PR、AE、ME、AU、PS、AI、三维软件、工具和练习路径 | 社区整理 · 🟢 可访问 |
 | [ACG Library：静止系 MAD](https://acglibrary.com/tutorial/static.html) | 按概念、鉴赏、构图、调色、文案、素材和制作技巧组织；页面说明大量参考 Wuyi无疑整理成果 | 社区整理 · 🟢 可访问 |
-| [ACG Library：常见名词解释](https://acglibrary.com/clarification/dictionary.html) | 中文社区词典入口，可与 MAD DOC [术语词典](/mad/glossary)对照 | 社区整理 · 🟢 可访问 |
+| [ACG Library：常见名词解释](https://acglibrary.com/clarification/dictionary.html) | 中文社区词典入口，可与 MAD DOC [术语表](/mad/glossary)对照 | 社区整理 · 🟢 可访问 |
 | [MAD Producer：What’s MAD](https://madproducer.com/en/mad) | 英文整理，覆盖日本 MAD、分类和旧史料；观点与 MAD DOC 旧版《MAD片》有同源关系 | 社区整理 · 🟢 可访问 |
 | [文诗的万事屋：《MAD的前世今生》](https://www.inscripoem.com/post/mad-history/) | 2025 年格式重整转载版，声明 CC BY-NC-SA 4.0，包含旧史、分类、作者和注释 | 社区整理 · 🟢 可访问 |
 | [saltedfish：静止系 MAD 收藏](https://blog.saoyu.fun/collections/%E9%9D%99%E6%AD%A2%E7%B3%BBmad/) | 按年份整理个人偏好的静止系作品，可作为作品发现入口，不代表历史全集 | 个人观点 · 🟢 可访问 |
@@ -205,7 +210,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | [Creator Blog：静止画MADの作り方](https://creator-blog.jp/how-to-make-mad-using-still-images/) | 2023 年以 Photoshop／After Effects 说明静态图像分层和动画化的入门流程；具体界面与订阅信息按当前 Adobe 文档核对 | 个人观点 · 🟢 可访问 |
 | [音MADとその周辺](https://otomad.jp/column) | 日本音 MAD 专题文章列表，包含社群史、创作和职业讨论；属于 MAD 的相关分支，不与视频 AMV 混写 | 社区整理 · 🟢 可访问 |
 
-## AI 辅助、MAID 与生成式二创
+## AI 辅助、MAID 与生成式二创 {#ai}
 
 ### MAD Producer 早期资料
 
@@ -238,7 +243,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | [《人工智能生成合成内容标识办法》](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm) | 自 2025-09-01 起施行，覆盖文字、图片、音频、视频和虚拟场景，规定显式／隐式标识及发布者主动声明义务 | 一手资料 · 🟢 可访问 |
 | [最高人民法院：AI 化使用他人声音典型案例](https://www.court.gov.cn/zixun/xiangqing/467511.html) | 最高法发布的典型案例说明，可识别的 AI 合成声音可能落入特定自然人的声音权益保护范围；录音使用许可不当然等于声音 AI 化许可 | 一手资料 · 🟢 可访问 |
 
-## 日本 MAD 与 AMV 历史
+## 日本 MAD 与 AMV 历史 {#japan-history}
 
 | 来源 | 本地摘要 | 性质／状态 |
 | --- | --- | --- |
@@ -252,7 +257,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | [AniPAFE 历届数据](https://anipafe.hatenablog.com/archive/category/%E9%81%8E%E5%8E%BB%E3%83%87%E3%83%BC%E3%82%BF) | 日本 AMV/MAD Festival 的历年规则与结果档案入口，可用于考证分类与活动变化 | 一手资料 · 🟢 可访问 |
 | [中川浩一：「MADムービー」にみる映像制作文化の一考察](https://kusa.repo.nii.ac.jp/record/401/files/kk200813015019.pdf) | 2007 年发表的日本研究文章，从当时的作品与制作环境观察 MAD 影像文化；年代较早，适合与同期页面交叉阅读 | 一手资料 · 🟢 可访问 |
 
-## 欧美与国际 AMV 资料
+## 欧美与国际 AMV 资料 {#international}
 
 | 来源 | 本地摘要 | 性质／状态 |
 | --- | --- | --- |
@@ -267,7 +272,7 @@ description: B站、MAD吧、博客、专题站、论文、国际社区与工具
 | [AMVGuide](https://amvguide.blogspot.com/) | 英文博客式完整流程，覆盖音频、源文件准备、无损／有损编辑、帧服务器、代理、后期与分发；部分 AviSynth 和软件内容具有明显年代特征 | 社区整理 · 🟢 可访问 |
 | [Fanlore：Anime Music Videos](https://fanlore.org/wiki/Anime_music_videos) | 粉丝文化维基，适合寻找术语和参考文献，具体事实需回到原始来源 | 社区整理 · 🟢 可访问 |
 
-## 软件与技术官方文档
+## 软件与技术官方文档 {#software}
 
 | 类别 | 官方来源 |
 | --- | --- |

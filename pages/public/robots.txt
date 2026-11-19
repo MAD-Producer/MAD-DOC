@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://doc.madproducer.top/sitemap.xml
+
+# Machine-readable index of this site for AI agents (https://llmstxt.org)
+# https://doc.madproducer.top/llms.txt

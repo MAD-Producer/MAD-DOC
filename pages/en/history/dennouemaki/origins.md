@@ -1,9 +1,17 @@
 ---
 title: Origins, Etymology, and Jūnishidan (Dennou Emaki Column Summaries)
-description: Original summaries of the Dennou Emaki blog's articles on the genealogy of MAD, the origin of the word "MAD," and Kikaku Group Jūnishidan
+description: Where the word “MAD” came from and what the first MAD video was—summaries of a Japanese MAD blog’s interview with Jūnishidan leader tencho, covering a 1973 radio show, “奇知害低符” (1976), NEW MAD TAPE (1978), and the 1985 “Jūnishidan Video.”
 ---
 
 # Origins, Etymology, and Jūnishidan
+
+::: tip Key points
+- **What “MAD” means**: according to tencho, it comes from the liner notes of *NEW MAD TAPE* (1978): after hearing it, the songs in your head are scrambled and you cannot sing them the original way.
+- **The earliest audio MAD**: “奇知害低符,” made in 1976 by students at Osaka University of Arts.
+- **The first MAD video**: the 1985 “Jūnishidan Video” by Kindai University's Jūnishidan, then called a “parody edit video.”
+- **Two accounts**: in 2018 the author named the 1984 “Etoketto Video”; after the 2020 interview he revised it to the account above. This page keeps both.
+- **Jūnishidan's motto**: the really fun things are the ones you make yourself.
+:::
 
 This page summarizes four articles from the “Genealogy of MAD” subcategory of the Dennou Emaki blog. *The Genealogy of MAD* (2018) is the author’s first timeline. In April 2020, after interviewing **tencho**, leader of the group Jūnishidan, the author published three articles that revise and expand it. The two accounts differ, so this page summarizes them in order of publication and ends with a comparison table.
 
@@ -214,5 +222,5 @@ The author’s channel aired two Jūnishidan specials on Niconico Live, on 2019-
 
 ## Relation to Other MAD DOC Pages
 
-- [Three Historical Threads · Japanese MAD](/en/history/timeline#japanese-mad) labels the MAD tape and the origin of the name “Community record / Unverified”. This page adds a community account traceable to a named participant (tencho), but it is still a single source and needs cross-checking against contemporary material such as the original *NEW MAD TAPE* notes, event programs, and master tapes.
+- [Historical Timeline · Japanese MAD](/en/history/timeline#japanese-mad) labels the MAD tape and the origin of the name “Community record / Unverified”. This page adds a community account traceable to a named participant (tencho), but it is still a single source and needs cross-checking against contemporary material such as the original *NEW MAD TAPE* notes, event programs, and master tapes.
 - The 1973 radio-show account and the 1985 first-MAD-video account rest mainly on tencho’s recollection and are labeled **Community record**.
