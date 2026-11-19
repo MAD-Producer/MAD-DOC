@@ -92,7 +92,7 @@ description: 从素材、剪辑、合成、音频到输出的工具地图与选�
 - 保留最终母版、发布版、字幕、封面、说明和校验值；
 - 至少使用 3-2-1 备份：三份数据、两种介质、一份异地。
 
-## 官方文档入口
+## 参考资料
 
 - [Adobe Premiere 技术要求](https://helpx.adobe.com/premiere/desktop/get-started/technical-requirements/adobe-premiere-pro-technical-requirements.html)
 - [Adobe After Effects 系统要求](https://helpx.adobe.com/after-effects/system-requirements.html)
@@ -101,4 +101,10 @@ description: 从素材、剪辑、合成、音频到输出的工具地图与选�
 - [Blender 系统要求](https://www.blender.org/download/requirements/)
 - [FFmpeg 文档](https://ffmpeg.org/documentation.html)
 
-相关条目：[素材与工程](/tools/footage) · [编码与交付](/tools/encoding) · [软件选择](/tools/software) · [插件与脚本](/tools/plugins-ai) · [AI 辅助创作与 MAID](/tools/ai)
+## 相关页面
+
+- [软件选择](/tools/software)：各环节软件的能力与官方入口；
+- [素材与工程管理](/tools/footage)：素材来源、目录结构和长期保存；
+- [视频基础与编码](/tools/encoding)：色彩、帧率、压缩与交付检查；
+- [插件与脚本](/tools/plugins-ai)：插件选择、兼容性清单与归档；
+- [AI 辅助与 MAID](/tools/ai)：AI 在各环节的用法与披露。

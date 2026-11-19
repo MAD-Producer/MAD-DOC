@@ -51,7 +51,7 @@ features:
 | --- | --- |
 | **New to MAD·AMV** | [Definitions and Scope](/en/mad/mad) → [Classification](/en/mad/classification) → [Glossary](/en/mad/glossary) |
 | **Preparing to create or enter a contest** | [Tools Overview](/en/tools/) → [Source Media and Project Management](/en/tools/footage) → [Video Fundamentals and Encoding](/en/tools/encoding) → [Contest Guidelines](/en/mad/contest-rules) |
-| **Researching history and communities** | [Historical Timeline](/en/history/timeline) → [Dennou Emaki Column Summaries](/en/history/dennouemaki) → [Source Index](/en/resources/) → [Research Methods and Survey](/en/history/research) |
+| **Researching history and communities** | [Historical Timeline](/en/history/timeline) → [Dennou Emaki Column Summaries](/en/history/dennouemaki) → [Chinese MAD Creator Study](/en/mad/ccopw) → [Source Index](/en/resources/) |
 
 ## Collection Principles
 
@@ -63,7 +63,7 @@ MAD DOC measures its value not by the number of articles copied, but by whether 
 4. **No infringing downloads:** Pages on source media explain lawful sources and organization methods. They do not list piracy sites.
 5. **Record link status:** Dead Tieba posts, cloud-drive links, and legacy websites are not presented as usable resources; they are documented as digital-preservation issues.
 
-Each page states its verification date at the top or in its source notes. Software, platform rules, and contest information reflect that date; check the latest official versions before relying on them.
+Time-sensitive pages such as the [Contest and Submission Guidelines](/en/mad/contest-rules), [AI Assistance and MAID](/en/tools/ai), and the [Source Index](/en/resources/) state their verification date at the top. Software versions, platform rules, and contest details change quickly; check the latest official versions before relying on them.
 
 ## Contact and Submissions
 

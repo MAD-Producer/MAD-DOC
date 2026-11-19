@@ -94,4 +94,9 @@ For a large knowledge base, this multidimensional record is more useful than for
 - [AMV Japan: History of AMV (Part 1)](https://amv-japan.org/column/history-of-amv-01) — The entry point to AMV Japan’s series on AMV history.
 - [ACG Library](https://acglibrary.com/) — A Chinese-language reference site built substantially on materials from MAD Bar.
 
-Related entries: [Classification](/en/mad/classification) · [Glossary](/en/mad/glossary) · [Contest and Submission Guidelines](/en/mad/contest-rules)
+## Related Pages
+
+- [Classification](/en/mad/classification): describing a work along five dimensions instead of a single category tree;
+- [Glossary](/en/mad/glossary): common terms in creation, contests, and communities;
+- [Historical Timeline](/en/history/timeline): the Japanese MAD, Western AMV, and Chinese community threads;
+- [Legacy MAD Resources (Archive)](/en/mad/mad-original): the full text of the earlier definitions, origins, and classification.

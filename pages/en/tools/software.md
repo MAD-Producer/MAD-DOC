@@ -121,3 +121,9 @@ Early MAD Bar and Bilibili tutorials may use Premiere CS6, After Effects CS6 or 
 - **Current alternative:** Points to current official documentation.
 
 These labels preserve both community memory and present-day usability.
+
+## Related Pages
+
+- [Tools Overview](/en/tools/): a workflow map that combines tools by production stage;
+- [Plugins and Scripts](/en/tools/plugins-ai): plugins beyond the host software and how to manage compatibility;
+- [Video Fundamentals and Encoding](/en/tools/encoding): the principles behind encoding and diagnostic tools.

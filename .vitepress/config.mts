@@ -107,6 +107,7 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
           { text: '分类、创作观与著作权', link: '/history/dennouemaki/theory' }
         ]
       },
+      { text: '中国 MAD 创作者研究（论文）', link: '/mad/ccopw' },
       { text: '研究方法与问卷', link: '/history/research' }
     ]
   },
@@ -135,8 +136,7 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
     items: [
       { text: '来源索引', link: '/resources/' },
       { text: '旧版 MAD 资料（存档）', link: '/mad/mad-original' },
-      { text: '山外青山楼外楼（存档）', link: '/history/history' },
-      { text: '中国 MAD 创作者研究（论文）', link: '/mad/ccopw' }
+      { text: '山外青山楼外楼（存档）', link: '/history/history' }
     ]
   }
 ]
@@ -166,6 +166,7 @@ const enSidebar: DefaultTheme.SidebarItem[] = [
           { text: 'Classification, Creativity, and Copyright', link: '/en/history/dennouemaki/theory' }
         ]
       },
+      { text: 'Chinese MAD Creator Study (Dissertation)', link: '/en/mad/ccopw' },
       { text: 'Research Methods and Survey', link: '/en/history/research' }
     ]
   },
@@ -194,8 +195,7 @@ const enSidebar: DefaultTheme.SidebarItem[] = [
     items: [
       { text: 'Source Index', link: '/en/resources/' },
       { text: 'Legacy MAD Resources (Archive)', link: '/en/mad/mad-original' },
-      { text: 'Beyond the Mountains (Archive)', link: '/en/history/history' },
-      { text: 'Chinese MAD Creator Study (Dissertation)', link: '/en/mad/ccopw' }
+      { text: 'Beyond the Mountains (Archive)', link: '/en/history/history' }
     ]
   }
 ]
@@ -265,6 +265,7 @@ const zhThemeConfig: DefaultTheme.Config = {
       items: [
         { text: '历史时间线', link: '/history/timeline' },
         { text: '电脑绘卷专栏摘要', link: '/history/dennouemaki' },
+        { text: '中国 MAD 创作者研究（论文）', link: '/mad/ccopw' },
         { text: '研究方法与问卷', link: '/history/research' }
       ]
     },
@@ -298,8 +299,7 @@ const zhThemeConfig: DefaultTheme.Config = {
           text: '存档',
           items: [
             { text: '旧版 MAD 资料', link: '/mad/mad-original' },
-            { text: '山外青山楼外楼（MAD史）', link: '/history/history' },
-            { text: '中国 MAD 创作者研究', link: '/mad/ccopw' }
+            { text: '山外青山楼外楼（MAD史）', link: '/history/history' }
           ]
         }
       ]
@@ -342,6 +342,7 @@ const enThemeConfig: DefaultTheme.Config = {
       items: [
         { text: 'Historical Timeline', link: '/en/history/timeline' },
         { text: 'Dennou Emaki Column Summaries', link: '/en/history/dennouemaki' },
+        { text: 'Chinese MAD Creator Study (Dissertation)', link: '/en/mad/ccopw' },
         { text: 'Research Methods and Survey', link: '/en/history/research' }
       ]
     },
@@ -375,8 +376,7 @@ const enThemeConfig: DefaultTheme.Config = {
           text: 'Archive',
           items: [
             { text: 'Legacy MAD Resources', link: '/en/mad/mad-original' },
-            { text: 'Beyond the Mountains (History of MAD)', link: '/en/history/history' },
-            { text: 'Chinese MAD Creator Study', link: '/en/mad/ccopw' }
+            { text: 'Beyond the Mountains (History of MAD)', link: '/en/history/history' }
           ]
         }
       ]

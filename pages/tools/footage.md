@@ -108,9 +108,9 @@ MAD吧新手导航曾收录 MKV 提取、找图、找原片和 MKVToolNix 使用
 
 MAD DOC 保留其**问题结构和原帖索引**，将仍然适用的通用知识整理为本地条目，并以现行官方文档替代旧下载链接。原始导航见[来源索引](/resources/#mad吧与中文社区)。
 
-编码参数、帧率、色彩信息和交付检查另见[编码、转码与交付](/tools/encoding)。
+编码参数、帧率、色彩信息和交付检查另见[视频基础与编码](/tools/encoding)。
 
-## 工具文档
+## 参考资料
 
 - [MediaInfo](https://mediaarea.net/en/MediaInfo)
 - [MKVToolNix 文档](https://mkvtoolnix.download/doc/mkvtoolnix.html)
@@ -119,3 +119,9 @@ MAD DOC 保留其**问题结构和原帖索引**，将仍然适用的通用知�
 - [VapourSynth 文档](https://www.vapoursynth.com/doc/)
 - [VCB-Studio 教程](https://guides.vcb-s.com/) — 视频基础、常见瑕疵、VapourSynth 与 x264／x265 编码体系。
 - [一般有趣：《AMV中的补帧原理与进阶操作》](https://www.bilibili.com/opus/82666859045536657) — 译文与中文实例；阅读时结合当前插件版本。
+
+## 相关页面
+
+- [视频基础与编码](/tools/encoding)：容器、编码、色彩、帧率与交付规格的原理；
+- [工具总览](/tools/)：素材处理在整个工作流中的位置；
+- [比赛与投稿规范](/mad/contest-rules)：比赛对素材来源与声明的要求。

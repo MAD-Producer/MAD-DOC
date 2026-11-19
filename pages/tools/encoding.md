@@ -10,7 +10,7 @@ description: 面向 MAD·AMV 制作的视频信号、色彩、帧率、压缩、
 本页以 [VCB-Studio 公开教程](https://guides.vcb-s.com/) 的视频基础、瑕疵识别和编码知识为主要技术参考，按 MAD·AMV 制作流程重新组织。VCB-Studio 教程主要面向 BDRip；本页关注的是素材进入剪辑软件后，如何保留原始信息并可靠交付作品。素材来源、入库记录与工程归档见[素材与工程管理](/tools/footage)。
 
 ::: warning 先确认比赛或平台要求
-比赛可能限定分辨率、帧率、容器、编码、码率、文件大小和提交方式。技术上“更高”的规格不一定符合规则。投稿前应以当届主办方原文为准，并参阅本站的[比赛通用规范](/mad/contest-rules)。
+比赛可能限定分辨率、帧率、容器、编码、码率、文件大小和提交方式。技术上“更高”的规格不一定符合规则。投稿前应以当届主办方原文为准，并参阅本站的[比赛与投稿规范](/mad/contest-rules)。
 :::
 
 ## 一、先把几个词分清楚
@@ -796,3 +796,9 @@ ffmpeg -i input.mkv -map 0 -c copy output.mkv
 本页中的 VCB-Studio 教程图像已复制到本站仓库，避免外链失效，并在各图下标明来源。VCB-Studio 公开教程采用 [Creative Commons Attribution-ShareAlike 4.0 International（CC BY-SA 4.0）](https://creativecommons.org/licenses/by-sa/4.0/) 许可；相关图像及本页基于其内容形成的改编部分依该许可署名与共享。
 
 本页不是 VCB-Studio 原教程的镜像，也不代替原教程。需要系统学习 BDRip、VapourSynth、x264／x265 参数和针对性修复时，应阅读原章节并以其最新版本为准。
+
+## 相关页面
+
+- [素材与工程管理](/tools/footage)：素材来源、入库记录与工程归档；
+- [比赛与投稿规范](/mad/contest-rules)：比赛常见的交付规格与交稿包；
+- [工具总览](/tools/)：编码在整个工作流中的位置。

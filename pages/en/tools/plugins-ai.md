@@ -5,6 +5,8 @@ description: Common MAD·AMV plugin categories, compatibility management, licens
 
 # Plugins and Scripts
 
+This page covers how to choose third-party plugins and scripts, how to record their versions, and how to keep projects openable later. For the host applications themselves, see [Software](/en/tools/software); for AI tools, see [AI Assistance and MAID](/en/tools/ai).
+
 ## Plugin Selection Principles
 
 Older tutorials often distribute a “plugin pack,” but this creates unclear licensing, version conflicts, unarchivable dependencies, and project crashes. A more maintainable record is: **problem → native method → optional plugin → compatible versions → fallback**.

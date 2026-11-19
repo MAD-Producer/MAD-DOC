@@ -1,6 +1,6 @@
 ---
 title: Dennou Emaki Column Summaries
-description: Original English summaries, source registration, and evidence ratings for the "Column" articles of the Japanese MAD blog Dennou Emaki Seisaku Iinkai
+description: Original English summaries, source registration, and reliability labels for the "Column" articles of the Japanese MAD blog Dennou Emaki Seisaku Iinkai
 ---
 
 # Dennou Emaki Column Summaries
@@ -9,7 +9,7 @@ description: Original English summaries, source registration, and evidence ratin
 
 MAD DOC summarizes **only the “Column” category**. Its 15 articles cover research into MAD origins, an interview with tencho, leader of the group Kikaku Group Jūnishidan, a history of media from cassette tape to video-sharing sites, a classification theory of MAD, and the author’s views on copyright.
 
-These pages are **original summaries**. The material has been reorganized by theme and paraphrased in an archival voice, and every point is tied to its source article and an evidence rating. No passages, images, or videos from the original are reproduced; quotations are limited to short phrases where necessary. Readers who need the original wording, figures, or embedded videos should consult the source articles.
+These pages are **original summaries**. The material has been reorganized by theme and paraphrased in an archival voice, and every point is tied to its source article and a reliability label. No passages, images, or videos from the original are reproduced; quotations are limited to short phrases where necessary. Readers who need the original wording, figures, or embedded videos should consult the source articles.
 
 > Verified on **2026-11-18**. All 15 articles in the “Column” category were checked. By editorial decision, the article *“Otaku no MAD Video” (Hajiou)* is not summarized; only its title and link are listed. The “MAD Videos” and “How to Make MAD” categories are outside the scope of these pages.
 
@@ -27,7 +27,7 @@ platform: Blog (livedoor Blog, dennouemaki.blog.jp; earlier posts migrated from 
 | Author | A creator active in the Japanese MAD videotape scene since the late 1990s; best known for the *Dennou Emaki* series (*Shin Dennou Emaki*, 2002; *Shin Dennou Emaki 2.0*, 2016; *Shin Dennou Emaki:\|\|*, 2018) |
 | Subcategories | Genealogy of MAD (7), Analog Editing Era (2), Copyright (2), MAD Production Activities (4) |
 | Nature of material | A mix of **first-hand interview** (Jūnishidan leader tencho), **personal recollection** (VHS/DVD circulation, screening events), and **personal opinion** (platform commentary, legal interpretation, views on creativity) |
-| Evidence rating | Interview and first-hand recollection are treated as **B Community record**; the author’s commentary, predictions, and value judgments are treated as **C Personal opinion** |
+| Reliability | Each source is labeled for reliability: interviews and first-hand recollection are marked **Community record** (a useful lead that needs cross-checking); the author’s commentary, predictions, and value judgments are marked **Personal view** |
 | Language | Japanese |
 | Link status | 🟢 Article text accessible; 🟡 some embedded Niconico videos, images, and PDF attachments on the old dennouemaki.info domain no longer load |
 
@@ -63,7 +63,12 @@ Dates follow the publication time shown on the blog (JST).
 
 ## Notes on Use
 
-- The summaries follow the author’s account faithfully and **do not represent MAD DOC’s final conclusions on these events**. Where they conflict with other sources in [Three Historical Threads](/en/history/timeline), evidence ratings and cross-verification take precedence.
+- The summaries follow the author’s account faithfully and **do not represent MAD DOC’s final conclusions on these events**. Where they conflict with other sources in [Three Historical Threads](/en/history/timeline), reliability labels and cross-verification take precedence.
 - The blog gives two different origin accounts. The 2018 article names the 1984 “Etoketto Video” as the first MAD video. After interviewing tencho in 2020, the author revised this: the 1984 “Bisuketto Video” became a transitional work, and the 1985 “Jūnishidan Video” the first recognized MAD video. The summaries keep both accounts and explain the revision rather than merging them.
 - Personal names, handles, and group names are kept in their original form; work titles are given with an English rendering on first mention.
 - Legal content reflects the author’s personal understanding in 2018 and is not legal advice.
+
+## Related Pages
+
+- [Historical Timeline](/en/history/timeline): these summaries in the context of the Japanese MAD, Western AMV, and Chinese threads;
+- [Source Index](/en/resources/#japanese-mad-blog-dennou-emaki-seisaku-iinkai): this blog’s entry in the source index.

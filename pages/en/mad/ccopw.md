@@ -7,7 +7,7 @@ description: The authorized English dissertation on animation recreators and cre
 # Creative Class or Precarious Workers: Animation Recreators in China's Video Platform
 
 ::: warning About this archive
-This page reproduces the dissertation's original English text for the English edition of MAD DOC. The wording and terminology are the author's own; only PDF pagination and Markdown heading levels have been adapted for web reading. The research is based on 69 semi-structured interviews and fieldwork, and its sample, period, and interpretations should not be generalized to the entire MAD·AMV community without qualification. See [Research Methods and Survey Design](/en/history/research) for the site's later research framework.
+This page reproduces the dissertation's original English text for the English edition of MAD DOC. The wording and terminology are the author's own; only PDF pagination and Markdown heading levels have been adapted for web reading. The research is based on 69 semi-structured interviews and fieldwork, and its sample, period, and interpretations should not be generalized to the entire MAD·AMV community without qualification. See [Research Methods and Survey](/en/history/research) for the site's later research framework.
 :::
 
 > **Original author:** [CHEN, Huaisong](https://space.bilibili.com/31268435)  

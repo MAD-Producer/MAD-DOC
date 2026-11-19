@@ -108,9 +108,9 @@ MAD Bar’s newcomer navigation once listed posts on MKV extraction, image searc
 
 MAD DOC preserves their **problem structure and original-post index**, localizes generally applicable knowledge, and replaces old download links with current official documentation. See the original navigation in the [Source Index](/en/resources/#mad-tieba-and-the-chinese-community).
 
-For encoding parameters, frame rate, color information, and delivery checks, see [Encoding and Delivery](/en/tools/encoding).
+For encoding parameters, frame rate, color information, and delivery checks, see [Video Fundamentals and Encoding](/en/tools/encoding).
 
-## Tool Documentation
+## References
 
 - [MediaInfo](https://mediaarea.net/en/MediaInfo)
 - [MKVToolNix documentation](https://mkvtoolnix.download/doc/mkvtoolnix.html)
@@ -119,3 +119,9 @@ For encoding parameters, frame rate, color information, and delivery checks, see
 - [VapourSynth documentation](https://www.vapoursynth.com/doc/)
 - [VCB-Studio guides](https://guides.vcb-s.com/) — Video fundamentals, common defects, VapourSynth, and x264/x265 encoding.
 - [一般有趣: “Frame Interpolation in AMV: Principles and Advanced Techniques”](https://www.bilibili.com/opus/82666859045536657) — A translation with Chinese examples; read it alongside documentation for the current plugin version.
+
+## Related Pages
+
+- [Video Fundamentals and Encoding](/en/tools/encoding): the principles behind containers, codecs, color, frame rate, and delivery specs;
+- [Tools Overview](/en/tools/): where source handling fits in the overall workflow;
+- [Contest and Submission Guidelines](/en/mad/contest-rules): what contests require about source media and disclosure.

@@ -1,80 +1,80 @@
 ---
 title: Video Fundamentals, Encoding, and Delivery
-description: Video signals, color, frame rates, compression, containers, defect identification, and delivery checks for MAD·AMV production
+description: Video signals, color, frame rate, compression, containers, defect identification, and delivery checks for MAD·AMV production
 ---
 
 # Video Fundamentals, Encoding, and Delivery
 
-Encoding is not merely the last step in an export window. It is part of a complete technical chain that begins when source media is decoded and continues through color conversion, scaling, compositing, frame-rate processing, audio processing, compression, and final muxing. A mistaken interpretation at any stage can cause color shifts, banding, combing, audio drift, or unnecessary generation loss.
+Encoding is not just the last step in an export dialog. It is a technical chain that starts when source media is read and runs through decoding, color conversion, scaling, compositing, frame-rate handling, audio processing, and final muxing. A misinterpretation at any point can cause color shifts, banding, combing, audio drift, or generation loss.
 
-This page uses the video fundamentals, defect-identification, and encoding material in the [public VCB-Studio guides](https://guides.vcb-s.com/) as its primary technical reference, reorganized around a MAD·AMV production workflow. The VCB-Studio guides mainly address BDRip production; this page instead focuses on preserving source information after media enters an editing application and on delivering a reliable final work. Source acquisition, library records, and project archiving are covered in [Source Media and Project Management](/en/tools/footage).
+This page draws mainly on the video fundamentals, defect identification, and encoding material in the [public VCB-Studio guides](https://guides.vcb-s.com/), reorganized around a MAD·AMV production workflow. The VCB-Studio guides are written mainly for BDRip production; this page focuses on how to preserve the original information once source media enters an editing application, and how to deliver a finished work reliably. For where source media comes from, intake records, and project archiving, see [Source Media and Project Management](/en/tools/footage).
 
-::: warning Confirm contest or platform requirements first
-Contests may restrict resolution, frame rate, container, codec, bitrate, file size, and submission method. A technically "higher" specification does not necessarily satisfy the rules. Before submitting, follow the current organizer's original rules and consult the site's [Contest and Submission Guidelines](/en/mad/contest-rules).
+::: warning Check contest or platform requirements first
+Contests may specify resolution, frame rate, container, codec, bitrate, file size, and delivery method. A technically “higher” specification does not necessarily comply with the rules. Before submitting, follow the organizer's text for the current edition and see the site's [Contest and Submission Guidelines](/en/mad/contest-rules).
 :::
 
-## 1. Distinguish the Basic Terms
+## 1. Getting the Basic Terms Straight
 
-### Files, Containers and Tracks
+### Files, Containers, and Tracks
 
-A common video file consists of three layers:
+A typical video file has three layers:
 
-| Hierarchy | Meaning | Example |
+| Layer | Meaning | Examples |
 | --- | --- | --- |
-| File | Object stored on disk | `work.mkv`, `master.mov` |
-| Container | A format for organizing multiple pieces of media data and meta-information | Matroska/MKV, MP4, MOV |
-| Track or stream | Independent media data inside the container | Video, audio, subtitles, chapters, attachments |
+| File | The object stored on disk | `work.mkv`, `master.mov` |
+| Container | A format that holds several media streams plus metadata | Matroska/MKV, MP4, MOV |
+| Track or stream | An independent piece of media inside the container | Video, audio, subtitles, chapters, attachments |
 
-A filename extension usually identifies the container, not the video codec. Two `.mp4` files may contain AVC, HEVC, or AV1 video and may also use different audio codecs.
+A file extension usually tells you only the container, not the video codec. Two `.mp4` files can contain AVC, HEVC, or AV1 video, and different audio codecs as well.
 
-![Hierarchical structure of Matroska files](./images/vcb-encoding/mkv-structure.png)
+![Structure of a Matroska file](./images/vcb-encoding/mkv-structure.png)
 
-*Figure: Basic structure of Matroska file. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: Basic structure of a Matroska file. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-### Codec, Encoder, and Decoder
+### Codecs, Encoders, and Decoders
 
-- A **codec specification** defines how compressed data is organized, as in AVC/H.264, HEVC/H.265, or AV1.
-- An **encoder** is software or hardware that implements a codec specification. For example, x264 is an AVC encoder and x265 is a HEVC encoder.
-- A **decoder** restores a compressed stream to pictures or audio that can be displayed or processed further.
-- **A codec specification is not an encoder implementation.** `H.264` and `x264`, or `H.265` and `x265`, name different layers of the system.
+- A **codec** (coding standard) defines how compressed data is organized, for example AVC/H.264, HEVC/H.265, or AV1.
+- An **encoder** is software or hardware that implements a coding standard. x264 is an AVC encoder; x265 is an HEVC encoder.
+- A **decoder** turns the compressed bitstream back into images and sound that can be displayed or processed further.
+- **A standard is not the same as an encoder.** `H.264` and `x264`, or `H.265` and `x265`, are names at different levels.
 
 ### Demuxing, Muxing, Remuxing, and Transcoding
 
-| Operation | Whether to recompress | Description |
+| Operation | Recompresses? | Description |
 | --- | --- | --- |
-| Demux | No | Extract video, audio, subtitle, or other tracks from a container |
-| Mux | No | Place independent tracks and metadata into a container |
-| Remux | Usually no | Preserve the encoded tracks while changing the container or track organization |
-| Transcode／Transcoding | Yes | Re-encode with another set of encoding settings after decoding |
-| Re-encode／re-encoding | Yes | Even if the encoding standard remains unchanged, re-compression will produce a new generation of encoding results |
+| Demux | No | Extracts video, audio, subtitle, and other tracks from a container |
+| Mux | No | Packs independent tracks and metadata into a container |
+| Remux | Usually no | Keeps the track contents and changes only the container or track layout |
+| Transcode | Yes | Decodes and encodes again with different settings |
+| Re-encode | Yes | Any recompression produces a new generation, even with the same coding standard |
 
-Remuxing cannot repair image defects already present in an encoded stream. Conversely, if only the container is unsupported by the editing application, a lossy transcode may be unnecessary.
+Remuxing cannot repair quality problems already present in the bitstream. Conversely, if the only problem is that an editor does not support the container, there is no need for a lossy transcode first.
 
 ### Lossless, Lossy, and Generation Loss
 
-- **Lossless encoding** can recover sample-by-sample consistent data from the compression result, but it does not mean that the file is unprocessed.
-- **Lossy encoding** actively discards some information in exchange for higher compression rates.
-- **Visually lossless** is just "difficult to observe the difference" under certain viewing conditions, not mathematical losslessness.
-- **Generation loss** is the error accumulated when lossy media is repeatedly decoded, processed, and re-encoded.
+- **Lossless coding** lets you recover data identical sample for sample. It does not mean the file has never been processed.
+- **Lossy coding** deliberately discards some information to achieve higher compression.
+- **Visually lossless** means differences are hard to see under particular viewing conditions; it is not mathematically lossless.
+- **Generation loss** is the error that accumulates each time lossy media is decoded, processed, and encoded again.
 
-In MAD·AMV production, source media should undergo only the processing that is necessary. Generate platform-specific releases from a high-quality master instead of reusing a platform-downloaded copy as a new source.
+In MAD·AMV production, keep processing of the original source to what is necessary, and generate each platform's upload from a high-quality master. Avoid re-editing from a copy downloaded from a platform.
 
 ## 2. Inspect Source Media Instead of Guessing
 
-### Recommended checking tools
+### Recommended Tools
 
-- [MediaInfo](https://mediaarea.net/MediaInfo): Quickly view container, track and encoding parameters;
-- [ffprobe](https://ffmpeg.org/ffprobe.html): Read stream, timestamp, frame rate and color metadata;
-- A player or preview tool that supports frame-by-frame viewing, switching field order and displaying frame numbers;
-- Material properties, sequence properties and color management panels of editing software.
+- [MediaInfo](https://mediaarea.net/MediaInfo): a quick view of the container, tracks, and encoding parameters;
+- [ffprobe](https://ffmpeg.org/ffprobe.html): reads streams, timestamps, frame rate, and color metadata;
+- A player or preview tool that can step frame by frame, switch field order, and show frame numbers;
+- The clip properties, sequence settings, and color management panels of your editing software.
 
-Basic check commands:
+A basic inspection command:
 
 ```bash
 ffprobe -v error -show_format -show_streams -of json input.mkv
 ```
 
-Check only the common fields of the first video stream:
+To check only the most useful fields of the first video stream:
 
 ```bash
 ffprobe -v error -select_streams v:0 \
@@ -82,198 +82,198 @@ ffprobe -v error -select_streams v:0 \
   -of default=noprint_wrappers=1 input.mkv
 ```
 
-::: tip command can only read existing information
-Metadata may be missing or mislabeled. Inspection results must be cross-validated with source specifications, actual footage, frame sequences and software interpretation methods.
+::: tip Commands only read what is already recorded
+Metadata can be missing or wrong. Always check the results against the source's published specifications, the actual picture, the frame sequence, and how your software interprets the file.
 :::
 
 ### Video Source Checklist
 
-| Item | What to confirm | Consequences of incorrect interpretation |
+| Item | What to confirm | What goes wrong if misread |
 | --- | --- | --- |
-| Containers and tracks | Video, audio, subtitles, chapters, attachments | Missing tracks, wrong default tracks, missing subtitle fonts |
-| Codec and profile | codec, profile, level/tier | Decode failure or hardware incompatibility |
-| Screen size | Encoding size, display size, cropping, rotation | Stretching, black borders, wrong orientation |
-| Pixel aspect ratio | SAR, DAR | Wrong proportions of characters and graphics |
-| Pixel format | RGB/YUV, 4:4:4/4:2:2/4:2:0, bit depth, Alpha | Color fringing, gradient break, transparent edge errors |
-| Frame rate | Exact fraction, CFR/VFR, time base | Repeated frames, dropped frames, audio and video drift |
-| Scan mode | Progressive, interlaced, field order, telecine | Combing, judder, or repeated fields |
-| Color metadata | primaries, transfer, matrix, range | color cast, gray-black, dead black, highlight cutoff |
-| HDR information | PQ/HLG, static or dynamic metadata | Display too dark, too bright, wrong colors |
-| Audio | Encoding, sample rate, bit depth, channel layout, delay | Pitch shifting, channel misalignment, out of sync |
+| Container and tracks | Video, audio, subtitles, chapters, attachments | Missing tracks, wrong default track, missing subtitle fonts |
+| Codec and profile | Codec, profile, level/tier | Cannot decode, hardware compatibility problems |
+| Frame size | Coded size, display size, cropping, rotation | Stretching, black bars, wrong orientation |
+| Pixel aspect ratio | SAR, DAR | Characters and graphics in the wrong proportions |
+| Pixel format | RGB/YUV, 4:4:4/4:2:2/4:2:0, bit depth, alpha | Color fringing, banding in gradients, bad transparent edges |
+| Frame rate | Exact fraction, CFR/VFR, time base | Duplicated or dropped frames, audio drift |
+| Scan type | Progressive, interlaced, field order, telecine | Combing, judder, repeated fields |
+| Color metadata | Primaries, transfer, matrix, range | Color casts, washed-out or crushed blacks, clipped highlights |
+| HDR information | PQ/HLG, static or dynamic metadata | Picture too dark or too bright, wrong colors |
+| Audio | Codec, sample rate, bit depth, channel layout, delay | Pitch shift, swapped channels, loss of sync |
 
-## 3. Frame Dimensions, Pixels, and Sampling
+## 3. Frame Size, Pixels, and Sampling
 
-### Resolution, display ratio and pixel aspect ratio
+### Resolution, Display Aspect Ratio, and Pixel Aspect Ratio
 
-- **Resolution** is the number of samples horizontally and vertically, such as `1920 × 1080`.
-- **SAR (Sample Aspect Ratio)** describes the aspect ratio of a single sample. Square pixels are typically `1:1`.
-- **DAR (Display Aspect Ratio)** is the final display aspect ratio.
-- The relationship is approximately: `DAR = frame aspect ratio × SAR`.
+- **Resolution** is the number of samples across and down the frame, for example `1920 × 1080`.
+- **SAR (Sample Aspect Ratio)** describes the shape of a single sample. Square pixels are usually `1:1`.
+- **DAR (Display Aspect Ratio)** is the final displayed shape of the frame.
+- Roughly: `DAR = frame width ÷ height × SAR`.
 
-Older format, DVD, or broadcast material may use non-square pixels. Just look at `720 × 480` and other encoding sizes and scale them directly, you may get the wrong ratio.
+Older broadcast standards, DVDs, and broadcast sources may use non-square pixels. Scaling directly from a coded size such as `720 × 480` can produce the wrong proportions.
 
-### RGB, YUV and YCbCr
+### RGB, YUV, and YCbCr
 
-RGB records red, green, and blue components respectively, and is suitable for display, graphics, and composition. Video encoding often uses digital YCbCr: Y′ records the brightness-related components processed by the transfer function, and Cb and Cr record color difference signals. Daily software interfaces often refer to YCbCr as YUV, but the two are not exactly the same in strict definition.
+RGB stores red, green, and blue components and suits display, graphics, and compositing. Video coding usually uses digital YCbCr: Y′ carries a luma component that has passed through a transfer function, and Cb and Cr carry color-difference signals. Software interfaces often call YCbCr “YUV,” but the two are not strictly the same.
 
-The human eye is generally more sensitive to luminance detail than chroma detail, so videos can be downsampled to save data.
+Human vision is generally more sensitive to detail in brightness than in color, so video can sample color at lower resolution to save data.
 
-![Visual example of using sparse color points to form comprehensive colors](./images/vcb-encoding/yuv-perception.png)
+![Visual example of sparse color dots forming an overall color](./images/vcb-encoding/yuv-perception.png)
 
-*Figure: Example of color assimilation illustrating the difference in perception of luminance and chrominance information. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: A color assimilation example showing how differently we perceive luma and chroma. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
 ### Chroma Subsampling
 
-`4:4:4`, `4:2:2` and `4:2:0` describe the sampling ratio of brightness and chroma in a certain pixel area, not the "image quality percentage".
+`4:4:4`, `4:2:2`, and `4:2:0` describe how many luma and chroma samples are taken within a block of pixels. They are not “quality percentages.”
 
-![4:4:4, 4:2:2, 4:2:0 chroma sampling](./images/vcb-encoding/chroma-subsampling.svg)
+![4:4:4, 4:2:2, and 4:2:0 chroma subsampling](./images/vcb-encoding/chroma-subsampling.svg)
 
-*Figure: Common chroma sampling structures. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: Common chroma subsampling patterns. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-| Format | Characteristics | Common uses in MAD·AMV |
+| Format | Characteristics | Typical use in MAD·AMV |
 | --- | --- | --- |
-| 4:4:4 | Each luma sample has a corresponding chroma sample | Graphics, text, keying, synthesis intermediate files |
-| 4:2:2 | Reduce chroma sampling in the horizontal direction | Professional collection and production of intermediate formats |
-| 4:2:0 | Chroma downsampling in both landscape and portrait orientation | BD, web video and common distribution files |
+| 4:4:4 | Every luma sample has a matching chroma sample | Graphics, text, keying, compositing intermediates |
+| 4:2:2 | Chroma halved horizontally | Professional capture, production intermediates |
+| 4:2:0 | Chroma halved both horizontally and vertically | BD, web video, and most delivery files |
 
-"4:2:0" also refers to the chroma location/chroma sampling location. Different standards have different conventions on where the chroma samples are located on the pixel grid; incorrect interpretation can result in a chroma shift of about half a pixel.
+4:2:0 also involves **chroma location**. Different standards place chroma samples at different positions relative to the pixel grid; reading it wrongly can shift color by about half a pixel.
 
-![Different chroma sampling methods and sampling locations](./images/vcb-encoding/chroma-patterns.svg)
+![Chroma subsampling patterns and sample locations](./images/vcb-encoding/chroma-patterns.svg)
 
-*Figure: Illustration of chroma sampling and sampling position. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: Chroma subsampling and sample locations. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-![Luminance sample grid](./images/vcb-encoding/sample-grid.png)
+![Luma sample grid](./images/vcb-encoding/sample-grid.png)
 
-![Chroma Sample Grid](./images/vcb-encoding/sample-grid-cbcr.png)
+![Chroma sample grid](./images/vcb-encoding/sample-grid-cbcr.png)
 
-*Figure: Luminance and chroma sampling grid. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: Luma and chroma sample grids. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-### Bit Depth, Quantization, and Dithering
+### Bit Depth, Quantization, and Dither
 
-The bit depth determines the number of discrete series that can be represented by a single component:
+Bit depth determines how many discrete levels each component can represent:
 
-- 8-bit: Maximum `2⁸ = 256` encoding values per component;
-- 10-bit: Maximum `2¹⁰ = 1024` encoding values per component;
-- 12-bit: Maximum `2¹² = 4096` encoded values per component.
+- 8-bit: up to `2⁸ = 256` code values per component;
+- 10-bit: up to `2¹⁰ = 1024` code values per component;
+- 12-bit: up to `2¹² = 4096` code values per component.
 
-Increasing bit depth will not restore lost detail out of thin air, but it will reduce rounding errors in grading, gradients, blurs, glows, and multiple compositing. When converting from high bit depth to low bit depth, **dither/dither** can be used to convert regular quantization steps into less conspicuous subtle noise.
+A higher bit depth cannot bring back detail that has already been lost, but it reduces rounding errors during grading, gradients, blurs, glows, and repeated compositing. When converting from a higher to a lower bit depth, **dither** turns regular quantization steps into faint, less visible noise.
 
-Examples of common pixel format names:
+Common pixel format names:
 
 | Name | Meaning |
 | --- | --- |
 | `yuv420p` | 8-bit planar YUV 4:2:0 |
-| `yuv420p10le` | 10-bit, little endian, planar YUV 4:2:0 |
+| `yuv420p10le` | 10-bit, little-endian, planar YUV 4:2:0 |
 | `yuv422p10le` | 10-bit planar YUV 4:2:2 |
 | `yuv444p10le` | 10-bit planar YUV 4:4:4 |
-| `gbrp`／`gbrp10le` | Planar RGB, 8-bit／10-bit |
-| `rgba` | Packed RGB with Alpha |
+| `gbrp` / `gbrp10le` | Planar RGB, 8-bit / 10-bit |
+| `rgba` | Packed RGB with alpha |
 
-### Alpha Channel
+### Alpha Channels
 
-Alpha records transparency. It is necessary to distinguish during synthesis:
+Alpha stores transparency. In compositing, you must distinguish between:
 
-- **Straight／Unmatted Alpha**: RGB saves the color without multiplied transparency;
-- **Premultiplied/Matted Alpha**: RGB multiplied by Alpha.
+- **Straight (unmatted) alpha**: RGB holds color that has not been multiplied by alpha;
+- **Premultiplied (matted) alpha**: RGB has already been multiplied by alpha.
 
-Incorrect interpretation can produce black edges, white edges, or color contamination on transparent edges. H.264/HEVC files for publishing generally do not assume transparency intermediate file responsibilities; transparent compositing should select an intermediate format or image sequence that explicitly supports Alpha.
+Interpreting alpha the wrong way produces dark or light fringes or color contamination at transparent edges. Delivery files in H.264/HEVC are generally not meant to carry transparency; for transparent compositing, use an intermediate format or image sequence that explicitly supports alpha.
 
 ## 4. Color Management
 
 ### Human Vision, CIE, and Color Gamut
 
-Color primaries are not "numbers of colors", but three sets of primary color coordinates and white points that define a codable color gamut. The figure below shows the relative responses of the three types of cone cells in the human eye to different wavelengths.
+Color primaries are not a “number of colors.” They are three primary coordinates plus a white point that together define the gamut a signal can encode. The figure below shows the relative response of the three types of cone cells in the human eye to different wavelengths.
 
-![Human cone response curve](./images/vcb-encoding/cone-response.svg)
+![Human cone response curves](./images/vcb-encoding/cone-response.svg)
 
-*Figure: Normalized response spectrum of human cones. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: Normalized spectral response of human cones. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-The CIE xy chromaticity diagram projects visible colors onto a two-dimensional plane. The RGB primaries in the standard form a triangle in the diagram, and inside the triangle is the range of colors that can be represented by that set of primaries.
+The CIE xy chromaticity diagram projects visible colors onto a two-dimensional plane. A standard's RGB primaries form a triangle on the diagram; the area inside is the range of colors those primaries can represent.
 
 ![CIE xy chromaticity diagram](./images/vcb-encoding/cie-xy.svg)
 
-*Figure: CIE xy chromaticity diagram. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: CIE xy chromaticity diagram. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-### Four Fields That Determine Video Color
+### Four Properties That Determine Video Color
 
-| Project | What to decide | Typical signs of incorrect marking |
+| Property | What it determines | Typical symptom when mislabeled |
 | --- | --- | --- |
-| Color primaries／Color primary colors | RGB primary color coordinates and white point, that is, color gamut | Hue and saturation errors of saturated colors |
-| Transfer characteristics | Relationship between linear light and encoded values | Midtones, shading, and HDR brightness errors |
-| Matrix coefficients／Matrix coefficients | Conversion relationship between RGB and Y′CbCr | Overall color cast, skin tone and highly saturated colors are obviously abnormal |
-| Color range／Color range | The valid range corresponding to the digital encoding value | Gray, dead black, overexposed or truncated details |
+| Color primaries | The RGB primary coordinates and white point, i.e. the gamut | Wrong hue and saturation in saturated colors |
+| Transfer characteristics | The relationship between linear light and code values | Wrong midtones, contrast, and HDR brightness |
+| Matrix coefficients | The conversion between RGB and Y′CbCr | An overall color cast, with skin tones and saturated colors clearly off |
+| Color range | Which code values count as the valid range | Washed-out or crushed blacks, blown highlights, clipped detail |
 
-These four items are independent of each other. You can't just write "Rec.709" and ignore whether it is a primary color, transfer property, or matrix, and you can't force override metadata based on resolution alone.
+These four properties are independent. Writing just “Rec.709” without saying whether it refers to the primaries, the transfer, or the matrix is not enough, and you should not override metadata based on resolution alone.
 
-### Rec.601, Rec.709 and Rec.2020
+### Rec.601, Rec.709, and Rec.2020
 
-![Rec.601 color gamut](./images/vcb-encoding/rec601.svg)
+![Rec.601 gamut](./images/vcb-encoding/rec601.svg)
 
-*Figure: Rec.601 Chromaticity Diagram. *
+*Figure: Rec.601 chromaticity diagram.*
 
-![Rec.709 color gamut](./images/vcb-encoding/rec709.svg)
+![Rec.709 gamut](./images/vcb-encoding/rec709.svg)
 
-*Figure: Rec.709 chromaticity diagram. *
+*Figure: Rec.709 chromaticity diagram.*
 
-![Rec.2020 color gamut](./images/vcb-encoding/rec2020.svg)
+![Rec.2020 gamut](./images/vcb-encoding/rec2020.svg)
 
-*Figure: Rec.2020 chromaticity diagram. Source of the three pictures: VCB-Studio "Understanding Video from Scratch". *
+*Figure: Rec.2020 chromaticity diagram. All three figures: VCB-Studio, “Understanding Video from Scratch.”*
 
-- **Rec.601** is common in SD digital video, but NTSC and PAL systems still need to be further distinguished;
-- **Rec.709** is the most common standard combination used in HD SDR production and delivery;
-- **Rec.2020** defines the wider color gamut primary colors used by the UHD system, and the actual content may not necessarily use the boundaries;
-- **sRGB** and Rec.709 use the same primary colors and D65 white point, but the transfer function and usage scenarios cannot simply be regarded as exactly the same;
-- **Display P3／DCI-P3** is not an alias for Rec.2020 either.
+- **Rec.601** is common in SD digital video, but NTSC and PAL systems still need to be distinguished;
+- **Rec.709** is the most common combination for HD SDR production and delivery;
+- **Rec.2020** defines wider-gamut primaries for UHD; actual content does not necessarily reach the edges;
+- **sRGB** uses the same primaries and D65 white point as Rec.709, but its transfer function and intended use are not simply identical;
+- **Display P3 / DCI-P3** is not another name for Rec.2020 either.
 
-### Transfer, Gamma, PQ and HLG
+### Transfer, Gamma, PQ, and HLG
 
-Transfer characteristics are used to map linear optical signals into nonlinear coded values suitable for recording and transmission. Traditional SDR is often colloquially referred to as Gamma; HDR is commonly referred to as:
+A transfer function maps linear light to nonlinear code values suited to recording and transmission. For traditional SDR this is often loosely called gamma. Common HDR transfers are:
 
-- **PQ／ST 2084**: based on absolute display brightness;
-- **HLG**: Relative system for broadcast compatibility.
+- **PQ / ST 2084**: based on absolute display luminance;
+- **HLG**: a relative system designed for broadcast compatibility.
 
-Converting HDR to SDR is not just about changing the label, it requires color gamut mapping and tone mapping. Conversely, marking an SDR file as HDR will not produce true HDR.
+Converting HDR to SDR is not just a matter of changing a label; it requires gamut mapping and tone mapping. Likewise, tagging an SDR file as HDR does not make it real HDR.
 
-### Full range and Limited range
+### Full Range and Limited Range
 
-Take the common Y′CbCr as an example:
+For typical Y′CbCr:
 
-| Bit Depth | Limited Y′ | Limited Cb／Cr | Full |
+| Bit depth | Limited Y′ | Limited Cb/Cr | Full |
 | --- | --- | --- | --- |
 | 8-bit | 16–235 | 16–240 | 0–255 |
 | 10-bit | 64–940 | 64–960 | 0–1023 |
 
-Headroom/footroom may still be reserved outside the Limited range. Processing should not be performed without justification at each step, nor should label changes be mistaken for numerical conversions.
+Limited-range signals may still carry headroom and footroom beyond the nominal range. Do not clip at every step without reason, and do not mistake changing a tag for converting the values.
 
-A clear distinction needs to be made between:
+Keep three operations clearly apart:
 
-1. **Modify tag**: only change how the player interprets existing values;
-2. **Conversion range**: actual remapped pixel value;
-3. **Cutting range**: Truncate out-of-bounds values to the boundary.
+1. **Changing the tag**: only changes how players interpret the existing values;
+2. **Converting the range**: actually remaps pixel values;
+3. **Clipping the range**: truncates out-of-range values to the limit.
 
-One wrong conversion can make the image look gray; repeated conversions or incorrect cropping can permanently lose shadows and highlights.
+One wrong conversion can make the picture look washed out; repeated conversions or wrong clipping can permanently lose shadow and highlight detail.
 
-### Color management in projects
+### Color Management in a Project
 
-MAD·AMV projects should be fixed and documented:
+A MAD·AMV project should fix and record:
 
-- working color space;
-- Timeline bit depth or floating point precision;
-- Material input transformation;
-- Monitor and preview links;
-- Output color space and color metadata;
-- Whether to use OCIO, ACES or the software’s own color management;
-- sRGB/ICC interpretation of screenshots, graphics and PNG assets.
+- The working color space;
+- Timeline bit depth or floating-point precision;
+- Input transforms for each source;
+- The monitor and preview chain;
+- The output color space and color metadata;
+- Whether OCIO, ACES, or the application's own color management is used;
+- How screenshots, graphics, and PNG assets are interpreted (sRGB/ICC).
 
-"Looking the same" must be based on the same display conditions and the same color management chain. System players, browsers, editing software and platform transcoding results may use different color management.
+“It looks the same” only means something under the same viewing conditions and the same color management chain. System players, browsers, editing software, and platform transcodes may all manage color differently.
 
 ## 5. Frames, Fields, Timestamps, and Motion Cadence
 
-### Frame Rate Is Not an Approximate Integer
+### Frame Rate Is Not a Rounded Integer
 
-Common frame rates should keep exact scores:
+Keep common frame rates as exact fractions:
 
-| Commonly used writing methods | Accurate value |
+| Common shorthand | Exact value |
 | --- | --- |
 | 23.976 | `24000/1001` |
 | 24 | `24/1` |
@@ -282,517 +282,523 @@ Common frame rates should keep exact scores:
 | 59.94 | `60000/1001` |
 | 60 | `60/1` |
 
-`23.976` and `24`, `29.97` and `30` will produce visible time differences after long-term accumulation. Audio sync, subtitle times and match time limits should all be checked against real timestamps.
+Over a long duration, `23.976` versus `24` and `29.97` versus `30` add up to a visible difference in length. Check audio sync, subtitle timing, and contest time limits against the real timestamps.
 
-### CFR, VFR, time base and timestamp
+### CFR, VFR, Time Base, and Timestamps
 
-- **CFR (Constant Frame Rate)**: Adjacent frames use a uniform display interval;
-- **VFR (Variable Frame Rate)**: The display interval of different frames can be changed;
-- **time base／time base**: the smallest unit of measurement used in timestamps;
-- **PTS**: The time a frame should be presented;
-- **DTS**: The time a frame should enter the decoder.
+- **CFR (constant frame rate)**: every frame is displayed for the same interval;
+- **VFR (variable frame rate)**: display intervals can differ from frame to frame;
+- **Time base**: the smallest unit in which timestamps are counted;
+- **PTS**: when a frame should be presented;
+- **DTS**: when a frame should enter the decoder.
 
-Since B frames refer to future pictures, the display order and decoding order may be different, so PTS and DTS are not necessarily consistent.
+Because B-frames reference later pictures, display order and decode order can differ, so PTS and DTS do not always match.
 
-Neither `r_frame_rate`, `avg_frame_rate`, or "total frames ÷ duration" alone can prove that footage is CFR. Before mobile phone screen recording, screen recording, and Internet downloaded materials enter the editing software, you should check the actual timestamp and do a synchronization test.
+Neither `r_frame_rate`, `avg_frame_rate`, nor “total frames ÷ duration” alone proves that footage is CFR. Before phone recordings, screen captures, and downloaded clips go into your editor, check their actual timestamps and run a sync test.
 
-### Progressive and interlaced
+### Progressive and Interlaced
 
-- **Progressive／Progressive**: Each frame contains a complete picture at the same time;
-- **Interlaced／interlaced**: One frame consists of two fields with different times;
-- **TFF／Top Field First**：The field is displayed first;
-- **BFF／Bottom Field First**: The bottom field is displayed first.
+- **Progressive**: each frame holds a complete picture from one moment;
+- **Interlaced**: each frame is made of two fields captured at different moments;
+- **TFF (top field first)**: the top field is displayed first;
+- **BFF (bottom field first)**: the bottom field is displayed first.
 
-![Progressive vs. Interlaced](./images/vcb-encoding/progressive-vs-interlaced.jpg)
+![Progressive and interlaced scanning](./images/vcb-encoding/progressive-vs-interlaced.jpg)
 
-*Figure: Schematic of progressive and interlaced scanning. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: Progressive and interlaced scanning. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-Scaling, rotating, or sharpening interlaced footage as if it were progressive footage solidifies the field structure into imperfections that are harder to repair. The processing sequence should usually be to first determine the field structure, then do correct field matching, deinterlacing or degeling, and then enter the line-by-line editing process.
+Scaling, rotating, or sharpening interlaced footage as if it were progressive bakes the field structure into defects that are much harder to fix. The usual order is to identify the field structure first, apply the correct field matching, deinterlacing, or inverse telecine, and only then move into a progressive editing workflow.
 
-### Telecine, field matching and IVTC
+### Telecine, Field Matching, and IVTC
 
-Film and television animations are often produced at close to 24 fps, and then converted to an interlaced system of about 29.97 fps through 3:2 pulldown and other methods. **IVTC (Inverse Telecine)** attempts to restore the original progressive frame sequence; it is different from ordinary deinterlacing.
+Film and TV animation is often produced at close to 24 fps and then converted to an interlaced system of about 29.97 fps using 3:2 pulldown or similar methods. **IVTC (inverse telecine)** tries to recover the original progressive frame sequence; it is not the same as ordinary deinterlacing.
 
-![3:2 pulldown signal](./images/vcb-encoding/23-pulldown.png)
+![3:2 pulldown](./images/vcb-encoding/23-pulldown.png)
 
-*Figure: Field assignment for 3:2 pulldown. Source: VCB-Studio "Elementary 30 fps Processing". *
+*Figure: How fields are distributed in 3:2 pulldown. Source: VCB-Studio, “Basic 30 fps Processing.”*
 
-Actual animation may be mixed:
+Real anime sources may mix:
 
-- 24p: progressive approximately 24 fps content;
-- 30p: progressive approximately 30 fps content;
-- 30i: approximately 59.94 temporally distinct fields per second;
-- 24t: obtained from 24p via the rule telecine;
-- 24d: insert repeated frames in ~30 fps sequence;
-- Mixed frame rates, duplicate fields, bad fields and post-superimposed subtitles.
+- 24p: progressive content at about 24 fps;
+- 30p: progressive content at about 30 fps;
+- 30i: about 59.94 fields per second, each from a different moment;
+- 24t: 24p converted by regular telecine;
+- 24d: duplicate frames inserted into a roughly 30 fps sequence;
+- Mixed frame rates, repeated fields, bad fields, and subtitles added in post.
 
-![Field phase shift example](./images/vcb-encoding/field-phase-shift.jpg)
+![Field phase shift](./images/vcb-encoding/field-phase-shift.jpg)
 
-*Figure: Field phase misalignment. Source: VCB-Studio "Elementary 30 fps Processing". *
+*Figure: Field phase shift. Source: VCB-Studio, “Basic 30 fps Processing.”*
 
-You can't mechanically "de-duplicate" the entire footage or flatten it to 60 fps. The real movement rhythm should be confirmed segment by segment before processing. Different rhythms may also be used for camera cuts, camera pulls, subtitles and special effects layers.
+Do not mechanically “remove duplicate frames” from an entire clip or interpolate everything to 60 fps. Confirm the real motion cadence section by section before processing; cuts, pans, subtitles, and effects layers may each use a different cadence.
 
-### Animation Exposure and Video Frame Rate
+### Animation Timing and Video Frame Rate
 
-"One shot for one, two shots for one, three shots for one" in the animation describes how many exposure frames the drawn image maintains, which is not equal to the container frame rate. A 23.976 fps file can display multiple consecutive frames of the same drawing; these repetitions may be a creative rhythm, rather than redundant frames that must be deleted.
+Animating “on ones, twos, or threes” describes how many frames each drawing is held for; it is not the container frame rate. A 23.976 fps file can show the same drawing for several consecutive frames. Those repeats may be the intended rhythm of the animation, not redundant frames to delete.
 
-Frame-filling creates an intermediate image that does not exist in the original work. Occlusions, fast cuts, flashes, particles, text, and anamorphic lenses are particularly prone to distortion and are not lossless frame rate conversions.
+Interpolation creates in-between images that do not exist in the original. Occlusion, fast cuts, flashes, particles, text, and deforming shots are especially prone to warping. It is not a lossless frame-rate conversion.
 
 ## 6. How Video Compression Works
 
-### Intra-frame compression: transformation, quantization and entropy coding
+### Intra-Frame Compression: Transform, Quantization, and Entropy Coding
 
-The encoder usually divides the picture into blocks, transforms the spatial domain signal into the frequency domain, and then quantizes the coefficients. Smooth changes are concentrated in low frequencies, and fine lines, textures, and noise contain more high-frequency information.
+Encoders usually divide the picture into blocks, transform the spatial signal into the frequency domain, and then quantize the coefficients. Smooth changes sit in the low frequencies; fine lines, texture, and noise carry more high-frequency information.
 
-![DCT basis function](./images/vcb-encoding/dct-basis.png)
+![DCT basis functions](./images/vcb-encoding/dct-basis.png)
 
-*Figure: 8 × 8 DCT basis functions. Source: VCB-Studio "Video Encoder Basics". *
+*Figure: 8 × 8 DCT basis functions. Source: VCB-Studio, “Video Encoder Fundamentals.”*
 
-![DCT coefficient example](./images/vcb-encoding/dct-coefficients.png)
+![Example DCT coefficients](./images/vcb-encoding/dct-coefficients.png)
 
-*Figure: Example of DCT coefficients after image block conversion. Source: VCB-Studio "Video Encoder Basics". *
+*Figure: DCT coefficients of an image block after transformation. Source: VCB-Studio, “Video Encoder Fundamentals.”*
 
-**Quantization** will reduce the accuracy of the coefficients and is the main information loss link in common lossy coding. The stronger the quantization, the more high-frequency details are erased; entropy coding is then used to losslessly compress the remaining data.
+**Quantization** reduces coefficient precision and is the main point of information loss in typical lossy coding. The stronger the quantization, the more high-frequency detail disappears. The remaining data is then compressed losslessly with entropy coding.
 
-![Quantization table example](./images/vcb-encoding/quantization-table.png)
+![Example quantization table](./images/vcb-encoding/quantization-table.png)
 
-*Picture: Quantitative representation. Source: VCB-Studio "Video Encoder Basics". *
+*Figure: A quantization table. Source: VCB-Studio, “Video Encoder Fundamentals.”*
 
-### Interframe compression: prediction and motion compensation
+### Inter-Frame Compression: Prediction and Motion Compensation
 
-Consecutive frames of video are usually highly similar. Instead of saving the complete image every frame, the encoder searches for similar regions in the reference frame and records motion vectors and prediction residuals.
+Consecutive video frames are usually very similar. Instead of storing a full picture for every frame, the encoder searches reference frames for similar regions and records motion vectors and the prediction residual.
 
-| Frame type | Basic function |
+| Frame type | Basic role |
 | --- | --- |
-| I frame | Only uses the internal information encoding of the current frame and can be used as the basis for random access |
-| P-frame | Prediction using previous reference frame |
-| B frame | Can use front and rear reference frames for bidirectional prediction |
+| I-frame | Coded using only information within the frame; a basis for random access |
+| P-frame | Predicted from earlier reference frames |
+| B-frame | Can be predicted from both earlier and later reference frames |
 
-![Reference relationship between I, P, and B frames](./images/vcb-encoding/ipb-frames.svg)
+![References between I-, P-, and B-frames](./images/vcb-encoding/ipb-frames.svg)
 
-*Figure: Basic reference relationship of I/P/B frames. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: Basic reference relationships between I-, P-, and B-frames. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-### GOP, keyframes and random access
+### GOP, Keyframes, and Random Access
 
-**GOP (Group of Pictures)** is a group of coded images that reference each other. Keyframe interval effects:
+A **GOP (group of pictures)** is a set of coded pictures that reference one another. The keyframe interval affects:
 
-- Random drag and cut positioning;
-- Recovery after scene switching;
+- Seeking and cutting precision;
+- Recovery after a scene change;
 - Compression efficiency;
-- Streaming media fragmentation and platform transcoding;
-- Error propagation scope.
+- Streaming segmentation and platform transcoding;
+- How far errors propagate.
 
 ![GOP structure](./images/vcb-encoding/gop-structure.svg)
 
-*Figure: GOP structure and inter-frame references. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: GOP structure and inter-frame references. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-![GOP decoding and transmission sequence](./images/vcb-encoding/gop-transmission.svg)
+![Decode and transmission order of a GOP](./images/vcb-encoding/gop-transmission.svg)
 
-*Figure: The difference between display order and transmission/decoding order. Source: VCB-Studio "Understanding Video from Scratch". *
+*Figure: Display order versus transmission/decode order. Source: VCB-Studio, “Understanding Video from Scratch.”*
 
-The keyframe interval is not bigger, the better, nor is it a fixed number. Short films, competition titles, files that require precise segmentation, and streaming platforms have different requirements for random access.
+A longer keyframe interval is not automatically better, and there is no single number to apply everywhere. Short films, contest openings, files that need precise cutting, and streaming platforms each have different random-access needs.
 
-### Why block structures continue to evolve
+### Why Block Structures Keep Evolving
 
-Different codec generations permit different block and prediction structures. More flexible partitions can describe flat areas, lines, and motion boundaries more accurately, but require more encoder computation.
+Different coding standards allow different block and prediction structures. More flexible partitioning describes flat areas, lines, and motion boundaries more accurately, but costs more computation to encode.
 
 | MPEG-2 example | AVC/H.264 example | HEVC/H.265 example |
 | --- | --- | --- |
-| ![MPEG-2 blocks](./images/vcb-encoding/mpeg2-blocks.png) | ![H.264 blocks](./images/vcb-encoding/h264-blocks.png) | ![H.265 blocks](./images/vcb-encoding/h265-blocks.png) |
+| ![MPEG-2 partitioning](./images/vcb-encoding/mpeg2-blocks.png) | ![H.264 partitioning](./images/vcb-encoding/h264-blocks.png) | ![H.265 partitioning](./images/vcb-encoding/h265-blocks.png) |
 
-*Figure: Examples of chunking for different encoding structures. Source: VCB-Studio "Video Encoder Basics". *
+*Figure: Block partitioning in different coding standards. Source: VCB-Studio, “Video Encoder Fundamentals.”*
 
-### Profile, Level and Tier
+### Profile, Level, and Tier
 
-- **Profile** specifies which coding tools and pixel formats are permitted;
-- **Level** limits resolution, frame rate, bitrate, buffering, and other complexity bounds;
-- **Tier** appears in some standards to distinguish additional bitrate capabilities.
+- **Profile** specifies which coding tools and pixel formats may be used;
+- **Level** caps complexity such as resolution, frame rate, bitrate, and buffer size;
+- **Tier**, found in some standards, further distinguishes bitrate capability.
 
-These fields mainly serve decoding compatibility, not simple "image quality level". Setting the Level very high will not automatically improve the picture quality, but may cause the device to refuse playback.
+These fields mainly serve decoder compatibility; they are not a simple “quality grade.” Setting a very high level does not improve quality and may cause devices to refuse playback.
 
-## 7. Bitrate Control and Encoding Parameters
+## 7. Rate Control and Encoding Parameters
 
 ### Bitrate, File Size, and Quality
 
-Average bitrate and file size are approximately related by:
+Average bitrate and file size are related roughly as:
 
 `file size ≈ average total bitrate × duration`
 
-Total bitrate also includes audio, subtitles, and container overhead. At the same bitrate, codec, encoder implementation, preset, resolution, frame rate, and content complexity can all change the resulting quality.
+The total bitrate also includes audio, subtitles, and container overhead. At the same bitrate, the coding standard, encoder implementation, preset, resolution, frame rate, and content complexity all change the final quality.
 
 ### Common Rate-Control Modes
 
-| Mode | Control Objectives | Applicability |
+| Mode | What it controls | When to use it |
 | --- | --- | --- |
-| CBR | Try to maintain a fixed bitrate | Real-time transmission with strictly limited bandwidth; there are usually still buffering fluctuations in file encoding |
-| ABR/Average bitrate | Achieve target average bitrate | Known file size or total bitrate budget |
-| 2-pass VBR | The first pass is analysis, the second pass is allocated according to the total budget | Need to more accurately control the size of the finished product |
-| CRF/Constant Quality | Allocate bitrate based on perceived quality targets | Publish or archive without hard file size limits |
-| CQP/QP | Direct control of quantization parameters | Testing or specific workflows, not equivalent to constant visual quality |
-| CQ/ICQ, etc. | Quality target modes for hardware encoders | Names and scales vary by implementation |
+| CBR | Keeps the bitrate as constant as possible | Live transmission with strict bandwidth limits; file encodes still fluctuate within the buffer |
+| ABR (average bitrate) | Hits a target average bitrate | When the file size or total bitrate budget is known |
+| 2-pass VBR | Analyzes in the first pass, then distributes the budget in the second | When the final size must be controlled fairly precisely |
+| CRF (constant quality) | Allocates bitrate toward a perceptual quality target | Delivery or archiving without a hard size limit |
+| CQP / QP | Sets the quantization parameter directly | Testing or specific workflows; not the same as constant visual quality |
+| CQ / ICQ and similar | Quality-target modes in hardware encoders | Names and scales vary by implementation |
 
-![x264 rate control interface example](./images/vcb-encoding/x264-rate-control.png)
+![x264 rate-control options](./images/vcb-encoding/x264-rate-control.png)
 
-*Figure: Example of x264 rate control options, used to illustrate different control targets; the interface version is not recommended as the current parameter. Source: VCB-Studio "Video Encoder Basics". *
+*Figure: x264 rate-control options, shown to illustrate the different targets; the interface version is not a recommendation of current settings. Source: VCB-Studio, “Video Encoder Fundamentals.”*
 
-### CRF is not a "fixed quality percentage"
+### CRF Is Not a “Fixed Quality Percentage”
 
-CRF numbers can only be compared relatively within the same encoder, similar versions and similar setups:
+CRF values can only be compared relative to one another within the same encoder, similar versions, and similar settings:
 
-- CRF numbers of different encoders cannot be horizontally equivalent;
-- The same CRF will generate different bit rates and volumes when faced with different materials;
-- After changing the preset, tune, resolution, bit depth or noise reduction level, the results will also change;
-- The CQ/ICQ scale in the hardware encoder cannot be directly applied to the CRF experience of x264/x265.
+- CRF numbers from different encoders are not equivalent;
+- The same CRF produces different bitrates and sizes on different sources;
+- Changing the preset, tune, resolution, bit depth, or amount of denoising also changes the result;
+- CQ/ICQ scales in hardware encoders cannot be read with x264/x265 CRF experience.
 
-A reliable approach is to select representative clips for testing: dark gradients, fast motion, thin lines, particles, glow, lens shake, noise, complex transitions, and large amounts of text.
+The reliable approach is to test representative clips: dark gradients, fast motion, fine lines, particles, glows, camera shake, noise, complex transitions, and heavy text.
 
-### Preset, Tune and Psychological Visual Optimization
+### Presets, Tunes, and Psychovisual Optimization
 
-- **Preset** mainly determines how much search and decision-making calculations the encoder is willing to invest. Generally, the slower the compression, the higher the efficiency, but the marginal benefit will decrease;
-- **Tune** changes the encoder's weight for certain types of content;
-- The preset named `animation` is not necessarily suitable for all Japanese animations, nor is it necessarily suitable for MAD that contains a large number of synthetic, particle and live-action materials;
-- Parameters should be tested based on the work. The parameter table of a certain subtitle group, a certain era or a certain software version should not be regarded as a universal standard.
+- **Preset** mainly decides how much search and decision-making the encoder will spend. Slower presets usually compress more efficiently, with diminishing returns;
+- **Tune** changes the trade-offs the encoder makes for a particular type of content;
+- A tune called `animation` is not automatically right for all Japanese anime, let alone for MAD with heavy compositing, particles, and live-action footage;
+- Choose parameters by testing on the work itself. Do not treat one fansub group's, one era's, or one software version's settings table as a universal standard.
 
-### VBV and Peak Limit
+### VBV and Peak Limits
 
-The VBV model uses the maximum bit rate and buffer size to constrain the peak code stream to serve the network or hardware decoding capabilities. Setting it too tight will force complex shots to significantly reduce quality; setting no limit at all may exceed the target device or platform's instantaneous throughput capabilities.
+The VBV model constrains bitstream peaks with a maximum bitrate and buffer size, matching network or hardware decoding capacity. Set too tight, it forces a visible quality drop in complex shots; with no limit at all, the stream may exceed what the target device or platform can handle at any instant.
 
-### Software encoding and hardware encoding
+### Software and Hardware Encoding
 
-- Software encoding usually provides more complete search and parameter control, making it suitable for high-quality final output;
-- GPU/media engine hardware encoding is faster, suitable for preview, proxy, recording and time-sensitive tasks;
-- New hardware generations can substantially change encoding quality; quality cannot be inferred from "CPU" or "GPU" alone;
-- Actual graphics, speed and compatibility should ultimately be compared under the same delivery constraints.
+- Software encoders usually offer more thorough search and finer parameter control, and suit high-quality final output;
+- GPU and media-engine hardware encoders are faster, and suit previews, proxies, recording, and time-critical tasks;
+- Hardware encoding quality changes markedly between generations, so “CPU versus GPU” alone does not settle the question;
+- In the end, compare the actual picture, speed, and compatibility under the same delivery constraints.
 
 ## 8. Intermediate Files, Proxies, and Masters
 
-### Intermediate format
+### Intermediate Formats
 
-Editing and compositing intermediate files should give priority to:
+For editing and compositing intermediates, prioritize:
 
-- Frame accurate access;
-- Low decoding burden;
-- Sufficient bit depth and chroma accuracy;
+- Frame-accurate access;
+- Light decoding load;
+- Enough bit depth and chroma precision;
 - Alpha support;
-- Stability after multiple generations of processing;
-- Editing software compatibility.
+- Stability across repeated processing;
+- Compatibility with your editing software.
 
-Common directions include ProRes, DNxHR, CineForm, FFV1, uncompressed video, and PNG/TIFF/EXR image sequences. The choice depends on software, operating system, alpha, HDR and storage budget.
+Common choices include ProRes, DNxHR, CineForm, FFV1, uncompressed video, and PNG/TIFF/EXR image sequences. The right one depends on your software, operating system, alpha and HDR needs, and storage budget.
 
-### Proxy Files
+### Proxies
 
-Proxies reduce decoding and storage pressure during editing; they are not final masters. A proxy workflow must ensure:
+Proxies reduce decoding and storage load while editing; they are not the final master. A proxy workflow must ensure that:
 
-1. Each proxy corresponds uniquely to its source file;
-2. The duration, time code, frame rate and audio are synchronized and consistent;
-3. Randomly check key shots after reconnecting;
-4. The final export references the source media rather than the proxy;
-5. Variable speed, nested sequences and VFR footage are independently verified.
+1. Each proxy maps to exactly one original file;
+2. Duration, timecode, frame rate, and audio sync match;
+3. Key shots are spot-checked after relinking;
+4. The final export really references the originals, not the proxies;
+5. Speed changes, nested sequences, and VFR sources are verified separately.
 
-### Master and Release Versions
+### Masters and Delivery Versions
 
-It is recommended to distinguish at least:
+Distinguish at least the following:
 
-| Type | Purpose | Focus |
+| Type | Purpose | Priorities |
 | --- | --- | --- |
-| Project master | Later revisions, subtitled editions, and platform transcodes | High bit depth, low generation loss, complete audio |
-| Contest submission version | Comply with current rules | Strictly adhere to container, encoding, duration and volume |
-| Platform release version | Upload to Bilibili and other platforms | Compatible with the platform and reserve margin for secondary transcoding |
-| Review version | Team proofreading, fast transmission | Small size, with version number or watermark |
+| Project master | Later remakes, subtitled versions, platform transcodes | High bit depth, minimal generation loss, complete audio |
+| Contest submission | Meets the current edition's rules | Strictly follows the required container, codec, duration, and size |
+| Platform upload | Upload to Bilibili and other platforms | Platform-compatible, with headroom for the platform's own transcode |
+| Review copy | Team proofing and quick transfer | Small, with a version number or watermark |
 
-Masters, releases, and projects should use clear version numbers and should not be distinguished by "final2_reallyfinal".
+Give masters, delivery versions, and project files clear version numbers rather than names like “final2_really_final.”
 
 ## 9. Containers and Tracks
 
-### Common containers
+### Common Containers
 
-| Container | Main features | Usage precautions |
+| Container | Main characteristics | Things to watch |
 | --- | --- | --- |
-| MP4 | Wide platform and device compatibility | Limited support for subtitles, attachments and some audio formats |
-| MKV | Rich capabilities of tracks, subtitles, chapters and attachments | Some editing software or platforms do not accept it directly |
-| MOV | Common production process, works with multiple intermediate encodings | Compatibility depends on internal encoding |
-| WebM | Often used with VP9/AV1, Opus | May not be accepted in competitions or traditional editing environments |
+| MP4 | Widely supported by platforms and devices | Limited support for subtitles, attachments, and some audio formats |
+| MKV | Rich support for tracks, subtitles, chapters, and attachments | Some editors and platforms do not accept it directly |
+| MOV | Common in production, works with many intermediate codecs | Compatibility depends on the codec inside |
+| WebM | Usually paired with VP9/AV1 and Opus | May not be accepted by contests or traditional editing setups |
 
-When encapsulating, you need to check the default track, forced track, language, name, chapter, subtitle font, delay, color label and rotation information.
+When muxing, check default and forced tracks, languages, track names, chapters, subtitle fonts, delays, color tags, and rotation metadata.
 
-### Limits of Cutting Without Re-encoding
+### Limits of Cutting Without Re-Encoding
 
-Most long GOP videos can only be cut losslessly starting near randomly accessible keyframes. Even if the tool displays "success", the cut point may be moved forward, the first paragraph may be blurred, or the timestamp may be rewritten. When precise point-cutting is required frame-by-frame, this should usually be handled in the editing timeline or in an intermediate format.
+Most long-GOP video can only be cut losslessly near a keyframe that allows random access. Even when a tool reports success, the cut point may move earlier, the first segment may show corruption, or timestamps may be rewritten. When you need frame-accurate cuts, do them on an editing timeline or in an intermediate format.
 
-### A Safe Remuxing Example
+### A Safe Remux Example
 
 ```bash
 ffmpeg -i input.mkv -map 0 -c copy output.mkv
 ```
 
-This command only demonstrates the concept of "copy all tracks and repackage". Real projects still need to check attachments, chapters, track labels, timestamps, and target container compatibility.
+This command only illustrates the idea of copying all tracks into a new container. In a real project, still check attachments, chapters, track labels, timestamps, and compatibility with the target container.
 
 ## 10. Audio Fundamentals
 
-### Sampling rate, bit depth and channels
+### Sample Rate, Bit Depth, and Channels
 
-- **Sampling rate** indicates how many audio samples are collected per second, 48 kHz is common in video production;
-- **Bit depth** affects the quantization accuracy of PCM samples;
-- **Number of channels** is not equal to the channel layout, and the six channels may be arranged differently;
-- **PCM** is uncompressed sampling, FLAC is lossless compression, AAC/Opus, etc. are usually lossy compression.
+- **Sample rate** is how many audio samples are taken per second; 48 kHz is common in video production;
+- **Bit depth** affects the quantization precision of PCM samples;
+- **Channel count** is not the same as channel layout; six channels can be arranged in different ways;
+- **PCM** is uncompressed sampling, FLAC is lossless compression, and AAC, Opus, and similar formats are usually lossy.
 
-The sampling rate should be fixed as much as possible within the project to avoid multiple resampling. Importing 44.1 kHz music doesn't mean you have to convert it individually to lossy 48 kHz files first; editing software can output them uniformly after high-precision internal processing.
+Keep a single sample rate within a project where possible to avoid repeated resampling. Importing 44.1 kHz music does not mean you must first convert it to a separate lossy 48 kHz file; the editor can process it internally at high precision and output everything at one rate.
 
-### Loudness, Peak and True Peak
+### Loudness, Peaks, and True Peak
 
-- Digital peak only checks whether discrete samples reach the upper limit;
-- **True Peak／True Peak** estimates the possible peak value of the reconstructed waveform between samples;
-- **LUFS** is used to describe the perceived loudness on a certain time scale;
-- Limiters are not a substitute for mixing, and they cannot be used to determine whether a work sounds reasonable based on a single loudness number.
+- Sample peak only checks whether individual samples reach the ceiling;
+- **True peak** estimates peaks that can appear between samples when the waveform is reconstructed;
+- **LUFS** describes perceived loudness over a given time scale;
+- A limiter is not a substitute for mixing, and a single loudness number cannot tell you whether a work sounds right.
 
-The platform may normalize playback for loudness, but the rules will change. Keep the unclipped master version and review the actual upload results.
+Platforms may normalize loudness on playback, but their rules change. Keep an unclipped master and check the actual uploaded result.
 
-### Synchronization and delay
+### Sync and Delay
 
-Audio and video synchronization problems may come from:
+Audio/video sync problems can come from:
 
-- VFR timestamp;
-- 23.976/24 or 29.97/30 mixed;
+- VFR timestamps;
+- Mixing 23.976 with 24, or 29.97 with 30;
 - Encoder delay and container compensation;
-- Track start times are different;
-- Resampling or variable speed;
-- No re-encoding cuts falling on audio frame boundaries.
+- Tracks with different start times;
+- Resampling or speed changes;
+- Cuts made without re-encoding that fall on audio frame boundaries.
 
-Just checking the beginning is not enough to detect drift, you should check the middle and the end at the same time.
+Checking only the start is not enough to catch drift; check the middle and the end as well.
 
 ## 11. Identifying Image Defects
 
-The goal of defect identification is not to "fit all problems with filters", but to distinguish the production characteristics of the material itself, distribution media problems, error handling and encoding losses. The restoration must be clearly defined and compared frame by frame to the unprocessed version.
+The goal is not to “throw a filter at every problem,” but to tell apart characteristics of how the source was produced, problems with the release medium, processing mistakes, and encoding loss. Every fix needs a clearly identified target and a frame-by-frame comparison with the unprocessed version.
 
 ### Banding
 
-Smooth gradients are divided into visible color levels. Could be from low bit depth, strong quantization, wrong range conversion, or excessive noise reduction. Debanding usually requires dithering or protective noise; too much processing can erase existing shadow lines and texture.
+Smooth gradients break into visible steps. Causes include low bit depth, heavy quantization, a wrong range conversion, or excessive denoising. Debanding usually needs dither or protective noise; too much processing erases shading lines and texture that were really there.
 
-![Ribbon example](./images/vcb-encoding/defect-banding.png)
+![Banding example](./images/vcb-encoding/defect-banding.png)
 
-*Picture: Banding. Source: VCB-Studio "Understanding Defects". *
+*Figure: Banding. Source: VCB-Studio, “Recognizing Defects.”*
 
 ### Aliasing
 
-Steps and erratic flickering in diagonal lines, curves, or scaled details. The source may be raw rendering, low-resolution upscaling, error field processing, or scaling algorithms. Anti-aliasing does not equal overall blur.
+Diagonal lines, curves, or scaled detail show stair-steps and unstable flicker. The cause may be the original drawing, upscaling from a low resolution, wrong field handling, or the scaling algorithm. Anti-aliasing is not the same as blurring the whole picture.
 
-![Aliased example](./images/vcb-encoding/defect-aliasing.png)
+![Aliasing example](./images/vcb-encoding/defect-aliasing.png)
 
-*Picture: Aliasing. Source: VCB-Studio "Understanding Defects". *
+*Figure: Aliasing. Source: VCB-Studio, “Recognizing Defects.”*
 
-### Ringing/Haloing
+### Ringing and Haloing
 
-Ripples, bright edges, or dark edges around high-contrast edges are often associated with over-sharpening, scaling, or compression. When processing, distinguish the strokes, luminous effects and abnormal edges of the original work.
+Ripples, bright edges, or dark edges appear around high-contrast boundaries, often from over-sharpening, scaling, or compression. When treating it, distinguish it from outlines, glow effects, and other edges that belong to the original artwork.
 
 ![Ringing example](./images/vcb-encoding/defect-ringing.png)
 
-*Picture: Ringing. Source: VCB-Studio "Understanding Defects". *
+*Figure: Ringing. Source: VCB-Studio, “Recognizing Defects.”*
 
-### Noise/Grain
+### Noise and Grain
 
-Noise may come from the sensor, film, scanning, compression, or production process; grain may also be texture that the creator intentionally preserved. Noise reduction changes encoding difficulty, but excessive noise reduction can lead to melted lines, lost textures, and "mush" in motion.
+Noise can come from the sensor, film, scanning, compression, or the production process, and grain may be a texture the creators deliberately kept. Denoising changes how hard a source is to encode, but too much of it melts lines, removes texture, and turns motion into smears.
 
 ![Noise example](./images/vcb-encoding/defect-noise.png)
 
-*Picture: Noise. Source: VCB-Studio "Understanding Defects". *
+*Figure: Noise. Source: VCB-Studio, “Recognizing Defects.”*
 
-### Blocking effect and mosquito noise (Blocking/DCT Ringing)
+### Blocking and Mosquito Noise (DCT Ringing)
 
-When the bit rate is insufficient or the quantization is too strong, block boundaries become visible; wandering noise, bad edges, and DCT ringing may also appear around text and lines. Post-processing can only alleviate, but not restore, the true details that have been lost.
+When bitrate is too low or quantization too strong, block boundaries become visible, and shimmering specks, ragged edges, and DCT ringing can appear around text and lines. Post-processing can soften these artifacts but cannot restore detail that has been lost.
 
 ![Blocking example](./images/vcb-encoding/defect-blocking.png)
 
 ![DCT ringing and mosquito noise example](./images/vcb-encoding/defect-dct-ringing.png)
 
-*Picture: Blocking and DCT ringing. Source: VCB-Studio "Understanding Defects". *
+*Figure: Blocking and DCT ringing. Source: VCB-Studio, “Recognizing Defects.”*
 
-### Luma Overflow and Clipping
+### Out-of-Range Luma and Clipping
 
-Range interpretation errors may cause effective highlights or shadows to be treated as pure white or pure black. The figure below compares the results after brightness overflow and restoration to the correct range.
+Misreading the range can turn valid highlights or shadows into pure white or black. The figures below compare luma overflow with the result after restoring the correct range.
 
-![Brightness out of bounds](./images/vcb-encoding/defect-luma-overflow.png)
+![Luma overflow](./images/vcb-encoding/defect-luma-overflow.png)
 
-![After brightness range correction](./images/vcb-encoding/defect-luma-overflow-fixed.png)
+![After range correction](./images/vcb-encoding/defect-luma-overflow-fixed.png)
 
-*Picture: Luma overflow and correction example. Source: VCB-Studio "Understanding Defects". *
+*Figure: Luma overflow and its correction. Source: VCB-Studio, “Recognizing Defects.”*
 
-If the data has been truncated, simply changing the label later will not restore the details. Before repairing, you need to determine whether the display is interpreted incorrectly or the pixel values ​​have been clipped.
+If the data has already been clipped, changing the tag afterward cannot recover the detail. Before fixing anything, determine whether it is a display interpretation error or whether the pixel values themselves have been cut off.
 
-### Combing, Interlace Scaling Artifacts, and Duplicate Fields
+### Combing, Scaling Artifacts, and Duplicate Fields
 
-- **Combing／Brushing**: Two fields at different times are displayed as one frame at the same time;
-- **Offset caused by interlaced scaling**: scaling according to the progressive algorithm without first processing the field structure;
-- **Duplicate field／Duplicate field**: The two fields of a frame are actually repeated, which is easily confused with ordinary aliasing.
+- **Combing**: two fields from different moments are displayed together as one frame;
+- **Striping from interlaced scaling**: footage was scaled with a progressive algorithm before its field structure was dealt with;
+- **Duplicate fields**: both fields of a frame are actually the same, which is easily confused with ordinary aliasing.
 
-![Interlacing example](./images/vcb-encoding/defect-interlacing.png)
+![Interlacing combing example](./images/vcb-encoding/defect-interlacing.png)
 
-![Abnormal lines caused by interlaced scaling](./images/vcb-encoding/defect-combing.png)
+![Artifacts from scaling interlaced footage](./images/vcb-encoding/defect-combing.png)
 
 ![Duplicate field example](./images/vcb-encoding/defect-duplicate-field.png)
 
-*Image: Interlacing related imperfections. Source: VCB-Studio "Understanding Defects". *
+*Figure: Interlacing-related defects. Source: VCB-Studio, “Recognizing Defects.”*
 
 ### Blending and Ghosting
 
-Abnormal blending of adjacent frames can leave translucent afterimages on moving edges. It could come from incorrect format conversion, deinterlacing, or time-domain processing. Some regular problems can be partially restored, but irregular mixing is often difficult to fully restore.
+Abnormal blending of adjacent frames leaves translucent trails at moving edges. It can come from incorrect standards conversion, deinterlacing, or temporal processing. Some regular patterns can be partly undone; irregular blending is usually very hard to reverse completely.
 
 ![Ghosting example](./images/vcb-encoding/defect-blending.png)
 
-*Picture: Blending. Source: VCB-Studio "Understanding Defects". *
+*Figure: Blending. Source: VCB-Studio, “Recognizing Defects.”*
 
 ### Chroma Banding, Chroma Aliasing, and Chroma Shift
 
-Errors in the accuracy, downsampling algorithm, and sampling position of the chroma plane will produce artifacts that are different from those of the luma plane:
+The precision of the chroma planes, the downsampling algorithm, and errors in sample location produce defects distinct from those in the luma plane:
 
-![Chroma Banding](./images/vcb-encoding/defect-chroma-banding.png)
+![Chroma banding](./images/vcb-encoding/defect-chroma-banding.png)
 
-![Chroma Aliasing](./images/vcb-encoding/defect-chroma-aliasing.png)
+![Chroma aliasing](./images/vcb-encoding/defect-chroma-aliasing.png)
 
 ![Chroma shift](./images/vcb-encoding/defect-chroma-shift.png)
 
-*Picture: Chroma banding, chroma aliasing and chroma shift. Source: VCB-Studio "Understanding Defects". *
+*Figure: Chroma banding, chroma aliasing, and chroma shift. Source: VCB-Studio, “Recognizing Defects.”*
 
-Chroma shift is usually a unidirectional misalignment of the chroma plane relative to the luma plane. It is different from visual effects that deliberately stagger the RGB channels:
+Chroma shift is usually a one-directional offset of the chroma planes relative to luma. It is different from a deliberate visual effect that offsets the RGB channels:
 
-![RGB shift special effect example](./images/vcb-encoding/example-rgb-shift.png)
+![RGB shift effect example](./images/vcb-encoding/example-rgb-shift.png)
 
-*Picture: RGB shift special effect, used to distinguish it from abnormal chroma shift. Source: VCB-Studio "Understanding Defects". *
+*Figure: An RGB shift effect, shown for contrast with abnormal chroma shift. Source: VCB-Studio, “Recognizing Defects.”*
 
 ### Chroma Bleeding
 
-Highly saturated colors expand to the surroundings, and the chroma boundary clearly exceeds the brightness boundary. It is different from directional chromaticity shift.
+Highly saturated colors spread into their surroundings, so color boundaries extend well past the luma edges. This is different from a directional chroma shift.
 
 ![Chroma bleeding example](./images/vcb-encoding/defect-chroma-bleeding.png)
 
-*Picture: Chroma bleeding. Source: VCB-Studio "Understanding Defects". *
+*Figure: Chroma bleeding. Source: VCB-Studio, “Recognizing Defects.”*
 
-### Rainbow Artifacts and Dot Crawl
+### Rainbowing and Dot Crawl
 
-Early analog composite video or poor dubbing can cause high-frequency crosstalk from luminance to chroma, creating red and blue rainbow streaks or moving dot patterns.
+Early analog composite video or poor transfers can let high-frequency luma leak into chroma, producing red-blue rainbow patterns or crawling dot patterns.
 
-![Rainbow pattern example](./images/vcb-encoding/defect-rainbow.png)
+![Rainbow example](./images/vcb-encoding/defect-rainbow.png)
 
-![Example of dot crawls](./images/vcb-encoding/defect-dot-crawl.jpg)
+![Dot crawl example](./images/vcb-encoding/defect-dot-crawl.jpg)
 
-*Picture: Rainbow and dot crawl. Source: VCB-Studio "Understanding Defects". *
+*Figure: Rainbowing and dot crawl. Source: VCB-Studio, “Recognizing Defects.”*
 
-## 12. Suggested MAD·AMV Production Workflow
+## 12. A Suggested MAD·AMV Production Workflow
 
-### 1. Source Registration
+### 1. Register Source Media
 
-Record source, version, episode number, time period, container, encoding, resolution, frame rate, color information and audio track. BD, streaming media, WEBRip, PV, game screen recording and homemade graphics cannot be classified into the same category just by extension.
+Record the source, release version, episode, time range, container, codec, resolution, frame rate, color information, and audio tracks. BD, streaming, WEBRip, PVs, game captures, and your own graphics should not be lumped together by file extension.
 
-### 2. Technical Diagnosis
+### 2. Diagnose
 
-Use MediaInfo/ffprobe to establish parameter records, and then judge frame by frame:
+Build a parameter record with MediaInfo/ffprobe, then check frame by frame:
 
-- Whether true interlaced, pseudo-interlaced or telecine;
-- Whether it is CFR/VFR;
-- Whether there are range, matrix or chroma position errors;
-- Does the defect come from the original production, a particular release, or a platform transcode?
-- Is there a higher quality source.
+- Whether the footage is truly interlaced, falsely flagged, or telecined;
+- Whether it is CFR or VFR;
+- Whether there are range, matrix, or chroma-location errors;
+- Whether defects come from production, the release, or a platform's recompression;
+- Whether a higher-quality source exists.
 
-### 3. Preprocessing
+### 3. Preprocess
 
-Only handle confirmed issues. Recommended to keep:
+Fix only problems you have confirmed. Keep:
 
-- original document;
-- Process scripts and versions;
+- The original files;
+- Processing scripts and their versions;
 - Key parameters;
-- Compare frames before and after processing;
-- Records of cropping, speed shifting, deinterlacing and color conversion done on the footage.
+- Before-and-after comparison frames;
+- A record of any cropping, speed changes, deinterlacing, and color conversions applied.
 
-### 4. Proxy Editing
+### 4. Proxies and Editing
 
-Use consistent proxy naming, timecode, and audio synchronization. Choose the timeline frame rate from the work's primary cadence and delivery rules; do not let the first imported clip determine it without review.
+Standardize proxy naming, timecode, and audio sync. Set the timeline frame rate according to the work's main rhythm and the delivery rules; do not let the first imported clip decide it and never check again.
 
 ### 5. Compositing and Intermediate Output
 
-High-intensity color grading, glow, particles, motion blur, text and keying should be completed in a high bit depth environment as much as possible. When cross-software is required, give priority to using low-loss intermediate formats or image sequences, and confirm the Alpha type and color space.
+Do heavy grading, glows, particles, motion blur, text, and keying in a high-bit-depth environment where possible. When moving between applications, prefer low-loss intermediate formats or image sequences, and confirm the alpha type and color space.
 
-### 6. Master output
+### 6. Master Output
 
-The master should retain sufficient bit depth and chroma accuracy to avoid using a long GOP release encoding that is too low a bitrate as the only archive. The audio is retained as a lossless version, recording the project sample rate, channel layout and loudness processing.
+The master should keep enough bit depth and chroma precision. Do not use a low-bitrate long-GOP delivery encode as your only archive. Keep a lossless version of the audio, and record the project sample rate, channel layout, and loudness processing.
 
-### 7. Release Encoding and Muxing
+### 7. Delivery Encoding and Muxing
 
-Generate competition version, Bilibili release version or other platform versions from the master version respectively. Do not treat downloaded files after transcoding for one platform as master files for other platforms.
+Generate the contest version, the Bilibili upload, and other platform versions separately from the master. Do not use a file downloaded after one platform's transcode as the master for another.
 
-### 8. Review after uploading
+### 8. Check After Upload
 
-The platform will transcode again. Spot check after uploading:
+Platforms transcode again. After uploading, spot-check:
 
-- Beginning, end and random position;
-- Dark gradient, strong flash, fast motion, thin lines, subtitles and particles;
-- Audio and video synchronization and sound channels;
-- The resolution level actually provided by the platform;
-- Cover, title, introduction, subtitles and statement of work.
+- The opening, the ending, and random points in between;
+- Dark gradients, strong flashes, fast motion, fine lines, subtitles, and particles;
+- Audio sync and channels;
+- Which quality levels the platform actually offers;
+- The thumbnail, title, description, subtitles, and work statement.
 
 ## 13. Delivery Checklist
 
 ### File and Picture
 
-- [ ] The file can be read completely, and the total duration is consistent with the competition limit;
-- [ ] There are no errors in the first frame, last frame, black field and ending;
-- [ ] Resolution, SAR, DAR and rotation information are correct;
-- [ ] Accurate frame rate, CFR/VFR, time base and timestamps are as expected;
-- [ ] Progressive/interlaced, field sequential, telecine and repeating frame structures confirmed;
-- [ ] Pixel format, bit depth, chroma sampling and alpha correct;
-- [ ] primaries, transfer, matrix, range labels are consistent with actual pixels;
-- [ ] HDR/SDR output meets target, no pseudo-conversion that only changes labels;
-- [ ] Shadows, highlights, gradients, thin lines, fast motion and complex special effects are checked;
-- [ ] No new color banding, aliasing, ringing, blocking, ghosting or frame-filling distortions.
+- [ ] The file reads completely, and its total duration meets the contest limit;
+- [ ] The first frame, last frame, black frames, and end card are not cut off by mistake;
+- [ ] Resolution, SAR, DAR, and rotation metadata are correct;
+- [ ] The exact frame rate, CFR/VFR, time base, and timestamps are as expected;
+- [ ] Progressive/interlaced structure, field order, telecine, and duplicate frames have been confirmed;
+- [ ] Pixel format, bit depth, chroma subsampling, and alpha are correct;
+- [ ] Primaries, transfer, matrix, and range tags match the actual pixels;
+- [ ] HDR/SDR output meets the target, with no fake conversion by relabeling only;
+- [ ] Shadows, highlights, gradients, fine lines, fast motion, and complex effects have been checked;
+- [ ] No new banding, aliasing, ringing, blocking, ghosting, or interpolation warping has been introduced.
 
 ### Audio
 
-- [ ] The sampling rate, encoding, number of channels and channel layout are correct;
-- [ ] No popping, clipping, channel reversal or accidental muting;
-- [ ] Check the audio and video synchronization at the beginning, middle and end;
-- [ ] The loudness and true peak value meet the requirements of the team or event;
-- [ ] Music, dialogue and sound effects licensing information has been recorded.
+- [ ] Sample rate, codec, channel count, and channel layout are correct;
+- [ ] No pops, clipping, swapped channels, or unexpected silence;
+- [ ] Audio sync has been checked at the start, middle, and end;
+- [ ] Loudness and true peak meet the team's or contest's requirements;
+- [ ] Licensing information for music, dialogue, and sound effects has been recorded.
 
-### Container and Version
+### Container and Versions
 
-- [ ] The container and encoding combination is accepted by the target platform or host;
-- [ ] Default tracks, languages, titles, chapters, subtitles and font attachments are correct;
-- [ ] The file name, version number and submitter information comply with the rules;
-- [ ] The master version, submission version, and release version can clearly correspond;
-- [ ] Generate SHA-256 and other check values and save them;
-- [ ] Complete the final review on another device or target player;
-- [ ] Check the online version again after the platform transcoding is completed.
+- [ ] The container and codec combination is accepted by the target platform or organizer;
+- [ ] Default tracks, languages, titles, chapters, subtitles, and font attachments are correct;
+- [ ] File name, version number, and submitter information follow the rules;
+- [ ] The master, submission version, and upload version can be matched to each other unambiguously;
+- [ ] A checksum such as SHA-256 has been generated and saved;
+- [ ] A final check has been done on another device or the target player;
+- [ ] The online version has been checked again after the platform finishes transcoding.
 
 ## 14. Common Misconceptions
 
-| Argument | More accurate understanding |
+| Claim | More accurate understanding |
 | --- | --- |
-| "MP4 has better image quality than MKV" | The two are containers; the image quality mainly depends on the internal video and processing |
-| "10-bit will make 8-bit clearer" | It will not restore source details, but it can reduce quantization errors in subsequent calculations and re-encoding |
-| "The higher the code rate, the better" | Continuing to increase the gain after achieving transparency is limited; source quality and encoding efficiency are equally important |
-| "CRF 18 is the same in all encoders" | The CRF scale is only suitable for relative comparisons within the same implementation and approximate setup |
-| "All animations use animation tune" | Tune is a specific trade-off and must be subject to actual measurement of the work |
-| "Duplicate frames should be deleted" | Animation exposure pacing, telecine, VFR and falsely repeated frames are different issues |
-| "Fixing to 60 fps will make it smoother" | Filling frames will generate new pictures, and may also destroy the original rhythm and create artifacts |
-| "Changing the label to Rec.709 will fix it" | Labels, pixel conversion and range cropping must be distinguished |
-| "After noise reduction, the bit rate is lower, so the picture quality is better" | Noise reduction may also delete the original texture, grains and fine lines |
-| "If the file can be played, the delivery is qualified" | Synchronization, color, frame structure, complex lenses and platform secondary pressure still need to be checked |
+| “MP4 looks better than MKV” | Both are containers; picture quality depends mainly on the video inside and how it was processed |
+| “10-bit makes 8-bit sharper” | It cannot restore source detail, but it reduces quantization error in later processing and re-encoding |
+| “Higher bitrate is always better” | Past the point of transparency, more bitrate adds little; source quality and encoding efficiency matter just as much |
+| “CRF 18 means the same thing in every encoder” | CRF scales are only comparable within the same implementation and similar settings |
+| “Use the animation tune for all anime” | A tune is a specific trade-off; test on the actual work |
+| “All duplicate frames should be removed” | Animation timing, telecine, VFR, and erroneous duplicates are different problems |
+| “Interpolating to 60 fps makes it smoother” | Interpolation creates new images and can break the original rhythm and introduce artifacts |
+| “Relabeling it Rec.709 fixes it” | Tags, pixel conversion, and range clipping must be kept apart |
+| “Denoising lowers the bitrate, so quality improves” | Denoising can also remove original texture, grain, and fine lines |
+| “If the file plays, it is ready to deliver” | Sync, color, frame structure, complex shots, and platform recompression still need checking |
 
 ## References and Image Licensing
 
-### Main reference
+### Main References
 
-- [VCB-Studio public tutorial](https://guides.vcb-s.com/)
-- [Chapter 1: Getting to Know Videos from Scratch](https://guides.vcb-s.com/basic-guide-01/)
-- [Chapter 3: Tools and Suppression Process](https://guides.vcb-s.com/basic-guide-03/)
-- [Chapter 4: Understanding flaws](https://guides.vcb-s.com/basic-guide-04/)
-- [Chapter 7: Video Encoder Basics](https://guides.vcb-s.com/basic-guide-07/)
-- [Chapter 10: Elementary 30 fps processing](https://guides.vcb-s.com/basic-guide-10/)
-- [VCB-Studio Guides source code repository](https://github.com/vcb-s/guides)
+- [VCB-Studio public guides](https://guides.vcb-s.com/)
+- [Chapter 1: Understanding Video from Scratch](https://guides.vcb-s.com/basic-guide-01/)
+- [Chapter 3: Tools and the Encoding Workflow](https://guides.vcb-s.com/basic-guide-03/)
+- [Chapter 4: Recognizing Defects](https://guides.vcb-s.com/basic-guide-04/)
+- [Chapter 7: Video Encoder Fundamentals](https://guides.vcb-s.com/basic-guide-07/)
+- [Chapter 10: Basic 30 fps Processing](https://guides.vcb-s.com/basic-guide-10/)
+- [VCB-Studio Guides source repository](https://github.com/vcb-s/guides)
 - [FFmpeg Formats Documentation](https://ffmpeg.org/ffmpeg-formats.html)
 - [ffprobe Documentation](https://ffmpeg.org/ffprobe.html)
 - [MediaInfo](https://mediaarea.net/MediaInfo)
 
 ### Localization and Licensing
 
-The VCB-Studio tutorial images on this page have been copied to the warehouse of this site to avoid external link failure, and the source is indicated under each image. VCB-Studio public tutorials are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) license; related images and the adapted parts of this page based on their content are signed and shared in accordance with this license.
+The VCB-Studio tutorial images on this page have been copied into this site's repository so that they do not break if the original links change; each image is credited below it. The public VCB-Studio guides are licensed under [Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/). The images and the parts of this page adapted from their content are attributed and shared under the same license.
 
-This page is not a mirror of the original VCB-Studio tutorial, nor does it replace the original tutorial. If you need to systematically learn BDRip, VapourSynth, x264/x265 parameters and targeted repairs, you should read the original chapter and refer to the latest version.
+This page is not a mirror of the VCB-Studio guides and does not replace them. To study BDRip production, VapourSynth, x264/x265 parameters, and targeted repairs in depth, read the original chapters and follow their latest versions.
+
+## Related Pages
+
+- [Source Media and Project Management](/en/tools/footage): sources, intake records, and project archiving;
+- [Contest and Submission Guidelines](/en/mad/contest-rules): common delivery specs and submission packages;
+- [Tools Overview](/en/tools/): where encoding fits in the overall workflow.
