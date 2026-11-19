@@ -219,7 +219,7 @@
 .VPFooter .container {
   width: min(100%, 1180px);
   margin: 0 auto;
-  padding: 34px 28px 22px;
+  padding: 34px 28px calc(22px + env(safe-area-inset-bottom, 0px));
 }
 
 .VPFooter .message {
@@ -336,6 +336,11 @@
     transform 0.18s ease;
 }
 
+.VPFooter .message .mad-footer-links a,
+.VPFooter .message .mad-footer-license {
+  text-decoration: none;
+}
+
 .mad-footer-links a:hover {
   border-color: color-mix(in srgb, var(--vp-c-brand-1) 50%, var(--vp-c-divider));
   background: var(--vp-c-brand-soft);
@@ -411,8 +416,15 @@
 
 @media (max-width: 900px) {
   .mad-footer-main {
-    align-items: flex-start;
+    align-items: stretch;
     flex-direction: column;
+    gap: 20px;
+  }
+
+  /* 纵向排列时 flex-basis 会变成高度，需要重置，否则品牌区与链接区被拉高。 */
+  .mad-footer-identity,
+  .mad-footer-links {
+    flex: none;
   }
 
   .mad-footer-links {
@@ -422,23 +434,67 @@
 
 @media (max-width: 640px) {
   .VPFooter .container {
-    padding: 28px 20px 20px;
+    padding: 24px 16px calc(18px + env(safe-area-inset-bottom, 0px));
   }
 
   .mad-footer-identity {
     min-width: 0;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .mad-footer-monogram,
+  .mad-footer-monogram img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mad-footer-monogram {
+    flex-basis: 40px;
+  }
+
+  .mad-footer-brand-copy strong {
+    font-size: 17px;
+  }
+
+  .mad-footer-studio {
+    line-height: 1.5;
   }
 
   .mad-footer-links {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  /* 保证约 40px 的触控高度，同时保持紧凑。 */
+  .mad-footer-links a {
+    min-height: 40px;
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .mad-footer-links a:hover {
+    transform: none;
   }
 
   .mad-footer-meta {
+    margin-top: 18px;
+    padding-top: 14px;
     align-items: flex-start;
     flex-direction: column;
+    gap: 8px;
+  }
+
+  .mad-footer-license {
+    line-height: 1.4;
   }
 
   .mad-footer-purpose {
+    text-align: left;
+  }
+
+  .VPFooter .copyright {
+    margin-top: 10px !important;
     text-align: left;
   }
 }
