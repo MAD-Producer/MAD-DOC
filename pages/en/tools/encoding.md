@@ -1,17 +1,39 @@
 ---
-title: Video Fundamentals, Encoding, and Delivery
-description: Video signals, color, frame rate, compression, containers, defect identification, and delivery checks for MAD·AMV production
+title: Video Fundamentals, Encoding, and Export
+description: A complete reference for exporting MAD·AMV and image quality—containers and codecs, color range and color spaces, frame rate and interlacing, rate control and CRF, masters and upload versions, audio loudness, common image defects, and a delivery checklist.
 ---
 
-# Video Fundamentals, Encoding, and Delivery
+# Video Fundamentals, Encoding, and Export
 
-Encoding is not just the last step in an export dialog. It is a technical chain that starts when source media is read and runs through decoding, color conversion, scaling, compositing, frame-rate handling, audio processing, and final muxing. A misinterpretation at any point can cause color shifts, banding, combing, audio drift, or generation loss.
-
-This page draws mainly on the video fundamentals, defect identification, and encoding material in the [public VCB-Studio guides](https://guides.vcb-s.com/), reorganized around a MAD·AMV production workflow. The VCB-Studio guides are written mainly for BDRip production; this page focuses on how to preserve the original information once source media enters an editing application, and how to deliver a finished work reliably. For where source media comes from, intake records, and project archiving, see [Source Media and Project Management](/en/tools/footage).
-
-::: warning Check contest or platform requirements first
-Contests may specify resolution, frame rate, container, codec, bitrate, file size, and delivery method. A technically “higher” specification does not necessarily comply with the rules. Before submitting, follow the organizer's text for the current edition and see the site's [Contest and Submission Guidelines](/en/mad/contest-rules).
+::: tip Key points
+- **Export every version from a master**: export one high-quality master first, then encode the contest and Bilibili versions from it. Do not re-edit files downloaded from a platform.
+- **Keep the frame rate**: the timeline frame rate follows the main footage and the contest rules; do not casually switch to 60 fps.
+- **Get the color tags right**: most HD SDR works should be BT.709, limited range. Changing a tag is not the same as converting color.
+- **CRF is only comparable within one encoder**: there are no universal best settings; test on the hardest clips (dark gradients, fast motion, particles).
+- **Read the contest rules first**: contests may restrict resolution, frame rate, container, codec, bitrate, and file size, and a technically “higher” spec may not comply. See [Contest and Submission Guidelines](/en/mad/contest-rules).
 :::
+
+This page reorganizes the video fundamentals, defect identification, and encoding material in the [public VCB-Studio guides](https://guides.vcb-s.com/) around a MAD·AMV production workflow. For sources and project archiving, see [Source Media and Project Management](/en/tools/footage).
+
+## Quick Start: Exporting a Work
+
+1. **Inspect sources**: use MediaInfo to check frame rate, color range, and whether footage is interlaced (see [section 2](#inspect)).
+2. **Set up the timeline**: match resolution and frame rate to the main footage and the contest requirements.
+3. **Export a master**: use ProRes 422 HQ, DNxHR HQ, or a lossless codec, with PCM/WAV audio. Keep this file for archiving and re-encoding.
+4. **Encode the upload version**: encode H.264 or HEVC from the master. Here is an x264 starting point; adjust after testing on your footage:
+
+```bash
+ffmpeg -i master.mov \
+  -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p \
+  -color_primaries bt709 -color_trc bt709 -colorspace bt709 -color_range tv \
+  -c:a aac -b:a 320k -ar 48000 \
+  -movflags +faststart output.mp4
+```
+
+5. **Check everything**: go through the [delivery checklist in section 13](#checklist) for picture, audio, and container.
+6. **Recheck after upload**: platforms transcode again, so check the opening, ending, shadows, and fast-motion shots after uploading.
+
+Format requirements differ widely between contests; check the current edition's rules before choosing the settings in step 4.
 
 ## 1. Getting the Basic Terms Straight
 
@@ -59,7 +81,7 @@ Remuxing cannot repair quality problems already present in the bitstream. Conver
 
 In MAD·AMV production, keep processing of the original source to what is necessary, and generate each platform's upload from a high-quality master. Avoid re-editing from a copy downloaded from a platform.
 
-## 2. Inspect Source Media Instead of Guessing
+## 2. Inspect Source Media Instead of Guessing {#inspect}
 
 ### Recommended Tools
 
@@ -676,7 +698,7 @@ Early analog composite video or poor transfers can let high-frequency luma leak 
 
 *Figure: Rainbowing and dot crawl. Source: VCB-Studio, “Recognizing Defects.”*
 
-## 12. A Suggested MAD·AMV Production Workflow
+## 12. The Full Production Workflow
 
 ### 1. Register Source Media
 
@@ -728,7 +750,7 @@ Platforms transcode again. After uploading, spot-check:
 - Which quality levels the platform actually offers;
 - The thumbnail, title, description, subtitles, and work statement.
 
-## 13. Delivery Checklist
+## 13. Delivery Checklist {#checklist}
 
 ### File and Picture
 

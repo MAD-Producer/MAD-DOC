@@ -3,9 +3,9 @@ import type { HeadConfig } from 'vitepress'
 export const SITE_URL = 'https://doc.madproducer.top'
 export const SITE_NAME = 'MAD DOC'
 export const ZH_DESCRIPTION =
-  'MAD Producer 麦德工坊旗下的 MAD·AMV 资料库：定义、分类、历史、术语、工具与来源索引'
+  'MAD Producer 麦德工坊维护的 MAD·AMV 资料库：MAD 和 AMV 是什么、作品类型、历史、创作工具、比赛规范与来源索引'
 export const EN_DESCRIPTION =
-  'A MAD·AMV knowledge base by MAD Producer, covering definitions, classification, history, terminology, tools, and sources.'
+  'A MAD·AMV knowledge base maintained by MAD Producer: what MAD and AMV are, types of works, history, creation tools, contest guidelines, and sources.'
 const ZH_HOME_TITLE = 'MAD·AMV 资料库'
 const EN_HOME_TITLE = 'MAD·AMV Knowledge Base'
 
@@ -45,6 +45,10 @@ function absoluteUrl(path: string): string {
   return new URL(path, `${SITE_URL}/`).href
 }
 
+function markdownPath(relativePath: string): string {
+  return `/${relativePath}`
+}
+
 function alternatePaths(relativePath: string): {
   zh: string
   en: string
@@ -66,6 +70,26 @@ function safeJson(data: unknown): string {
   return JSON.stringify(data).replace(/</g, '\\u003c')
 }
 
+interface Section {
+  zh: string
+  en: string
+  path: string
+}
+
+// Site sections used for breadcrumbs and Article.articleSection.
+const SECTIONS: { match: RegExp; section: Section }[] = [
+  { match: /^\/mad\/(mad|classification|glossary)$/, section: { zh: '认识 MAD·AMV', en: 'About MAD·AMV', path: '/mad/mad' } },
+  { match: /^\/tools\//, section: { zh: '创作工具', en: 'Creation Tools', path: '/tools/' } },
+  { match: /^\/mad\/contest-rules$/, section: { zh: '比赛', en: 'Contests', path: '/mad/contest-rules' } },
+  { match: /^\/(history\/(timeline|research|dennouemaki)|mad\/ccopw)/, section: { zh: '历史与研究', en: 'History and Research', path: '/history/timeline' } },
+  { match: /^\/(resources\/|mad\/mad-original$|history\/history$)/, section: { zh: '资料与存档', en: 'Resources and Archive', path: '/resources/' } }
+]
+
+function sectionFor(path: string): Section | undefined {
+  const localPath = path.startsWith('/en/') ? path.slice(3) : path
+  return SECTIONS.find(({ match }) => match.test(localPath))?.section
+}
+
 function breadcrumbData(
   canonical: string,
   title: string,
@@ -75,24 +99,27 @@ function breadcrumbData(
   if (path === '/' || path === '/en/') return undefined
 
   const homePath = isEnglish ? '/en/' : '/'
+  const items: { name: string; item: string }[] = [
+    { name: isEnglish ? 'Home' : '首页', item: absoluteUrl(homePath) }
+  ]
+
+  const section = sectionFor(path)
+  if (section) {
+    const sectionUrl = absoluteUrl(isEnglish ? `/en${section.path}` : section.path)
+    if (sectionUrl !== canonical) {
+      items.push({ name: isEnglish ? section.en : section.zh, item: sectionUrl })
+    }
+  }
+  items.push({ name: title, item: canonical })
 
   return {
     '@type': 'BreadcrumbList',
     '@id': `${canonical}#breadcrumb`,
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: isEnglish ? 'Home' : '首页',
-        item: absoluteUrl(homePath)
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: title,
-        item: canonical
-      }
-    ]
+    itemListElement: items.map((entry, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      ...entry
+    }))
   }
 }
 
@@ -149,6 +176,34 @@ function structuredData(
     graph[1].dateModified = new Date(pageData.lastUpdated).toISOString()
   }
 
+  const isHome = path === '/' || path === '/en/'
+  if (!isHome) {
+    const section = sectionFor(path)
+    const article: Record<string, any> = {
+      '@type': 'Article',
+      '@id': `${canonical}#article`,
+      headline: pageData.title,
+      description,
+      inLanguage: language,
+      mainEntityOfPage: { '@id': `${canonical}#webpage` },
+      isPartOf: { '@id': `${SITE_URL}/#website` },
+      author: { '@id': `${SITE_URL}/#organization` },
+      publisher: { '@id': `${SITE_URL}/#organization` },
+      license: 'https://creativecommons.org/licenses/by-sa/4.0/',
+      image: SOCIAL_IMAGE,
+      encoding: {
+        '@type': 'MediaObject',
+        encodingFormat: 'text/markdown',
+        contentUrl: absoluteUrl(markdownPath(pageData.relativePath))
+      }
+    }
+    if (section) article.articleSection = isEnglish ? section.en : section.zh
+    if (pageData.lastUpdated) {
+      article.dateModified = new Date(pageData.lastUpdated).toISOString()
+    }
+    graph.push(article)
+  }
+
   // Google only supports WebSite site-name markup on the domain homepage.
   // The localized /en/ homepage is represented by its WebPage node instead.
   if (path === '/') {
@@ -197,6 +252,15 @@ export function createSeoHead(pageData: SeoPageData): HeadConfig[] {
 
   const head: HeadConfig[] = [
     ['link', { rel: 'canonical', href: canonical }],
+    [
+      'link',
+      {
+        rel: 'alternate',
+        type: 'text/markdown',
+        title: isEnglish ? 'Markdown version' : 'Markdown 版本',
+        href: absoluteUrl(markdownPath(pageData.relativePath))
+      }
+    ],
     [
       'link',
       {

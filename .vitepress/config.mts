@@ -6,6 +6,7 @@ import {
   SITE_URL,
   ZH_DESCRIPTION
 } from './seo'
+import { writeLlmsFiles } from './llms'
 
 const logo: DefaultTheme.ThemeableImage = {
   src: '/brand/mad-producer-logo.webp',
@@ -87,9 +88,9 @@ const zhSidebar: DefaultTheme.SidebarItem[] = [
     text: '认识 MAD·AMV',
     collapsed: false,
     items: [
-      { text: '定义与边界', link: '/mad/mad' },
-      { text: '分类方法', link: '/mad/classification' },
-      { text: '术语词典', link: '/mad/glossary' }
+      { text: 'MAD 和 AMV 是什么', link: '/mad/mad' },
+      { text: '作品类型与分类', link: '/mad/classification' },
+      { text: '术语表', link: '/mad/glossary' }
     ]
   },
   {
@@ -146,8 +147,8 @@ const enSidebar: DefaultTheme.SidebarItem[] = [
     text: 'About MAD·AMV',
     collapsed: false,
     items: [
-      { text: 'Definitions and Scope', link: '/en/mad/mad' },
-      { text: 'Classification', link: '/en/mad/classification' },
+      { text: 'What Are MAD and AMV?', link: '/en/mad/mad' },
+      { text: 'Types and Classification', link: '/en/mad/classification' },
       { text: 'Glossary', link: '/en/mad/glossary' }
     ]
   },
@@ -255,9 +256,9 @@ const zhThemeConfig: DefaultTheme.Config = {
     {
       text: '认识 MAD·AMV',
       items: [
-        { text: '定义与边界', link: '/mad/mad' },
-        { text: '分类方法', link: '/mad/classification' },
-        { text: '术语词典', link: '/mad/glossary' }
+        { text: 'MAD 和 AMV 是什么', link: '/mad/mad' },
+        { text: '作品类型与分类', link: '/mad/classification' },
+        { text: '术语表', link: '/mad/glossary' }
       ]
     },
     {
@@ -332,8 +333,8 @@ const enThemeConfig: DefaultTheme.Config = {
     {
       text: 'About MAD·AMV',
       items: [
-        { text: 'Definitions and Scope', link: '/en/mad/mad' },
-        { text: 'Classification', link: '/en/mad/classification' },
+        { text: 'What Are MAD and AMV?', link: '/en/mad/mad' },
+        { text: 'Types and Classification', link: '/en/mad/classification' },
         { text: 'Glossary', link: '/en/mad/glossary' }
       ]
     },
@@ -413,6 +414,9 @@ export default defineConfig({
         ]
       }
     }
+  },
+  buildEnd(siteConfig) {
+    writeLlmsFiles(siteConfig)
   },
   transformHead({ page }) {
     if (page !== '404.md') return

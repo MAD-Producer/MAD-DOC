@@ -1,199 +1,146 @@
 ---
 title: MAD Contest and Submission Guidelines
-description: Contest formats, common requirements, points of variation, and delivery checks for the Bilibili MAD·AMV community
+description: What to know before entering a Bilibili MAD·AMV contest—a ten-point pre-submission check; how major contests, ICs, themed contests, and exhibitions differ; common rules on originality and re-edits, prior publication, source material, duration and format, collaborations, and AI; judging methods and the delivery package.
 ---
 
 # MAD Contest and Submission Guidelines
 
-::: warning Read the rules for the current edition first
-This page is a plain-language guide to common requirements, not a universal rulebook for every contest. **The current contest column, supplementary announcements, and written responses from the organizer always take priority.** Do not assume that a source type, publication method, or AI tool is permitted this year merely because it was permitted in a previous edition.
+::: info Basis
+Compiled from [MAD Producer's “Standard Rules for MAD Contests”](https://madproducer.com/archives/1309) and the 43 contest articles in MAD Producer's “Contest” category as of **2026-07-25**.
 :::
 
-This page primarily discusses mainland Chinese MAD·AMV contests that use Bilibili as their central platform for publication, screening, and archiving. It draws on [MAD Producer’s “Standard Rules for MAD Contests”](https://madproducer.com/archives/1309) and 43 contest columns listed under MAD Producer’s “Contest” category as of **Jul. 25, 2026**.
+::: tip Key points
+- **The current edition's rules always win**: this page only summarizes common practice. What a past edition allowed may not be allowed now.
+- **Do not publish the full work before submitting**: once the organizer confirms receipt, publish according to that edition's rules.
+- **Source scope, duration, format, and logos are not universal**: copy each requirement from the original text into your checklist.
+- **Ask about AI first**: some contests ban even AI assistance; when asking, name the specific tool and use.
+- **When in doubt, ask the organizer** and keep the written reply.
+:::
 
-## Common Contest Formats
+## Ten-Point Pre-Submission Check
 
-### Comprehensive Contests
+1. Am I eligible? Can judges or organizers enter?
+2. Are my work type, source proportions, and division accepted?
+3. Has the work been published before? Has it entered another contest?
+4. Is there any re-editing of others' work, undisclosed imitation, stolen material, or unfinished section?
+5. Did I use AI? Do the rules clearly allow it? Has the organizer confirmed the specific use?
+6. How is running time counted? Do the logo, opening, and staff credits comply?
+7. Do file format, codec, resolution, frame rate, bitrate, and size comply?
+8. Are the thumbnail, notes document, contributor list, profile links, and contact details complete?
+9. Did I upload before the deadline (check the time zone)? Did I get a receipt confirmation?
+10. When may I publish? Which titles, tags, and event hashtags are required?
 
-Comprehensive contests generally provide several weeks to several months for production or submissions, accept a wider range of work types, and offer shortlisting, rankings, and category awards. They may use one open category or judge separate divisions for anime-based work, still-image work, AMV, ASMV, or organizer-defined categories.
+## Types of Contests
 
-Before entering, confirm:
+| Type | Features | Check especially |
+| --- | --- | --- |
+| Major contest | Weeks to months of submissions, many work types, shortlist, rankings, and special awards | Whether new work made after the announcement is required; how many entries per person; whether you may publish right after submitting; whether mixed-media, GMV, hand-drawn work, etc. are accepted |
+| IC (Iron Chef) | Time-limited creation, usually 72 hours to a week; a song pack or theme is released at the start | Whether you may cross song packs; whether songs may be cut or retimed; source proportions; whether previews may be posted during production |
+| Themed / restricted contest | Limits on theme, material, or eligibility—for example, MMGC centers on still-image work and university contests restrict schools | Invitation-only, shortlist-based, and open-call entry are different things |
+| Exhibition / screening | Usually no overall ranking or prize; for festivals and exchange | Being “selected” is not the same as a competitive shortlist |
 
-- Whether the entry must be produced after the announcement or simply never have been published;
-- Whether judges, organizing staff, or previous finalists may enter;
-- How many entries one person may submit and whether a collaboration consumes a separate slot;
-- Whether an entry may be published immediately after submission or must wait for the finalist compilation;
-- Whether mixed-media work, GMV, tokusatsu, film edits, PV, hand-drawn work, or original animation falls within the submission scope.
+IC rules vary a lot: [NMIC#II](https://madproducer.com/archives/201) allowed crossing song packs and accepted solo, Collab, and MEP entries; [IFT IC #6](https://madproducer.com/archives/2532) banned crossing categories and required at least 70% anime/manga footage.
 
-### IC／Iron Chef
+## Common Rules
 
-An IC is a timed creation contest, commonly lasting from 72 hours to one week. At the start, the organizer provides a song pack, theme, or source restriction, and participants must complete their entries within the stated period.
+### It must be your own work
 
-An IC is not only about “working quickly.” Important questions include:
+“Original” in contests means you did the editing, compositing, and expression yourself; the material need not be original. Usually rejected:
 
-- Whether music may cross song packs or categories;
-- Whether the original song from the pack is mandatory and whether it may be shortened, remixed, or retimed;
-- Whether the contest accepts only anime AMV or also still-image work, GMV, and ASMV;
-- The minimum required proportion of anime or manga material;
-- Whether participants may publish previews, stream their project, or release the completed work during the production period;
-- The precise relationship between solo entries, two-person Collabs, MEPs, and team formats.
+- Reposting, stealing, or submitting someone else's work under your name;
+- Re-edits (三剪): splicing, re-scoring, or retiming someone else's finished MAD·AMV;
+- Copying long stretches of another work's shot order, transitions, and compositing design;
+- Unfinished entries with obvious placeholders;
+- Padding the running time with loops.
 
-[NMIC#II](https://madproducer.com/archives/201) allowed songs to cross packs and accepted Solo, Collab, and MEP entries. [IFT IC #6](https://madproducer.com/archives/2532), by contrast, prohibited cross-category use and required anime or manga clips to constitute 70% of the work. “ICs generally work this way” is not a substitute for the rules of the current edition.
+If you have a clear reference, tell the organizer which parts you referenced. Do not submit a recreation exercise as an original entry.
 
-### Theme Contests, Format-Restricted Contests, and Invitation Events
+### Prior publication and multiple submissions
 
-These events restrict the theme, source type, or participant eligibility. MMGC, for example, has long centered its submission scope on static MAD. University contests may impose restrictions involving school affiliation, year level, or in-person attendance. A theme contest may require work built around a specified concept.
+Many contests do not accept work that has been published, and ban entering the same work in several contests. “Published” may include uploading to any platform, releasing a full preview or downloadable version, or playing the full work in a stream or screening.
 
-Invitation-only, shortlist-based, and open-call formats are also distinct:
+Some contests use publish-on-submission, letting you publish once your entry is received—for example, the 12th Nanjing University MAD Contest and Rosa Festa. If the work was shown at a small event, a campus screening, or an overseas contest, say so before submitting.
 
-- **Invitation-only:** The organizer contacts creators in advance to confirm participation and publication arrangements;
-- **Shortlist-based:** All submissions undergo selection before finalists proceed to screening or ranking;
-- **Open call:** Any eligible participant may submit, but not every entry is guaranteed a place in the official selection.
+### Source scope
 
-### Exhibition Matches and Screening Events
+Contests may accept only certain material. Common limits:
 
-Exhibition matches generally have no overall ranking or cash prize and are held for festivals, anniversaries, organizational exchange, and screenings. They may still specify a theme, duration, review process, and publication window, but “selected” generally does not mean “ranked finalist” in a competitive contest.
+- Anime, manga, light-novel illustrations, or game CG must be the main material;
+- Live action or non-ACG material may not exceed a set share;
+- No GMV, tokusatsu, ASMV, PVs, hand-drawn work, or original CG;
+- Separate divisions for still-image and anime-based work;
+- Mixed-media work picks a division by main material, or as the organizer decides.
 
-## What Most Contests Repeatedly Emphasize
+When unsure, send the organizer a short preview and a breakdown of your material.
 
-MAD Producer’s Contest category contains 43 verified columns. Wording differs across years, but the following requirements recur.
+### Platform review
 
-### 1. The Participant Must Submit Their Own Entry
+For contests published centrally on Bilibili, entries must pass the MAD·AMV category review. Illegal, sexual, gambling, drug-related, excessively gory, or hateful content is usually rejected. “It was in the original” does not mean the compilation will pass; replace or shorten shots if needed.
 
-In contest contexts, “original” usually means that the participant personally created the editing, compositing, and expression of the submitted work. It does not mean that the anime, manga, or music used is also the participant’s original material.
+### Duration, logo, and format
 
-Generally unacceptable:
+Common requirements are MP4, H.264, and 720p or 1080p and above, but details vary widely:
 
-- Reposting, stealing, or submitting another person’s work under a false name;
-- Simply splicing, replacing the music in, or retiming another creator’s completed MAD·AMV—commonly called “triple-editing”;
-- Closely copying extended shot sequences, transitions, compositing designs, or creative execution from another work;
-- Submitting a draft with only parts completed or obvious placeholders;
-- Repeating a loop merely to meet the minimum duration.
+- Minimum length ranges from 20 seconds to 1 minute 30 seconds; maximum from 5 to 15 minutes;
+- Some accept 4K, MKV, MOV, or H.265; others accept only MP4/H.264;
+- Some require the contest logo in the work itself; others only opening text;
+- Whether openings, endings, staff credits, and source lists count toward the running time depends on the original text.
 
-No universal percentage separates “homage” from “imitation.” When a work has a clear reference, the participant should proactively explain the extent of that reference to the organizer. A recreation exercise should not be submitted directly as an original contest entry.
+Before exporting, copy each requirement—format, resolution, frame rate, bitrate, size, and audio—into your checklist. For exporting correctly, see [Video Fundamentals and Encoding](/en/tools/encoding).
 
-### 2. Confirm Publication Windows and Multiple-Contest Entries
+### Collaborative entries
 
-Many contests do not accept works that have been or were previously published and prohibit the same work from entering multiple contests simultaneously. “Published” may include:
+- **Collab**: two or a few creators working together;
+- **MEP**: music sections assigned to several editors and assembled by a coordinator;
+- **Team entry**: submitted under a team name, but the actual contributors must be listed.
 
-- Uploads to Bilibili, YouTube, Douyin, Weibo, and other platforms;
-- A publicly available master file, full preview, or downloadable version;
-- A complete showing on a public stream, at a screening, or on a social-media account.
+List the coordinator, every contributor's ID, profile links, and roles. Prize money is usually per work, not multiplied by contributors. Some contests do not accept collaborations, or do not count them toward individual rankings.
 
-Some contests instead allow publication after delivery: once the organizer confirms receipt, the creator may release the work independently. The 12th Nanjing MAD competition in 2026 and Rosa Festa have used publication arrangements that differ from the standard rules.
+## How AI Is Handled {#ai}
 
-The safest practice is: **do not publish the complete work before delivery; after receiving confirmation from the organizer, publish it according to the current rules.** If the work has appeared at a small event, campus screening, or overseas contest, disclose that history before submission.
+| Situation | Examples | In contests |
+| --- | --- | --- |
+| Light assistance | Filtering sources, extracting vocals, rough cutouts, writing expressions, spell-checking | Generally accepted in the community, but **that does not mean contests allow it**. [IMAC FUN#4](https://madproducer.com/archives/2355) banned AI and AI assistance entirely |
+| Generated content as the core | Main visuals, shots, dialogue, or singing generated by AI | Departs from the practice of re-editing existing ACG material; traditional contests rarely accept it. [Rosa Festa 2026](https://madproducer.com/archives/2348) explicitly excludes fully AIGC animation |
 
-### 3. Each Contest Defines Its Eligible Source Media
+When entering:
 
-A contest may accept all MAD·AMV or only a particular type of source. Common restrictions include:
+1. If the rules ban AI, do not use any AI tool the rules cover;
+2. If the rules only exclude fully AIGC work, do not assume voice cloning, generated video, or outpainting are allowed;
+3. When unsure, ask the organizer before you start and describe the specific function;
+4. Keep original sources, manual masks, project records, and the organizer's reply;
+5. Even when a contest allows it, still apply the platform's AI label and secure permissions for material and voices.
 
-- Anime, manga, light-novel illustrations, and game CG must constitute the primary source material;
-- Live-action film, original footage, or non-ACG material may not exceed a stated proportion;
-- GMV, tokusatsu, ASMV, PV, hand-drawn work, original CG, or raw editing may be excluded;
-- Still-image and anime-based entries may be judged in separate divisions;
-- Mixed-media work may be assigned according to its primary source proportion or the organizer’s decision.
+See [AI Assistance and MAID](/en/tools/ai).
 
-Do not determine eligibility solely from “AMV” or “static MAD” in a title. When uncertain, send the organizer a short preview and a description of the source composition, and retain the written response.
+## Judging Methods
 
-### 4. Entries Must Meet the Publishing Platform’s Moderation Requirements
-
-Contests published collectively on Bilibili generally require entries to comply with submission, content, and moderation requirements for the Anime category and MAD·AMV subcategory. Illegal content, pornography, gambling, drugs, excessive gore or exposure, hatred, and other high-risk sensitive material are generally rejected.
-
-The fact that an image appears in the original work does not ensure that a contest compilation will pass moderation. Replace shots, shorten exposed material, or confirm with the organizer in advance when necessary.
-
-### 5. Duration, Logo, and Technical Specifications Are Not Universal Constants
-
-MAD contests commonly request MP4, H.264/x264, and 720p or 1080p and above, but actual restrictions vary widely:
-
-- Minimum duration may be 20, 30, or 45 seconds, or 1 minute 30 seconds;
-- Maximum duration may be 5, 6, 8, 10, or 15 minutes;
-- Some contests accept 4K, MKV, MOV, or H.265, while others accept only MP4/H.264;
-- Some require the contest logo within the main program, while others require only an intro or event text;
-- The original rules determine whether an intro, outro, staff credits, source list, or loop counts toward duration.
-
-An encoding guide can explain how to export correctly; it cannot determine what a contest permits. Before export, copy every current requirement for file format, resolution, frame rate, bitrate, file size, and audio into a checklist.
-
-### 6. Collaborative Entries Must Identify Participants and Responsibility
-
-- **Collab** usually refers to a work jointly made by two or a small number of creators;
-- **MEP** usually assigns musical sections to multiple creators and is assembled by a coordinator;
-- A **team entry** may be submitted under a team name but must still identify the actual participants;
-- Prize money is generally awarded per entry and distributed by the collaborators, rather than multiplied by headcount.
-
-Delivery materials should state the organizer or coordinator, every participant ID, profile URL, and role. Some contests do not accept collaborative entries, or allow them without counting them toward team or individual rankings.
-
-## How Contests Handle AI Assistance
-
-The Bilibili MAD·AMV community discussed by this site commonly distinguishes two situations:
-
-### Lightweight Assistance
-
-AI does not replace the main images, sound, or expression of the work and instead improves source processing or project efficiency, for example:
-
-- Assisting with the selection, retrieval, and organization of source material;
-- Extracting dialogue, vocals, or accompaniment and preparing a draft transcript;
-- Producing an initial cutout or mask and repairing a small number of edges;
-- Assisting with expressions, scripts, or batch commands;
-- Checking typos, missing files, and delivery items.
-
-Such uses are generally more readily accepted in ordinary creative discussion than extensive generative substitution, but **this does not imply that every contest permits them**. [IMAC FUN#4](https://madproducer.com/archives/2355), for example, explicitly prohibited AI and AI-assisted creation.
-
-### Generated Content Forms the Main Work
-
-When character images, primary shots, dialogue, singing, or complete passages are generated by AI, the work departs substantially from the current Bilibili MAD·AMV convention of re-editing existing ACG source material. It is therefore generally less likely to be accepted by that community or by traditional contests.
-
-[Rosa Festa 2026](https://madproducer.com/archives/2348) explicitly rejected entirely AIGC animation; this does not mean it automatically accepted every other form of AI use. Creators must still ask the organizer to confirm the tools used, scope of processing, input material, and location of generated content.
-
-Recommended practice:
-
-1. If the rules prohibit AI, do not use any AI tool within the stated scope of the prohibition;
-2. If the rules exclude only entirely AIGC work, do not assume that voice cloning, generated video, or outpainting is permitted;
-3. When uncertain, describe the exact feature to the organizer before production rather than asking only “Can I use AI?”;
-4. Retain original source files, manual masks, project records, and the organizer’s response;
-5. Even when a contest permits the use, comply with platform labeling requirements and obtain the necessary rights for source material and voices.
-
-## Common Judging and Results Structures
-
-| Method | Meaning and notes |
+| Method | Description |
 | --- | --- |
-| Preliminary review／shortlisting | First checks compliance and the quality threshold for selection; the finalist ratio may change with the number of submissions |
-| Final judging／ranking | Final judges score, rank, or discuss shortlisted entries to determine awards |
-| Trimmed mean | Removes the highest and lowest score before averaging; may not be used with a small judging panel |
-| Judge vote | Determines results through placement ballots, ranked ballots, or preference votes |
-| Audience vote | Commonly used for daily rounds, battles, or popularity awards and does not always determine overall ranking |
-| Category awards | Awards for anime, still-image work, narrative, compositing, emotion, creativity, newcomers, and other categories may coexist with overall ranking |
-| Feedback | Some events provide feedback on every submission; others comment only on finalists |
-| Exhibition entry | Screened for presentation or entertainment in a battle but excluded from official ranking and prize money |
+| First round / shortlist | Checks compliance and whether the entry reaches shortlist level; the shortlist share may vary with the number of entries |
+| Final round / ranking | Final judges score, rank, or discuss to decide awards |
+| Trimmed mean | The highest and lowest scores are dropped before averaging |
+| Judge voting | Results from ranked, ordinal, or preference votes |
+| Audience voting | Common for head-to-head rounds or popularity awards; does not necessarily decide the overall ranking |
+| Special awards | Anime, still-image, story, compositing, creativity, newcomer, and others, alongside the overall ranking |
+| Feedback | Some contests comment on every entry; others only on shortlisted ones |
+| Exhibition entries | Screened only; not eligible for ranking or prizes |
 
-If judges or organizing staff may enter, confirm the recusal process: entrants must not judge themselves, and another judge may need to supply the score. Some events permit participation but exclude those entries from the overall ranking.
+If judges or organizers may enter, confirm the recusal process: they must not score their own work, and other judges step in if needed.
 
-## Typical Delivery Package
+## The Delivery Package Usually Includes
 
-- The final video exported to the contest specifications;
-- A 1920×1080 cover or the dimensions specified by the contest;
-- Work title, creator ID, Bilibili UID, and contact details;
-- Division, work type, source material, and work introduction;
-- A complete participant list and coordinator for a Collab or MEP;
-- Project screenshots, profile screenshots, or other evidence required by the contest;
-- Notes for judges on source material, rights, AI assistance, or an unusual aspect ratio.
+- The final video exported as required;
+- A thumbnail at 1920×1080 or the specified size;
+- Title, creator ID, Bilibili UID, and contact details;
+- Division, work type, material used, and a description;
+- For collaborations, the full contributor list and coordinator;
+- Any required project screenshots, profile screenshots, or other proof;
+- Notes for judges on material, permissions, AI use, or unusual aspect ratios.
 
-Compressed archives and email subjects must follow the naming format for the current edition exactly. Avoid temporary filenames such as “final2_really_final.mp4” that cannot be reliably identified.
+Copy the edition's naming format exactly for the archive file and email subject.
 
-## Pre-Submission Checklist
-
-1. Do I meet the eligibility requirements, and may judges or organizing staff enter?
-2. Are my work type, source proportion, and division accepted?
-3. Has the work been published or entered in another contest?
-4. Does it contain triple-editing, undeclared imitation, stolen material, or unfinished sections?
-5. Is my AI use explicitly permitted, and has the organizer confirmed the specific use?
-6. How is the main-program duration calculated, and do the logo, intro, and staff credits comply?
-7. Do the file format, codec, resolution, frame rate, bitrate, and size comply?
-8. Are the cover, TXT document, creator list, profile URLs, and contact details complete?
-9. Was the upload completed before the deadline in the specified time zone, and did I receive confirmation?
-10. When may the entry be published, and which title format, tags, and event topics are required?
-
-## Verification Sample
+## References
 
 - [MAD Producer: “Standard Rules for MAD Contests”](https://madproducer.com/archives/1309)
 - [2024 First EAC MAD Contest](https://madproducer.com/archives/196)
@@ -205,13 +152,13 @@ Compressed archives and email subjects must follow the naming format for the cur
 - [8th ALS AMV IC](https://madproducer.com/archives/2427)
 - [QG SOLO MAD CONTEST #S2](https://madproducer.com/archives/2434)
 - [IFT IC #6](https://madproducer.com/archives/2532)
-- [12th Nanjing MAD competition](https://madproducer.com/archives/2537)
+- [12th Nanjing University MAD Contest](https://madproducer.com/archives/2537)
 
-This page extracts only shared patterns and points of variation. Contest dates, group numbers, prize money, judges, and delivery channels are time-sensitive; always return to the original column and the organizer’s latest announcement for verification.
+Contest dates, chat groups, prizes, judges, and submission channels are time-sensitive; follow the original article and the organizer's latest announcement.
 
 ## Related Pages
 
-- [Video Fundamentals and Encoding](/en/tools/encoding): resolution, frame rate, bitrate, and delivery checks;
-- [Source Media and Project Management](/en/tools/footage): source records and project archiving, useful when organizers ask about source media;
+- [Video Fundamentals and Encoding](/en/tools/encoding): export settings and the delivery checklist;
+- [Source Media and Project Management](/en/tools/footage): recording sources so you can answer organizers' questions;
 - [AI Assistance and MAID](/en/tools/ai): categories of AI use and how to write a disclosure;
-- [Glossary](/en/mad/glossary): contest terms such as IC, MEP, triple-editing, and loops.
+- [Glossary](/en/mad/glossary): IC, MEP, re-edits, loops, and other contest terms.

@@ -1,129 +1,164 @@
 ---
 title: MAD·AMV Glossary
-description: Common terminology used in MAD and AMV creation, contests, and communities
+description: Short definitions of common MAD·AMV terms—work types, content tags, editing and compositing techniques, audio and AI, MEP/IC and other contest terms, and Chinese community slang such as 三剪, 燃向, and 卡点.
 ---
 
 # MAD·AMV Glossary
 
-Terminology changes across regions, periods, and event rules. The working definitions below are designed for research and discovery; they do not present community usage as a single universal standard.
+::: tip Key points
+- Terms are grouped into seven sets: works and types, content tags, material, technique, audio and AI, collaboration and contests, and Chinese community slang.
+- Each entry gives the most common usage. The same word can mean different things in different communities, eras, or contests; for contest terms, follow that edition's rules.
+- Press <kbd>Ctrl</kbd>/<kbd>⌘</kbd> + <kbd>F</kbd> to search the page.
+:::
 
-## Terminology Policy
-
-- **MAD Producer:** The official name of the organization maintaining this project.
-- **MAD DOC:** The official name of this knowledge-base project and website.
-- **MAD·AMV:** The site-wide umbrella term for the related creative fields and materials. It does not imply that MAD and AMV are completely synonymous.
-- **MAD** and **AMV:** When discussing a particular work, creator, region, event, or historical source, the source’s own designation is preserved and recorded separately.
-- **Official:** Used only for a confirmed rights holder, platform, event organizer, or page operated by MAD Producer. Community compilations, personal accounts, and reposts are not labeled as official sources.
-- **Rules:** Platform, category, and contest rules are documented with their publisher, scope, and year. They are not generalized into a single industry-wide standard.
-
-## Works and Styles
+## Works and Types
 
 | Term | Meaning |
 | --- | --- |
-| MAD | A broad term from Japanese dōjin remix culture. It may use sound, anime, manga, games, and many other kinds of source material |
-| AMV | Anime Music Video, an unofficial music video that creates expression through anime footage and music |
-| Still-image M@D | A work built primarily from static materials such as manga, illustrations, and character art, animated through compositing |
-| MMV | Manga Music Video, a music video made primarily from manga images |
-| GMV | Usually Game Music Video; the expansion may differ between platforms |
-| ASMV | Anime Story Music Video, generally emphasizing dialogue, music, and narrative arrangement |
-| Animegraphy | An anime-footage compilation organized around a year, period, theme, or large body of works |
-| Raw | Relies primarily on shot selection, editing, synchronization, and basic processing rather than conspicuous compositing |
-| FX／VFX | Emphasizes visual effects and compositing; contests do not consistently distinguish the two labels |
-| Mograph／MG | Motion Graphics, expression through the movement of graphics, text, shapes, and layout |
-| IG／INS | A community label originating in the Instagram publishing ecosystem. It may include rhythmic short edits, motion design, FX, VFX, live action, or game footage and does not denote a single fixed technique |
-| Style-focused | A Chinese community term for works that emphasize visual design, atmosphere, rhythm, motion, or an individual style. It can include long and short works and cannot be identified solely by the amount of effects used |
-| Short edit | An editing format that develops synchronization, visual design, or an emotional passage within a short duration. It describes a publishing and production context, not low production value, and is not synonymous with all style-focused works |
-| MAID | A community term proposed by Chinese MAD creators for works whose primary source material is AI-generated and is organized through MAD·AMV methods. It is not an internationally standardized category |
-| Character Profile | A work focused on developing a character or group of characters |
-| Cross-over | Brings characters, worlds, or events from different works together within one narrative |
-| Non-anime | Uses live action, film, or other non-anime footage; eligibility depends on the community or contest |
-| パロ／Parody | Imitates, parodies, or structurally remakes an opening, advertisement, music video, or another work |
-| Alt-Opening | An unofficial alternative opening made for an anime |
+| MAD | A broad Japanese fan-culture term for new works made by re-editing existing material—audio, anime, manga, or games |
+| AMV | Anime Music Video: an unofficial music video re-edited from anime footage |
+| MAD·AMV | The combined term used on Chinese platforms, and the name of a Bilibili category; it does not mean the two are identical |
+| Still-image M@D | Works made mainly from manga, illustrations, or character art through compositing and animation |
+| M@D | A variant spelling of MAD, common in still-image circles; the “@” does not denote a technique |
+| MMV | Manga Music Video, with manga as the main material |
+| GMV | Game Music Video, with game footage as the main material |
+| ASMV | Anime Story Music Video: dialogue, ambient sound, and music shaped into a short film or trailer |
+| FMV | In Wuyi无疑's scheme, Fan-made MV, broader than AMV; elsewhere it may mean Full Motion Video |
+| Animegraphy | A compilation of many anime shots covering a year, an era, or a theme |
+| Anime-based / still-image / style-focused | The three most common Chinese community types; see [Types and Classification](/en/mad/classification) |
+| Story rewrite (误解系) | Works that rearrange dialogue and plot so viewers see a different story |
+| 复合 MAD | Also called a “move list” (出招表): similar motions chained together to strong rhythmic music. It does not mean mixed material |
+| iMADs / im@ds | MAD made from *THE iDOLM@STER*; the “i” is not Instagram |
+| 手书 (hand-drawn) | Fan animation drawn by the creator |
+| MAID | A term coined by a Chinese MAD creator for MAD made mainly from AI-generated material; not an international category. See [AI Assistance and MAID](/en/tools/ai) |
 
-## Techniques
+## Content Tags
 
 | Term | Meaning |
 | --- | --- |
-| Sync／Synchronization | Establishes a relationship between visual changes and a song’s beat, melody, lyrics, emotion, or structure |
-| Beat Sync | Aligns cuts, actions, or effects with musical beats |
-| Internal Sync | Uses motion already present within a shot to correspond with sound, rather than relying only on cut points |
-| Over-sync | Creates a visible response to every small sound, which may produce a dense or deliberately exaggerated effect |
-| Lip Sync | Re-edits or deforms mouth movements so that a character appears to sing or speak new material |
-| Masking | Uses masks to separate regions, characters, foregrounds, or backgrounds |
-| Rotoscoping／Keying | Tracks contours frame by frame to isolate or reassemble an object |
-| Match Cut | Connects shots through similarities in action, shape, composition, direction, or color |
-| Flow | The sense of continuity between shots, motion, composition, emotion, and musical sections |
-| Time Remapping | Controls source speed with a curve |
-| Frame Interpolation | Generates intermediate frames to change frame rate or smooth slow motion; incorrect estimation can produce warped artifacts |
-| Camera Mapping | Separates a flat image into layers, then creates spatial depth and virtual camera movement |
-| Typography | Dynamic visual design applied to lyrics, dialogue, or other text |
-| SFX | Sound Effects that reinforce actions, environments, transitions, or impacts |
-| TTS／Voice Cloning | A process that generates speech in a target timbre from text and voice references. Permission should be obtained before publicly using the identifiable voice of a natural person |
-| Voice Conversion／VC | Converts existing speech or singing into another timbre while attempting to preserve the original performance’s timing, pitch, and expression |
-| RVC | Retrieval-based Voice Conversion, a class of voice-conversion frameworks based on retrieved features. It is commonly used for voice and singing conversion and is not equivalent to TTS |
-| Source Separation | Estimates dialogue, vocals, drums, bass, accompaniment, or other components from a mixed track. The result is not an official stem and generally contains residual sound and artifacts |
-| Labeling of AI-generated synthetic content | Adds perceptible labels or embedded information to AI-generated or synthetic text, images, audio, or video. Specific obligations depend on the place of publication and platform rules |
+| Action | Emphasizes continuity, force, and speed of motion |
+| Dance | Centers on dance movement and musical groove |
+| Comedy / Humor | Clear jokes, contrast, or parody |
+| Fun / Play | Light and playful, not necessarily joke-driven |
+| Drama | Reorganizes plot and character conflict through editing |
+| Romance | Centers on relationships and romantic emotion |
+| Sentimental | Friendship, growth, nostalgia, parting; less conflict than Drama |
+| Character Profile | Focuses on one character or an ensemble |
+| Story | Built on events and causality, understandable without knowing the original |
+| Psyche | Psychedelic, stream-of-consciousness, psychologically oppressive |
+| Horror / Dark | Fear and unease, or an overall dark, heavy tone |
+| Cinematic | Trailer-style sections, score, and sound design |
+| Trailer | Footage cut as a trailer, sometimes for a film that does not exist |
+| Candy | A sweet, bright visual direction, often with color blocks, decorative shapes, and motion graphics |
+| Upbeat | High, bright energy |
+| Rhythm & Beat | The main appeal is sustained correspondence between picture and groove |
+| Ecchi | Sexy or adult-suggestive content; platform and contest standards differ |
+| Cross-Over | Characters or worlds from different works meeting in one story |
+| Parody / パロ | Recognizable imitation or parody of an opening, ad, MV, and the like |
+| Alt-Opening | Remaking an anime opening using footage from another work |
+| BGA | Background Animation: visuals made for a rhythm game or music event track |
+| CM | A promotional short; in MAD circles, often an announcement video for a contest or team |
+| PV | Promotion Video; sometimes also Preview |
+| MTV / MV | Music video; older schemes used MTV to mean official works |
+
+## Material
+
+| Term | Meaning |
+| --- | --- |
+| Raw | Relies mainly on shot choice, editing, and sync rather than visible compositing |
+| Non-Anime | Main material is not Japanese anime, for example Western animation, live action, or games |
+| Original Animation | Animation drawn or made by the creator |
+| Raw source (生肉) | Original source footage without burned-in subtitles; obtain it lawfully |
+| Use of material (素材利用率) | Whether shots serve the theme—not the more the better |
+
+## Technique
+
+| Term | Meaning |
+| --- | --- |
+| Sync | Matching visual changes to the beat, melody, lyrics, or mood of the music |
+| Beat sync (卡点) | Cuts or effects landing on the beat; the most basic form of sync |
+| Internal Sync | Matching sound with motion already inside a shot, not just with cut points |
+| Over-Sync | Visibly matching many small sounds; too dense can hurt readability |
+| Lip Sync | Making characters' mouths match new lyrics or lines |
+| Match Cut | Joining two shots through similar motion, shape, composition, or color |
+| Flow | The sense of continuity across shots, motion, emotion, and musical sections |
+| Time Remapping | Controlling footage speed with a curve |
+| Frame interpolation (补帧) | Computing in-between frames for slow motion or higher frame rates; warps around occlusion and fast motion |
+| Masking | Separating regions, characters, or foreground from background |
+| Rotoscoping | Tracing outlines frame by frame to isolate an object |
+| Camera Mapping | Splitting a flat image into layers to build space for virtual camera moves |
+| FX | In Chinese sources, rhythmic effects such as text blocks, color layers, and zooms |
+| VFX | Recomposition, tracking, keying, 3D, and full-frame compositing |
+| MG / Motion Graphics | Visuals built from moving shapes, text, and layout |
+| GFX | Thumbnails, posters, and other graphic design, or the person who makes them |
+| Typography | Animated design of lyrics, dialogue, or other text |
+| Kinetic Typography | Text whose position, size, and form change with the rhythm, so the text itself carries expression |
+
+## Audio and AI
+
+| Term | Meaning |
+| --- | --- |
+| SFX | Sound effects: impacts, ambience, transitions |
+| Source separation | Estimating vocals, drums, accompaniment, and so on from a mixed track; not official stems, and artifacts remain |
+| TTS / voice cloning | Generating speech in a target voice from text and a reference recording |
+| VC (Voice Conversion) | Changing the timbre of an existing spoken or sung performance while keeping its delivery |
+| RVC | A widely used voice conversion framework; not TTS |
+| Singing synthesis | Generating singing directly from lyrics and notes, for example DiffSinger |
+| AI content labeling | Visible labels or embedded information marking AI-generated content; mandatory in mainland China since 2025-09-01 |
 
 ## Collaboration and Contests
 
 | Term | Meaning |
 | --- | --- |
-| MEP | Multi-Editor Project, in which multiple editors create separate music segments that are assembled by a coordinator |
-| Collab | A general term for a collaborative work. It need not divide a song evenly or follow an MEP workflow |
-| IC | Iron Chef, a timed creation contest with assigned themes, source material, or both; some use a battle format |
-| Major contest | Usually a comprehensive contest with a longer submission period, shortlisting or rankings, and multiple awards. It is not a legally defined tier with a universal threshold |
-| Exhibition match | An event focused on celebration, exchange, or screening, generally without an official overall ranking or cash prize |
-| Song pack | A set of songs supplied by an IC organizer when the contest begins. Songs may be grouped into categories such as Action, Dance, and Drama, with cross-category use restricted |
-| Shortlisted | An entry has passed preliminary review or selection and proceeds to screening, final judging, or ranking. It does not mean the entry has already placed |
-| Preliminary／final judging | Preliminary judging commonly checks compliance and selects finalists; final judging commonly determines rankings and awards. The exact weighting depends on that edition’s rules |
-| Multiple submissions | Entering the same work in multiple contests simultaneously or in succession. Most contests restrict this practice, but scope and exceptions depend on the rules for that edition |
-| Publish after delivery | The creator may publish an entry after the organizer confirms receipt, rather than waiting for an official compilation |
-| Loop | Repeats an already edited passage. Contests generally prohibit using loops merely to reach the minimum main-program duration |
-| Beta | A test version shared for feedback before formal release |
-| Beta Tester | A person who comments on rhythm, narrative, technique, and readability in a test version |
-| Coordinator | The person coordinating an MEP or collaborative project, including its rules, segment assignment, delivery, and assembly |
-| Track | A music segment assigned to one creator or group within an MEP |
-| Intro／Outro | Opening, closing, and credit segments of a work or collaborative project |
-| Deadline | The closing time for submissions or delivery; contests generally specify a time zone |
-| Premiere | The first public release or screening |
+| MEP | Multi-Editor Project: several editors each make a section (track), then a coordinator assembles them |
+| Collab | A collaborative work, not necessarily divided by section |
+| IC | Iron Chef: a contest with limited time, theme, or material, sometimes head-to-head |
+| Song pack (曲包) | The set of songs organizers release when an IC starts, often grouped by type |
+| Major contest (大赛) | A broad contest with a long submission period, a shortlist, and multiple awards |
+| Exhibition (表演赛) | Mainly for screening and exchange; usually no overall ranking |
+| Shortlist (入围) | Passing the first round into screening or final judging; not the same as winning |
+| First / final round | The first round checks rules and quality; the final round decides rankings |
+| Multiple submission (一稿多投) | Entering the same work in several contests; most contests restrict it |
+| Publish-on-submission (随交随投) | Creators may publish once organizers confirm receipt |
+| Loop | Repeating an already edited section; contests usually forbid using it to pad length |
+| Coordinator (主催) | The organizer of an MEP or collaborative project |
+| Track | The part of the music assigned to one editor in an MEP |
+| Beta / Beta Tester | A test version before release, and the people who give feedback on it |
+| Intro / Outro | Opening, ending, and credit sections |
+| Deadline | The submission cutoff; check which time zone the contest uses |
+| Premiere | First public release or screening |
 
-## Common Terms in Chinese Communities
+## Chinese Community Slang
 
-| Term | Meaning and notes |
+| Term | Meaning |
 | --- | --- |
-| MADer | A community term for a MAD creator |
-| Triple-editing | A simple re-edit of another creator’s completed transformative video; it commonly creates serious attribution and copyright risks |
-| High-energy | A broad Chinese label for works centered on intensity, action, and a high-energy experience |
-| Emotional climax | A community label for works that combine emotional buildup with the release of action or a climax |
-| Editing sensibility | An overall impression created by rhythm, shot selection, direction of motion, and audiovisual continuity, rather than a single technical metric |
-| Source utilization | Whether the choice of source material serves the theme; it does not mean that using more shots is inherently better |
-| Homogenization | High repetition across works in song choice, source material, structure, effects, or templates |
-| Beat matching | Changes a shot or effect on a beat; a basic form of synchronization |
-| Misinterpretation | Reorders relationships and plot elements from the source so that viewers infer a different story. Its boundaries and name arise primarily from Chinese communities |
-| Imitation | Recreates another work’s effects or workflow for study. Public releases should identify the reference and must not be presented as original work |
-| Long-form MAD·AMV community | A mainland Chinese creative community centered on Bilibili uploads, teams, and contests, commonly structuring works around a full song or a longer passage. This is an observation about a community, not a work type |
-| Style-focused short-edit community | A mainland Chinese creative community characterized by short edits, individual style, and circulation through short-video platforms or instant-messaging groups. It overlaps with the long-form community, but their social networks and evaluative contexts have clearly diverged |
+| MADer | A MAD creator |
+| 三剪 | Lightly re-editing someone else's fan video and posting it; raises credit and copyright issues and is rejected by contests |
+| 仿作 | Recreating another work's effects to learn; credit the reference when publishing |
+| 燃向 | Hot-blooded, action-heavy, high energy |
+| 泪燃 | Builds emotion first, then releases it at the climax |
+| 剪辑感 | An overall feel for pacing, shot choice, direction of motion, and transitions |
+| 同质化 | Songs, material, structure, or effects that are all very similar |
+| 短剪 | A very short format; says nothing about completeness |
 
-## Potentially Misleading Terms
+## Easily Misunderstood Words
 
-- **“Effects”:** May refer to anything from a simple transition to complex compositing. Discussions should identify the actual method whenever possible.
-- **“Original”:** May mean original editing and expression or original source material; the two involve different rights.
-- **“Copyright-free”:** Usually inaccurate. More precise descriptions include public domain, a specific open license, permission granted, or royalty-free licensing.
-- **“Official”:** A rights holder, platform account, event organizer, and community administrator are different entities.
-- **“Rules”:** Contest rules govern only that event, and platform rules govern only that platform. Neither is a universal definition.
+- **Effects**: may mean a simple transition or complex compositing; say what you actually did.
+- **Original**: may mean the editing is original or the material is original; the rights involved are completely different.
+- **Copyright-free**: usually wrong. Say public domain, a specific open license, permission granted, or royalty-free instead.
+- **Official**: rights holders, platforms, contest organizers, and community moderators are different parties.
+- **Rules**: contest rules apply only to that contest; platform rules apply only to that platform.
 
 ## References
 
-- [ACG Library: Explanation of Common Terms](https://acglibrary.com/clarification/dictionary.html)
+- [ACG Library: Glossary of Common Terms](https://acglibrary.com/clarification/dictionary.html)
 - [Wuyi无疑: “Classification of MAD”](https://www.bilibili.com/opus/291682438941101836)
 - [AMV Japan: AMVのカテゴリー](https://amv-japan.org/column/amv-categories)
 - [AnimeMusicVideos.org](https://www.animemusicvideos.org/)
 
-Each glossary addition requires, at minimum, the term, period of use, community of use, and a link to an original example. Explanations without verifiable context are not added as formal definitions.
-
 ## Related Pages
 
-- [Definitions and Scope](/en/mad/mad): a full discussion of the two core terms, MAD and AMV;
-- [Classification](/en/mad/classification): how style and type tags combine;
-- [AI Assistance and MAID](/en/tools/ai): AI-related terms and where their limits lie;
-- [Contest and Submission Guidelines](/en/mad/contest-rules): how contest terms such as IC, MEP, and triple-editing work in practice.
+- [What Are MAD and AMV?](/en/mad/mad): definitions of the two core terms;
+- [Types and Classification](/en/mad/classification): how these tags combine;
+- [Contest and Submission Guidelines](/en/mad/contest-rules): how contest terms work in real rules;
+- [AI Assistance and MAID](/en/tools/ai): where AI-related terms draw their lines.

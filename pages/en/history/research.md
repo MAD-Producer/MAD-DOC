@@ -1,11 +1,17 @@
 ---
 title: MAD·AMV Research Methods and Survey
-description: A collection framework for historical verification, creator conditions, and career pathways
+description: A survey plan for MAD·AMV community history and creators today—research goals, conclusions that must not be drawn directly, five sets of survey questions (background, learning, community history, careers, sustainability), interview verification, data publication and privacy rules, and a historical record template.
 ---
 
 # Research Methods and Survey
 
-The main problem with existing MAD·AMV historical material is not a complete lack of articles, but opaque samples, the mixing of recollection and fact, and dead primary links. This page provides a reproducible collection framework without presenting an unimplemented survey as research findings.
+::: tip Key points
+- The main problem with MAD·AMV historical material is opaque samples, memories mixed with facts, and dead links—not a lack of articles.
+- This page is a collection plan that **has not yet been carried out**: survey questions, interview verification, and data publication rules. It contains no findings.
+- Every historical claim should record the date, platform, the speaker's role, the evidence, and whether it was first-hand.
+- Information about minors, real identities, income, and contact details needs explicit consent before publication.
+- For published research, see the [Chinese MAD Creator Study (Dissertation)](/en/mad/ccopw).
+:::
 
 ## Research Objectives
 
@@ -14,7 +20,7 @@ The main problem with existing MAD·AMV historical material is not a complete la
 3. Observe the relationship between MAD·AMV skills and education, freelance work, and formal employment;
 4. Build datasets, interview catalogs, and evidence links that can be published anonymously.
 
-## Conclusions That Must Not Be Inferred Directly
+## Conclusions You Cannot Draw Directly
 
 - Bilibili view counts do not represent the number of creators across the entire community;
 - A decline in Tieba posts does not directly prove a decline in creator numbers;
@@ -105,7 +111,7 @@ evidence_type: contemporary page／file／first-hand interview／second-hand acc
 primary_url: original URL
 archive_url: lawful web archive
 accessed_at: YYYY-MM-DD
-confidence: A | B | C
+confidence: Verifiable | Community record | Unverified
 rights: rights and permission for publication
 notes: conflicting accounts, missing fields, and follow-up verification tasks
 ```

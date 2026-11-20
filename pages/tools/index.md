@@ -1,96 +1,70 @@
 ---
 title: MAD·AMV 创作工具总览
-description: 从素材、剪辑、合成、音频到输出的工具地图与选择原则
+description: 做 MAD·AMV 需要哪些软件：从素材检查、剪辑、合成、音频到导出的工作流地图，Adobe、DaVinci Resolve 和免费开源三套常用组合，以及硬件与工程归档要点。
 ---
 
 # MAD·AMV 创作工具总览
 
-软件不是按“新手／大神”分级，而是按任务选择。一个稳定的最小工作流通常只需要：**素材分析工具 + 一款主剪辑软件 + 一款编码工具 + 可选的合成／图像／音频软件**。
+::: tip 要点
+- 最少只需要四样工具：**素材检查工具 + 一款剪辑软件 + 一款编码工具 + 一款合成软件（可选）**。
+- 三套常见组合：Adobe（Premiere＋After Effects）、DaVinci Resolve 一体化、Kdenlive＋Blender 免费开源。
+- 软件按任务选择，没有“新手软件”和“大神软件”之分。
+- 先用软件自带功能，确实省时再买插件。
+- 项目要能在几年后重新打开：记录软件和插件版本，做好备份。
+:::
 
-## 工作流地图
+## 制作流程与对应工具
 
-| 阶段 | 主要任务 | 常用工具 |
+| 阶段 | 要做什么 | 常用工具 |
 | --- | --- | --- |
-| 规划 | 主题、选曲、镜头表、版权记录 | 文档／表格、PureRef、Eagle；可选对话模型辅助整理 |
-| 检查素材 | 查看封装、编码、帧率、色彩和音轨 | MediaInfo、ffprobe |
-| 拆封装 | 从自己合法持有的 MKV 等容器提取轨道 | MKVToolNix、FFmpeg |
-| 转码／代理 | 转为软件易解码的中间格式，生成低负载代理 | FFmpeg、HandBrake、剪辑软件内置代理 |
-| 主剪辑 | 选镜、结构、节奏、基础变速和声音 | Premiere Pro、DaVinci Resolve、Final Cut Pro、Kdenlive |
+| 规划 | 定主题、选曲、列镜头表、记素材来源 | 文档／表格、PureRef、Eagle |
+| 检查素材 | 看容器、编码、帧率、色彩、音轨 | MediaInfo、ffprobe |
+| 拆封装 | 从 MKV 等容器里取出音视频轨道 | MKVToolNix、FFmpeg |
+| 转码／代理 | 转成好剪的格式，或生成低负载代理 | FFmpeg、HandBrake、剪辑软件自带代理 |
+| 剪辑 | 选镜、结构、节奏、变速、声音 | Premiere Pro、DaVinci Resolve、Final Cut Pro、Kdenlive |
 | 合成／动效 | 遮罩、跟踪、文字、粒子、三维、静止画动画化 | After Effects、Fusion、Blender |
-| 图像处理 | 分层、修图、绘制、矢量 | Photoshop、Krita、GIMP、Illustrator、Inkscape |
-| 音频 | 清理、重混、音效、响度 | Audition、REAPER、Audacity |
-| 输出与质检 | 编码、校验、逐帧检查、最终上传 | Media Encoder、FFmpeg、MediaInfo |
+| 图像 | 拆层、修图、绘制、矢量 | Photoshop、Krita、GIMP、Illustrator、Inkscape |
+| 音频 | 清理、混音、音效、响度 | Audition、REAPER、Audacity |
+| 导出与检查 | 编码、逐帧检查、上传 | Media Encoder、FFmpeg、MediaInfo |
 
-## 常用工作流组合
+## 三套常用组合
 
-### 组合 A：通用商业工作流
+**A. Adobe 组合**：Premiere Pro 剪辑，After Effects 合成和静止画动画化，Photoshop／Illustrator 处理图像，Audition 处理音频，Media Encoder 或 FFmpeg 导出。中文教程和插件最多；缺点是要订阅，版本和插件兼容问题多。
 
-- Premiere Pro：主剪辑与代理；
-- After Effects：合成、动效、静止画动画化；
-- Photoshop／Illustrator：图像与矢量；
-- Audition：音频处理；
-- Media Encoder／FFmpeg：交付。
+**B. DaVinci Resolve 一体化**：Resolve 一个软件完成剪辑、Fusion 合成、调色和 Fairlight 音频，免费版已够用；再配 Blender 做三维、Krita／GIMP 做图像。软件切换少；缺点是 Fusion 用节点，和 AE 的图层思路差别很大。
 
-优点是教程、模板和插件生态大；风险是订阅成本、版本兼容和第三方插件依赖。
+**C. 免费开源组合**：Kdenlive 剪辑，Blender 做合成和三维，Krita／GIMP／Inkscape 做图像，Audacity 做音频，FFmpeg、MKVToolNix、MediaInfo 处理技术问题。不用付费，工程也更容易长期打开；学习成本并不低。
 
-### 组合 B：一体化调色与合成
+各软件的详细介绍见[软件选择](/tools/software)。
 
-- DaVinci Resolve：剪辑、Fusion 合成、调色和 Fairlight 音频；
-- Blender：三维和复杂空间；
-- Krita／GIMP：图像；
-- FFmpeg／MKVToolNix：素材预处理。
+## 怎样决定要不要加工具
 
-适合希望减少软件切换的人。Fusion 的节点式思维与 AE 图层式工作流差异较大。
+依次问自己：
 
-### 组合 C：免费／开源工作流
+1. 主软件自带功能能做到吗？
+2. 能不能用预合成、表达式、节点或脚本反复利用？
+3. 第三方插件真的能省下大量时间吗？
+4. 插件支持你的软件版本、系统和显卡吗？
+5. 合作者和以后打开工程的环境也有合法授权吗？
 
-- Kdenlive：主剪辑和代理；
-- Blender：合成、三维和部分剪辑；
-- Krita／GIMP／Inkscape：图像；
-- Audacity：音频；
-- FFmpeg、MKVToolNix、MediaInfo：技术处理。
+插件用来解决具体问题，不能代替作品本身的风格。详见[插件与脚本](/tools/plugins-ai)。
 
-开源不等于没有学习成本，但项目更容易长期打开，也减少订阅和授权压力。
+## 硬件
 
-## 工具选择顺序
+- **剪辑**：CPU、硬件解码和硬盘速度决定 H.264／H.265 等长 GOP 素材是否流畅。文件小不等于好剪，卡顿时就生成代理。
+- **合成**：After Effects 主要吃内存和缓存；Resolve／Fusion、Blender 和 AI 工具更依赖显卡和显存。
+- **存储**：当前项目和缓存放 NVMe SSD；归档另做备份。
+- **配置**：官方最低配置只保证能运行。按你常做的分辨率、帧率、素材编码和效果来选，再对照官方最新要求。
 
-工具评估可按以下顺序进行：
+## 让工程几年后还能打开
 
-1. 主软件原生功能能否完成？
-2. 是否可以通过预合成、表达式、节点或脚本重复使用？
-3. 第三方插件是否真的节省大量时间？
-4. 插件是否支持你的宿主版本、操作系统和 GPU？
-5. 团队其他成员与未来归档环境是否也有合法许可证？
+- 记录软件和插件的准确版本；
+- 收集工程用到的字体、LUT、脚本和插件清单（不要打包无权分发的安装文件）；
+- 关键的动态链接合成先渲染成高质量中间文件；
+- 保留母版、发布版、字幕、封面、说明和校验值；
+- 按 3-2-1 原则备份：三份数据、两种介质、一份异地。
 
-插件应解决明确问题，而不是作为作品风格的替代品。
-
-## 硬件性能要素
-
-### 剪辑与解码
-
-- CPU、硬件解码支持和存储速度影响长 GOP 素材的浏览；
-- 内存决定大型工程、缓存和多软件并行的余量；
-- NVMe SSD 适合缓存与当前项目，归档应另有备份；
-- H.264／H.265 文件“小”不代表编辑“轻”，必要时生成代理或中间编码。
-
-### 合成与三维
-
-- AE 常受内存、缓存和单帧计算影响；
-- Resolve／Fusion、Blender 和 AI 工具更依赖 GPU 与显存；
-- 4K、32-bit 浮点、降噪、粒子和大量预合成会快速增加资源占用。
-
-### 配置原则
-
-软件最低要求只代表基础运行条件。硬件评估应以典型项目的分辨率、帧率、素材编码、最长时长、并发软件、常用效果和预算为依据，再对照当前官方要求。由于要求会随版本更新，MAD DOC 只保留官方入口，不设置长期固定的配置单。
-
-## 项目长期可打开
-
-- 保留软件与插件的准确版本；
-- 收集项目使用的字体、LUT、脚本和插件清单；归档包不包含无权分发的安装文件；
-- 将关键动态链接合成为高质量中间文件；
-- 输出带透明通道和不带透明通道的关键镜头；
-- 保留最终母版、发布版、字幕、封面、说明和校验值；
-- 至少使用 3-2-1 备份：三份数据、两种介质、一份异地。
+目录结构和素材清单模板见[素材与工程管理](/tools/footage)。
 
 ## 参考资料
 
@@ -103,8 +77,8 @@ description: 从素材、剪辑、合成、音频到输出的工具地图与选�
 
 ## 相关页面
 
-- [软件选择](/tools/software)：各环节软件的能力与官方入口；
-- [素材与工程管理](/tools/footage)：素材来源、目录结构和长期保存；
-- [视频基础与编码](/tools/encoding)：色彩、帧率、压缩与交付检查；
-- [插件与脚本](/tools/plugins-ai)：插件选择、兼容性清单与归档；
-- [AI 辅助与 MAID](/tools/ai)：AI 在各环节的用法与披露。
+- [软件选择](/tools/software)：每款软件的特点和官方入口；
+- [素材与工程管理](/tools/footage)：素材来源、目录结构和归档；
+- [视频基础与编码](/tools/encoding)：导出设置和画质问题；
+- [插件与脚本](/tools/plugins-ai)：插件怎么选、怎么记录；
+- [AI 辅助与 MAID](/tools/ai)：AI 工具能做什么、怎么标注。

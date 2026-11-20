@@ -1,13 +1,18 @@
 ---
 title: MAD·AMV Source Index
-description: An annotated index of Bilibili, MAD Tieba, blogs, specialist sites, research papers, international communities, and official tool documentation
+description: An index of original MAD·AMV sources—Bilibili articles and videos, old MAD Tieba posts, Chinese and Japanese blogs, research papers, international AMV communities, AI tools and regulations, and official software documentation—each with a summary, source type, and link status.
 ---
 
-# Source Index and Verification Status
+# Source Index
 
-This index lists original MAD·AMV sources with a short local summary, the type of source, and whether the link still works. The summaries are written and stored on this site so that each entry can record what the source is useful for, where its limits lie, and which search terms lead further. Every entry links back to the original.
+::: tip Key points
+- More than 130 original MAD·AMV sources: Bilibili, MAD Tieba, blogs, research papers, international communities, and official software documentation.
+- Every entry states its **source type** (primary source / community compilation / personal view) and **link status** (🟢 accessible / 🟡 partly missing / 🔴 dead link).
+- The summaries are written by this site; follow the links for the originals.
+- Verification date: **2026-07-25**. Tieba and Bilibili pages were checked directly; other entries were cross-checked against public pages, papers, and official documentation.
+:::
 
-> Verification date: **2026-07-25**. For Tieba and Bilibili pages, the visible text or page information was checked directly. Other entries were cross-checked against public web pages, organization pages, research papers, and official software documentation.
+**Jump to**: [Japanese MAD blog](#dennouemaki) · [Contest articles](#contests) · [Wuyi无疑](#wuyi) · [Bilibili](#bilibili) · [MAD Tieba](#mad-tieba) · [Chinese blogs and sites](#blogs) · [AI and MAID](#ai) · [Japanese MAD and AMV history](#japan-history) · [International](#international) · [Software documentation](#software)
 
 ## How to Read the Labels
 
@@ -42,7 +47,7 @@ Two types joined together (such as “Primary source / Community compilation”)
 
 Including a text in the archive does not make its conclusions established fact. The main pages re-examine these claims with summaries, evidence labels, and cross-referenced sources.
 
-## Japanese MAD Blog: Dennou Emaki Seisaku Iinkai
+## Japanese MAD Blog: Dennou Emaki Seisaku Iinkai {#dennouemaki}
 
 The personal blog of yuu926. MAD DOC covers 14 of the 15 articles in its “Column” category as original thematic summaries; *“Otaku no MAD Video” (Hajiou)* is not summarized for now. The “MAD Videos” and “How to Make MAD” categories are out of scope.
 
@@ -51,7 +56,7 @@ The personal blog of yuu926. MAD DOC covers 14 of the 15 articles in its “Colu
 | [Dennou Emaki Seisaku Iinkai, “Column” category](https://dennouemaki.blog.jp/archives/cat_250334.html) | MAD genealogy, etymology, the Jūnishidan interview, media history, classification theory, and views on copyright; see [Dennou Emaki Column Summaries](/en/history/dennouemaki) | Community compilation / Personal view · 🟢 Accessible (some videos and PDF attachments missing) |
 | [MAD動画の創始者「企画グループ十二支団」（1985年）](https://dennouemaki.blog.jp/2020/04/25/mad%E5%8B%95%E7%94%BB%E3%81%AE%E5%89%B5%E5%A7%8B%E8%80%85%E3%80%8C%E4%BC%81%E7%94%BB%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97%E5%8D%81%E4%BA%8C%E6%94%AF%E5%9B%A3%E3%80%8D%EF%BC%881985%E5%B9%B4%EF%BC%89/) | Interview with Jūnishidan leader tencho: activities from 1984 to 1989, the annual videos, and attendance figures; see [Origins](/en/history/dennouemaki/origins#junishidan) | Community compilation · 🟢 Accessible |
 
-## MAD Producer Contest Articles
+## MAD Producer Contest Articles {#contests}
 
 As of the verification date, the public feed of MAD Producer's “Contest” category contains **43 articles**. MAD DOC reviewed the title and rule text of each one when writing the [Contest and Submission Guidelines](/en/mad/contest-rules). Each article records the rules of one event; they should not be stitched together into a single rule set that applies to every contest.
 
@@ -73,7 +78,7 @@ As of the verification date, the public feed of MAD Producer's “Contest” cat
 
 Topics that recur across these articles include duration, collaboration, judges, prior publication, triple-editing, imitation, plagiarism, logos, loops, platform review, and encoding formats. The actual requirements often point in opposite directions. Some contests allow publication immediately after submission, while others require creators to wait for the official compilation. Some let judges enter as long as they recuse themselves from scoring their own work; others bar judges from entering at all.
 
-## Wuyi无疑 (Bilibili UID 11869055)
+## Wuyi无疑 (Bilibili UID 11869055) {#wuyi}
 
 At the time of verification, the [creator's space](https://space.bilibili.com/11869055) listed 7 text posts and 29 videos. The entries directly relevant to this site are:
 
@@ -85,7 +90,7 @@ At the time of verification, the [creator's space](https://space.bilibili.com/11
 - Published: 2019-08-26
 - Summary: Divides works into anime, still-image, and hybrid groups. The anime group includes Raw, VFX, and FX, and the article also collects a large set of tags such as Action, Dance, Drama, Psyche, ASMV, MEP, MG, Lip Sync, and Typography.
 - Value: One of the most widely circulated classification vocabularies on the Chinese internet. It cites international sources including AMVNews, AKROSS, AMV Japan, AMV France, and AnimeMusicVideos.org.
-- Limits: The author states that the system leans toward Western conventions and is incomplete. Categories, techniques, styles, and event formats sit at the same level. MAD DOC reworks it into five independent dimensions in [Classification](/en/mad/classification).
+- Limits: The author states that the system leans toward Western conventions and is incomplete. Categories, techniques, styles, and event formats sit at the same level. MAD DOC reworks it into five independent dimensions in [Types and Classification](/en/mad/classification).
 
 ### “What Did You See in the MAD Section in 2021? Major MAD Events of 2021”
 
@@ -96,7 +101,7 @@ At the time of verification, the [creator's space](https://space.bilibili.com/11
 - Summary: A video review of events in the Chinese MAD community during 2021; a useful entry point into that year.
 - Limits: The events were selected by the author. The list still needs to be checked against event announcements, the works themselves, and other participants.
 
-## Bilibili Sources
+## Bilibili Sources {#bilibili}
 
 | Source | Summary | Type / status |
 | --- | --- | --- |
@@ -135,7 +140,7 @@ At the time of verification, the [creator's space](https://space.bilibili.com/11
 | [Old AMV Tutorial on Removing Dialogue or Background Music](https://www.bilibili.com/read/cv1972078/) | A 2019 phase-cancellation method. The author later marked it as outdated and noted that AI source-separation tools have replaced it; a record of a technical turning point | Community compilation · 🟢 Accessible |
 | [Bilibili: Campaign Against Misuse of AI Applications](https://www.bilibili.com/opus/1202507670848798745) | Platform notice dated 2026-05-15: generated or synthetic content must be labeled, and the AI declaration has moved to the main submission screen. Missing labels may be added by the platform, or the upload rejected or removed; deceptive synthetic dubbing and face swaps are treated more strictly | Primary source · 🟢 Accessible |
 
-## MAD Tieba and the Chinese Community
+## MAD Tieba and the Chinese Community {#mad-tieba}
 
 ### Core Navigation
 
@@ -187,7 +192,7 @@ At the time of verification, the [creator's space](https://space.bilibili.com/11
 - At the time of verification, the page showed a founding date of **2004-12-06**, the tagline “Use love to create original animation videos,” about 79,000 followers, and 660,000 posts. Some earlier sources give December 7 instead; MAD DOC follows the current Tieba page and notes the discrepancy.
 - Follower and post counts change over time. They are recorded only as a snapshot from 2026-07-25 and are not used to estimate the number of active creators.
 
-## Chinese Blogs and Specialist Sites
+## Chinese Blogs and Specialist Sites {#blogs}
 
 | Source | Summary | Type / status |
 | --- | --- | --- |
@@ -205,7 +210,7 @@ At the time of verification, the [creator's space](https://space.bilibili.com/11
 | [Creator Blog: 静止画MADの作り方](https://creator-blog.jp/how-to-make-mad-using-still-images/) | A 2023 introduction to separating and animating still images in Photoshop and After Effects; check interface and subscription details against current Adobe documentation | Personal view · 🟢 Accessible |
 | [音MADとその周辺](https://otomad.jp/column) | An index of Japanese articles on audio MAD, covering community history, creation, and careers; treated as a related branch, not merged with video AMV | Community compilation · 🟢 Accessible |
 
-## AI Assistance, MAID, and Generative Fan Works
+## AI Assistance, MAID, and Generative Fan Works {#ai}
 
 ### Early MAD Producer Material
 
@@ -238,7 +243,7 @@ At the time of verification, the [creator's space](https://space.bilibili.com/11
 | [Measures for Labeling AI-Generated Synthetic Content](https://www.cac.gov.cn/2025-03/14/c_1743654684782215.htm) | In force from 2025-09-01; covers text, images, audio, video, and virtual scenes, and sets out explicit and implicit labeling as well as publishers' duty to declare such content | Primary source · 🟢 Accessible |
 | [Supreme People's Court: Typical case on unauthorized AI use of a person's voice](https://www.court.gov.cn/zixun/xiangqing/467511.html) | The court's typical case explains that an identifiable AI-synthesized voice can fall under a specific person's voice rights, and that permission to use recordings does not automatically extend to making an AI version of the voice | Primary source · 🟢 Accessible |
 
-## Japanese MAD and AMV History
+## Japanese MAD and AMV History {#japan-history}
 
 | Source | Summary | Type / status |
 | --- | --- | --- |
@@ -252,7 +257,7 @@ At the time of verification, the [creator's space](https://space.bilibili.com/11
 | [AniPAFE past data](https://anipafe.hatenablog.com/archive/category/%E9%81%8E%E5%8E%BB%E3%83%87%E3%83%BC%E3%82%BF) | Archive of past rules and results for a Japanese AMV/MAD festival; useful for tracing changes in categories and events | Primary source · 🟢 Accessible |
 | [中川浩一「MADムービー」にみる映像制作文化の一考察](https://kusa.repo.nii.ac.jp/record/401/files/kk200813015019.pdf) | A 2007 Japanese research article examining MAD video culture through the works and production environment of its time; older, and best read alongside contemporaneous pages | Primary source · 🟢 Accessible |
 
-## Western and International AMV Sources
+## Western and International AMV Sources {#international}
 
 | Source | Summary | Type / status |
 | --- | --- | --- |
@@ -267,7 +272,7 @@ At the time of verification, the [creator's space](https://space.bilibili.com/11
 | [AMVGuide](https://amvguide.blogspot.com/) | A blog-style guide to the full process: audio, source preparation, lossless and lossy editing, frameservers, proxies, post-production, and distribution; some AviSynth and software material is clearly dated | Community compilation · 🟢 Accessible |
 | [Fanlore: Anime Music Videos](https://fanlore.org/wiki/Anime_music_videos) | A fan-culture wiki that is useful for terms and references; specific facts should be traced back to original sources | Community compilation · 🟢 Accessible |
 
-## Official Software and Technical Documentation
+## Official Software and Technical Documentation {#software}
 
 | Category | Official sources |
 | --- | --- |

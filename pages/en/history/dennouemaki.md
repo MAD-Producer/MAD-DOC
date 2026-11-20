@@ -1,9 +1,16 @@
 ---
 title: Dennou Emaki Column Summaries
-description: Original English summaries, source registration, and reliability labels for the "Column" articles of the Japanese MAD blog Dennou Emaki Seisaku Iinkai
+description: English summaries of 14 Column articles from the Japanese MAD blog Dennou Emaki Seisaku Iinkai—where the word “MAD” came from, Jūnishidan’s 1985 first MAD video, media history from tape to Niconico, MAD classification theory, and views on copyright.
 ---
 
 # Dennou Emaki Column Summaries
+
+::: tip Key points
+- A personal blog by the Japanese MAD creator yuu926; this site summarizes 14 of the 15 articles in its “Column” (コラム) category.
+- The most valuable part is the author's **interview with Jūnishidan leader tencho**: where the word “MAD” came from, and the 1985 “Jūnishidan Video,” regarded as the first MAD video.
+- The summaries are split by topic into three pages: [Origins](/en/history/dennouemaki/origins), [Media and Platforms](/en/history/dennouemaki/media), and [Classification and Copyright](/en/history/dennouemaki/theory).
+- The summaries faithfully relay the author's views and are not this site's final conclusions.
+:::
 
 *Dennou Emaki Seisaku Iinkai* (電脳絵巻製作委員会, “Dennou Emaki Production Committee”; hereafter “the Dennou Emaki blog”) is a personal blog run by the Japanese MAD creator **yuu926**. It has three top-level categories: “MAD Videos” (commentary on the author’s own works), “Column” (コラム), and “How to Make MAD” (MADの作り方).
 
@@ -71,4 +78,4 @@ Dates follow the publication time shown on the blog (JST).
 ## Related Pages
 
 - [Historical Timeline](/en/history/timeline): these summaries in the context of the Japanese MAD, Western AMV, and Chinese threads;
-- [Source Index](/en/resources/#japanese-mad-blog-dennou-emaki-seisaku-iinkai): this blog’s entry in the source index.
+- [Source Index](/en/resources/#dennouemaki): this blog’s entry in the source index.

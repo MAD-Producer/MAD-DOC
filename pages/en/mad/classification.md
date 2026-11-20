@@ -1,355 +1,168 @@
 ---
-title: MAD·AMV Classification
-description: A multidimensional tagging system covering source media, expression, technique, collaboration, and release context instead of a mutually exclusive classification tree
+title: MAD·AMV Types and Classification
+description: How anime-based, still-image, style-focused, effects, mixed-media, GMV, and story-rewrite MAD·AMV differ, and how to describe any work by five dimensions—material, purpose, technique, collaboration, and release context.
 ---
 
-# MAD·AMV Classification
+# MAD·AMV Types and Classification
 
-No single classification system can simultaneously encompass Japanese MAD, Western AMV, Chinese platform categories, and every contest. MAD DOC records works through multidimensional fields, avoiding a single mutually exclusive tree imposed across different contexts.
+::: tip Key points
+- The most common broad types in the Chinese community are **anime-based (动画系), still-image (静止系), and style-focused (风格系)**, plus effects, mixed-media, GMV, and story-rewrite works.
+- These types are based on **material** or **style**, so they overlap; one work can belong to several.
+- When a contest has divisions, follow that edition's rules rather than the words “AMV” or “still-image” in a title.
+- To describe a work precisely, state its material, purpose, main technique, collaboration format, and release context.
+- Every tag is defined in the [Glossary](/en/mad/glossary).
+:::
 
-The site primarily discusses **the mainland Chinese MAD·AMV community centered on Bilibili as its main platform for publishing, contests, and communication**. Materials on Japanese still-image MAD, Western AMV, and style-focused short edits explain origins and cross-influences without replacing that primary scope.
+## Quick Reference
 
-## Five-Dimensional Classification
+| Type | Main material | What to look for | Common misunderstanding |
+| --- | --- | --- | --- |
+| Anime-based | Existing anime footage | Shot choice, pacing, sync, storytelling | Not the same as plain editing; can involve heavy compositing |
+| Still-image | Manga, illustrations, character art, CG | Layer separation, camera moves, layout that make still images “move” | Not “a few pictures with transitions”; often very labor-intensive |
+| Style-focused | Any | Motion, sync, visual design, personal style | Not a synonym for “lots of effects” |
+| Effects | Any | Compositing, motion graphics, visual effects | The boundaries of FX, VFX, and MG vary by community |
+| Mixed-media | Two or more media | Different materials share the storytelling | A few frames of another medium do not count |
+| GMV | Gameplay, cutscenes, trailers | Like AMV, but with game footage | Many anime divisions do not accept it |
+| Story rewrite (误解系) | Existing anime | Rearranges dialogue and events to tell a story the original never did | Merely shuffling the order is not enough |
+| ASMV | Anime plus dialogue and ambient sound | Trailer-like or short-film structure | Not every story-driven work is an ASMV |
+| Hand-drawn / original animation | Drawn by the creator | Original visuals | Some contests do not accept it |
 
-### 1. Source Media
+## Anime-Based
 
-| Tag | Description |
+Uses existing anime shots, creating new expression through shot selection, reordering, sync, sound, and compositing. It may draw on one series or many.
+
+Common directions:
+
+- **Raw (plain editing)**: expression comes from shot content, cut points, speed changes, and structure alone;
+- **Story / emotion**: reorganizes the original's events and relationships;
+- **Action / dance**: lands motion and camera movement on the musical beat;
+- **FX / VFX**: adds graphics, masks, tracking, and compositing on top of the edit;
+- **ASMV**: builds a trailer or short-film structure from dialogue, ambient sound, and subtitles;
+- **Multi-source AMV**: picks shots from several series and unifies them by theme or visual relationships.
+
+## Still-Image
+
+Uses manga, illustrations, character art, and other still images as the main material, creating a sense of time through camera moves, layer separation, masking, deformation, layout, and compositing. Related names:
+
+- **Still-image M@D (静止画 M@D)**: the usual name in Japanese and Chinese communities;
+- **MMV** (Manga Music Video): manga-based;
+- **Manga-based**: uses panels, speech balloons, and screentone, controlling reading order by splitting panels, filling gaps, and re-laying out pages;
+- **Galge / visual novel-based**: uses character sprites, event CGs, and backgrounds, staged through expression variants and layers;
+- **Light novel / illustration-based**: little material, relying on extending compositions, text, and atmosphere.
+
+The “motion” in still-image work comes mainly from:
+
+1. Separating characters, hair, clothing, foreground, and background into independent layers;
+2. Repairing backgrounds hidden behind characters;
+3. Building shots with 2.5D/3D space, virtual cameras, depth of field, and lighting;
+4. Rearranging panels and text to guide the viewer's reading order;
+5. Adding motion with deformation, particles, frame-by-frame animation, or original drawing.
+
+## Style-Focused
+
+A Chinese community term for works where visual design, rhythm, and form matter more than narrative, common in short edits and the IG-style scene. It is not a stable international category.
+
+Typical features:
+
+- Continuous motion from zooms, shake, rotation, blur, and speed ramps;
+- A personal visual language of color blocks, shapes, text, and grading;
+- Layered sync to drums, timbre, and lyrics;
+- Any material: anime, manga, games, or live action;
+- Usually seconds to a minute long, though full contest entries exist.
+
+Stacking presets without consistent motion logic and rhythm does not by itself produce a “style.”
+
+## Effects
+
+Works where compositing, motion graphics, or visual effects take up a large share. Related terms:
+
+- **FX**: in Chinese sources, leans toward text blocks, solid layers, zooms, shapes, and rhythmic effects;
+- **VFX**: leans toward recomposition, keying, tracking, 3D space, particles, and full-frame compositing;
+- **Motion Graphics (MG)**: driven by moving text, shapes, and layout;
+- **GFX**: sometimes refers specifically to thumbnails, posters, and other graphic design.
+
+These terms overlap and do not indicate skill level.
+
+## Other Types
+
+- **Mixed-media**: anime, manga, game CG, character art, and other media share the main storytelling. Contests may require you to pick a division by the main material or may have a separate mixed division.
+- **GMV** (Game Music Video): uses gameplay, cutscenes, or trailers. With mostly animated cutscenes it is close to AMV; with mostly gameplay it is closer to a game edit.
+- **Tokusatsu, live action, Non-Anime**: edited the same way as MAD, but check separately whether Bilibili's category and each contest accept them.
+- **Story rewrite (误解系)**: rearranges dialogue, expressions, and event order so viewers see a different story from the original. The new story has to make sense.
+- **Hand-drawn (手书), original animation, PV**: 手书 are fan animations drawn by the creator; original animation stresses fully original visuals; a PV is made to promote something. Some contests exclude these because their scope differs, not because these forms lack value.
+
+## Describing a Work in Five Dimensions
+
+Choose one or more tags in each dimension:
+
+| Dimension | Tags |
 | --- | --- |
-| Anime | Moving images from television anime, theatrical releases, OVAs, original animation, and related sources |
-| Manga／illustration | Manga panels, character art, dōjin illustrations, and visual-novel assets |
-| Games | Cutscenes, gameplay footage, character models, or promotional game assets |
-| Live action／non-anime | Films, television series, live footage, advertisements, and documentaries |
-| Original | Material drawn, filmed, modeled, or generated by the creator with the necessary rights |
-| Mixed | Two or more media types that each play a substantial expressive role |
+| 1. Material | Anime, manga/illustration, game, live action, original, mixed |
+| 2. Purpose | Action, Dance, Comedy, Drama/Romance, Character Profile, Psyche/Horror, Sentimental, Experimental |
+| 3. Main technique | Raw (plain editing), FX/VFX, Motion Graphics, Typography, Lip Sync, Match Cut, masking/rotoscoping, frame interpolation, original animation, color design |
+| 4. Collaboration | Solo, Collab, MEP, IC, team |
+| 5. Release context | Contest entry, event/festival, trailer/PV/CM, Parody (パロ), Alt-Opening, BGA/MV |
 
-### 2. Expressive Purpose
+For example: “anime material · Action + Character Profile · Raw · Solo · contest entry.”
 
-| Tag | Typical objective |
+“Raw” does not mean low skill, and “FX” does not mean more advanced; they only say where the work puts its effort.
+
+## IG / INS Style
+
+IG is short for Instagram. “IG style” refers to the short edits and AMVs popular on Instagram. It is a family of styles, not a single technique. The 2019 NEW EDITORS CON guide listed these common directions:
+
+| Direction | Features |
 | --- | --- |
-| Action | Emphasizes continuity of action, impact, speed, and progression between sections |
-| Dance | Centers on dance movement, musical groove, and bodily rhythm |
-| Fun／Comedy | Creates humor, contrast, parody, imitation, or a lighthearted atmosphere |
-| Drama／Romance | Develops character relationships, conflict, emotion, and narrative |
-| Character Profile | Builds a portrait of one character or a group |
-| Psyche／Horror | Pursues psychological pressure, strangeness, unease, or fear |
-| Sentimental | Centers on emotions such as nostalgia, comfort, parting, and growth |
-| Experimental | Primarily experiments with form, medium, or perception |
-
-These tags may coexist. A work can be “Action + Character Profile + Sentimental.”
-
-### 3. Production Techniques
-
-| Tag | Primary criterion |
-| --- | --- |
-| Raw／editing | Creates expression primarily through shot selection, ordering, speed changes, and basic processing |
-| FX／VFX | Makes extensive use of visual effects, compositing, tracking, rotoscoping, particles, or 3D |
-| Motion Graphics | Uses graphics, text, shapes, and layout animation as the principal visual language |
-| Typography | Treats the animated design of lyrics, dialogue, or other text as a core element |
-| Lip Sync | Recombines mouth movements so that a character appears to sing or speak new lines |
-| Match Cut | Matches shots through similarities in composition, action, color, or shape |
-| Masking／Rotoscoping | Separates characters and backgrounds with masks or frame-by-frame isolation |
-| Frame Interpolation | Changes motion speed and smoothness through interpolation or retiming |
-| Original Animation | Adds animation made by the creator beyond the existing source material |
-| Color Design | Establishes relationships and emotion by unifying or reconstructing color |
-
-“Raw” does not mean low-skill, and “FX” does not mean more advanced. The labels describe where a work concentrates its effort.
-
-### 4. Collaboration Structure
-
-| Tag | Description |
-| --- | --- |
-| Solo | Led and completed by one creator |
-| Collab | Created by multiple participants with no fixed format or division of work |
-| MEP | Multi-Editor Project, generally assigning musical sections to multiple editors before unified assembly |
-| IC | Iron Chef, a creation or battle format completed under limits on time, source material, or theme |
-| Studio／Team | Released under the name of an established team or studio |
-
-### 5. Release Context
-
-- **Contest Entry:** Made for a specific contest; the rules for that edition must also be recorded.
-- **Festival／Event:** Made for a festival, anniversary, collaborative project, or screening.
-- **Trailer／PV／CM:** Imitates or reconstructs the form of a trailer, promotional video, or commercial.
-- **Parody／パロ:** Recognizably imitates or parodies an original work, opening, music video, or advertisement.
-- **Alt-Opening／Alt-Ending:** Creates an unofficial replacement opening or ending.
-- **BGA／MV:** Serves as background animation or music visualization.
-
-## Using Common Umbrella Categories
-
-### Anime-Based
-
-These works primarily use existing moving anime footage. The creator establishes new expression through shot selection, rearrangement, synchronization, sound, and compositing. A work may use one title or draw from many anime.
-
-Common areas of emphasis include:
-
-- **Raw／editing:** Uses shot content, direction of action, cut points, speed changes, and sectional structure to create expression;
-- **Drama／emotion:** Rearranges events or character relationships from the source to create a complete emotional progression;
-- **Action／dance:** Aligns action, camera movement, and cutting with musical rhythm and intensity;
-- **FX／VFX:** Adds extensive graphics, text, masks, tracking, and recompositing beyond the edit;
-- **ASMV:** Uses dialogue, ambient sound, subtitles, and music to create a structure resembling a film trailer or narrative short;
-- **Multi-source AMV:** Selects shots from multiple anime and unifies them through a shared theme, action, or visual relationship.
-
-“Anime-based” identifies moving anime as the primary source media. It does not imply that a work uses editing alone and is not a complete synonym for AMV.
-
-### Still-Image
-
-These works primarily use static materials such as manga, illustrations, and character art, establishing temporality through camera movement, layers, masks, deformation, layout, and compositing. Related terms include:
-
-- **Still-image M@D:** A common form in Japanese and Chinese communities.
-- **MMV:** Manga Music Video, generally emphasizing manga images and music.
-- **Manga style:** Uses manga panels, speech balloons, and screentone as its principal material, often controlling reading order by separating panels, reconstructing missing artwork, and redesigning layouts.
-- **GAL／visual-novel style:** Uses character art, event CGs, backgrounds, and text, developing the presentation through expression variants, layers, and camera movement.
-- **Light-novel／illustration style:** Usually works with fewer source images and therefore relies more heavily on extending compositions, text, atmosphere, and supplementary original design.
-
-The movement in still-image work commonly comes from:
-
-1. Separating characters, hair, clothing, foregrounds, and backgrounds into independently animated layers;
-2. Reconstructing backgrounds or missing image areas concealed by characters;
-3. Building shots with 2.5D or 3D space, virtual cameras, depth of field, and lighting;
-4. Rearranging manga panels and copy so that viewers read them in the intended order;
-5. Adding motion through deformation, particles, frame-by-frame animation, or original drawing.
-
-Still-image work is therefore not “a few pictures with transitions,” and its workload cannot be assessed solely by whether the source material moves.
-
-### Style-Focused
-
-“Style-focused” is not a stable international classification. Chinese communities commonly use it for works in which visual design, atmosphere, rhythm, or formal qualities take priority over explicit narrative, especially in short edits and IG/INS contexts.
-
-It may include:
-
-- Building continuous motion with push-ins, shakes, rotation, blur, speed changes, and retiming;
-- Creating an individual visual language with color blocks, graphics, text, color grading, and interface elements;
-- Synchronizing multiple layers to percussion, timbre, lyrics, and small sounds;
-- Using anime, manga, games, or live-action sources rather than one fixed media type;
-- Producing dense passages lasting from a few seconds to a minute, while also extending these methods into full contest entries.
-
-Style-focused is not synonymous with “many effects.” Stacking presets without consistent motion logic, composition, and rhythmic design does not automatically create a recognizable style.
-
-### Effects-Focused
-
-This generally describes works in which compositing, motion graphics, or visual effects occupy a substantial role. It overlaps with FX/VFX, but its boundaries depend on the community or contest.
-
-- In some Chinese-language sources, **FX** leans toward text blocks, solid-color layers, scaling, graphics, and rhythm-based effects;
-- **VFX** more often refers to recomposition, rotoscoping, tracking, 3D space, particles, and image-level compositing;
-- **Motion Graphics** focuses on moving text, shapes, layouts, and abstract graphics;
-- Within MAD communities, **GFX** may specifically refer to static visual design for covers and posters.
-
-These terms may overlap and do not form a widely accepted technical hierarchy. The number of effects cannot substitute for theme, editing, and overall design.
-
-### Mixed-Media
-
-Mixed-media work uses anime, manga, game CG, character art, or other media as major expressive components, rather than inserting only one or two frames from a different medium. Common approaches include alternating anime shots with manga panels, recombining moving characters with static backgrounds, or depicting the same character and timeline through multiple media.
-
-Records may note the approximate proportion and function of each media type. A contest may require creators to enter the anime or still-image category based on the primary source material, or it may offer a separate mixed-media category.
-
-### GMV
-
-GMV generally stands for Game Music Video and primarily uses gameplay, cutscenes, trailers, or character models. When the source consists almost entirely of animated game cinematics, it may resemble an anime AMV visually. When it centers on gameplay combat, racing, or esports footage, it is closer to a game edit.
-
-MAD contests differ widely in whether they accept GMV. A title containing “AMV” does not automatically make a work eligible for an anime category.
-
-### Tokusatsu, Live Action, and Non-Anime
-
-Tokusatsu edits use tokusatsu series, films, and related media. Non-Anime is a broader label for material outside Japanese anime and may include Western animation, live-action film, and other footage. These works may use the same remix methods as MAD, but eligibility under Bilibili categories and individual contests must be checked separately.
-
-### Misinterpretation
-
-Misinterpretation works rearrange dialogue, expressions, event order, and character relationships so that existing material presents a new story different from the source. They do not merely summarize the original plot; they deliberately establish a new chain of causality.
-
-The form depends particularly on whether viewers can understand the new premise, whether shots establish causal relationships, and whether dialogue and sound support the new narrative. Simply scrambling a timeline or placing characters from different works in the same frame does not necessarily create a complete misinterpretation narrative.
-
-### Hand-Drawn Works, Original Animation, and PV
-
-- **Hand-drawn works** generally refer to transformative animation drawn by the creator, sometimes imitating an original opening, a song PV, or an independent sequence;
-- **Original animation** emphasizes that the creator produced the visual source material and does not necessarily belong to the MAD tradition of re-editing existing sources;
-- **PV／Promo** is made to promote music, a work, a contest, or a project. It describes a release function rather than a fixed visual style.
-
-These forms frequently intersect with MAD·AMV. Some contests explicitly exclude entirely hand-drawn work, original CG, or promotional PV because their submission scope and judging criteria differ—not because these forms lack creative value.
-
-## Wuyi无疑’s “Classification of MAD”
-
-In “Classification of MAD,” published in 2019, Wuyi无疑 divided “Classification” and “Tag” into two parts. The hierarchy below follows the original article. Explanations have been simplified without altering its basic structure.
-
-### Part I: Classification
-
-| Primary category | Secondary category | Subtypes |
-| --- | --- | --- |
-| Anime-based MAD (AMV) | Raw | Action, Dance, Fun／Comedy, Drama／Romance, Psyche／Horror |
-| Anime-based MAD (AMV) | VFX | Primarily expressed through extensive recomposition and visual compositing |
-| Anime-based MAD (AMV) | FX | Editing and extensive graphics, color blocks, scaling, and related effects jointly serve the rhythm |
-| Still-image MAD | MMV | Manga Music Video made primarily from manga |
-| Still-image MAD | Still-image M@D | Emphasizes static source material, copy arrangement, and relationships between shots |
-| Mixed-media MAD | — | Mixes source material from ACGN and other media |
-
-The original article further explains the expressive types under Raw:
-
-| Type | Local summary of the original |
-| --- | --- |
-| Action | Emphasizes action, power, and fluid rhythm |
-| Dance | Emphasizes groove, rhythm, and camera movement |
-| Fun／Comedy | Primarily aims for entertainment, comedy, and audience response |
-| Drama | Uses editing to reorganize narrative and the meaning of shots |
-| Romance | Centers on character relationships and romantic emotion |
-| Psyche | Characterized by psychedelic, consciousness-oriented, and creatively constructed imagery |
-| Horror | Builds fear through atmosphere, suspense, and unease |
-
-### Part II: Tag
-
-The original article places other common terms under Tag and states explicitly that a work may carry multiple tags:
-
-| Scope | Tags listed in the original |
-| --- | --- |
-| Narrative and characters | ASMV, Character Profile, Story, Sentimental, Cinematic, Dark, Trailer |
-| Genre and emotion | Candy, Comedy／Humor, Ecchi, Play／Fun, Rhythm & Beat, Upbeat |
-| Source media | FMV, Manga, Non-Anime, Original Animation, iMADs, Composite MAD |
-| Visual and audio techniques | GFX, Kinetic Typography, MG, Over-Sync, Lip Sync, SFX, Frame Interpolation |
-| Form and release | Alt-Opening, BGA, CM, MTV, PV／Promo／Preview, Parody／パロ |
-| Collaboration | Collab, MEP |
-| Music | Instrumental, RAP, Trap |
-| Platform-derived | INS／ig, Vine |
-| Other spellings | Cross-Over, M@D |
-
-### Part II: Tag-by-Tag Explanations
-
-The following section expands every tag listed in the original article. They do not describe concepts at the same level: some indicate expressive purpose, while others indicate source media, techniques, music, collaboration, or publishing platforms. Multiple tags may be used for one record.
-
-#### Narrative, Character, and Atmosphere
-
-| Tag | Meaning | Difference from related tags |
-| --- | --- | --- |
-| ASMV | Anime Story Music Video. Usually retains or rearranges dialogue, subtitles, ambient sound, and music to create a narrative resembling a trailer or short film | Not every narrative AMV is an ASMV; the form generally depends more heavily on dialogue and cinematic sound structure |
-| Character Profile | Concentrates on the personality, experience, relationships, and development of one character or ensemble | May follow the source closely or propose a new interpretation through editing |
-| Story | Uses event progression and causality as its framework so that viewers unfamiliar with the source can still broadly understand the story | Does not require the original plot to be completely rewritten |
-| Sentimental | Centers on friendship, growth, nostalgia, parting, comfort, and related emotional experiences | Generally involves less intense conflict than Drama and need not center on romance |
-| Cinematic | Uses trailer-like sections, epic music, dialogue, ambience, and sound effects to create a cinematic atmosphere | Describes presentation, not source material from film |
-| Dark | Maintains a dark, oppressive, or dangerous character across subject matter, color, sound, and structure | May coexist with Horror, Psyche, Drama, and VFX |
-| Trailer | Rearranges source material as a trailer, commonly using title cards, dialogue, suspense, rising intensity, and an ending information card | May create a “fake trailer” for a nonexistent film or remake a trailer for the original work |
-
-#### Emotion, Rhythm, and Content Orientation
-
-| Tag | Meaning | Notes |
-| --- | --- | --- |
-| Candy | A sweet, bright, and lively visual direction that often uses static character art, color blocks, decorative graphics, and Motion Graphics | The original summarizes it as a “sweet style”; it often overlaps with FX, Dance, and Upbeat |
-| Comedy／Humor | Uses explicit jokes, contrast, misunderstanding, parody, or rhythmic design to make viewers laugh | Places more emphasis on “jokes” than the broadly lighthearted Fun |
-| Ecchi | A content tag for sexualized, suggestive, or adult-coded material | Platform and contest moderation standards differ substantially; the tag is not a guarantee of acceptance |
-| Play／Fun | Emphasizes lightheartedness, playfulness, inventive ideas, or interaction without necessarily relying on conventional jokes | May combine with game-like structures, character guessing, Dance, and other devices |
-| Rhythm & Beat | Derives its primary appeal from continuous correspondence between musical groove and visual action, creating the sense that viewers can move with the beat | Related to Dance but does not require dance footage |
-| Upbeat | Maintains an energetic, bright, and lively mood, commonly found in Dance, Fun, and youthful ensemble works | Describes mood and musical energy rather than a fixed editing technique |
-| Comedy／Fun | Often combined into one broad contest category, but may be understood separately as “creating laughter” and “conveying joy” | Records may distinguish them by the work’s objective or retain a contest’s combined label |
-
-#### Source Media
-
-| Tag | Meaning | Notes |
-| --- | --- | --- |
-| FMV | The original uses Fan-made MV for unofficial music videos broader than Anime Music Video, potentially including non-Japanese animation and other footage | Other communities may expand FMV as Full Motion Video; the context must be stated when cited |
-| Manga | Uses manga pages, panels, or character images | The presence of manga does not automatically make a work an MMV; manga should be the primary source |
-| Non-Anime | Primarily uses sources outside Japanese anime, such as Western animation, live-action film, or game footage | Overlaps with FMV and GMV and may not be eligible for every contest |
-| Original Animation | Adds animated shots drawn or produced by the creator to a MAD·AMV | “Original animated source material” should be distinguished from “original editing of existing material” |
-| iMADs／im@ds | A MAD term centered on source material or culture from *THE iDOLM@STER* franchise | The letter i does not mean Instagram or AI |
-| Composite MAD | Also called a “move list”; connects similar actions or poses into a continuous action combination synchronized with strongly rhythmic music | “Composite” here does not simply mean mixed source media and is distinct from mixed-media MAD |
-
-#### Visual, Text, and Audio Techniques
-
-| Tag | Meaning | Primary criterion |
-| --- | --- | --- |
-| GFX | Graphics FX. Commonly refers to static visual design for a work’s cover, poster, or key frame, and may also refer to the creator responsible for that design | When used for the video itself, specify whether it means graphic design or motion compositing |
-| Kinetic Typography | Changes the position, size, rotation, letterforms, and timing of text so that the text itself conveys emotion and rhythm | More than adding entrance animation to subtitles |
-| MG／Motion Graphics | Builds images through animated shape layers, text, icons, layout, and abstract graphics | May define the entire style or appear only in an intro or bridge |
-| Over-Sync | Uses multiple layers of synchronization—cuts, internal motion, lip movement, effects, text, and sound—to map dense visual detail to the music | More synchronization is not automatically better; excessive density can impair readability and sectional hierarchy |
-| Lip Sync | Uses shot selection, cutting, speed changes, or deformation to align a character’s mouth with new lyrics or dialogue | Requires attention to syllables, open and closed mouth shapes, expressions, and shot continuity |
-| SFX | Sound Effects that reinforce impacts, environments, transitions, action, and spatial detail | Sound from the original, libraries, and the creator should have their sources recorded separately |
-| Frame Interpolation | Estimates intermediate frames for slow motion, speed changes, or high-frame-rate output | Repeated anime frames, fast occlusion, and flashing scenes are prone to warping, ghosting, and false lines |
-| FX／VFX | FX often emphasizes text blocks, color layers, scaling, and rhythmic effects; VFX often emphasizes recomposition, tracking, rotoscoping, and image compositing | This is a working distinction in the original article, not a convention shared by every contest or creator |
-
-#### Release Forms and Imitation
-
-| Tag | Meaning | Notes |
-| --- | --- | --- |
-| Alt-Opening | Recreates or replaces the shot structure, music, and direction of an anime opening with footage from another work | Both the opening being imitated and the source work used should be identified |
-| BGA | Background Animation, common in rhythm games and music events, made as background visuals for a particular track | A BGA may be viewed independently, but its primary purpose is to serve the designated music |
-| CM | Commercial or promotional short. In MAD communities, it often means an announcement video for a contest, team, or event | Unlike a full contest entry, its emphasis is communicating information and attracting participation |
-| MTV | The original uses this label to distinguish officially produced music videos from unofficial music-oriented AMV | “MV” is more common today; a mechanical official/unofficial distinction is not recommended |
-| PV／Promo | Promotion Video for a work, music, event, or project | Defined by what it promotes rather than a particular visual style |
-| PV／Preview | A preview or advance clip; may overlap with CM in contest promotion | The abbreviation has two expansions, so citations should spell out the intended form |
-| Parody／パロ | Recognizably imitates, parodies, or remakes the structure and direction of an opening, advertisement, music video, trailer, or popular video | Homage does not automatically resolve plagiarism concerns; contests differ in their acceptance of imitation |
-
-#### Collaboration, Music, and Platform Origins
-
-| Tag | Meaning | Notes |
-| --- | --- | --- |
-| Collab | Two or a small number of creators jointly make a structurally coherent work; responsibilities need not be divided by musical section | Actual participants and responsibilities should be recorded |
-| MEP | Multi-Editor Project. Multiple creators each produce an assigned Track, while an organizer unifies the intro, transitions, and output | Segment coordination, not merely the number of people, defines an MEP |
-| Instrumental | Uses instrumental music without vocals | Describes the music, not whether the work is Action, Drama, or another expressive type |
-| RAP | Uses rap music and may draw on dense lyrics for Lip Sync, Typography, or rapid synchronization | A song containing one rap passage does not always require the tag |
-| Trap | Uses Trap music and its characteristic heavy beats, syncopation, and timbre. Early short edits often combined it with IG-style synchronization techniques | A music and historical-context tag, not a fixed preset pack |
-| INS／IG | Originates in Instagram’s short-edit ecosystem and emphasizes rhythm, design, motion, and individual style | Not a single technique; see the detailed classification below |
-| Vine | Originates from the discontinued short-video platform Vine and often describes brief, looping edits with conspicuous rapid scaling and shape animation | Now retained primarily as a historical label |
-| M@D | A variant spelling of MAD common in Japanese and Chinese communities, especially for still-image M@D | “@” is not a separate technical category and does not by itself establish that the source material is static |
-
-This classification preserves many search terms used by Chinese MAD·AMV communities in 2019. Four limitations remain important:
-
-1. The author explicitly states that the system leans toward Western AMV communities;
-2. It mixes classification, source media, style, technique, event format, and platform origin at different levels;
-3. Tags are not mutually exclusive;
-4. Some terms have different meanings across websites, periods, and events.
-
-MAD DOC therefore preserves the original classification alongside the five-dimensional system above. Neither overrides creator self-identification or contest rules.
-
-## IG／INS
-
-IG is a common abbreviation for Instagram. The “IG style” discussed in Chinese MAD·AMV communities originated in short edits and AMVs published by creators on Instagram, but it is not a single technique with fixed boundaries.
-
-Wuyi无疑’s classification uses **INS／ig** as a Tag for short, loopable, stream-of-consciousness-oriented works that emphasize design and rhythm. The 2019 NEW EDITORS CON guide uses a broader scope, treating IG as a collection of short-form editing styles found on the platform and listing the following common directions:
-
-| Direction | Common characteristics |
-| --- | --- |
-| Rhythm-focused short edit | Push-ins, shakes, exposure changes, color grading, blur, speed changes, and dense synchronization emphasizing fluidity and impact |
-| Hybrid | Combines blur, shaking, and rhythm treatments common in IG edits with longer editing structures and 3D scenes |
-| Motion Design | Constructs images through graphic design, text animation, layout, and moving graphics |
-| Candy／FX | Characterized by bright graphics, color blocks, shape animation, and effects design |
-| Pulse | Uses high-frequency flashing, jump cuts, and intense audiovisual stimulation |
-| Celebrity Edit | Uses live-action celebrities or idols, commonly with speed changes and fluid motion transitions |
-| GMV Edit | Uses gameplay, cutscenes, or competitive-game footage in short edits |
-| VFX／3D | Organizes shots, text, and scenes in 3D space, emphasizing camera motion and spatial design |
-
-These directions reflect particular creators’ observations of the Instagram editing ecosystem at that time and are not official platform categories. “IG/INS” may be recorded as a publishing-culture or community-style tag while the actual source media, expressive purpose, and production techniques continue to be documented.
+| Rhythmic short edit | Zooms, shake, exposure, grading, blur, speed ramps, dense sync |
+| Hybrid | IG-style treatment combined with longer edits or 3D scenes |
+| Motion Design | Graphic design, text animation, and moving shapes |
+| Candy / FX | Bright graphics, color blocks, and shape animation |
+| Pulse | High-frequency flashing and jump cuts |
+| Celebrity Edit | Live-action celebrity footage with speed ramps and smooth transitions |
+| GMV Edit | Short edits of gameplay or cutscenes |
+| VFX / 3D | Shots and text arranged in 3D space |
 
 ## Two Creative Communities in Mainland China
 
-This section describes **creator social networks and publishing ecosystems**, not two mutually exclusive categories into which every work must be forced. By the 2020s, mainland Chinese MAD·AMV creators had clearly developed into two relatively independent but still overlapping communities:
+Since the 2020s, mainland Chinese MAD·AMV creators have roughly split into two overlapping but fairly separate communities. This describes communities, not a way of classifying works:
 
-| Dimension | Bilibili long-form MAD·AMV community | Style-focused short-edit AMV community |
+| | Bilibili long-form community | Style-focused short-edit community |
 | --- | --- | --- |
-| Primary publication and archiving | Centered on Bilibili video uploads, collections, team accounts, and contest pages | Centered on short-video platforms, instant-messaging groups, and creators’ personal accounts, with some works reposted to Bilibili |
-| Common duration | Often structured around a full song or its principal sections, commonly around 2–5 minutes; ASMV may be longer | Commonly a few seconds to one minute, with some style-focused contest entries running 1–3 minutes |
-| Primary emphasis | Shot selection, narrative, emotional progression, complete structure, and reorganization of anime or still-image sources | Synchronization, speed, push-ins, shakes, transitions, graphics, color grading, short-term visual density, and individual style |
-| Community entry points | MAD teams, contests, Bilibili creators, legacy MAD Bar resources, and tutorials | Style tags, short-edit tutorials, creator chat groups, and mobile or After Effects project sharing |
-| Common evaluative context | Theme, shot language, use of source material, structure, technical execution, and contest rules | Fluidity, impact, synchronization, visual design, effects execution, and recognizable style |
-| Preservation risks | Pages are relatively suitable for long-term citation, although event attachments and older drafts may still disappear | Works are short and frequently reposted across platforms; accounts move quickly, making original creators and first-publication dates harder to trace |
+| Where work is published | Bilibili uploads, playlists, team accounts, contests | Short-video platforms, personal accounts, chat groups |
+| Typical length | 2–5 minutes; ASMV longer | Seconds to 1 minute; contest entries 1–3 minutes |
+| What is valued | Shot choice, story, emotion, complete structure | Sync, speed, motion, visual design, personal style |
+| Ways in | Teams, contests, Bilibili creators, old MAD Bar tutorials | Style tags, short-edit tutorials, creator groups |
+| Preservation | Relatively easy to cite | Frequent cross-platform reposting makes original creators hard to trace |
 
-Three groups of verifiable evidence support this distinction:
+Evidence: the 2024 [Chinese MAD Creator Study](/en/mad/ccopw) (69 interviews) discusses Bilibili's MAD community separately from IG-style creators on Instagram and Douyin; the 2026 [IMAC FUN#4](https://www.bilibili.com/opus/1203002472552988705) set separate durations for anime AMV (2–5 minutes), still-image (1 min 30 s–5 minutes), and style entries (35 seconds–3 minutes).
 
-1. The 2024 dissertation [Creative Class or Precarious Workers](/en/mad/ccopw) includes 69 semi-structured interviews. It discusses the Bilibili-centered MAD community separately from IG-style creators on Instagram and Douyin, recording differences in social relationships, tutorials, and commercial practice.
-2. The 2019 [NEW EDITORS CON guide to IG styles](https://www.bilibili.com/opus/215518138904040334) understands IG as a collection of short-form edit styles on Instagram, not as one fixed technical branch of Bilibili long-form MAD.
-3. The 2026 [IMAC FUN#4 rules](https://www.bilibili.com/opus/1203002472552988705) separately set durations of 2–5 minutes for anime AMV, 1:30–5 minutes for still-image works, and 35 seconds–3 minutes for style-focused and other MAD. Rules for one contest do not represent an entire field, but they show organizers distinguishing these production contexts in actual submissions.
+## Wuyi无疑's “Classification of MAD”
 
-“Relatively independent” does not mean isolated. Long-form works may make extensive use of style-focused techniques, and short-edit creators may enter Bilibili contests or produce long-form works. Bilibili also hosts many short edits. Creator and work records should separately document **publishing platform, typical duration, community self-identification, and actual techniques** rather than assigning a community solely by runtime.
+Published in 2019, Wuyi无疑's “Classification of MAD” is the most widely circulated classification in the Chinese community. It splits works into three groups and treats every other label as a stackable tag:
+
+| Level 1 | Level 2 | Description |
+| --- | --- | --- |
+| Anime MAD (AMV) | Raw | Subdivided into Action, Dance, Fun/Comedy, Drama/Romance, Psyche/Horror |
+| | VFX | Built mainly on heavy recomposition and visual compositing |
+| | FX | Editing and graphic, color-block, and zoom effects serve the rhythm together |
+| Still-image MAD | MMV | Manga as the main material |
+| | Still-image M@D | Emphasizes still material, text layout, and the relationship between storyboards |
+| Mixed MAD | — | Mixes ACGN and other media |
+
+The tags it lists (ASMV, Candy, Over-Sync, 复合 MAD, iMADs, and so on) are all defined in the [Glossary](/en/mad/glossary). The author notes that the scheme leans toward Western AMV conventions and is incomplete, and categories, techniques, styles, and platforms sit at the same level.
 
 ## References
 
 - [Wuyi无疑: “Classification of MAD”](https://www.bilibili.com/opus/291682438941101836)
 - [NEW EDITORS CON: Contest Guide and Introduction to IG Styles](https://www.bilibili.com/opus/215518138904040334)
 - [IMAC FUN#4: Contest Guide and Category Durations](https://www.bilibili.com/opus/1203002472552988705)
-- [Creative Class or Precarious Workers: Animation Recreators in China's Video Platform](/en/mad/ccopw)
 - [AMV Japan: AMVのカテゴリー](https://amv-japan.org/column/amv-categories)
-- [AnimeMusicVideos.org](https://www.animemusicvideos.org/)
-- [AKROSS Con](https://www.akross.ru/)
-- [AMVNews](https://amvnews.ru/)
-- [ACG Library: Explanation of Common Terms](https://acglibrary.com/clarification/dictionary.html)
-- [MAD Bar: “How Do You Make MAD?”](https://tieba.baidu.com/p/5405972673) — Contains many examples of work types. The author later noted that the article contains errors that could no longer be edited; it should be read alongside other sources.
+- [ACG Library: Glossary of Common Terms](https://acglibrary.com/clarification/dictionary.html)
+- [MAD Bar: “How Do You Make MAD?”](https://tieba.baidu.com/p/5405972673): many examples of types; the author later noted errors in the text.
 
 ## Related Pages
 
-- [Definitions and Scope](/en/mad/mad): what MAD and AMV each mean and how they relate;
-- [Glossary](/en/mad/glossary): technical and community terms beyond classification tags;
-- [Dennou Emaki: Classification, Creativity, and Copyright](/en/history/dennouemaki/theory#classification): a Japanese MAD creator’s own scheme of 37 techniques;
-- [Contest and Submission Guidelines](/en/mad/contest-rules): how contest divisions relate to these dimensions.
+- [What Are MAD and AMV?](/en/mad/mad): definitions of the two core terms;
+- [Glossary](/en/mad/glossary): what each tag means;
+- [Dennou Emaki: Classification, Creativity, and Copyright](/en/history/dennouemaki/theory#classification): a Japanese MAD creator's scheme of 37 techniques;
+- [Contest and Submission Guidelines](/en/mad/contest-rules): how contests divide entries.

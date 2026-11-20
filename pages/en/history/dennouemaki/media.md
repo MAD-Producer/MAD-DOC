@@ -1,9 +1,17 @@
 ---
 title: Media, Distribution, and Video Platforms (Dennou Emaki Column Summaries)
-description: Original summaries of the Dennou Emaki blog's articles on MAD media history, analog capture, Niconico Douga, and livestream audio
+description: How Japanese MAD media changed—cassette tapes in the 1980s, VHS in the 1990s, DVD in the 2000s, video sites in the 2010s—plus analog capture, the author’s analysis of Niconico Douga, and reference audio levels for livestreams.
 ---
 
 # Media, Distribution, and Video Platforms
+
+::: tip Key points
+- The author argues that “the history of MAD is the history of media”: roughly every ten years a new medium arrives, changing how MAD is made and what the word means.
+- Cassette tapes in the 1980s, VHS compilations in the 1990s, DVD in the 2000s, and Niconico and other video sites from 2007.
+- In the analog era, footage had to be digitized with VCRs and capture cards; this page records how the author did it.
+- The author analyzed Niconico's changes in 2018 and 2020, attributing users' move to YouTube mainly to differing business models.
+- Includes livestream audio notes: voice about −5 dB, BGM about −24 dB, video about −15 dB, sound effects about −5 dB.
+:::
 
 One of the author’s central arguments is that **the history of MAD is also the history of media**. Each generation of storage and distribution media shaped how MAD was made, how it circulated, and even what the word “MAD” meant. This page summarizes the five “Column” articles that deal with media, platforms, and the publishing environment.
 

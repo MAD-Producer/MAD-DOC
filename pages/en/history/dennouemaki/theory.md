@@ -1,13 +1,21 @@
 ---
 title: Classification, Views on Creativity, and Copyright (Dennou Emaki Column Summaries)
-description: Original summaries of the Dennou Emaki blog's articles on MAD cultural spheres, genre and technique classification, the derivative-work debate, non-complaint copyright offenses, and the "Newtype theory"
+description: A Japanese MAD creator’s theory—classifying MAD by cultural sphere, by type (two systems, seven categories), and by 37 editing techniques; whether MAD counts as creative work; how Japan’s non-complaint copyright change affects MAD; and the “Newtype theory” of MAD communities.
 ---
 
 # Classification, Views on Creativity, and Copyright
 
-This page summarizes the five more theoretical, opinion-based “Column” articles: two on classification, a short essay on the nature of MAD, a note on copyright, and an essay on generational change in the community. These mainly reflect the author’s personal position and are all rated **C Personal opinion**.
+::: tip Key points
+- The author classifies MAD three ways: 6 cultural spheres, 2 systems with 7 types, and 37 editing techniques.
+- He proposes a “third MAD”: a mixed “new video” sphere beyond the dynamic and static systems, beginning with “Secret Waltz” (2003).
+- He argues MAD is neither a derivative work nor a creative work in itself, but a “**secondary creation of interpretation**,” with creativity holding only within limits.
+- On Japan's 2018 move to make copyright infringement prosecutable without a complaint, he stresses that “conflicting ≠ violating ≠ criminal” and that the law decides.
+- These are all the author's personal views.
+:::
 
-> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and how reliability is labeled. MAD DOC’s own framework is described in [Classification](/en/mad/classification).
+This page summarizes the five more theoretical, opinion-based “Column” articles: two on classification, a short essay on the nature of MAD, a note on copyright, and an essay on generational change in the community. These mainly reflect the author’s personal position and are all labeled **Personal view**.
+
+> See the [Column Summaries overview](/en/history/dennouemaki) for the source registration and how reliability is labeled. MAD DOC’s own framework is described in [Types and Classification](/en/mad/classification).
 
 ## The Third MAD: The “New Video” Sphere {#third-mad}
 
@@ -258,5 +266,5 @@ Source: [MADにおけるニュータイプ論](https://dennouemaki.blog.jp/2020/
 
 ## Relation to Other MAD DOC Pages
 
-- [Definitions and Scope](/en/mad/mad) discusses how MAD relates to derivative work, dōjin culture, and AMV. The “secondary creation of interpretation” described here is one veteran Japanese creator’s personal position, useful as a sample viewpoint rather than a consensus definition.
+- [What Are MAD and AMV?](/en/mad/mad) discusses how MAD relates to derivative work, dōjin culture, and AMV. The “secondary creation of interpretation” described here is one veteran Japanese creator’s personal position, useful as a sample viewpoint rather than a consensus definition.
 - [Contest and Submission Guidelines](/en/mad/contest-rules) covers source-material and copyright rules. The copyright content on this page reflects the 2018 revision of Japanese law and does not apply to other jurisdictions.

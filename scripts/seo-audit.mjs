@@ -177,6 +177,31 @@ for (const verificationFile of [
   }
 }
 
+for (const machineFile of ['llms.txt', 'llms-full.txt', 'en/llms-full.txt']) {
+  try {
+    const text = readDist(machineFile)
+    assert(text.length > 1000, `${machineFile} looks empty`)
+  } catch {
+    errors.push(`${machineFile} is missing from the build output`)
+  }
+}
+
+for (const url of sitemapUrls) {
+  const html = readDist(htmlFileFor(url))
+  const markdown = matches(
+    html,
+    /<link\s+rel="alternate"\s+type="text\/markdown"[^>]*href="([^"]*)"/g
+  )
+  assert(markdown.length === 1, `${url}: expected one Markdown alternate link`)
+  if (markdown[0]) {
+    try {
+      readDist(new URL(markdown[0]).pathname.slice(1))
+    } catch {
+      errors.push(`${url}: Markdown copy ${markdown[0]} is missing`)
+    }
+  }
+}
+
 if (errors.length) {
   console.error(`SEO audit failed with ${errors.length} issue(s):`)
   for (const error of errors) console.error(`- ${error}`)
